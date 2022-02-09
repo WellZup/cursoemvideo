@@ -1,27 +1,18 @@
-# Curso em Vídeo
+# Curso em Vídeo | Prof. Gustavo Guanabara
 
-## Prof. Gustavo Guanabara
-
-[![](https://img.shields.io/badge/made_by-eduardodsr-green)](https://github.com/eduardodsr/)
-![GitHub top language](https://img.shields.io/github/languages/top/eduardodsr/AluraOracleONE)
-![GitHub language count](https://img.shields.io/github/languages/count/eduardodsr/AluraOracleONE)
-
+[![](https://img.shields.io/badge/made_by-eduardodsr-green)](https://github.com/eduardodsr/cursoemvideo)
+<!-- ![GitHub top language](https://img.shields.io/github/languages/top/eduardodsr/cursoemvideo)
+![GitHub language count](https://img.shields.io/github/languages/count/eduardodsr/cursoemvideo) -->
 
 
 ## Cursos
 
 <img src="https://www.cursoemvideo.com/wp-content/uploads/bb-plugin/cache/algoritmos-circle.jpg" alt="logo" width="100px" /> 
 
-### 01. Curso de Algoritmo [40 Horas] ✅ 
+### 01. Curso de Algoritmo [40 Horas] 
 
 
-
-
-
-
-
-
-### Tópicos / Aulas
+### Conteúdo do Módulo :bookmark:
 
 1. Aula 1 – Introdução a Algoritmos  ✅
 2. Aula 2 – Primeiro Algoritmo ✅
@@ -40,27 +31,8 @@
 15. Aula 15 – Matrizes ❌
 
 
-
 ### Links: 
 
 [Site - Curso de Algoritmo [40 Horas]](https://www.cursoemvideo.com/curso/curso-de-algoritmo/)
 
 [Código Fonte - Curso de Algoritmo [40 Horas]](https://github.com/eduardodsr/cursoemvideo/tree/master/curso-de-algoritmo/projetos) 
-        
-
-<br>
-
-## Perfil, Atividades & Certificados: 
-
-  `link:`   
-
-
-
-
-
-Ativo 8
-44% COMPLETO
-Última atividade em 8 de fevereiro de 2022 23:06
-
-
-
