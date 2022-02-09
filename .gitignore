@@ -1,0 +1,15 @@
+##### MAC OS #####
+
+# General
+.DS_Store
+*/.DS_Store
+**/.DS_Store
+._.DS_Store
+
+# Directories Ignores 
+teste
+
+# Packages #
+*.dmg
+*.rar
+*.zip
