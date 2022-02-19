@@ -21,9 +21,9 @@
 5. Aula 5 – Introdução ao Scratch ✅
 6. Aula 6 – Exercícios de Algoritmo Resolvidos ✅
 7. Aula 7 – Estruturas Condicionais 1 ✅
-8. Aula 8 – Estruturas Condicionais 2 ❌
-9. Aula 9 – Estruturas de Repetição 1 ❌
-10. Aula 10 – Estruturas de Repetição 2 ❌
+8. Aula 8 – Estruturas Condicionais 2 ✅
+9. Aula 9 – Estruturas de Repetição 1 ✅
+10. Aula 10 – Estruturas de Repetição 2 ✅
 11. Aula 11 – Estruturas de Repetição 3 ❌
 12. Aula 12 – Procedimentos ❌
 13. Aula 13 – Funções ❌
@@ -36,3 +36,5 @@
 [Site - Curso de Algoritmo [40 Horas]](https://www.cursoemvideo.com/curso/curso-de-algoritmo/)
 
 [Código Fonte - Curso de Algoritmo [40 Horas]](https://github.com/eduardodsr/cursoemvideo/tree/master/curso-de-algoritmo/projetos) 
+
+[Manual do VisualG](https://github.com/eduardodsr/cursoemvideo/tree/master/curso-de-algoritmo/manual.pdf) 
