@@ -35,6 +35,6 @@
 
 [Site - Curso de Algoritmo [40 Horas]](https://www.cursoemvideo.com/curso/curso-de-algoritmo/)
 
-[Código Fonte - Curso de Algoritmo [40 Horas]](https://github.com/eduardodsr/cursoemvideo/tree/master/curso-de-algoritmo/projetos) 
+[Código Fonte - Curso de Algoritmo [40 Horas]](https://github.com/eduardodsr/cursoemvideo/tree/master/curso-de-algoritmo/Projetos) 
 
 [Manual do VisualG](https://github.com/eduardodsr/cursoemvideo/tree/master/curso-de-algoritmo/manual.pdf) 
