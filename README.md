@@ -11,6 +11,12 @@
 
 ### 01. Curso de Algoritmo [40 Horas] 
 
+- O **Visualg** é um programa que permite criar, editar, interpretar e que também executa os algoritmos em português como se fosse um “programa” normal de computador.
+
+- O Visualg possui recursos como simulação da “tela” do MS-DOS, visualização de variáveis, “breakpoints”, com ajuda on-line, impressão dos fontes e outras características que auxiliam o aprendizado das técnicas de programação.
+
+- **OBS:** Para utilizar no MacOS, estou utilizando o software **CrossOver**, permite utilizar os aplicativos Windows no MacOS.
+
 
 ### Conteúdo do Módulo :bookmark:
 
@@ -33,6 +39,8 @@
 
 ### Links: 
 
+[Visual G - Download](https://sourceforge.net/projects/visualg30/)
+
 [Site - Curso de Algoritmo [40 Horas]](https://www.cursoemvideo.com/curso/curso-de-algoritmo/)
 
 [Código Fonte - Curso de Algoritmo [40 Horas]](https://github.com/eduardodsr/cursoemvideo/tree/master/curso-de-algoritmo/Projetos) 
@@ -41,3 +49,10 @@
 
 [Manual do VisualG - SITE](https://manual.visualg3.com.br/doku.php?id=manual) 
 
+[Manual do VisualG - Apostila Download](https://sourceforge.net/projects/visualg30/files/Apostila%20de%20VisualG%20Curso_Basico.pdf)
+
+### Agradecimentos:
+
+- Prof. Antonio Carlos Nicolodi, criador do Visual G.
+
+- Prof. Gustavo Guanabara, criador do site Curso em Vídeo e Estudonauta.
