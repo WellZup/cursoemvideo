@@ -32,29 +32,34 @@
 8. Aula 8 – Estruturas Condicionais 2 ✅
 9. Aula 9 – Estruturas de Repetição 1 ✅
 10. Aula 10 – Estruturas de Repetição 2 ✅
-11. Aula 11 – Estruturas de Repetição 3 ❌
+11. Aula 11 – Estruturas de Repetição 3 ✅
 12. Aula 12 – Procedimentos ❌
 13. Aula 13 – Funções ❌
 14. Aula 14 – Vetores ❌
 15. Aula 15 – Matrizes ❌
 
+
+### Anotações das Aulas:
+
+[]()
+
 ### Código Fonte:
 
 [Código Fonte das Aulas - Curso de Algoritmo](https://github.com/eduardodsr/cursoemvideo/tree/master/curso-de-algoritmo/Projetos) 
 
+
 ### Links: 
+
+[Curso de Algoritmo, site do Prof. Gustavo Guanabara](https://www.cursoemvideo.com/curso/curso-de-algoritmo/)
 
 [Visual G - Site Oficial](http://visualg3.com.br/)
 
 [Visual G - Download](https://sourceforge.net/projects/visualg30/)
 
-[Curso de Algoritmo, site do Prof. Gustavo Guanabara](https://www.cursoemvideo.com/curso/curso-de-algoritmo/)
-
-
-
 [Manual do VisualG - SITE](https://manual.visualg3.com.br/doku.php?id=manual) 
 
 [Manual do VisualG - Apostila Download](https://sourceforge.net/projects/visualg30/files/Apostila%20de%20VisualG%20Curso_Basico.pdf)
+
 
 ### Agradecimentos:
 
@@ -62,4 +67,4 @@
     - Obrigado por compartilhar o seu conhecimento. 
 
 - Prof. *Gustavo Guanabara*, criador do site Curso em Vídeo.
-    - Obrigado pela excelente qualidade e dedicação das suas aulas. Com certeza, uns dos melhores professores para aprender a programar.
+    - Obrigado pela excelente qualidade e dedicação das suas aulas. 
