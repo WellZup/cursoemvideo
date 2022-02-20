@@ -59,5 +59,7 @@
 ### Agradecimentos:
 
 - Prof. *Antonio Carlos Nicolodi*, criador do Visual G.
+    - Obrigado por compartilhar o seu conhecimento. 
 
 - Prof. *Gustavo Guanabara*, criador do site Curso em Vídeo.
+    - Obrigado pela excelente qualidade e dedicação das suas aulas. Com certeza, uns dos melhores professores para aprender a programar.
