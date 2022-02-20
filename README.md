@@ -41,7 +41,7 @@
 
 ### Anotações das Aulas:
 
-[]()
+[Anotações das Aulas com Código Fonte](https://github.com/eduardodsr/cursoemvideo/blob/master/curso-de-algoritmo/algoritmos.md)
 
 ### Código Fonte:
 
