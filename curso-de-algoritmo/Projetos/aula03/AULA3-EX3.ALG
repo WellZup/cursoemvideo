@@ -12,14 +12,17 @@ Var
    
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
+   EscrevaL ("------- CALCULADORA -------")
+   EscrevaL ("")
    Escreva ("Escreva o primeiro número: ")
    Leia (N1)
 
-   Escreva("Escreva o segundo número: ")
-   Leia(N2)
+   Escreva ("Escreva o segundo número: ")
+   Leia (N2)
 
-   SOMA <- N1+N2
-   Escreva("O resultado da soma de ", N1, " + ", N2, " = ", SOMA)
+   SOMA <- N1 + N2
+   EscrevaL ("")
+   EscrevaL ("O resultado da soma de ", N1, " + ", N2, " = ", SOMA)
    
 
 Fimalgoritmo

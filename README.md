@@ -33,8 +33,8 @@
 9. Aula 9 – Estruturas de Repetição 1 ✅
 10. Aula 10 – Estruturas de Repetição 2 ✅
 11. Aula 11 – Estruturas de Repetição 3 ✅
-12. Aula 12 – Procedimentos ❌
-13. Aula 13 – Funções ❌
+12. Aula 12 – Procedimentos ✅
+13. Aula 13 – Funções ✅
 14. Aula 14 – Vetores ❌
 15. Aula 15 – Matrizes ❌
 
