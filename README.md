@@ -20,7 +20,7 @@
 - **OBS:** Para utilizar no MacOS, estou utilizando o software **CrossOver**, permite utilizar os aplicativos Windows no MacOS.
 
 
-### Conteúdo do Módulo :bookmark:
+### Conteúdo do Módulo [ ✅ ❌ ] :bookmark:
 
 1. Aula 1 – Introdução a Algoritmos  ✅
 2. Aula 2 – Primeiro Algoritmo ✅
@@ -35,7 +35,7 @@
 11. Aula 11 – Estruturas de Repetição 3 ✅
 12. Aula 12 – Procedimentos ✅
 13. Aula 13 – Funções ✅
-14. Aula 14 – Vetores ❌
+14. Aula 14 – Vetores ✅
 15. Aula 15 – Matrizes ❌
 
 
