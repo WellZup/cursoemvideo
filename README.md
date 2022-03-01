@@ -52,7 +52,7 @@
 
 ### Anotações das Aulas:
 
-[Anotações das Aulas com Código Fonte](https://github.com/eduardodsr/cursoemvideo/blob/master/curso-de-algoritmo/algoritmos.md)
+[Anotações das Aulas com Código Fonte](https://github.com/eduardodsr/cursoemvideo/blob/master/curso-de-algoritmo/README.md)
 
 ### Código Fonte:
 
@@ -117,7 +117,7 @@
 
 ### Anotações das Aulas:
 
-[Anotações de PHP - Resumo das Aulas](https://github.com/eduardodsr/cursoemvideo/blob/master/php-basico/php.md)
+[Anotações de PHP - Resumo das Aulas](https://github.com/eduardodsr/cursoemvideo/tree/master/php-basico)
 
 ### Código Fonte:
 
