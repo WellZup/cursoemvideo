@@ -1,13 +1,24 @@
 # Curso em Vídeo | Prof. Gustavo Guanabara
 
-[![](https://img.shields.io/badge/made_by-eduardodsr-green)](https://github.com/eduardodsr/cursoemvideo)
-<!-- ![GitHub top language](https://img.shields.io/github/languages/top/eduardodsr/cursoemvideo)
-![GitHub language count](https://img.shields.io/github/languages/count/eduardodsr/cursoemvideo) -->
+[![eduardodsr](https://img.shields.io/badge/made_by-eduardodsr-green)](https://github.com/eduardodsr/cursoemvideo)
+![GitHub top language](https://img.shields.io/github/languages/top/eduardodsr/cursoemvideo)
+![GitHub language count](https://img.shields.io/github/languages/count/eduardodsr/cursoemvideo)
+
+<h1 align="center"> Curso em Vídeo </h1>
+
+<p align="center"> |&nbsp;&nbsp;&nbsp; 
+  <a href="#algoritmo">01. Algoritmo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#php-basico">02. PHP Básico</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+   <a href="#autor">Autor &rarr; eduardodsr</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
+
 
 
 ## Cursos
 
 <img src="https://www.cursoemvideo.com/wp-content/uploads/bb-plugin/cache/algoritmos-circle.jpg" alt="logo algoritmo" width="100px" /> 
+
+<span id="algoritmo">
 
 ### 01. Curso de Algoritmo [40 Horas] 
 
@@ -73,6 +84,8 @@
 
 <img src="https://www.cursoemvideo.com/wp-content/uploads/bb-plugin/cache/php-circle.jpg" alt="logo php" width="100px" /> 
 
+<span id="php-basico">
+
 ### 02. PHP Básico [40 Horas] 
 
 - Criado em 1995, por Rasmus Lerdorf, o **PHP** (acrônimo para PHP: Hypertext Preprocessor) é uma linguagem de script Open Source de uso geral. Com ela, desenvolvedores podem criar sites dinâmicos, extensões para aplicativos e otimizar tanto programas quanto Sistemas Operacionais. Ela é especialmente adequada para o desenvolvimento web e pode ser embutida dentro do HTML.
@@ -83,33 +96,9 @@
 ### Conteúdo do Módulo [ ✅ ❌ ] :bookmark:
 
 1. Aula 1 – História do PHP ✅
-
-<label for="aula1"> Aula 1 - Resumo</label> <select name="aula1" id="aula1" disable>
-A Linguagem PHP começou em 1994, quando Rasmus Lerdorf resolveu criar um gerenciador de visitas para o seu site. Sua primeira criação não era uma linguagem, e sim uma ferramenta. Batizada de Personal Home Page, usava comandos simples inspirados da linguagem PERL. A segunda versão da ferramenta já permitia a manipulação de formulários e pequenos livros de visita: o Personal Home Page/ Forms Interpreter, ou PHP/FI. Essa versão ficou bastante popular e começou a se espalhar em 1995.
-
-Com o objetivo de fazer sua ferramenta crescer, Rasmus liberou o acesso ao código-fonte da CGI em 1996, o que despertou o interesse de diversos programadores, entre eles os israelenses Zeev Suraski e Andi Gutmans. Esses dois reescreveram o núcleo da ferramenta e a transformou em uma Linguagem de Scripts, nos moldes em que nós temos o PHP atualmente. A partir de 1998, o PHP já começava a se destacar como uma das linguagens mais utilizadas na Internet. Foi nessa época que a linguagem foi rebatizada e passou a se chamar PHP: Hypertext Preprocessor e chegou à sua versão 3.0, com muitas funcionalidades interessantes.
-
-Em 2000, a quarta versão do PHP surge para eliminar a maioria dos erros e falhas de segurança encontrados pela comunidade. Enquanto isso, Zeev e Andi resolveram reescrever todo o núcleo da linguagem, abandonando quase que completamente o projeto original de Rasmus Lerdorf. Quatro anos depois, em 2004, surge o PHP5 que ficou mundialmente conhecido e atualmente conta com 32 versões internas, com mais de 1000 correções de falhas de segurança.
-</select>
-
 2. Aula 2 – Como funciona o PHP ✅
-
-<label for="aula2"> Aula 2 - Resumo</label> <select name="aula2" id="aula2" disable>
-Como funciona o PHP? Como transformar meu computador em um servidor? Como funciona tecnologias server-side? Qual é a diferença entre tecnologias PHP, ASP, JSP e etc? A segunda aula do seu Curso de PHP do Curso em Vídeo vai responder a essas e muitas outras perguntas que normalmente são feitas por quem está iniciando seus estudos em PHP.
-
-A infra-estrutura da Internet é baseada no modelo cliente x servidor. A Internet interliga clientes a servidores que possuem arquivos e fornecem cópias desses documentos.
-
-Nas tecnologias client-side, a função do servidor é apenas fornecer arquivos que o cliente solicita. Quem vai ter mais trabalho de processamento é o lado do cliente (client-side) que terá seu navegador trabalhando para interpretar os códigos e arquivos enviados pelo server. São exemplos de tecnologias client-side: HTML, CSS, JavaScript e Flash.
-
-Já nas tecnologias server-side, o servidor vai assumir a maior parte do trabalho, já que existe a interpretação de códigos do lado do servidor (server-side), que no caso do PHP são chamados scripts de servidor.
-
-Para o PHP funcionar corretamente, o servidor precisa ter o Apache, que é um program server, um interpretador PHP (engine) e suporte a um ou mais tipos de banco de dados (geralmente MySQL).
-
-Para transformar seu computador em um servidor com suporte PHP, você precisa de um sistema AMP (Apache + MySQL + PHP). Para usar PHP no Windows, instalamos um sistema WAMP. Para usar PHP no Linux, instalamos um sistema LAMP. Para usar PHP no Mac, instalamos um sistema MAMP.
-</select>
-
-3. Aula 3 – Como Instalar o PHP
-4. Aula 4 – Variáveis em PHP  ❌
+3. Aula 3 – Como Instalar o PHP ✅
+4. Aula 4 – Variáveis em PHP ✅
 5. Aula 5 – Operadores Aritméticos ❌
 6. Aula 6 – Operadores de Atribuição ❌
 7. Aula 7 – Operadores Relacionais ❌
@@ -126,6 +115,10 @@ Para transformar seu computador em um servidor com suporte PHP, você precisa de
 18. Aula 18 – Vetores e Matrizes – Parte 1 ❌
 19. Aula 19 – Vetores e Matrizes – Parte 2 ❌
 
+### Anotações das Aulas:
+
+[Anotações de PHP - Resumo das Aulas](https://github.com/eduardodsr/cursoemvideo/blob/master/php-basico/php.md)
+
 ### Código Fonte:
 
 [Código Fonte das Aulas - Curso de PHP Básico](https://github.com/eduardodsr/cursoemvideo/tree/master/php-basico/) 
@@ -137,9 +130,27 @@ Para transformar seu computador em um servidor com suporte PHP, você precisa de
 
 [PHP museum](https://museum.php.net/)
 
+[Manual do PHP](https://www.php.net/manual/pt_BR/)
+
+[PHP - Download documentation](https://www.php.net/download-docs.php)
+
+[XAMP - Download - Windows | Linux | MacOS](https://www.apachefriends.org/download.html)
+
+<hr>
 
 
-### Agradecimentos:
+<span id="autor">
 
-- Prof. *Gustavo Guanabara*, criador do site Curso em Vídeo.
-    - Obrigado pela excelente qualidade e dedicação das suas aulas. 
+### Autor
+
+<div align="rigth">
+  <a href="https://github.com/eduardodsr">
+   <img align="center" style="border-radius: 100%;" src="https://avatars.githubusercontent.com/u/66234125?s=400" width="100px;" alt="Foto do GitHub de eduardodsr"/>
+  </a>
+</div>
+
+  * ` Dev: ` Eduardo da Silva Rodrigues
+  
+  * ` GitHub: ` [github.com/eduardodsr](https://www.github.com/eduardodsr)
+ 
+  * ` E-mail: ` <eduardodsr@gmail.com> 
