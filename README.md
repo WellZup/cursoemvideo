@@ -50,7 +50,7 @@
 14. Aula 14 – Vetores ✅
 15. Aula 15 – Matrizes ✅
 
-<img src="https://github.com/eduardodsr/cursoemvideo/blob/master/curso-de-algoritmo/img/algoritmo.png" alt="100%" width="100px" /> 
+<img src="https://github.com/eduardodsr/cursoemvideo/blob/master/curso-de-algoritmo/img/algoritmo.png" alt="OK" width="200px" /> 
 
 ### Anotações das Aulas:
 
