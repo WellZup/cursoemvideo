@@ -18,9 +18,11 @@
 
 <img src="https://www.cursoemvideo.com/wp-content/uploads/bb-plugin/cache/algoritmos-circle.jpg" alt="logo algoritmo" width="100px" /> 
 
+<img src="https://github.com/eduardodsr/cursoemvideo/tree/master/curso-de-algoritmo/img/algoritmos.jpg" alt="logo algoritmo" width="100px" /> 
+
 <span id="algoritmo">
 
-### 01. Curso de Algoritmo [40 Horas] 
+## 01. Curso de Algoritmo [40 Horas] 
 
 - O **Visualg** é um programa que permite criar, editar, interpretar e que também executa os algoritmos em português como se fosse um “programa” normal de computador.
 
@@ -31,7 +33,7 @@
 - **OBS:** Para utilizar no MacOS, estou utilizando o software **CrossOver**, permite utilizar os aplicativos Windows no MacOS.
 
 
-### Conteúdo do Módulo [ ✅ ❌ ] :bookmark:
+### Conteúdo do Módulo :bookmark:
 
 1. Aula 1 – Introdução a Algoritmos  ✅
 2. Aula 2 – Primeiro Algoritmo ✅
@@ -47,7 +49,7 @@
 12. Aula 12 – Procedimentos ✅
 13. Aula 13 – Funções ✅
 14. Aula 14 – Vetores ✅
-15. Aula 15 – Matrizes ❌
+15. Aula 15 – Matrizes ✅
 
 
 ### Anotações das Aulas:
@@ -56,8 +58,11 @@
 
 ### Código Fonte:
 
-[Código Fonte das Aulas - Curso de Algoritmo](https://github.com/eduardodsr/cursoemvideo/tree/master/curso-de-algoritmo/Projetos) 
+[Código Fonte das Aulas - Curso de Algoritmo - Projetos](https://github.com/eduardodsr/cursoemvideo/tree/master/curso-de-algoritmo/Projetos) 
 
+## Certificado: 
+
+[Código Fonte das Aulas - Curso de Algoritmo - Projetos](https://github.com/eduardodsr/cursoemvideo/tree/master/curso-de-algoritmo/certificado) 
 
 ### Links: 
 
@@ -70,6 +75,8 @@
 [Manual do VisualG - SITE](https://manual.visualg3.com.br/doku.php?id=manual) 
 
 [Manual do VisualG - Apostila Download](https://sourceforge.net/projects/visualg30/files/Apostila%20de%20VisualG%20Curso_Basico.pdf)
+
+[Exercícios de Algoritmos - Prof. Gustavo Guanabara](https://www.cursoemvideo.com/wp-content/uploads/2019/08/exercicios-algoritmos.pdf)
 
 
 ### Agradecimentos:
@@ -86,12 +93,11 @@
 
 <span id="php-basico">
 
-### 02. PHP Básico [40 Horas] 
+## 02. PHP Básico [40 Horas] 
 
 - Criado em 1995, por Rasmus Lerdorf, o **PHP** (acrônimo para PHP: Hypertext Preprocessor) é uma linguagem de script Open Source de uso geral. Com ela, desenvolvedores podem criar sites dinâmicos, extensões para aplicativos e otimizar tanto programas quanto Sistemas Operacionais. Ela é especialmente adequada para o desenvolvimento web e pode ser embutida dentro do HTML.
 
 - Você vai aprender os primeiros passos para criar sites que utilizem a tecnologia PHP incorporada. Para isso, aprenderá como instalar um servidor, criar scripts básicos, interatividade com formulários e acesso a bancos de dados simples. No final, vai aprender como colocar seu site no ar utilizando um servidor profissional de hospedagem.
-
 
 ### Conteúdo do Módulo [ ✅ ❌ ] :bookmark:
 
@@ -121,8 +127,7 @@
 
 ### Código Fonte:
 
-[Código Fonte das Aulas - Curso de PHP Básico](https://github.com/eduardodsr/cursoemvideo/tree/master/php-basico/) 
-
+[Código Fonte das Aulas - Curso de PHP Básico - Projetos](https://github.com/eduardodsr/cursoemvideo/tree/master/php-basico/projetos/) 
 
 ### Links: 
 
@@ -135,6 +140,8 @@
 [PHP - Download documentation](https://www.php.net/download-docs.php)
 
 [XAMP - Download - Windows | Linux | MacOS](https://www.apachefriends.org/download.html)
+
+[php.net - manual pt_BR](https://www.php.net/manual/pt_BR/)
 
 <hr>
 
