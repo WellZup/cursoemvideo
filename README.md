@@ -60,9 +60,9 @@
 
 [Código Fonte das Aulas - Curso de Algoritmo - Projetos](https://github.com/eduardodsr/cursoemvideo/tree/master/curso-de-algoritmo/Projetos) 
 
-## Certificado: 
+### Certificado: 
 
-[Código Fonte das Aulas - Curso de Algoritmo - Projetos](https://github.com/eduardodsr/cursoemvideo/tree/master/curso-de-algoritmo/certificado) 
+[Certificado de Conclusão | Teste Final -> 10 de 10 Pontos(100% de aproveitamento)](https://github.com/eduardodsr/cursoemvideo/tree/master/curso-de-algoritmo/certificado) 
 
 ### Links: 
 
