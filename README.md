@@ -18,7 +18,6 @@
 
 <img src="https://www.cursoemvideo.com/wp-content/uploads/bb-plugin/cache/algoritmos-circle.jpg" alt="logo algoritmo" width="100px" /> 
 
-<img src="https://github.com/eduardodsr/cursoemvideo/tree/master/curso-de-algoritmo/img/algoritmos.jpg" alt="logo algoritmo" width="100px" /> 
 
 <span id="algoritmo">
 
@@ -51,6 +50,7 @@
 14. Aula 14 – Vetores ✅
 15. Aula 15 – Matrizes ✅
 
+<img src="https://github.com/eduardodsr/cursoemvideo/blob/master/curso-de-algoritmo/img/algoritmo.png" alt="100%" width="100px" /> 
 
 ### Anotações das Aulas:
 
