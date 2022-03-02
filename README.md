@@ -121,7 +121,9 @@
 
 ### Anotações das Aulas:
 
-[Anotações de PHP - Resumo das Aulas](https://github.com/eduardodsr/cursoemvideo/tree/master/php-basico)
+[Anotações das aulas de PGP](https://github.com/eduardodsr/cursoemvideo/tree/master/php-basico)
+
+<a href="https://github.com/eduardodsr/cursoemvideo/blob/master/php-basico/README.md" target="_blank">Resumo das aulas do curso de PHP, </a>
 
 ### Código Fonte:
 
@@ -129,17 +131,20 @@
 
 ### Links: 
 
-[Curso de PHP Básico, site do Prof. Gustavo Guanabara](https://www.cursoemvideo.com/curso/php-basico)
+<a href="https://github.com/eduardodsr/cursoemvideo" target="_blank">Meu repositório do GitHub do curso em vídeo </a>
 
-[PHP museum](https://museum.php.net/)
+<a href="https://www.cursoemvideo.com/curso/php-basico" target="_blank">Site do Curso em Vídeo, curso de PHP Básico</a>
 
-[Manual do PHP](https://www.php.net/manual/pt_BR/)
+[Curso de PHP Básico, site do Prof. Gustavo Guanabara](https://www.cursoemvideo.com/curso/php-basico "cursoemvideo.com")
 
-[PHP - Download documentation](https://www.php.net/download-docs.php)
+[PHP museum](https://museum.php.net/ "museum.php.net")
 
-[XAMP - Download - Windows | Linux | MacOS](https://www.apachefriends.org/download.html)
+[Manual do PHP - php.net - manual pt_BR](https://www.php.net/manual/pt_BR/ "php.net")
 
-[php.net - manual pt_BR](https://www.php.net/manual/pt_BR/)
+[PHP - Download documentation](https://www.php.net/download-docs.php "php.net")
+
+[XAMP - Download - Windows | Linux | MacOS](https://www.apachefriends.org/download.html "apachefriends.org")
+
 
 <hr>
 

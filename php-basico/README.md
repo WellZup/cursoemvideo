@@ -175,14 +175,9 @@ Note que o uso dos parênteses muda bastante as coisas.
 
 Vamos analisar a URL abaixo: 
 
-    http://localhost/php/aula05/operadores.php
+    http://localhost/aula05/operadores.php?a=3&b=2
 
-<big> http://localhost/php/aula05/operadores.php?a=3&b=2 </big>
-
-<big> http://localhost/php/aula05/operadores.php?a=5&b=2 </big>
-
-<big> http://localhost/php/aula05/operadores.php?a=8&b=4 </big>
-
+<big>&nbsp; http://localhost/php/aula05/operadores.php?a=3&b=2 </big>
 
 No link acima, o arquivo *operadores.php* está sendo chamado dentro da pasta *aula05* do servidor local. Na linha, serão passados dois valores: *a valendo 3* e *b valendo 2*.
 
@@ -201,29 +196,29 @@ Obs: use sempre <code>$_GET</code> com todas as letras maiúsculas.
 
 abs() : Retorna o valor absoluto de um número.
 
-    Ex: abs(-5) = 5
+    abs(-5) = 5
 
 pow() : Calcula uma potência
 
-    Ex: pow(3,2) = 32 = 9
+    pow(3,2) = 32 = 9
 
 sqrt() : Calcula a raiz quadrada de um número.
 
-    Ex: sqrt(25) = 5
+    sqrt(25) = 5
 
 round() : Arredonda valores.
 
-    Ex: round(3.8) = 4
+    round(3.8) = 4
 
 intval() : Trunca um número.
 
 Retorna a parte inteira de um valor.
 
-    Ex: abs(8.7) = 8
+    abs(8.7) = 8
 
 number_format() : Formata um número Real.
 
-    Ex: number_format(3258.754, 2, “,”, “.”) = 3.258. 75.
+    number_format(3258.754, 2, “,”, “.”) = 3.258. 75.
 
 Obs: Ainda existem os métodos <code> ceil() </code> e <code> floor() </code> para arredondamentos para cima e para baixo, respectivamente. 
 A função <code> round() </code> vai usar as regras de arredondamento.
