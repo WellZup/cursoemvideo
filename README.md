@@ -123,21 +123,21 @@
 
 [Anotações das aulas de PGP](https://github.com/eduardodsr/cursoemvideo/tree/master/php-basico)
 
-<a href="https://github.com/eduardodsr/cursoemvideo/blob/master/php-basico/README.md" target="_blank">Resumo das aulas do curso de PHP, </a>
+<p><a href="https://github.com/eduardodsr/cursoemvideo/blob/master/php-basico/README.md" target="_blank">Resumo das aulas do curso de PHP</a></p>
 
 ### Código Fonte:
 
-[Código Fonte das Aulas - Curso de PHP Básico - Projetos](https://github.com/eduardodsr/cursoemvideo/tree/master/php-basico/projetos/) 
+[Código fonte das aulas | Projetos das aulas - Curso de PHP Básico](https://github.com/eduardodsr/cursoemvideo/tree/master/php-basico/projetos/) 
 
 ### Links: 
 
-<a href="https://github.com/eduardodsr/cursoemvideo" target="_blank">Meu repositório do GitHub do curso em vídeo </a>
+<a href="https://github.com/eduardodsr/cursoemvideo" target="_blank">Meu repositório do curso em vídeo </a>
 
 <a href="https://www.cursoemvideo.com/curso/php-basico" target="_blank">Site do Curso em Vídeo, curso de PHP Básico</a>
 
-[Curso de PHP Básico, site do Prof. Gustavo Guanabara](https://www.cursoemvideo.com/curso/php-basico "cursoemvideo.com")
+[Curso de PHP Básico](https://www.cursoemvideo.com/curso/php-basico "cursoemvideo.com")
 
-[PHP museum](https://museum.php.net/ "museum.php.net")
+[PHP museum - Release Archives](https://museum.php.net/ "museum.php.net")
 
 [Manual do PHP - php.net - manual pt_BR](https://www.php.net/manual/pt_BR/ "php.net")
 
