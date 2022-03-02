@@ -105,17 +105,18 @@ $casado = true;
 
 Concatenar é juntar valores para tratá-los em conjunto. A concatenação em PHP é realizada pelo operador ponto (.) como no trecho de código a seguir.
 
-$idade = 18;
+    $idade = 18;
 
-$nome = “Maria”;
+    $nome = “Maria”;
 
-echo $nome . “ tem “ . $idade . “ anos “;
+    echo $nome . “ tem “ . $idade . “ anos “;
 
-No script acima, será exibido “Maria tem 18 anos”, já que acontecerão concatenações.
+No script acima, será exibido *“Maria tem 18 anos”*, já que acontecerão concatenações.
 
 Porém, já que os identificadores PHP começam com um $, é possível realizar o comando de saída utilizando um modo simplificado:
 
-echo “$nome tem $idade anos”; O comando acima pode ser usado sem problemas, contanto que sejam utilizadas aspas duplas.
+    echo “$nome tem $idade anos”; 
+O comando acima pode ser usado sem problemas, contanto que sejam utilizadas aspas duplas.
 
 5. Aula 5 – Operadores Aritméticos ✅
 
@@ -124,17 +125,17 @@ Como realizar somas, multiplicações e mais?
 Exponenciações em PHP? 
 Raiz quadrada em PHP? 
 
-Os operadores aritméticos do PHP são:
+**Os operadores aritméticos do PHP são:**
 
-    +   é o operador de adição
+    +       é o operador de adição
 
-    –   é o operador de subtração
+    –       é o operador de subtração
 
-    *   é o operador de multiplicaçã
+    *       é o operador de multiplicação
 
-    /   é o operador de divisão Real
+    /       é o operador de divisão Real
 
-    %   é o operador de módulo (resto da divisão)
+    %       é o operador de módulo (resto da divisão)
 
 O código a seguir, vai somar dois números:
 
@@ -150,13 +151,15 @@ O código acima vai mostrar na tela a mensagem
 
     A soma entre 3 e 2 é igual a 5
 
+**Ordem de precedência de operadores aritméticos em PHP**
+
 Outra coisa importante a saber é a ordem de precedência de operadores aritméticos em PHP. Sempre em uma expressão, os operadores que serão executados são, na ordem:
 
 1. parênteses ( )
 
-2. operadores de multiplicação, divisão e módulo * / %
+2. operadores de multiplicação, divisão e módulo  *  /  %
 
-3. as adições e subtrações + –
+3. as adições e subtrações  +  –
 
 Por exemplo, considerando o código a seguir:
 
@@ -172,7 +175,14 @@ Note que o uso dos parênteses muda bastante as coisas.
 
 Vamos analisar a URL abaixo: 
 
-    http://localhost/aula05/operadores.php?a=3&b=2
+    http://localhost/php/aula05/operadores.php
+
+<big> http://localhost/php/aula05/operadores.php?a=3&b=2 </big>
+
+<big> http://localhost/php/aula05/operadores.php?a=5&b=2 </big>
+
+<big> http://localhost/php/aula05/operadores.php?a=8&b=4 </big>
+
 
 No link acima, o arquivo *operadores.php* está sendo chamado dentro da pasta *aula05* do servidor local. Na linha, serão passados dois valores: *a valendo 3* e *b valendo 2*.
 

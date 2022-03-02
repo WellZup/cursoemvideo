@@ -6,6 +6,9 @@
 **/.DS_Store
 ._.DS_Store
 .idea
+*/.idea
+**/.idea
+
 
 # Directories Ignores 
 teste
