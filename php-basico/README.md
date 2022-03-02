@@ -17,19 +17,24 @@ Em 2000, a quarta versão do PHP surge para eliminar a maioria dos erros e falha
 
 2. Aula 2 – Como funciona o PHP ✅
 
-Como funciona o PHP? Como transformar meu computador em um servidor? Como funciona tecnologias server-side? Qual é a diferença entre tecnologias PHP, ASP, JSP e etc? A segunda aula do seu Curso de PHP do Curso em Vídeo vai responder a essas e muitas outras perguntas que normalmente são feitas por quem está iniciando seus estudos em PHP.
+Como funciona o PHP? 
+Como transformar meu computador em um servidor? 
+Como funciona tecnologias server-side? 
+Qual é a diferença entre tecnologias PHP, ASP, JSP e etc? 
+
+A segunda aula do seu Curso de PHP do Curso em Vídeo vai responder a essas e muitas outras perguntas que normalmente são feitas por quem está iniciando seus estudos em PHP.
 
 A infra-estrutura da Internet é baseada no modelo cliente x servidor. A Internet interliga clientes a servidores que possuem arquivos e fornecem cópias desses documentos.
 
-Nas tecnologias client-side, a função do servidor é apenas fornecer arquivos que o cliente solicita. Quem vai ter mais trabalho de processamento é o lado do cliente (client-side) que terá seu navegador trabalhando para interpretar os códigos e arquivos enviados pelo server. São exemplos de tecnologias client-side: HTML, CSS, JavaScript e Flash.
+Nas tecnologias **client-side**, a função do servidor é apenas fornecer arquivos que o cliente solicita. Quem vai ter mais trabalho de processamento é o lado do cliente (client-side) que terá seu navegador trabalhando para interpretar os códigos e arquivos enviados pelo server. São exemplos de tecnologias client-side: HTML, CSS, JavaScript e Flash.
 
-Já nas tecnologias server-side, o servidor vai assumir a maior parte do trabalho, já que existe a interpretação de códigos do lado do servidor (server-side), que no caso do PHP são chamados scripts de servidor.
+Já nas tecnologias **server-side**, o servidor vai assumir a maior parte do trabalho, já que existe a interpretação de códigos do lado do servidor (server-side), que no caso do PHP são chamados scripts de servidor.
 
 Para o PHP funcionar corretamente, o servidor precisa ter o Apache, que é um program server, um interpretador PHP (engine) e suporte a um ou mais tipos de banco de dados (geralmente MySQL).
 
 Para transformar seu computador em um servidor com suporte PHP, você precisa de um sistema AMP (Apache + MySQL + PHP). Para usar PHP no Windows, instalamos um sistema WAMP. Para usar PHP no Linux, instalamos um sistema LAMP. Para usar PHP no Mac, instalamos um sistema MAMP.
 
-3. Aula 3 – Como Instalar o PHP
+3. Aula 3 – Como Instalar o PHP ✅
 
 Nessa aula do Curso Grátis de PHP para Iniciantes você vai aprender como instalar um servidor PHP no seu computador e vai ver como criar o seu primeiro exemplo de código PHP: o “Olá, Mundo!”.
 
@@ -37,13 +42,18 @@ Nessa aula do Curso Grátis de PHP para Iniciantes você vai aprender como insta
 
 4. Aula 4 – Variáveis em PHP ✅
 
-Como criar variáveis em PHP? Como declarar variáveis em PHP? Quais são os tipos primitivos do PHP? Como realizar conversões em PHP? A resposta para essas e muitas outras perguntas você vai ter nessa quarta aula do Curso Grátis de PHP para Iniciantes.
+Como criar variáveis em PHP? 
+Como declarar variáveis em PHP? 
+Quais são os tipos primitivos do PHP? 
+Como realizar conversões em PHP? 
 
-Antes de mais nada, é importante que você entenda os conceitos de variáveis em Algoritmos e saiba utilizá-las corretamente. Nós temos uma aula no Curso Grátis de Algoritmos que fala sobre variáveis, assista esse vídeo antes de prosseguir com essa aula, caso você não esteja familiarizado com esse conceito.
+A resposta para essas e muitas outras perguntas você vai ter nessa quarta aula do Curso Grátis de PHP para Iniciantes.
 
-Comandos de saída do PHP:
+Antes de mais nada, é importante que você entenda os conceitos de variáveis em Algoritmos e saiba utilizá-las corretamente. 
 
-Os comandos ECHO, PRINT e PRINTF servem para gerar saídas na tela. Um exemplo simples desse comando é:
+**Comandos de saída do PHP:**
+
+Os comandos **ECHO, PRINT e PRINTF** servem para gerar saídas na tela. Um exemplo simples desse comando é:
 
 echo “Estou aprendendo variáveis em PHP”;
 
@@ -51,11 +61,11 @@ A pronúncia correta do comando echo é ECO (aquele som que se repete quando gri
 
 Note que no comando acima, foi utilizada uma tag HTML para a quebra de linha. Isso é possível, já que o PHP se integra com essa tecnologia. Fique à vontade para utilizar tags de marcação hipertexto dentro dos seus comandos de saída em PHP.
 
-Usando variáveis
+**Usando variáveis**
 
 Variáveis são espaços na memória do computador que podem conter valores. Variáveis simples armazenam apenas um valor de cada vez, dependendo do seu tipo.
 
-Todas as variáveis no PHP possuem um $ na frente e seguem as mesmas regras de construção de nomes de identificadores:
+Todas as variáveis no PHP possuem um **$** na frente e seguem as mesmas regras de construção de nomes de identificadores:
 
 – Devem começar com uma letra (após o $)
 
@@ -67,7 +77,7 @@ Todas as variáveis no PHP possuem um $ na frente e seguem as mesmas regras de c
 
 OBS: O PHP faz a diferenciação entre as letras maiúsculas e minúsculas, por isso recomendamos que você utilize apenas identificadores com letras minúsculas em seus scripts PHP.
 
-Declaração de variáveis
+**Declaração de variáveis**
 
 No PHP não existe a necessidade de declarar variáveis. Os tipos serão atribuídos automaticamente de acordo com o valor que a variável receber. Esse processo é conhecido como coerção. Isso pode ser até empolgante no início, mas é preciso prestar bastante atenção para não fazer nada errado.
 
@@ -75,7 +85,10 @@ Você pode forçar um tipo primitivo a uma variável por TYPECAST, utilizando (i
 
 Não existe typecast para variáveis lógicas. Os valores booleanos são considerados números, sendo o valor 1 atribuído para true e vazio para false.
 
-Atribuição de valores
+<img src="img/variaveis.png">
+<a href="https://youtu.be/DGZS9KrlrjI?t=450" target="_blank">Print tirado dessa vídeoaula</a>
+
+**Atribuição de valores**
 
 Atribuir valor é colocar um conteúdo em uma variável. Utilizamos o operador de atribuição = para realizar essa tarefa. Veja alguns exemplos:
 
@@ -87,7 +100,7 @@ $nome = “Gustavo”;
 
 $casado = true;
 
-Concatenação de valores
+**Concatenação de valores**
 
 Concatenar é juntar valores para tratá-los em conjunto. A concatenação em PHP é realizada pelo operador ponto (.) como no trecho de código a seguir.
 
