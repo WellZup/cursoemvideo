@@ -103,7 +103,7 @@
 2. Aula 2 – Como funciona o PHP ✅
 3. Aula 3 – Como Instalar o PHP ✅
 4. Aula 4 – Variáveis em PHP ✅
-5. Aula 5 – Operadores Aritméticos ❌
+5. Aula 5 – Operadores Aritméticos ✅ 
 6. Aula 6 – Operadores de Atribuição ❌
 7. Aula 7 – Operadores Relacionais ❌
 8. Aula 8 – Integração HTML5 + PHP ❌
