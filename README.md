@@ -131,7 +131,7 @@
 
 ### Links: 
 
-<a href="https://github.com/eduardodsr/cursoemvideo" target="_blank">Meu repositório do curso em vídeo </a>
+<a href="https://github.com/eduardodsr/cursoemvideo#php-basico" target="_blank">Meu repositório do curso em vídeo, PHP </a>
 
 <a href="https://www.cursoemvideo.com/curso/php-basico" target="_blank">Site do Curso em Vídeo, curso de PHP Básico</a>
 
