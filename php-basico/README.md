@@ -194,36 +194,171 @@ Obs: use sempre <code>$_GET</code> com todas as letras maiúsculas.
 
 **Funções Matemáticas em PHP**
 
-abs() : Retorna o valor absoluto de um número.
+abs( ) : Retorna o valor absoluto de um número.
 
     abs(-5) = 5
 
-pow() : Calcula uma potência
+pow( ) : Calcula uma potência
 
     pow(3,2) = 32 = 9
 
-sqrt() : Calcula a raiz quadrada de um número.
+sqrt( ) : Calcula a raiz quadrada de um número.
 
     sqrt(25) = 5
 
-round() : Arredonda valores.
+round( ) : Arredonda valores.
 
     round(3.8) = 4
 
-intval() : Trunca um número.
+intval( ) : Trunca um número. Retorna a parte inteira de um valor.
 
-Retorna a parte inteira de um valor.
+    intval(3.99) = 3
 
-    abs(8.7) = 8
-
-number_format() : Formata um número Real.
+number_format( ) : Formata um número Real.
 
     number_format(3258.754, 2, “,”, “.”) = 3.258. 75.
+
+number_format( ) : Formata um número Real. 
+Exemplo de formataçao de uma variavel em moeda.
+
+    $v2 = 9999.99;
+    echo "<br> O valor de $v2 em moeda é : R$ " .number_format($v2, 2, "," , ".");
+    // O valor de 9999.99 em moeda é : R$ 9.999,99
+
 
 Obs: Ainda existem os métodos <code> ceil() </code> e <code> floor() </code> para arredondamentos para cima e para baixo, respectivamente. 
 A função <code> round() </code> vai usar as regras de arredondamento.
 
-6. Aula 6 – Operadores de Atribuição ❌
+6. Aula 6 – Operadores de Atribuição ✅
+
+Uma atribuição acontece quando queremos colocar algum valor dentro de uma variável, seja ele um número ou string estática, o resultado de uma expressão, o retorno de uma função ou o conteúdo de outra variável.
+
+**Operadores de Atribuição do PHP**
+
+<img src="img/OperadoresAtribuicao.png">
+<a href="https://youtu.be/NuBt0B_GeEo?t=275" target="_blank">Print tirado dessa vídeoaula</a>
+
+Os operadores de atribuição do PHP são :
+
+    +=      Adição
+    -=      Subtração
+    *=      Multiplicação
+    /=      Divisão
+    %=      Módulo
+    .=      Concatenação
+
+Vejamos alguns exemplos:
+
+    $c = $c + 5;    $c += 5;
+
+    $c = $c – $a;   $c -= $a;
+
+    $c = $c + 1;    $c += 1;
+
+Na última linha da tabela acima, você verifica a adição de apenas uma unidade na variável. Nesses casos, podemos usar os operadores de incremento.
+
+**Operadores de Incremento ou Decremento**
+
+<img src="img/OperadoresIncremento.png">
+<a href="https://youtu.be/NuBt0B_GeEo?t=720" target="_blank">Print tirado dessa vídeoaula</a>
+
+**Exemplo de Operadores de Incremento ou Decremento**:
+
+    $c = $c + 1;    $c += 1;    $c++;
+
+Qualquer uma das formas acima é válida. De maneira similar, temos:
+
+    $c = $c – 1;    $c -= 1;    $c–-;
+
+A forma de utilizar o operador de incremento/ decremento faz toda diferença se ele aparece antes ou depois da variável. Assim:
+
+    $c++   $c–-
+
+
+**Comentários em PHP**
+
+Existem três tipos de comentários em PHP. 
+Os **comentários inline** <code> // </code> e <code> #  </code> transformam tudo o que está após o(s) símbolo(s) será considerado comentário.
+
+```php
+<?php
+    // Essa linha é um comentário
+ 
+    # Essa também é um comentário
+?> 
+```
+
+Existe também o **comentário multiline**, que vai criar comentários que ocupem várias linhas:  
+
+```php
+<?php
+    /* 
+        Esse comentário vai ocupar várias linhas do seu código
+        e todas serão ignoradas.
+        Tudo aquilo que estiver aqui no meio será considerado 
+        como sendo um comentário. 
+    */
+?>
+```
+
+```php
+<?php
+
+    /* Esse comentário vai ocupar várias linhas do seu código 
+    e todas serão ignoradas */
+
+    $a += 1;    // Esse é um comentário de uma linha
+
+    $b ++;      # Esse aqui também é um comentário
+
+?>
+```
+
+**Variáveis Referenciadas**
+
+<img src="img/VariaveisReferenciadas.png">
+<a href="https://youtu.be/NuBt0B_GeEo?t=1190" target="_blank">Print tirado dessa vídeoaula</a>
+
+Como fazer referências entre variáveis?
+
+Colocar um caractere <code> & </code> na frente de uma variável vai criar um ponteiro em PHP. 
+*Ela não será uma variável de fato, mas será uma <strong>referência à variável original</strong>.*
+
+Considere o código:
+
+```php
+<?php
+
+     $x = 3;    // A variável $x vai receber 3. 
+
+     $y = $x;   // A variável $y vai receber o valor que está dentro da variável $x.
+
+     $z = &$x;  // A variável $z vai ser uma ligação com a variável $x.
+
+     /* 
+        Mais tarde, qualquer modificação em $y não vai alterar o valor de $x. 
+        Porém, se mudarmos o valor de $z, o valor de $x será afetado, já que existe uma relação entre as duas.
+     */
+
+?>
+```
+
+**Variáveis de Variáveis (Variáveis Variantes)**
+
+Colocar um segundo <code> $ </code> na frente de uma variável também possui um efeito bem peculiar. Ele vai criar uma variável dinamicamente, dependendo do conteúdo da variável original. Essas são as variáveis de variáveis em PHP.
+
+```php
+<?php
+
+    $nome = “gustavo”;  // uma variável $nome, como o conteúdo “gustavo”
+
+    $$nome = “professor”; // uma variável $gustavo, com o conteúdo “professor”.
+
+?>
+```
+
+
+
 7. Aula 7 – Operadores Relacionais ❌
 8. Aula 8 – Integração HTML5 + PHP ❌
 9. Aula 9 – Estrutura Condicional if ❌
