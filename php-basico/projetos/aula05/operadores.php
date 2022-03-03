@@ -10,7 +10,10 @@
 <body>
 <div>
     <?php
-        $n1 = $_GET["a"];
+
+        // http://localhost/php/aula05/operadores.php?a=3&b=2
+
+        $n1 = $_GET["a"];   // $_GET["a"] -> ira pegar o parametro "a" e atribuir na variavel $n1
         $n2 = $_GET["b"];
         echo "<h2>Valores recebidos: $n1 e $n2 </h2>";
         $m = ($n1 + $n2) / 2;
@@ -22,6 +25,7 @@
         echo "<br>O modulo vale ".($n1 % $n2);
 
         echo "<br><br>A media vale $m";
+
     ?>
 </div>
 </body>

@@ -345,6 +345,9 @@ Considere o código:
 
 **Variáveis de Variáveis (Variáveis Variantes)**
 
+<img src="img/VariaveisVariantes.png">
+<a href="https://youtu.be/NuBt0B_GeEo?t=1460" target="_blank">Print tirado dessa vídeoaula</a>
+
 Colocar um segundo <code> $ </code> na frente de uma variável também possui um efeito bem peculiar. Ele vai criar uma variável dinamicamente, dependendo do conteúdo da variável original. Essas são as variáveis de variáveis em PHP.
 
 ```php
