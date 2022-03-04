@@ -104,10 +104,10 @@
 3. Aula 3 – Como Instalar o PHP ✅
 4. Aula 4 – Variáveis em PHP ✅
 5. Aula 5 – Operadores Aritméticos ✅ 
-6. Aula 6 – Operadores de Atribuição ❌
-7. Aula 7 – Operadores Relacionais ❌
-8. Aula 8 – Integração HTML5 + PHP ❌
-9. Aula 9 – Estrutura Condicional if ❌
+6. Aula 6 – Operadores de Atribuição  ✅
+7. Aula 7 – Operadores Relacionais  ✅
+8. Aula 8 – Integração HTML5 + PHP  ✅
+9. Aula 9 – Estrutura Condicional if  ✅
 10. Aula 10 – Estrutura Condicional Switch ❌
 11. Aula 11 – Estrutura de Repetição While ❌
 12. Aula 12 – Estrutura de Repetição Do While ❌
@@ -144,6 +144,8 @@
 [PHP - Download documentation](https://www.php.net/download-docs.php "php.net")
 
 [XAMP - Download - Windows | Linux | MacOS](https://www.apachefriends.org/download.html "apachefriends.org")
+
+[phpstorm - Teclas de Atalhos](https://resources.jetbrains.com/storage/products/phpstorm/docs/phpstorm_Leaflet.pdf)
 
 
 <hr>

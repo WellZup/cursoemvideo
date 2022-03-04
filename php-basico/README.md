@@ -361,10 +361,177 @@ Colocar um segundo <code> $ </code> na frente de uma variável também possui um
 ```
 
 
+7. Aula 7 – Operadores Relacionais  ✅
 
-7. Aula 7 – Operadores Relacionais ❌
-8. Aula 8 – Integração HTML5 + PHP ❌
-9. Aula 9 – Estrutura Condicional if ❌
+**Operadores Relacionais**
+
+<img src="img/OperadoresRelacionais.png">
+<a href="https://youtu.be/YrmPk8zL9Qw?t=55" target="_blank">Print tirado dessa vídeoaula</a>
+
+**Operador Ternário**
+
+<img src="img/OperadorTernario.png">
+<a href="https://youtu.be/YrmPk8zL9Qw?t=175" target="_blank">Print tirado dessa vídeoaula</a>
+
+Operador Ternário no PHP
+
+Ele nada mais é do que uma forma mais enxuta ou curta de usar o comando condicional if.
+
+Uma condição é avaliada, e se ela for **verdadeira**, atribui-se um valor, e se for **falsa**, atribui-se outro valor. A sintaxe fica assim:
+
+    /* Operador Ternário */
+    
+    expressao  ?  verdadeiro  :  falso
+
+```php
+<?php
+
+    /* Operador Ternário */
+
+    // expressao ? verdadeiro : falso
+
+    $r = $a > $b ? $a + $b : $a - $b
+
+    $situacao = $media < 7 ? "recuperacao" : "aprovado"
+
+?>
+```
+
+**Operadores Lógicos**
+
+<img src="img/OperadoresLogicos.png">
+<a href="https://youtu.be/YrmPk8zL9Qw?t=1075" target="_blank">Print tirado dessa vídeoaula</a>
+
+8. Aula 8 – Integração HTML5 + PHP  ✅
+
+Ligação formulário HTML PHP, integração HTML5 com PHP via formulário.
+
+Nessa oitava aula do Curso de PHP, vamos aprender como aumentar a interatividade dos nossos scripts PHP com formulários HTML5.
+
+**Formulários em HTML5**
+
+<img src="img/Formularios1.png">
+<a href="https://youtu.be/gvZfP2iBkw4?t=90" target="_blank">Print tirado dessa vídeoaula</a>
+
+<img src="img/Formularios2.png">
+<a href="https://youtu.be/gvZfP2iBkw4?t=90" target="_blank">Print tirado dessa vídeoaula</a>
+
+Se você não sabe como lidar com formulários HTML5, não se esqueça de assistir antes as duas aulas que tratam desse assunto no Curso em Vídeo Grátis de HTML5.
+
+Formulários HTML5 – Parte 1: http://youtu.be/metoFY-x_yg
+
+Formulários HTML5 – Parte 2: http://youtu.be/lwuDJN9Udfc
+
+Formulários HTML5 e JavaScript: http://youtu.be/YY5hqlcbfoI
+
+Lá você vai aprender como escrever códigos específicos para a criação de formulários completos e vai estudar todos os novos controles de formulários adicionados ao HTML5, como o range, color, number, date, etc.
+
+Por exemplo, vamos considerar um formulário que use o método **GET** e envie um valor **V** para o arquivo **DADOS.PHP**:
+
+Obs: O método **GET** envia dados de um formulário diretamente pela URL.
+
+**Interligando o formulário HTML com o script PHP**
+
+Para interligar o formulário, vamos usar a cláusula <code> $_GET </code> 
+
+```php
+<?php
+
+     $valor = $_GET[“v”];
+
+     echo “Digitou $valor”;
+
+?>
+```
+
+**Formulário HTML com script PHP / Resumo do método GET e POST**
+
+<strong><code> $_POST </code></strong>  =>  lento / mais seguro / enviar os dados por pacotes
+
+<strong><code> $_GET </code></strong>   =>  rápido / menos seguro / enviar os dados pela URL
+
+<em>Obs:</em>  
+<code> $_GET </code> =>  formulários mais simples
+
+<code> $_POST </code> =>  formulários mais complexos, por exemplo, senhas e cartão de crédito. Porém o POST não é tão seguro assim, pois não inclui criptografica e precisa utilizar outros protocolos mais poderosos.
+
+
+**Interligando outros tipos de controles de formulários HTML5 com PHP**
+
+A integração de qualquer controle de formulário PHP pode ser feita através do parâmetro NAME de cada um deles. Durante a aula, criamos um formulário com vários tipos de controles e interligamos eles ao arquivo PHP.
+
+**Pegando o ano atual com PHP** 
+
+Para obter o ano atual no PHP, utilizamos:
+
+    $idade = date(“Y”) – $ano;
+
+9. Aula 9 – Estrutura Condicional if  ✅
+
+O PHP permite a criação de condicões. 
+Nessa aula, veremos como utilizar a estrutura <code> IF </code>.
+
+A estrutura condicional em PHP é representada da seguinte forma:
+
+```php
+if ($idade = 18) {
+
+     $vota = true;
+
+} else {
+
+    $vota = false;
+}
+```
+
+**Estruturas condicionais aninhadas**
+
+Quando colocamos uma condicional dentro da outra, dizemos que estamos aninhando estruturas (termo que se refere a ninho). 
+Para aninhar blocos, utilizamos uma sintaxe semelhante à anterior:
+
+```php
+if ($peso 50) {
+
+    $tipo = “muito magro”;
+
+} else {
+
+    if ($peso =50 && $peso 70) {
+
+          $tipo = “peso normal”;
+
+     } else {
+
+        $tipo = “acima do peso”;
+
+     }
+}
+```
+
+**Simplificando estruturas condicionais aninhadas**
+
+No PHP, podemos substituir uma cláusula <code> ELSE </code> seguida de outro <code> IF </code> (como feito acima) por uma estrutura <code> elseif {} </code> que vai se comportar exatamente da mesma maneira, mas usará menos blocos.
+
+```php
+if ($tipo == “nacional”) {
+
+     $imposto = 0;
+
+} elseif ($tipo == “importado”) {
+
+     $imposto = 60;
+
+} elseif ($tipo == “mercosul”) {
+
+     $imposto = 20;
+
+} else {
+
+     $imposto = 80;
+
+}
+```
+
 10. Aula 10 – Estrutura Condicional Switch ❌
 11. Aula 11 – Estrutura de Repetição While ❌
 12. Aula 12 – Estrutura de Repetição Do While ❌
