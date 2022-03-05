@@ -1,4 +1,4 @@
-# Curso em Vídeo | Prof. Gustavo Guanabara :earth_americas: :brazil:
+# Curso em Vídeo | Prof. Gustavo Guanabara :earth_americas: 
 
 [![eduardodsr](https://img.shields.io/badge/made_by-eduardodsr-green)](https://github.com/eduardodsr/cursoemvideo)
 ![GitHub top language](https://img.shields.io/github/languages/top/eduardodsr/cursoemvideo)
@@ -13,7 +13,7 @@
    <a href="#autor">Autor &rarr; eduardodsr</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
-## Cursos :ledger:
+## Cursos :brazil:
 
 <img src="https://www.cursoemvideo.com/wp-content/uploads/bb-plugin/cache/algoritmos-circle.jpg" alt="logo algoritmo" width="100px" /> 
 
@@ -90,6 +90,8 @@
     - Obrigado pela excelente qualidade e dedicação das suas aulas. 
 
 <br>
+
+<hr>
 
 <img src="https://www.cursoemvideo.com/wp-content/uploads/bb-plugin/cache/php-circle.jpg" alt="logo php" width="100px" /> 
 
