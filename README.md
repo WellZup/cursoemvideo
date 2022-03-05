@@ -13,12 +13,16 @@
    <a href="#autor">Autor &rarr; eduardodsr</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
-## Cursos :brazil:
-
-<img src="https://www.cursoemvideo.com/wp-content/uploads/bb-plugin/cache/algoritmos-circle.jpg" alt="logo algoritmo" width="100px" /> 
-
+## Cursos Concluídos :brazil:
 
 <span id="algoritmo">
+
+<img src="https://www.cursoemvideo.com/wp-content/uploads/bb-plugin/cache/algoritmos-circle.jpg" alt="logo algoritmo" width="100px" />
+&nbsp;&nbsp;&nbsp;
+
+<img src="https://visualg3.com.br/wp-content/uploads/2017/04/logo.png" width="250px">
+<a href="#" target="_blank"></a>
+
 
 ## 01. Curso de Algoritmo [40 Horas]  :blue_book: :one:
 
@@ -93,9 +97,13 @@
 
 <hr>
 
-<img src="https://www.cursoemvideo.com/wp-content/uploads/bb-plugin/cache/php-circle.jpg" alt="logo php" width="100px" /> 
-
 <span id="php-basico">
+
+<img src="https://www.cursoemvideo.com/wp-content/uploads/bb-plugin/cache/php-circle.jpg" alt="logo php" width="100px" />
+&nbsp;&nbsp;&nbsp;
+
+<img src="https://www.geekproject.com.br/wp-content/uploads/2011/01/elephpant-elephant-php-logo.png" alt="logo elephant php" width="150px" /> 
+
 
 ## 02. PHP Básico [40 Horas] :green_book: :two:
 
@@ -103,7 +111,7 @@
 
 - Você vai aprender os primeiros passos para criar sites que utilizem a tecnologia PHP incorporada. Para isso, aprenderá como instalar um servidor, criar scripts básicos, interatividade com formulários e acesso a bancos de dados simples. No final, vai aprender como colocar seu site no ar utilizando um servidor profissional de hospedagem.
 
-### Conteúdo do Módulo [ ✅ ❌ ] :bookmark:
+### Conteúdo do Módulo :bookmark:
 
 1. Aula 1 – História do PHP ✅
 2. Aula 2 – Como funciona o PHP ✅
@@ -115,7 +123,7 @@
 8. Aula 8 – Integração HTML5 + PHP  ✅
 9. Aula 9 – Estrutura Condicional if  ✅
 10. Aula 10 – Estrutura Condicional Switch ✅
-11. Aula 11 – Estrutura de Repetição While ❌
+11. Aula 11 – Estrutura de Repetição While  ✅
 12. Aula 12 – Estrutura de Repetição Do While ❌
 13. Aula 13 – Estrutura de Repetição For ❌
 14. Aula 14 – Rotinas em PHP – Parte 1 ❌
@@ -125,7 +133,7 @@
 18. Aula 18 – Vetores e Matrizes – Parte 1 ❌
 19. Aula 19 – Vetores e Matrizes – Parte 2 ❌
 
-### Anotações das Aulas: :writing_hand:
+### Anotações das Aulas: :open_book: :writing_hand:
 
 [Anotações das aulas de PGP](https://github.com/eduardodsr/cursoemvideo/tree/master/php-basico)
 
