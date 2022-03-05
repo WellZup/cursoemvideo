@@ -15,6 +15,8 @@ Com o objetivo de fazer sua ferramenta crescer, Rasmus liberou o acesso ao códi
 
 Em 2000, a quarta versão do PHP surge para eliminar a maioria dos erros e falhas de segurança encontrados pela comunidade. Enquanto isso, Zeev e Andi resolveram reescrever todo o núcleo da linguagem, abandonando quase que completamente o projeto original de Rasmus Lerdorf. Quatro anos depois, em 2004, surge o PHP5 que ficou mundialmente conhecido e atualmente conta com 32 versões internas, com mais de 1000 correções de falhas de segurança.
 
+<br>
+
 2. Aula 2 – Como funciona o PHP ✅
 
 Como funciona o PHP? 
@@ -34,11 +36,15 @@ Para o PHP funcionar corretamente, o servidor precisa ter o Apache, que é um pr
 
 Para transformar seu computador em um servidor com suporte PHP, você precisa de um sistema AMP (Apache + MySQL + PHP). Para usar PHP no Windows, instalamos um sistema WAMP. Para usar PHP no Linux, instalamos um sistema LAMP. Para usar PHP no Mac, instalamos um sistema MAMP.
 
+<br>
+
 3. Aula 3 – Como Instalar o PHP ✅
 
 Nessa aula do Curso Grátis de PHP para Iniciantes você vai aprender como instalar um servidor PHP no seu computador e vai ver como criar o seu primeiro exemplo de código PHP: o “Olá, Mundo!”.
 
 É possível instalar o PHP no seu PC, bem como todas as ferramentas necessárias para o desenvolvimento na linguagem, como o Apache, MySQL, PHPMyAdmin, interpretadores e etc.
+
+<br>
 
 4. Aula 4 – Variáveis em PHP ✅
 
@@ -117,6 +123,8 @@ Porém, já que os identificadores PHP começam com um $, é possível realizar 
 
     echo “$nome tem $idade anos”; 
 O comando acima pode ser usado sem problemas, contanto que sejam utilizadas aspas duplas.
+
+<br>
 
 5. Aula 5 – Operadores Aritméticos ✅
 
@@ -228,6 +236,8 @@ Exemplo de formataçao de uma variavel em moeda.
 
 Obs: Ainda existem os métodos <code> ceil() </code> e <code> floor() </code> para arredondamentos para cima e para baixo, respectivamente. 
 A função <code> round() </code> vai usar as regras de arredondamento.
+
+<br>
 
 6. Aula 6 – Operadores de Atribuição ✅
 
@@ -360,6 +370,7 @@ Colocar um segundo <code> $ </code> na frente de uma variável também possui um
 ?>
 ```
 
+<br>
 
 7. Aula 7 – Operadores Relacionais  ✅
 
@@ -401,6 +412,8 @@ Uma condição é avaliada, e se ela for **verdadeira**, atribui-se um valor, e 
 
 <img src="img/OperadoresLogicos.png">
 <a href="https://youtu.be/YrmPk8zL9Qw?t=1075" target="_blank">Print tirado dessa vídeoaula</a>
+
+<br><br>
 
 8. Aula 8 – Integração HTML5 + PHP  ✅
 
@@ -466,25 +479,35 @@ Para obter o ano atual no PHP, utilizamos:
 
     $idade = date(“Y”) – $ano;
 
+<br>
+
 9. Aula 9 – Estrutura Condicional if  ✅
 
 O PHP permite a criação de condicões. 
 Nessa aula, veremos como utilizar a estrutura <code> IF </code>.
 
+<img src="img/If.png">
+<a href="https://youtu.be/qAisUeI5oKE?t=140" target="_blank">Print tirado dessa vídeoaula</a>
+
 A estrutura condicional em PHP é representada da seguinte forma:
 
 ```php
-if ($idade = 18) {
+if ($idade >= 18) {
 
      $vota = true;
+     $dirige = true;
 
 } else {
 
     $vota = false;
+    $dirige = false;
 }
 ```
 
 **Estruturas condicionais aninhadas**
+
+<img src="img/CondicionaisAninhadas.png">
+<a href="https://youtu.be/qAisUeI5oKE?t=850" target="_blank">Print tirado dessa vídeoaula</a>
 
 Quando colocamos uma condicional dentro da outra, dizemos que estamos aninhando estruturas (termo que se refere a ninho). 
 Para aninhar blocos, utilizamos uma sintaxe semelhante à anterior:
@@ -510,6 +533,9 @@ if ($peso 50) {
 
 **Simplificando estruturas condicionais aninhadas**
 
+<img src="img/CondicionaisAninhadasSimplificando.png">
+<a href="https://youtu.be/qAisUeI5oKE?t=1272" target="_blank">Print tirado dessa vídeoaula</a>
+
 No PHP, podemos substituir uma cláusula <code> ELSE </code> seguida de outro <code> IF </code> (como feito acima) por uma estrutura <code> elseif {} </code> que vai se comportar exatamente da mesma maneira, mas usará menos blocos.
 
 ```php
@@ -531,14 +557,116 @@ if ($tipo == “nacional”) {
 
 }
 ```
+<br>
 
-10. Aula 10 – Estrutura Condicional Switch ❌
+10. Aula 10 – Estrutura Condicional Switch ✅
+
+<img src="img/Switch.png">
+<a href="https://youtu.be/thElQ5IhM1Q?t=100" target="_blank">Print tirado dessa vídeoaula</a>
+
+<img src="img/Switch2.png">
+<a href="https://youtu.be/thElQ5IhM1Q?t=800" target="_blank">Print tirado dessa vídeoaula</a>
+
+Estruturas de condição de múltipla escolha em PHP. 
+**Switch** case em PHP usa a mesma sintaxe do Java e da Linguagem C e C++.
+
+<br>
+
 11. Aula 11 – Estrutura de Repetição While ❌
+
+Vamos agora começar as Estruturas de Repetição em PHP, partindo da estrutura WHILE (enquanto).
+
+A Estrutura While (enquanto), também conhecida como Estrutura de Repetição com Teste Lógico no início, realiza o teste de uma expressão lógica sempre na primeira linha da estrutura. Vamos ver como realizar uma contagem progressiva de 1 até 10, utilizando a estrutura while em PHP.
+
+$c = 1;
+
+while ($c = 10) {
+
+    echo $c; $c++;
+
+}
+
+Durante a aula, veremos também como realizar outras contagens, como por exemplo a contagem regressiva.
+
+Outra coisa que vamos aprender durante essa aula de repetição é criar código HTML dinamicamente, utilizando scripts PHP. No exemplo apresentado, vamos criar várias caixas de texto com nomes e etiquetas diferentes usando uma estrutura de repetição em PHP.
+
+Aula Anterior
+
+
+<br>
+
 12. Aula 12 – Estrutura de Repetição Do While ❌
+
+Na aula de hoje veremos como funciona a estrutura de repetição while.
+
+<br>
+
 13. Aula 13 – Estrutura de Repetição For ❌
+
+Aprenda a utilizar a estrutura de repetição For do PHP com vários exercícios práticos, demonstrações detalhadas e exercícios de fixação.
+
+<br>
+
 14. Aula 14 – Rotinas em PHP – Parte 1 ❌
+
+Nessa aula daremos início as Rotinas em PHP.
+
+<br>
+
 15. Aula 15 – Rotinas em PHP – Parte 2 ❌
+
+Criando funções e procedimentos em PHP com passagem de parâmetros por valor e passagem de parâmetros por referência.
+
+Aprenda como utilizar as instruções include, require, include_once, require_once para incluir arquivos externos em seu script PHP.
+
+<br>
+
 16. Aula 16 – Funções String em PHP (Parte 1) ❌
+
+Nessa aula, veremos uma lista de funções para Strings usando PHP. São funções internas que já existem na linguagem. A lista de funções de manipulação de Strings que serão vistas nessa aula é composta pelas instruções:
+
+Função printf() : Permite exibir uma string com itens formatados.
+
+Função print_r() : Exibe coleções, objetos e variáveis compostas (vetores e matrizes) de maneira organizada.
+
+Função wordwrap() : Cria quebras de linha ou divisões em uma string em um tamanho especificado.
+
+Função strlen() : Permite verificar o tamanho de uma string, contando seus caracteres (inclusive espaços em branco).
+
+Função trim() : Elimina espaços em branco antes e depois de uma string.
+
+Função ltrim() : Elimina espaços no início de uma string.
+
+Função rtrim() : Elimina espaços em branco no final de uma string.
+
+Função str_word_count() : Conta quantas palavras uma string possui.
+
+Função explode() : Quebra uma string e coloca os itens em um vetor.
+
+Função str_split() : Coloca cada letra de uma string em uma posição de um vetor.
+
+Função implode() : Transforma um vetor inteiro em uma string.
+
+Função chr() : Retorna um caractere de acordo com seu código ASCII passado como parâmetro.
+
+Função ord() : Retorna o código ASCII de um caractere passado como parâmetro.
+
+Na aula 17 do curso, veremos mais funções para manipulação de Strings.
+
+<br>
+
 17. Aula 17 – Funções String em PHP (Parte 2) ❌
+
+Hoje, vamos continuar nossos estudos sobre string em PHP.
+
+<br>
+
 18. Aula 18 – Vetores e Matrizes – Parte 1 ❌
+
+Na aula de hoje vamos dar início as variáveis compostas.
+
+<br>
+
 19. Aula 19 – Vetores e Matrizes – Parte 2 ❌
+
+Nessa aula vamos dar continuidade aos nossos estudos sobre variáveis compostas, e encerraremos o curso de PHP para iniciantes.

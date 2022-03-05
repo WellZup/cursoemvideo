@@ -54,9 +54,13 @@
 
 [Anotações das Aulas com Código Fonte](https://github.com/eduardodsr/cursoemvideo/blob/master/curso-de-algoritmo/README.md)
 
-### Código Fonte:
+### Código Fonte / Projetos:
 
 [Código Fonte das Aulas - Curso de Algoritmo - Projetos](https://github.com/eduardodsr/cursoemvideo/tree/master/curso-de-algoritmo/Projetos) 
+
+### YouTube - Playlist: 
+
+[Curso de Algoritmos](https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV)
 
 ### Certificado: 
 
@@ -108,7 +112,7 @@
 7. Aula 7 – Operadores Relacionais  ✅
 8. Aula 8 – Integração HTML5 + PHP  ✅
 9. Aula 9 – Estrutura Condicional if  ✅
-10. Aula 10 – Estrutura Condicional Switch ❌
+10. Aula 10 – Estrutura Condicional Switch ✅
 11. Aula 11 – Estrutura de Repetição While ❌
 12. Aula 12 – Estrutura de Repetição Do While ❌
 13. Aula 13 – Estrutura de Repetição For ❌
@@ -125,9 +129,13 @@
 
 <p><a href="https://github.com/eduardodsr/cursoemvideo/blob/master/php-basico/README.md" target="_blank">Resumo das aulas do curso de PHP</a></p>
 
-### Código Fonte:
+### Código Fonte / Projetos:
 
 [Código fonte das aulas | Projetos das aulas - Curso de PHP Básico](https://github.com/eduardodsr/cursoemvideo/tree/master/php-basico/projetos/) 
+
+### YouTube - Playlist: 
+
+[Curso de PHP para Iniciantes](https://www.youtube.com/playlist?list=PLHz_AreHm4dm4beCCCmW4xwpmLf6EHY9k)
 
 ### Links: 
 
