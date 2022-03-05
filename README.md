@@ -1,10 +1,11 @@
-# Curso em Vídeo | Prof. Gustavo Guanabara
+# Curso em Vídeo | Prof. Gustavo Guanabara :earth_americas: :brazil:
 
 [![eduardodsr](https://img.shields.io/badge/made_by-eduardodsr-green)](https://github.com/eduardodsr/cursoemvideo)
 ![GitHub top language](https://img.shields.io/github/languages/top/eduardodsr/cursoemvideo)
 ![GitHub language count](https://img.shields.io/github/languages/count/eduardodsr/cursoemvideo)
 
-<h1 align="center"> Curso em Vídeo </h1>
+
+<h1 align="center"> Curso em Vídeo </h1> 
 
 <p align="center"> |&nbsp;&nbsp;&nbsp; 
   <a href="#algoritmo">01. Algoritmo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -12,14 +13,14 @@
    <a href="#autor">Autor &rarr; eduardodsr</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
-## Cursos
+## Cursos :ledger:
 
 <img src="https://www.cursoemvideo.com/wp-content/uploads/bb-plugin/cache/algoritmos-circle.jpg" alt="logo algoritmo" width="100px" /> 
 
 
 <span id="algoritmo">
 
-## 01. Curso de Algoritmo [40 Horas] 
+## 01. Curso de Algoritmo [40 Horas]  :blue_book: :one:
 
 - O **Visualg** é um programa que permite criar, editar, interpretar e que também executa os algoritmos em português como se fosse um “programa” normal de computador.
 
@@ -48,25 +49,24 @@
 14. Aula 14 – Vetores ✅
 15. Aula 15 – Matrizes ✅
 
-<img src="https://github.com/eduardodsr/cursoemvideo/blob/master/curso-de-algoritmo/img/algoritmo.png" alt="OK" width="200px" /> 
 
-### Anotações das Aulas:
+### Anotações das Aulas: :open_book: :writing_hand:
 
 [Anotações das Aulas com Código Fonte](https://github.com/eduardodsr/cursoemvideo/blob/master/curso-de-algoritmo/README.md)
 
-### Código Fonte / Projetos:
+### Código Fonte / Projetos: :computer: :file_folder:
 
 [Código Fonte das Aulas - Curso de Algoritmo - Projetos](https://github.com/eduardodsr/cursoemvideo/tree/master/curso-de-algoritmo/Projetos) 
 
-### YouTube - Playlist: 
+### YouTube - Playlist: :desktop_computer: :headphones:
 
 [Curso de Algoritmos](https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV)
 
-### Certificado: 
+### Certificado: :trophy: :100: 
 
 [Certificado de Conclusão | Teste Final -> 10 de 10 Pontos(100% de aproveitamento)](https://github.com/eduardodsr/cursoemvideo/tree/master/curso-de-algoritmo/certificado) 
 
-### Links: 
+### Links: :link:
 
 [Curso de Algoritmo, site do Prof. Gustavo Guanabara](https://www.cursoemvideo.com/curso/curso-de-algoritmo/)
 
@@ -81,7 +81,7 @@
 [Exercícios de Algoritmos - Prof. Gustavo Guanabara](https://www.cursoemvideo.com/wp-content/uploads/2019/08/exercicios-algoritmos.pdf)
 
 
-### Agradecimentos:
+### Agradecimentos: :clap:
 
 - Prof. *Antonio Carlos Nicolodi*, criador do Visual G.
     - Obrigado por compartilhar o seu conhecimento. 
@@ -95,7 +95,7 @@
 
 <span id="php-basico">
 
-## 02. PHP Básico [40 Horas] 
+## 02. PHP Básico [40 Horas] :green_book: :two:
 
 - Criado em 1995, por Rasmus Lerdorf, o **PHP** (acrônimo para PHP: Hypertext Preprocessor) é uma linguagem de script Open Source de uso geral. Com ela, desenvolvedores podem criar sites dinâmicos, extensões para aplicativos e otimizar tanto programas quanto Sistemas Operacionais. Ela é especialmente adequada para o desenvolvimento web e pode ser embutida dentro do HTML.
 
@@ -123,21 +123,21 @@
 18. Aula 18 – Vetores e Matrizes – Parte 1 ❌
 19. Aula 19 – Vetores e Matrizes – Parte 2 ❌
 
-### Anotações das Aulas:
+### Anotações das Aulas: :writing_hand:
 
 [Anotações das aulas de PGP](https://github.com/eduardodsr/cursoemvideo/tree/master/php-basico)
 
 <p><a href="https://github.com/eduardodsr/cursoemvideo/blob/master/php-basico/README.md" target="_blank">Resumo das aulas do curso de PHP</a></p>
 
-### Código Fonte / Projetos:
+### Código Fonte / Projetos: :computer: :file_folder:
 
 [Código fonte das aulas | Projetos das aulas - Curso de PHP Básico](https://github.com/eduardodsr/cursoemvideo/tree/master/php-basico/projetos/) 
 
-### YouTube - Playlist: 
+### YouTube - Playlist: :desktop_computer: :headphones:
 
 [Curso de PHP para Iniciantes](https://www.youtube.com/playlist?list=PLHz_AreHm4dm4beCCCmW4xwpmLf6EHY9k)
 
-### Links: 
+### Links: :link:
 
 <a href="https://github.com/eduardodsr/cursoemvideo#php-basico" target="_blank">Meu repositório do curso em vídeo, PHP </a>
 
@@ -156,12 +156,18 @@
 [phpstorm - Teclas de Atalhos](https://resources.jetbrains.com/storage/products/phpstorm/docs/phpstorm_Leaflet.pdf)
 
 
+## Agradecimentos: :clap:
+
+- Prof. *Gustavo Guanabara*, criador do site Curso em Vídeo.
+    - Obrigado pela criação do projeto, oferecendo ensino de alta qualidade, onde aprendi a programar com a linguagem PGP. 
+<br>
+
 <hr>
 
 
 <span id="autor">
 
-### Autor
+### Autor :smile:
 
 <div align="rigth">
   <a href="https://github.com/eduardodsr">
@@ -171,6 +177,6 @@
 
   * ` Dev: ` Eduardo da Silva Rodrigues
   
-  * ` GitHub: ` [github.com/eduardodsr](https://www.github.com/eduardodsr)
+  * ` GitHub: ` [github.com/eduardodsr](https://www.github.com/eduardodsr) :link:
  
-  * ` E-mail: ` <eduardodsr@gmail.com> 
+  * ` E-mail: ` <eduardodsr@gmail.com> :email:

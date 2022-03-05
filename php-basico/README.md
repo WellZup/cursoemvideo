@@ -1,6 +1,6 @@
 ### 02. PHP Básico [40 Horas] 
 
-- Criado em 1995, por Rasmus Lerdorf, o **PHP** (acrônimo para PHP: Hypertext Preprocessor) é uma linguagem de script Open Source de uso geral. Com ela, desenvolvedores podem criar sites dinâmicos, extensões para aplicativos e otimizar tanto programas quanto Sistemas Operacionais. Ela é especialmente adequada para o desenvolvimento web e pode ser embutida dentro do HTML.
+- Criado em 1995, por **Rasmus Lerdorf**, o **PHP** (acrônimo para PHP: Hypertext Preprocessor) é uma linguagem de script Open Source de uso geral. Com ela, desenvolvedores podem criar sites dinâmicos, extensões para aplicativos e otimizar tanto programas quanto Sistemas Operacionais. Ela é especialmente adequada para o desenvolvimento web e pode ser embutida dentro do HTML.
 
 - Você vai aprender os primeiros passos para criar sites que utilizem a tecnologia PHP incorporada. Para isso, aprenderá como instalar um servidor, criar scripts básicos, interatividade com formulários e acesso a bancos de dados simples. No final, vai aprender como colocar seu site no ar utilizando um servidor profissional de hospedagem.
 
@@ -42,6 +42,14 @@ Para transformar seu computador em um servidor com suporte PHP, você precisa de
 
 Nessa aula do Curso Grátis de PHP para Iniciantes você vai aprender como instalar um servidor PHP no seu computador e vai ver como criar o seu primeiro exemplo de código PHP: o “Olá, Mundo!”.
 
+```php
+<?php
+
+    echo "Olá, Mundo !";
+
+?> 
+```
+
 É possível instalar o PHP no seu PC, bem como todas as ferramentas necessárias para o desenvolvimento na linguagem, como o Apache, MySQL, PHPMyAdmin, interpretadores e etc.
 
 <br>
@@ -61,7 +69,7 @@ Antes de mais nada, é importante que você entenda os conceitos de variáveis e
 
 Os comandos **ECHO, PRINT e PRINTF** servem para gerar saídas na tela. Um exemplo simples desse comando é:
 
-echo “Estou aprendendo variáveis em PHP”;
+    echo “Estou aprendendo variáveis em PHP”;
 
 A pronúncia correta do comando echo é ECO (aquele som que se repete quando gritamos dentro de cavernas, lembra?).
 
@@ -71,7 +79,7 @@ Note que no comando acima, foi utilizada uma tag HTML para a quebra de linha. Is
 
 Variáveis são espaços na memória do computador que podem conter valores. Variáveis simples armazenam apenas um valor de cada vez, dependendo do seu tipo.
 
-Todas as variáveis no PHP possuem um **$** na frente e seguem as mesmas regras de construção de nomes de identificadores:
+Todas as **variáveis** no PHP possuem um **$** na frente e seguem as mesmas regras de construção de nomes de identificadores:
 
 – Devem começar com uma letra (após o $)
 
@@ -87,7 +95,7 @@ OBS: O PHP faz a diferenciação entre as letras maiúsculas e minúsculas, por 
 
 No PHP não existe a necessidade de declarar variáveis. Os tipos serão atribuídos automaticamente de acordo com o valor que a variável receber. Esse processo é conhecido como coerção. Isso pode ser até empolgante no início, mas é preciso prestar bastante atenção para não fazer nada errado.
 
-Você pode forçar um tipo primitivo a uma variável por TYPECAST, utilizando (int) (real) (float) (double) (string) antes do valor na atribuição.
+Você pode forçar um tipo primitivo a uma variável por **TYPECAST**, utilizando (int) (real) (float) (double) (string) antes do valor na atribuição.
 
 Não existe typecast para variáveis lógicas. Os valores booleanos são considerados números, sendo o valor 1 atribuído para true e vazio para false.
 
@@ -99,13 +107,13 @@ Não existe typecast para variáveis lógicas. Os valores booleanos são conside
 
 Atribuir valor é colocar um conteúdo em uma variável. Utilizamos o operador de atribuição = para realizar essa tarefa. Veja alguns exemplos:
 
-$idade = 15;
+    $idade = 15;
 
-$salario = 1500.25;
+    $salario = 1500.25;
 
-$nome = “Gustavo”;
+    $nome = “Gustavo”;
 
-$casado = true;
+    $casado = true;
 
 **Concatenação de valores**
 
@@ -135,15 +143,15 @@ Raiz quadrada em PHP?
 
 **Os operadores aritméticos do PHP são:**
 
-    +       é o operador de adição
+    +     é o operador de adição
 
-    –       é o operador de subtração
+    –     é o operador de subtração
 
-    *       é o operador de multiplicação
+    *     é o operador de multiplicação
 
-    /       é o operador de divisão Real
+    /     é o operador de divisão Real
 
-    %       é o operador de módulo (resto da divisão)
+    %     é o operador de módulo (resto da divisão)
 
 O código a seguir, vai somar dois números:
 
@@ -208,7 +216,7 @@ abs( ) : Retorna o valor absoluto de um número.
 
 pow( ) : Calcula uma potência
 
-    pow(3,2) = 32 = 9
+    pow(3, 2) = 32 = 9
 
 sqrt( ) : Calcula a raiz quadrada de um número.
 
@@ -384,7 +392,7 @@ Colocar um segundo <code> $ </code> na frente de uma variável também possui um
 <img src="img/OperadorTernario.png">
 <a href="https://youtu.be/YrmPk8zL9Qw?t=175" target="_blank">Print tirado dessa vídeoaula</a>
 
-Operador Ternário no PHP
+**Operador Ternário no PHP**
 
 Ele nada mais é do que uma forma mais enxuta ou curta de usar o comando condicional if.
 
@@ -417,7 +425,7 @@ Uma condição é avaliada, e se ela for **verdadeira**, atribui-se um valor, e 
 
 8. Aula 8 – Integração HTML5 + PHP  ✅
 
-Ligação formulário HTML PHP, integração HTML5 com PHP via formulário.
+Ligação formulário HTML + PHP, integração HTML5 com PHP via formulário.
 
 Nessa oitava aula do Curso de PHP, vamos aprender como aumentar a interatividade dos nossos scripts PHP com formulários HTML5.
 
@@ -557,6 +565,7 @@ if ($tipo == “nacional”) {
 
 }
 ```
+
 <br>
 
 10. Aula 10 – Estrutura Condicional Switch ✅
@@ -572,26 +581,42 @@ Estruturas de condição de múltipla escolha em PHP.
 
 <br>
 
-11. Aula 11 – Estrutura de Repetição While ❌
+11. Aula 11 – Estrutura de Repetição While ✅
 
-Vamos agora começar as Estruturas de Repetição em PHP, partindo da estrutura WHILE (enquanto).
+<img src="img/While.png">
+<a href="https://youtu.be/3jk8fSWpQIg?t=70" target="_blank">Print tirado dessa vídeoaula</a>
 
-A Estrutura While (enquanto), também conhecida como Estrutura de Repetição com Teste Lógico no início, realiza o teste de uma expressão lógica sempre na primeira linha da estrutura. Vamos ver como realizar uma contagem progressiva de 1 até 10, utilizando a estrutura while em PHP.
+Vamos agora começar as <em>Estruturas de Repetição</em> em PHP, partindo da estrutura **WHILE (enquanto)**.
 
+A Estrutura **While (enquanto)**, também conhecida como **Estrutura de Repetição com Teste Lógico no início**, realiza o teste de uma expressão lógica sempre na primeira linha da estrutura. 
+
+Vamos ver como realizar uma contagem progressiva de 1 até 10, utilizando a estrutura while em PHP.
+
+```php
 $c = 1;
 
-while ($c = 10) {
+while ($c <= 10) {
 
-    echo $c; $c++;
-
+    echo $c; 
+    $c++;   // $c = $c + 1;  // $c + 1  // $c++
 }
+```
 
-Durante a aula, veremos também como realizar outras contagens, como por exemplo a contagem regressiva.
+Vamos ver como realizar uma contagem regressiva de 10 até 1, utilizando a estrutura while em PHP.
 
-Outra coisa que vamos aprender durante essa aula de repetição é criar código HTML dinamicamente, utilizando scripts PHP. No exemplo apresentado, vamos criar várias caixas de texto com nomes e etiquetas diferentes usando uma estrutura de repetição em PHP.
+<img src="img/While2.png">
+<a href="https://youtu.be/3jk8fSWpQIg?t=350" target="_blank">Print tirado dessa vídeoaula</a>
 
-Aula Anterior
+```php
 
+$c = 10;
+
+while ($c >= 1) {
+
+    echo $c; 
+    $c--;   // $c = $c - 1;  // $c - 1  // $c--
+}
+```
 
 <br>
 
@@ -625,33 +650,46 @@ Aprenda como utilizar as instruções include, require, include_once, require_on
 
 Nessa aula, veremos uma lista de funções para Strings usando PHP. São funções internas que já existem na linguagem. A lista de funções de manipulação de Strings que serão vistas nessa aula é composta pelas instruções:
 
-Função printf() : Permite exibir uma string com itens formatados.
+Função printf( ) 
+: Permite exibir uma string com itens formatados.
 
-Função print_r() : Exibe coleções, objetos e variáveis compostas (vetores e matrizes) de maneira organizada.
+Função print_r( )
+: Exibe coleções, objetos e variáveis compostas (vetores e matrizes) de maneira organizada.
 
-Função wordwrap() : Cria quebras de linha ou divisões em uma string em um tamanho especificado.
+Função wordwrap( )
+: Cria quebras de linha ou divisões em uma string em um tamanho especificado.
 
-Função strlen() : Permite verificar o tamanho de uma string, contando seus caracteres (inclusive espaços em branco).
+Função strlen( ) 
+: Permite verificar o tamanho de uma string, contando seus caracteres (inclusive espaços em branco).
 
-Função trim() : Elimina espaços em branco antes e depois de uma string.
+Função trim( ) 
+: Elimina espaços em branco antes e depois de uma string.
 
-Função ltrim() : Elimina espaços no início de uma string.
+Função ltrim( ) 
+: Elimina espaços no início de uma string.
 
-Função rtrim() : Elimina espaços em branco no final de uma string.
+Função rtrim( ) 
+: Elimina espaços em branco no final de uma string.
 
-Função str_word_count() : Conta quantas palavras uma string possui.
+Função str_word_count( ) 
+: Conta quantas palavras uma string possui.
 
-Função explode() : Quebra uma string e coloca os itens em um vetor.
+Função explode( ) 
+: Quebra uma string e coloca os itens em um vetor.
 
-Função str_split() : Coloca cada letra de uma string em uma posição de um vetor.
+Função str_split( ) 
+: Coloca cada letra de uma string em uma posição de um vetor.
 
-Função implode() : Transforma um vetor inteiro em uma string.
+Função implode( ) 
+: Transforma um vetor inteiro em uma string.
 
-Função chr() : Retorna um caractere de acordo com seu código ASCII passado como parâmetro.
+Função chr( ) 
+: Retorna um caractere de acordo com seu código ASCII passado como parâmetro.
 
-Função ord() : Retorna o código ASCII de um caractere passado como parâmetro.
+Função ord( ) 
+: Retorna o código ASCII de um caractere passado como parâmetro.
 
-Na aula 17 do curso, veremos mais funções para manipulação de Strings.
+
 
 <br>
 
