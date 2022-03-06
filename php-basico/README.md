@@ -617,18 +617,33 @@ while ($c >= 1) {
     $c--;   // $c = $c - 1;  // $c - 1  // $c--
 }
 ```
+**Modificando o laço (break e continue)**
+
+<code> break; </code>    -> comando para sair do laço, ou seja, vai direto ao final do laço (while)
+
+<code> continue; </code> -> comando para voltar ao início (começo) do laço, mesmo sem ter chegado ao fim do laço (while)
+
+<img src="img/Break_Continue.png">
+<a href="https://youtu.be/3jk8fSWpQIg?t=900" target="_blank">Print tirado dessa vídeoaula</a>
 
 <br>
 
 12. Aula 12 – Estrutura de Repetição Do While ❌
 
-Na aula de hoje veremos como funciona a estrutura de repetição while.
+Na aula de hoje veremos como funciona a estrutura de repetição **do while**.
+
+<img src="img/dowhile.png">
+<a href="https://youtu.be/6QymvmX3YJU?t=55" target="_blank">Print tirado dessa vídeoaula</a>
+
+<img src="img/dowhile2.png">
+<a href="https://youtu.be/6QymvmX3YJU?t=493" target="_blank">Print tirado dessa vídeoaula</a>
 
 <br>
 
 13. Aula 13 – Estrutura de Repetição For ❌
 
 Aprenda a utilizar a estrutura de repetição For do PHP com vários exercícios práticos, demonstrações detalhadas e exercícios de fixação.
+
 
 <br>
 
