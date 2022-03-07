@@ -135,9 +135,9 @@
 
 ### Anotações das Aulas: :open_book: :writing_hand:
 
-[Anotações das aulas de PGP](https://github.com/eduardodsr/cursoemvideo/tree/master/php-basico)
+[Anotações das aulas](https://github.com/eduardodsr/cursoemvideo/tree/master/php-basico)
 
-<p><a href="https://github.com/eduardodsr/cursoemvideo/blob/master/php-basico/README.md" target="_blank">Resumo das aulas do curso de PHP</a></p>
+<p><a href="https://github.com/eduardodsr/cursoemvideo/blob/master/php-basico/README.md" target="_blank">Resumo das aulas</a></p>
 
 ### Código Fonte / Projetos: :computer: :file_folder:
 
