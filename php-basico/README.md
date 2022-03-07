@@ -702,13 +702,13 @@ Na aula de hoje veremos como funciona a estrutura de repetição **do while**.
 
 Aprenda a utilizar a estrutura de repetição **For** do PHP com vários exercícios práticos, demonstrações detalhadas e exercícios de fixação.
 
-<img src="img/for.png">
+<img src="img/For.png">
 <a href="https://youtu.be/ancrPpEq9Rw?t=104" target="_blank">Print tirado dessa vídeoaula</a>
 
 Preste atenção...
 : while X for
 
-<img src="img/for2.png">
+<img src="img/For2.png">
 <a href="https://youtu.be/ancrPpEq9Rw?t=130" target="_blank">Print tirado dessa vídeoaula</a>
 
 
