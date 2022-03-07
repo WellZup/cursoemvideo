@@ -794,9 +794,102 @@ Exemplo verifica se um número é primo utilizando o laço for.
 ```
 <br>
 
-14. Aula 14 – Rotinas em PHP – Parte 1 ❌
+14. Aula 14 – Rotinas em PHP – Parte 1 ✅
 
 Nessa aula daremos início as Rotinas em PHP.
+
+<img src="img/Rotina.png">
+<a href="https://youtu.be/7V6MdZQFArc?t=112" target="_blank">Print tirado dessa vídeoaula</a>
+
+Exemplo: Criar um procedimento que some dois valores númericos inteiros 
+
+```php
+<?php
+    function soma ($a, $b) {
+        $s = $a + $b;
+        echo "<br> Valores recebidos, a = $a e b = $b";
+        echo "<br> A soma vale $s <br>";
+    }
+
+    soma(3,4); // A soma vale 7
+    soma(8,2); // A soma vale 10
+
+    $x = 9;
+    $y = 15;
+    soma($x, $y); // A soma vale 24
+?>
+```
+
+Rotinas em PHP que retornam um valor.
+
+<img src="img/Rotina2.png">
+<a href="https://youtu.be/7V6MdZQFArc?t=455" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+<?php
+    function soma ($a, $b) {
+        return $a + $b; 
+    }
+    $x = 3;
+    $y = 8;
+    $res = soma($x,$y);
+    echo "A soma entre $x e $y é igual a $res";
+    //    A soma entre 3  e 8  é igual a 11
+?>
+```
+
+**Rotinas em PHP:**
+Função sem retorno X Função com retorno
+
+<img src="img/Rotina3.png">
+<a href="https://youtu.be/7V6MdZQFArc?t=730" target="_blank">Print tirado dessa vídeoaula</a>
+
+**Rotinas em PHP com Parâmetros Dinâmicos:**
+Rotinas com múltiplos parâmetros em PHP
+
+<img src="img/Rotina4.png">
+<a href="https://youtu.be/7V6MdZQFArc?t=775" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+<?php
+    function soma () {
+
+        $p = func_get_args();
+        // func_get_args(); -> Retorna um array contendo uma lista de argumentos da função
+        // $p[0]=3, $p[1]=4, $p[2]=8, $p[3]=1, $p[4]=2
+
+        $tot = func_num_args();
+        // func_num_args(); -> Retorna o número de argumentos passados para a função
+        // $tot = 5
+
+        $soma = 0; // soma dos valores
+        for ($i = 0 ; $i < $tot ; $i++) {
+            $soma += $p[$i];    // $soma = $soma + $p[$i];
+        }
+        return $soma;
+    }
+    
+    $res = soma(3, 4, 8, 1, 2);
+    echo "A soma dos valores é $res"; // A soma dos valores é 18
+?>
+```
+
+```php
+<?php
+    function soma () {
+        $p = func_get_args();
+        $tot = func_num_args();
+        $soma = 0;
+        for ($i = 0 ; $i < $tot ; $i++) {
+            $soma += $p[$i];    
+        }
+        return $soma;
+    }
+    
+    $res = soma(3, 5, 2);
+    echo "A soma dos valores é $res"; // A soma dos valores é 10
+?>
+```
 
 <br>
 
