@@ -628,7 +628,7 @@ while ($c >= 1) {
 
 <br>
 
-12. Aula 12 – Estrutura de Repetição Do While ❌
+12. Aula 12 – Estrutura de Repetição Do While ✅
 
 Na aula de hoje veremos como funciona a estrutura de repetição **do while**.
 
@@ -638,13 +638,160 @@ Na aula de hoje veremos como funciona a estrutura de repetição **do while**.
 <img src="img/dowhile2.png">
 <a href="https://youtu.be/6QymvmX3YJU?t=493" target="_blank">Print tirado dessa vídeoaula</a>
 
+**Aula 12 - Exibir a tabuada de um número escolhido pelo usuário de 1 a 10**
+
+<strong>05-tabuada.html</strong>
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_css/estilo.css">
+    <title>Aula 12 - Tabuada</title>
+</head>
+<body>
+    <div>
+        <!-- Exibir a tabuada de um número escolhido pelo usuário de 1 a 10 -->
+        <form method="get" action="05-tabuada.php">
+            <fieldset><legend>Tabuada</legend>
+                Número : <input type="number" name="num" min="1" max="10" value="10">
+
+                <input type="submit" value="Mostrar" class="botao">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
+```
+
+<strong>05-tabuada.php</strong>
+
+```php
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_css/estilo.css">
+    <title>Aula 12 - Tabuada</title>
+</head>
+<body>
+    <div>
+        <?php
+            $numero = isset($_GET["num"]) ? $_GET["num"] : 10;
+            $contador = 1;
+            echo "<h2>Tabuada de $numero</h2>";
+            do {
+                echo "<br> $numero X $contador = &nbsp;&nbsp;" .($numero * $contador);
+                $contador++;
+            } while ($contador <= 10);
+        ?>
+        <br><br><a href="javascript:history.go(-1)" class="botao">Voltar</a>
+    </div>
+</body>
+</html>
+```
+
 <br>
 
-13. Aula 13 – Estrutura de Repetição For ❌
+13. Aula 13 – Estrutura de Repetição For ✅
 
-Aprenda a utilizar a estrutura de repetição For do PHP com vários exercícios práticos, demonstrações detalhadas e exercícios de fixação.
+Aprenda a utilizar a estrutura de repetição **For** do PHP com vários exercícios práticos, demonstrações detalhadas e exercícios de fixação.
+
+<img src="img/for.png">
+<a href="https://youtu.be/ancrPpEq9Rw?t=104" target="_blank">Print tirado dessa vídeoaula</a>
+
+Preste atenção...
+: while X for
+
+<img src="img/for2.png">
+<a href="https://youtu.be/ancrPpEq9Rw?t=130" target="_blank">Print tirado dessa vídeoaula</a>
 
 
+Numero Primo 
+: <strong><u> Definição de número primo: </u></strong>
+Um número natural maior do que 1 é primo quando é divisível somente por 1 e ele mesmo. 
+
+: Números Primos de 1 a 100 são:
+
+: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73 , 79, 83, 89, 97
+
+Exemplo verifica se um número é primo utilizando o laço for.
+
+<strong>03-index.html</strong>
+
+```php
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_css/estilo.css">
+    <title>Aula 13 - Ex. 3 - </title>
+</head>
+<body>
+    <div>
+        <form method="get" action="03-primo.php">
+            <fieldset><legend>Verificar se um número é primo</legend>
+                Número : <input type="number" name="num" min="1" max="1000" value="2" required>
+
+                <input type="submit" value="É primo ?" class="botao">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>   
+```
+
+<strong>03-primo.php</strong>
+
+```php
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_css/estilo.css">
+    <title>Aula 13 - Primo</title>
+</head>
+<body>
+    <div>
+        <?php
+            $n = isset($_GET["num"]) ? $_GET["num"] : 1 ;
+
+            $contDiv = 0;
+            echo "<h2> O número <span class='foco'> $n </span> é primo ? </h2>";
+
+            for ($cont = 2 ; $cont < $n ; $cont++) {
+                if ($n % $cont == 0) {
+                    echo "Multiplo de $cont. <br>";
+                    $contDiv++;
+                }
+            }
+            echo "<br> Total de múltiplos : <strong> $contDiv </strong> <br>";
+
+            if ($n == 1 || $n == 0) {
+                $contDiv = true;
+            }
+
+            if ($contDiv) {
+                echo "<br> O <strong> número $n </strong> <span class='foco'> &rarr; NÃO É PRIMO ! </span>";
+            } else {
+                echo "<br> O <strong> número $n </strong> <span class='foco'> &rarr; É PRIMO ! </span>";
+            }
+        ?>
+        <br><br><a href="javascript:history.go(-1)" class="botao">Voltar</a>
+    </div>
+</body>
+</html>
+
+```
 <br>
 
 14. Aula 14 – Rotinas em PHP – Parte 1 ❌

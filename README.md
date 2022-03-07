@@ -124,8 +124,8 @@
 9. Aula 9 – Estrutura Condicional if  ✅
 10. Aula 10 – Estrutura Condicional Switch ✅
 11. Aula 11 – Estrutura de Repetição While  ✅
-12. Aula 12 – Estrutura de Repetição Do While ❌
-13. Aula 13 – Estrutura de Repetição For ❌
+12. Aula 12 – Estrutura de Repetição Do While  ✅
+13. Aula 13 – Estrutura de Repetição For  ✅
 14. Aula 14 – Rotinas em PHP – Parte 1 ❌
 15. Aula 15 – Rotinas em PHP – Parte 2 ❌
 16. Aula 16 – Funções String em PHP (Parte 1) ❌
