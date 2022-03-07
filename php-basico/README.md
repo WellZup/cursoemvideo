@@ -893,11 +893,97 @@ Rotinas com múltiplos parâmetros em PHP
 
 <br>
 
-15. Aula 15 – Rotinas em PHP – Parte 2 ❌
+15. Aula 15 – Rotinas em PHP – Parte 2  ✅
 
-Criando funções e procedimentos em PHP com passagem de parâmetros por valor e passagem de parâmetros por referência.
+Criando funções e procedimentos em PHP com **passagem de parâmetros por valor** e **passagem de parâmetros por referência**.
 
-Aprenda como utilizar as instruções include, require, include_once, require_once para incluir arquivos externos em seu script PHP.
+**Passagem por valor:**
+
+<img src="img/PassagemValor.png">
+<a href="https://youtu.be/o3y8af8rSKM?t=114" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+</head>
+<body>
+    <div>
+        <?php
+        /*
+         * Ex1-Criar um procedimento que use a passagem de parâmetros por valor
+         */
+            echo "<h3> Passagem por valor </h3>";
+
+            function teste ($x) {
+                $x += 2;
+                echo "O valor de X é <strong> $x </strong>";
+            }
+            $a = 3;
+            teste($a);
+            echo "<br> O valor de A é <strong> $a </strong>";
+        /* Passagem por valor:
+         * O valor de X é 5
+         * O valor de A é 3
+         */
+        ?>
+    </div>
+</body>
+</html>
+```
+
+**Passagem por referência:**
+
+Qualquer alteração em <mark>X interfere diretamente no valor de A</mark>
+
+<img src="img/PassagemReferencia.png">
+<a href="https://youtu.be/o3y8af8rSKM?t=245" target="_blank">Print tirado dessa vídeoaula</a>
+
+
+```php
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+</head>
+<body>
+    <div>
+        <?php
+        /*
+         * Ex2-Criar um procedimento que use a passagem de parâmetros por referência
+         */
+            echo "<h3>Passagem por referência</h3>";
+
+            function teste (&$x) {
+                $x += 2;
+                echo "O valor de X é <strong> $x </strong>";
+            }
+            $a = 3;
+            teste($a);
+            echo "<br> O valor de A é <strong> $a </strong>";
+            /* Passagem por referência:
+             * O valor de X é 5
+             * O valor de A é 5
+             */
+        ?>
+    </div>
+</body>
+</html>
+
+```
+
+**Como utilizar rotinas externas?**
+
+<img src="img/RotinasExternas.png">
+<a href="https://youtu.be/o3y8af8rSKM?t=560" target="_blank">Print tirado dessa vídeoaula</a>
+
+Aprenda como utilizar as instruções para incluir **arquivos externos** em seu script PHP. São elas: 
+        
+Como utilizar rotinas externas?
+
+    include      -> significa incluir
+    require      ->
+    include_once ->
+    require_once ->
 
 <br>
 
