@@ -934,7 +934,7 @@ Criando funções e procedimentos em PHP com **passagem de parâmetros por valor
 
 **Passagem por referência:**
 
-Qualquer alteração em <mark>X interfere diretamente no valor de A</mark>
+<mark>Qualquer alteração em X interfere diretamente no valor de A</mark>
 
 <img src="img/PassagemReferencia.png">
 <a href="https://youtu.be/o3y8af8rSKM?t=245" target="_blank">Print tirado dessa vídeoaula</a>
@@ -976,14 +976,46 @@ Qualquer alteração em <mark>X interfere diretamente no valor de A</mark>
 <img src="img/RotinasExternas.png">
 <a href="https://youtu.be/o3y8af8rSKM?t=560" target="_blank">Print tirado dessa vídeoaula</a>
 
-Aprenda como utilizar as instruções para incluir **arquivos externos** em seu script PHP. São elas: 
+Aprenda como utilizar as instruções para incluir **arquivos externos** em seu script PHP.
         
-Como utilizar rotinas externas?
+* Como utilizar rotinas externas (arquivos externos) no PHP?
 
-    include      -> significa incluir
-    require      ->
-    include_once ->
-    require_once ->
+<code> include </code> &rarr; o include significa **incluir**. Permitir incluir outros arquivos externos.
+
+<code> require </code> &rarr; o require significa **requerido**. Permite requerer outros arquivos externos.
+
+Qual a **diferença** entre o <code> include </code> e o <code> require </code> ?
+
+A diferença é a forma como um erro é tratado.
+Caso o arquivo externo não existir ou esteja corrompido ou inacessível ...
+
+<code> include </code> &rarr; Continua tentando a execução do script ! O include apenas produz um warning (alerta)
+
+<code> require </code> &rarr; Para (encerra) a execução do script ! O require produz um COMPILE_ERRO (erro fatal).
+
+
+Qual a diferença entre o <code> include_once  </code> e o <code> require_once </code> ?
+
+<code> include_once  </code> &rarr; Se o arquivo já foi carregado não precisa carregar mais o arquivo. 
+O include_once tem a garantia que o arquivo não será incluído novamente se ele já foi incluído antes.
+
+<code> require_once </code> &rarr; O **once** é carregar apenas uma vez. O require_once tem a garantia que o arquivo não será incluído novamente se ele já foi incluído antes.
+
+**Qual a função de include, include_once, require e require_once** ?
+
+As funções <code> include </code> , <code> include_once </code> , <code> require </code>  e <code> require_once </code>  são extremamente importantes no PHP, e talvez sejam as mais usadas no desenvolvimento de uma aplicação ou sites com PHP.
+
+**E qual é a função de cada uma?**
+Isso depende do que você espera, pois a funcionalidade é a mesma, mas o resultado de cada uma pode ser diferente.
+
+<code> include </code> : “Include” irá adicionar o arquivo especificado na execução do script, e caso não seja encontrado, irá retornar um erro do tipo “warning” com mensagem de “arquivo não encontrado”.
+
+<code> include_once </code> : A mesma função do “include” simples, mas não irá incluir o arquivo novamente, caso já tenha sido adicionado anteriormente na execução.
+
+<code> require </code> : Basicamente irá realizar a mesma função que os includes, mas como o próprio nome descreve, o script requer o arquivo para continuar a execução. Sem esse “require”, o script será parado de executar e retornará um “fatal error”, ou seja, irá parar de executar o script.
+
+<code> require_once: </code> Mesma funcionalidade do “require”, mas com o “once” junto, só irá incluir o arquivo se não houver uma chamada anterior do mesmo.
+
 
 <br>
 
