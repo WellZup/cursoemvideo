@@ -1023,9 +1023,7 @@ Isso depende do que você espera, pois a funcionalidade é a mesma, mas o result
 
 **Como manipular Strings em PHP ?**
 
-Nessa aula, veremos uma lista de funções para Strings usando PHP. 
-São funções internas que já existem na linguagem. 
-Vamos ver uma lista de **25 funções de manipulação de Strings** :
+Nessa aula, veremos uma lista de funções internas para Strings usando PHP. 
 
 1. Função printf( ) 
 : Permite exibir uma string com itens formatados.
@@ -1100,7 +1098,7 @@ A função **print_r** é muito utilizado para fazer testes.
 ```
 
 <u> OBS</u> :  
-* O simbolo <code> => </code> significa associação em PHP.
+* O simbolo <code> => </code> significa **associação** em PHP.
 * O **print_r** pode ser substituído por duas funçoes: **var_dump( )** e **var_export( )**.
 
 <br>
@@ -1122,6 +1120,7 @@ A função **print_r** é muito utilizado para fazer testes.
 <img src="img/f03-wordwrap2.png">
 <a href="https://youtu.be/hQLyylI2LwI?t=960" target="_blank">Print tirado dessa vídeoaula</a>
 
+<br>
 
 4. Função strlen( ) 
 : Permite verificar o tamanho de uma string, contando seus caracteres (inclusive espaços em branco).
@@ -1320,7 +1319,7 @@ A função **print_r** é muito utilizado para fazer testes.
         $vetor[3] = "Video";
 
         $texto = implode(" ", $vetor);
-        print($textoSeparadoEspaco); // Curso em Video
+        print($texto); // Curso em Video
         echo "<br><br>";
 
         $texto = join(" ", $vetor); // Curso em Video
