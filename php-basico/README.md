@@ -980,9 +980,9 @@ Aprenda como utilizar as instruções para incluir **arquivos externos** em seu 
         
 * Como utilizar rotinas externas (arquivos externos) no PHP?
 
-<code> include </code> &rarr; o include significa **incluir**. Permitir incluir outros arquivos externos.
+<code> include </code> &rarr; o **include** significa **incluir**. Permitir incluir outros arquivos externos.
 
-<code> require </code> &rarr; o require significa **requerido**. Permite requerer outros arquivos externos.
+<code> require </code> &rarr; o **require** significa **requerido**. Permite requerer outros arquivos externos.
 
 Qual a **diferença** entre o <code> include </code> e o <code> require </code> ?
 
@@ -1019,50 +1019,362 @@ Isso depende do que você espera, pois a funcionalidade é a mesma, mas o result
 
 <br>
 
-16. Aula 16 – Funções String em PHP (Parte 1) ❌
+16. Aula 16 – Funções String em PHP (Parte 1) ✅
 
-Nessa aula, veremos uma lista de funções para Strings usando PHP. São funções internas que já existem na linguagem. A lista de funções de manipulação de Strings que serão vistas nessa aula é composta pelas instruções:
+**Como manipular Strings em PHP ?**
 
-Função printf( ) 
+Nessa aula, veremos uma lista de funções para Strings usando PHP. 
+São funções internas que já existem na linguagem. 
+Vamos ver uma lista de **25 funções de manipulação de Strings** :
+
+1. Função printf( ) 
 : Permite exibir uma string com itens formatados.
 
-Função print_r( )
+<img src="img/f01-printf.png">
+<a href="https://youtu.be/hQLyylI2LwI?t=145" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+<?php
+    $prod = "leite";
+    $preco = 4.5;
+
+    echo "<br> O $prod está custando R$ " .number_format($preco, 2, ".", ","); 
+    // O leite está custando R$ 4.50
+
+    printf("O %s está custando R$ %.2f", $prod, $preco); 
+    // O leite está custando R$ 4.50
+
+    // https://www.php.net/manual/en/function.printf.php
+   /* 
+    * string  ->  %s ( s = string )
+    * int	  ->  %d ( d = decimal )
+    * float	  ->  %f ( f = floating-point number )
+    */
+?>
+```
+
+<img src="img/f01-printf2.png">
+<a href="https://youtu.be/hQLyylI2LwI?t=495" target="_blank">Print tirado dessa vídeoaula</a>
+
+**Parametros para a função printf** (function printf)
+
+
+| Type  |  Format  | Description  |
+| ------------ | ------------ | ------------ 	|
+| string  |  %s  			|  ( s = string )  |
+|  int 		| 	%d   		|  ( d = decimal / números inteiros ) |
+|  float 	|  %f  			|  ( f = float / números reais ) 	|
+
+`Link`: https://www.php.net/manual/en/function.printf.php
+
+<br>
+
+2. Função print_r( )
 : Exibe coleções, objetos e variáveis compostas (vetores e matrizes) de maneira organizada.
 
-Função wordwrap( )
+<img src="img/f02-print_r.png">
+<a href="https://youtu.be/hQLyylI2LwI?t=603" target="_blank">Print tirado dessa vídeoaula</a>
+
+A função **print_r** é muito utilizado para fazer testes.
+```php
+<?php
+    $x[0] = 4;
+    $x[1] = 3;
+    $x[2] = 8;
+    print_r($x);        // Array ( [0] => 4 [1] => 3 [2] => 8 )
+
+    echo "<br><br>";
+
+    $vet[0] = 4;
+    $vet[1] = 3;
+    $vet[2] = 8;
+    var_dump($vet);     // array(3) { [0]=> int(4) [1]=> int(3) [2]=> int(8) }
+
+    echo "<br><br>";
+
+    $vetor[0] = 4;
+    $vetor[1] = 3;
+    $vetor[2] = 8;
+    var_export($vetor); // array ( 0 => 4, 1 => 3, 2 => 8, )
+?>
+```
+
+<u> OBS</u> :  
+* O simbolo <code> => </code> significa associação em PHP.
+* O **print_r** pode ser substituído por duas funçoes: **var_dump( )** e **var_export( )**.
+
+<br>
+
+3. Função wordwrap( )
 : Cria quebras de linha ou divisões em uma string em um tamanho especificado.
 
-Função strlen( ) 
+<img src="img/f03-wordwrap.png">
+<a href="https://youtu.be/hQLyylI2LwI?t=820" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+<?php
+    $txt = "Aqui temos um texto gigante criado pelo PHP e vai mostrar o funcionamento da função wordwrap";
+    $res = wordwrap($txt, 20, "<br>\n");
+    echo $res;
+?>
+```
+
+<img src="img/f03-wordwrap2.png">
+<a href="https://youtu.be/hQLyylI2LwI?t=960" target="_blank">Print tirado dessa vídeoaula</a>
+
+
+4. Função strlen( ) 
 : Permite verificar o tamanho de uma string, contando seus caracteres (inclusive espaços em branco).
 
-Função trim( ) 
+<img src="img/f04-strlen.png">
+<a href="https://youtu.be/hQLyylI2LwI?t=1070" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+<?php
+    $txt = "Curso em video";
+    $tamanho = strlen($txt);
+    echo $tamanho; // 14
+?>
+```
+<br>
+
+5. Função trim( ) 
 : Elimina espaços em branco antes e depois de uma string.
 
-Função ltrim( ) 
+<img src="img/f05-trim.png">
+<a href="https://youtu.be/hQLyylI2LwI?t=1170" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+<?php
+    function pulaLinha() {
+        echo "<br><br>";
+    }
+    $letraComAcento = "é"; // 2
+    echo(strlen($letraComAcento));  // uma letra acentuada tem tamanho de 2 !
+    pulaLinha();
+
+    $letraSemAcento = "e"; // 1
+    echo(strlen($letraSemAcento)); 
+    pulaLinha();
+
+    $nome = "   Jose da Silva   "; // 19
+    echo(strlen($nome)); // Função strlen() : Conta tudo dentro da string, até os espaços em branco dentro da string. 
+    pulaLinha();
+
+    $novo = trim($nome); // Função trim() : Elimina espaços em branco antes e depois de uma string.
+    echo($novo); // Jose da Silva
+    pulaLinha();
+
+    echo(strlen($novo)); // 13
+?>
+```
+<br>
+
+6. Função ltrim( ) 
 : Elimina espaços no início de uma string.
 
-Função rtrim( ) 
+<img src="img/f06-ltrim.png">
+<a href="https://youtu.be/hQLyylI2LwI?t=1276" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+    <?php
+        function pulaLinha() {
+            echo "<br><br>";
+        }
+        $nome = "   Jose da Silva   ";
+        echo(strlen($nome)); // 19
+        pulaLinha();
+        $novo = ltrim($nome); // Função ltrim() : Elimina espaços em branco antes de uma string.
+        echo($novo); // Jose da Silva___
+        pulaLinha();
+        echo(strlen($novo)); // 16
+    ?>
+
+```
+<br>
+
+7. Função rtrim( ) 
 : Elimina espaços em branco no final de uma string.
 
-Função str_word_count( ) 
+<img src="img/f07-rtrim.png">
+<a href="https://youtu.be/hQLyylI2LwI?t=1318" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+    <?php
+        function pulaLinha() {
+            echo "<br><br>";
+        }
+        $nome = "   Jose da Silva   ";
+        echo(strlen($nome)); // 19
+        pulaLinha();
+        $novo = rtrim($nome); // rtrim() : Elimina espaços em branco no final de uma string.
+
+        echo($novo); // ___Jose da Silva
+        pulaLinha();
+        echo(strlen($novo)); // 16
+    ?>
+```
+<br>
+
+8. Função str_word_count( ) 
 : Conta quantas palavras uma string possui.
 
-Função explode( ) 
+<img src="img/f08-str_word_count.png">
+<a href="https://youtu.be/hQLyylI2LwI?t=1358" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+    <?php
+        $frase = "Eu vou estudar PHP";
+        $cont = str_word_count($frase, 0);
+        print_r($cont); 
+        // 4 
+        // retorna a quantidade de palavras dentro da string
+    ?>
+```
+
+```php
+    <?php
+        $frase = "Eu vou estudar PHP";
+        $cont = str_word_count($frase, 1);
+        print_r($cont); 
+        // Array ( [0] => Eu [1] => vou [2] => estudar [3] => PHP )
+        // retorna um array contendo todas as palavras encontradas dentro de string
+    ?>
+```
+
+```php
+    <?php
+        $frase = "Eu vou estudar PHP";
+        $cont = str_word_count($frase, 2);
+        print_r($cont); 
+        // Array ( [0] => Eu [3] => vou [7] => estudar [15] => PHP )
+        // retorna um array associativo, onde a chave é a posição numérica da palavra dentro da string 
+        // e o valor é a própria palavra.
+    ?>
+```
+<br>
+
+9. Função explode( ) 
 : Quebra uma string e coloca os itens em um vetor.
 
-Função str_split( ) 
+<img src="img/f09-explode.png">
+<a href="https://youtu.be/hQLyylI2LwI?t=1555" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+    <?php
+        $site = "Curso em Video";
+        $vetor = explode(" ", $site);
+        print_r($vetor); 
+        // Array ( [0] => Curso [1] => em [2] => Video )
+    ?>
+```
+<br>
+
+10. Função str_split( ) 
 : Coloca cada letra de uma string em uma posição de um vetor.
 
-Função implode( ) 
+<img src="img/f10-str_split.png">
+<a href="https://youtu.be/hQLyylI2LwI?t=1647" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+    <?php
+        $nome = "Eduardo";
+        $vetor = str_split($nome);
+        print_r($vetor); 
+        // Array ( [0] => E [1] => d [2] => u [3] => a [4] => r [5] => d [6] => o )
+    ?>
+```
+<br>
+
+11. Função implode( ) 
 : Transforma um vetor inteiro em uma string.
 
-Função chr( ) 
+<img src="img/f11-implode.png">
+<a href="https://youtu.be/hQLyylI2LwI?t=1693" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+    <?php
+        $vetor[0] = "Curso";
+        $vetor[1] = "em";
+        $vetor[3] = "Video";
+
+        $textoSeparadoEspaco = implode(" ", $vetor);
+        print($textoSeparadoEspaco); // Curso em Video
+        echo "<br><br>";
+
+        $textoSeparadoCerquilha = implode("#", $vetor);
+        print($textoSeparadoCerquilha); // Curso#em#Video
+        echo "<br><br>";
+
+        $textoSeparadoUnderline = implode("_", $vetor);
+        print($textoSeparadoUnderline); // Curso_em_Video
+    ?>
+```
+<u> OBS</u> :  
+* O **implode( )** pode ser substituído pela função **join( )** que funciona de maneira similar.
+
+```php
+    <?php
+        $vetor[0] = "Curso";
+        $vetor[1] = "em";
+        $vetor[3] = "Video";
+
+        $texto = implode(" ", $vetor);
+        print($textoSeparadoEspaco); // Curso em Video
+        echo "<br><br>";
+
+        $texto = join(" ", $vetor); // Curso em Video
+        print($texto);
+    ?>
+```
+
+<br>
+
+12. Função chr( ) 
 : Retorna um caractere de acordo com seu código ASCII passado como parâmetro.
 
-Função ord( ) 
+[Tabela ASCII Completa](https://gdhpress.com.br/wp-content/uploads/2019/07/tabelaASCII.pdf)
+
+```php
+    <?php
+        $letraC = chr(67);
+        echo "O codigo 67 em ASCII é a letra <span class='foco'> $letraC </span>"; // C
+        // O codigo 67 em ASCII é a letra C
+
+        echo "<br>";
+
+        $letrac = chr(99);
+        echo "O codigo 99 em ASCII é a letra <span class='foco'> $letrac </span>"; // c
+        // O codigo 99 em ASCII é a letra c
+
+        // https://gdhpress.com.br/wp-content/uploads/2019/07/tabelaASCII.pdf
+    ?>
+```
+<br>
+
+13. Função ord( ) 
 : Retorna o código ASCII de um caractere passado como parâmetro.
 
+[Tabela ASCII Completa](https://gdhpress.com.br/wp-content/uploads/2019/07/tabelaASCII.pdf)
 
+<img src="img/f13-ord.png">
+<a href="https://youtu.be/hQLyylI2LwI?t=1840" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+    <?php
+        $letra = "c";
+        $cod = ord($letra);
+        print("A letra $letra tem código ASCII <span class='foco'> $cod </span>");
+        // A letra c tem código ASCII 99
+
+        echo "<br><br>";
+
+        $letra = "C";
+        $cod = ord($letra);
+        print("A letra $letra tem código ASCII <span class='foco'> $cod </span>")
+        // A letra C tem código ASCII 67
+    ?>
+```
 
 <br>
 
