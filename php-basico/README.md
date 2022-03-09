@@ -1377,7 +1377,7 @@ A função **print_r** é muito utilizado para fazer testes.
 
 <br>
 
-17. Aula 17 – Funções String em PHP (Parte 2) ❌
+17. Aula 17 – Funções String em PHP (Parte 2)  ✅
 
 **Revisão da aula 16 e 17- Funções Strings em PHP**
 
@@ -1804,7 +1804,7 @@ str_pad( ); -> Parameters - pad_type:
 
 <br>
 
-18. Aula 18 – Vetores e Matrizes – Parte 1 ❌
+18. Aula 18 – Vetores e Matrizes – Parte 1  ✅
 
 Na aula de hoje vamos dar início as variáveis compostas.
 
