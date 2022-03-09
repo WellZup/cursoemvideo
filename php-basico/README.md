@@ -1748,23 +1748,37 @@ str_pad( ); -> Parameters - pad_type:
 25. Função str_replace( )  
 : Substitui todas as ocorrências da string de procura com a string de substituição.       
 : Substitui uma string por outra.
+: <mark> O str_replace( ) -> diferencia maiúsculas e minúsculas </mark> 
 
 <img src="img/f25-replace.png">
 <a href="https://youtu.be/1KdhIz0Gh5A?t=1196" target="_blank">Print tirado dessa vídeoaula</a>
 
 ```php
+<?php
+        $frase = "Gosto de estudar javascript";
+        $novaFrase = str_replace("javascript", "PHP", $frase);
+        print($novaFrase);
+        echo "<br>";
 
+        $str = "Gosto de estudar JavaScript";
+        $novaStr = str_replace("javascript", "PHP", $str);
+        print($novaStr);
+        echo "<br>";
+ 
+        /*
+        Gosto de estudar PHP
+        Gosto de estudar JavaScript
+        */
+    ?>
 ```
 
 <br>
 
 26. Função str_ireplace( )	  
-: Versão que não diferencia maiúsculas e minúsculas de str_replace( ). 
+: <mark> Versão que **não diferencia maiúsculas e minúsculas** de str_replace( ). </mark> 
 : A letra **i** da função str_**i**replace, significa "**ignore**".     
 : Ignorando maiúsculas ou minúsculas
 
-<img src="img/f.png">
-<a href="" target="_blank">Print tirado dessa vídeoaula</a>
 
 ```php
     <?php
@@ -1793,6 +1807,378 @@ str_pad( ); -> Parameters - pad_type:
 18. Aula 18 – Vetores e Matrizes – Parte 1 ❌
 
 Na aula de hoje vamos dar início as variáveis compostas.
+
+**Como usar vetores e matrizes em PHP ?**
+
+<img src="img/vet_1.png">
+<a href="https://youtu.be/g8Gr2NIMxQQ?t=115" target="_blank">Print tirado dessa vídeoaula</a>
+
+<img src="img/vet_2.png">
+<a href="https://youtu.be/g8Gr2NIMxQQ?t=294" target="_blank">Print tirado dessa vídeoaula</a>
+
+**Funções para Vetores e Matrizes (Array)**
+
+1. Função array( )
+: Cria um array.
+
+https://www.php.net/manual/pt_BR/function.array
+
+```php
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+</head>
+<body>
+<div>
+    <?php
+        $n = array(3, 5, 8, 2);
+        $n[] = 7;
+        print_r($n);
+//
+//      Sem utilizar a tag <pre> antes script php :
+//        Array ( [0] => 3 [1] => 5 [2] => 8 [3] => 2 [4] => 7)
+//
+    ?>
+</div>
+</body>
+</html>
+```
+
+Resultado utilizando a tag &lt;pre&gt; antes e depois do script php. 
+Dessa forma temos uma melhor visualização do Array (organizado em linhas):
+<code> 
+    &lt;pre&gt;
+        &nbsp;&nbsp;&lt;?php &nbsp;&nbsp;?&gt; 
+    &lt;/pre&gt;
+</code>
+
+```php
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+</head>
+<body>
+<pre>
+    <?php
+        $n = array(3, 5, 8, 2);
+        $n[] = 7;
+        print_r($n);
+//
+//       Com a tag <pre> antes e depois do script php :
+//        Array
+//      (
+//        [0] => 3
+//        [1] => 5
+//        [2] => 8
+//        [3] => 2
+//        [4] => 7
+//      )
+    ?>
+</pre>
+</body>
+</html>
+```
+
+2. Função range( )
+: Cria um array contendo uma faixa de elementos.
+
+https://www.php.net/manual/pt_BR/function.range
+
+<img src="img/vet_3.png">
+<a href="https://youtu.be/g8Gr2NIMxQQ?t=500" target="_blank">Print tirado dessa vídeoaula</a>
+
+Sintaxe:
+
+        range(mixed $start, mixed $end, number $step = 1): array
+      
+Script php: 
+
+```php
+<pre>
+    <?php
+        $c = range(5, 20, 5);
+        print_r($c);
+    ?>
+</pre>
+```
+
+Saída do script php: 
+
+```php
+    Array
+(
+    [0] => 5
+    [1] => 10
+    [2] => 15
+    [3] => 20
+)
+```
+
+Array utilizando o <code> foreach </code> :
+
+foreach( )
+: O construtor foreach fornece uma maneira fácil de iterar sobre arrays. O foreach funciona somente em arrays e objetos, e emitirá um erro ao tentar usá-lo em uma variável com um tipo de dado diferente ou em uma variável não inicializada.
+
+https://www.php.net/manual/pt_BR/control-structures.foreach.php
+
+<img src="img/vet_4.png">
+<a href="https://youtu.be/g8Gr2NIMxQQ?t=610" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+    <?php
+        $c = range(5, 20, 5);
+        foreach ($c as $v) {
+            echo "$v "; // 5 10 15 20
+        }
+    ?>
+```
+
+Array utilizando o **chaves personalizadas** :
+
+<img src="img/vet_5.png">
+<a href="https://youtu.be/g8Gr2NIMxQQ?t=710" target="_blank">Print tirado dessa vídeoaula</a>
+
+Script php: 
+
+```php
+<pre>
+    <?php
+        $v = array (
+                1 => "A",
+                3 => "B",
+                6 => "C",
+                8 => "D",
+        );
+        print_r($v);
+    ?>
+</pre>
+```
+
+Saída do script php: 
+
+```php
+    Array
+(
+    [1] => A
+    [3] => B
+    [6] => C
+    [8] => D
+)
+```
+
+Array utilizando o <code> unset() </code> :
+
+unset( )
+: Destrói a variável especificada.
+
+<img src="img/vet_6.png">
+<a href="https://youtu.be/g8Gr2NIMxQQ?t=710" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+<pre>
+    <?php
+        $v = array (
+                1 => "A",
+                3 => "B",
+                6 => "C",
+                8 => "D",
+        );
+
+        $v[] = "E"; // Adiciona a string "E" na última posição do vetor, ou seja, v[9] => "E"
+        
+        unset($v[9]); // Destrói a variável especificada, ou seja, Destrói o v[9] => "E"
+
+        print_r($v);
+    ?>
+</pre>
+```
+
+Array utilizando o **chaves associativas** :
+
+<img src="img/vet_7.png">
+<a href="https://youtu.be/g8Gr2NIMxQQ?t=960" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+<pre>
+    <?php
+        $cadastro = array (
+                "nome" => "Ana",
+                "idade" => 23,
+                "peso" => 78.5,
+        );
+        print_r($cadastro);
+    ?>
+</pre>
+```
+
+Saída do script php: 
+
+```php
+    Array
+(
+    [nome] => Ana
+    [idade] => 23
+    [peso] => 78.5
+)
+```
+Array utilizando o **chaves associativas** :
+
+<img src="img/vet_8.png">
+<a href="https://youtu.be/g8Gr2NIMxQQ?t=960" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+<pre>
+    <?php
+        $cadastro = array (
+                "nome" => "Ana",
+                "idade" => 23,
+                "peso" => 78.5,
+        );
+        
+        $cadastro["fuma"] = true;
+
+        print_r($cadastro);
+    ?>
+</pre>
+```
+
+Saída do script php: 
+
+```php
+    Array
+(
+    [nome] => Ana
+    [idade] => 23
+    [peso] => 78.5
+    [fuma] => 1
+)
+```
+
+Array utilizando o **foreach Associativo** :
+
+<img src="img/vet_9.png">
+<a href="https://youtu.be/g8Gr2NIMxQQ?t=960" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+<pre>
+    <?php
+        $cadastro = array (
+                "nome" => "Ana",
+                "idade" => 23,
+                "peso" => 78.5,
+        );
+        $cadastro["fuma"] = true;
+        print_r($cadastro);
+
+        foreach ($cadastro as $campo => $valor) {
+            echo "<br> O valor de $campo é $valor";
+        }
+    ?>
+</pre>
+```
+
+Saída do script php: 
+
+```php
+    Array
+(
+    [nome] => Ana
+    [idade] => 23
+    [peso] => 78.5
+    [fuma] => 1
+)
+
+ O valor de nome é Ana
+ O valor de idade é 23
+ O valor de peso é 78.5
+ O valor de fuma é 1
+```
+
+**Matriz em PHP**
+
+A matriz em PHP funciona vetores (array) dentro vetores (array).
+
+<img src="img/mat_1.png">
+<a href="https://youtu.be/g8Gr2NIMxQQ?t=1136" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+<pre>
+    <?php
+        $n = array(array(2, 3),
+                   array(3, 4),
+                   array(9, 5));
+        print_r($n);
+    ?>
+</pre>
+```
+Saída do script php: 
+
+```php
+    Array
+(
+    [0] => Array
+        (
+            [0] => 2
+            [1] => 3
+        )
+
+    [1] => Array
+        (
+            [0] => 3
+            [1] => 4
+        )
+
+    [2] => Array
+        (
+            [0] => 9
+            [1] => 5
+        )
+)
+```
+
+**Manipulando valores Matriz em PHP**
+
+<img src="img/mat_2.png">
+<a href="https://youtu.be/g8Gr2NIMxQQ?t=1136" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+<pre>
+    <?php
+        $n = array(array(2, 3),
+                   array(3, 4),
+                   array(9, 5));
+
+        $n[2][0] = $n[1][1]; 
+        // vetor na linha 2 e coluna 0 = "recebe" o vetor da linha 1 e coluna 1
+        // $n[2][0] = 4
+        
+        print_r($n);
+    ?>
+</pre>
+```
+Saída do script php: 
+```php
+    Array
+(
+    [0] => Array
+        (
+            [0] => 2
+            [1] => 3
+        )
+
+    [1] => Array
+        (
+            [0] => 3
+            [1] => 4 //  $n[1][1] = 4;
+        )
+
+    [2] => Array
+        (
+            [0] => 4 // $n[2][0] => 9 recebeu $n[2][0] => 4
+            [1] => 5
+        )
+)
+```
 
 <br>
 
