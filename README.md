@@ -129,7 +129,7 @@
 14. Aula 14 – Rotinas em PHP – Parte 1  ✅
 15. Aula 15 – Rotinas em PHP – Parte 2  ✅
 16. Aula 16 – Funções String em PHP (Parte 1) ✅
-17. Aula 17 – Funções String em PHP (Parte 2) ❌
+17. Aula 17 – Funções String em PHP (Parte 2) ✅
 18. Aula 18 – Vetores e Matrizes – Parte 1 ❌
 19. Aula 19 – Vetores e Matrizes – Parte 2 ❌
 
