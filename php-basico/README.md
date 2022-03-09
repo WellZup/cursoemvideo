@@ -1379,7 +1379,414 @@ A função **print_r** é muito utilizado para fazer testes.
 
 17. Aula 17 – Funções String em PHP (Parte 2) ❌
 
-Hoje, vamos continuar nossos estudos sobre string em PHP.
+**Revisão da aula 16 e 17- Funções Strings em PHP**
+
+1. Função printf( ) 
+: Permite exibir uma string com itens formatados.
+<br>
+
+2. Função print_r( )
+: Exibe coleções, objetos e variáveis compostas (vetores e matrizes) de maneira organizada.
+<br>
+
+3. Função wordwrap( )
+: Cria quebras de linha ou divisões em uma string em um tamanho especificado.
+<br>
+
+4. Função strlen( ) 
+: Permite verificar o tamanho de uma string, contando seus caracteres (inclusive espaços em branco).
+<br>
+
+5. Função trim( ) 
+: Elimina espaços em branco antes e depois de uma string.
+<br>
+
+6. Função ltrim( ) 
+: Elimina espaços no início de uma string.
+<br>
+
+7. Função rtrim( ) 
+: Elimina espaços em branco no final de uma string.
+<br>
+
+8. Função str_word_count( ) 
+: Conta quantas palavras uma string possui.
+<br>
+
+9. Função explode( ) 
+: Quebra uma string e coloca os itens em um vetor.
+<br>
+
+10. Função str_split( ) 
+: Coloca cada letra de uma string em uma posição de um vetor.
+<br>
+
+11. Função implode( ) 
+: Transforma um vetor inteiro em uma string.
+<br>
+
+12. Função chr( ) 
+: Retorna um caractere de acordo com seu código ASCII passado como parâmetro.
+<br>
+
+13. Função ord( ) 
+: Retorna o código ASCII de um caractere passado como parâmetro.
+<br>
+
+14. Função strtolower( )		
+: Converte uma string para **minúsculas**.
+<br>
+
+15. Função strtoupper( )		
+: Converte uma string para **maiúsculas**.
+<br>
+
+16. Função ucfirst( )		        
+: Converte para **maiúscula** o **primeiro caractere** de uma string.
+: Converte somente a primeira letra em maiúscula.
+<br>
+
+17. Função ucwords( )	        
+: Converte para maiúsculas o primeiro caractere de cada palavra. 
+: Converte a primeira letra de cada palavra em maiúscula.
+<br>
+
+18. Função strrev( )		        
+: Reverte uma string.
+: Exibe a string ao contrário.
+<br>
+
+19. Função strpos( ) 	
+: Encontra a posição da primeira ocorrência de uma string.        
+: Posição númerica da primeira ocorrência da string referenciada.
+: A função diferencia as palavras maiúsculas e minúsculas.
+: Se não encontrar a palavra, retorna FALSE, ou seja, vazio em PHP. 
+<br>
+
+20. Função stripos( )
+: Encontra a primeira ocorrencia de uma string sem diferenciar maiúsculas e minúsculas.
+: Ignorando maiúsculas ou minúsculas.
+<br>
+
+21. Função substr_count( )	
+: Conta o número de ocorrências de uma substring.
+: Contagem de aparições de uma palavra.
+<br>
+
+22. Função substr( )	
+: Retorna uma parte de uma string.	        
+<br>
+
+23. Função str_pad( )
+: Preenche uma string para um certo tamanho com outra string.
+<br>
+
+24. Função str_repeat( )		
+: Repete uma string.
+<br>
+
+25. Função str_replace( )  
+: Substitui todas as ocorrências da string de procura com a string de substituição.       
+: Substitui uma string por outra.
+: O str_replace( ) -> diferencia maiúsculas e minúsculas
+<br>
+
+26. Função str_ireplace( )	  
+: Versão que não diferencia maiúsculas e minúsculas de str_replace( ). 
+: A letra **i** da função str_**i**replace, significa "**ignore**".     
+: Ignorando maiúsculas ou minúsculas
+<br>
+
+**Aula 17 - Funções Strings em PHP (Parte 2)**
+
+
+14. Função strtolower( )		
+: Converte uma string para **minúsculas**.
+
+<img src="img/f14-strtolower.png">
+<a href="https://youtu.be/1KdhIz0Gh5A?t=90" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+    <?php
+        $nome = "Eduardo Rodrigues";
+        print("Seu nome é " .strtolower($nome) . ".");
+        // Seu nome é eduardo rodrigues.
+    ?>
+```
+
+<br>
+
+15. Função strtoupper( )		
+: Converte uma string para **maiúsculas**.
+
+<img src="img/f15-strtoupper.png">
+<a href="https://youtu.be/1KdhIz0Gh5A?t=258" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+    <?php
+        $nome = "Eduardo Rodrigues";
+        print("Seu nome é " .strtoupper($nome) .".");
+        // Seu nome é EDUARDO RODRIGUES.
+    ?>
+```
+
+<br>
+
+16. Função ucfirst( )		        
+: Converte para **maiúscula** o **primeiro caractere** de uma string.
+: Converte somente a primeira letra em maiúscula.
+
+<img src="img/f16-ucfirst.png">
+<a href="https://youtu.be/1KdhIz0Gh5A?t=314" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+    <?php
+        $nome = "eduardo rodrigues";
+        print("Seu nome é " .ucfirst($nome) . ".");
+        // Seu nome é Eduardo rodrigues.
+    ?>
+```
+
+<br>
+
+17. Função ucwords( )	        
+: Converte para maiúsculas o primeiro caractere de cada palavra. 
+: Converte a primeira letra de cada palavra em maiúscula.
+
+<img src="img/f17-ucwords.png">
+<a href="https://youtu.be/1KdhIz0Gh5A?t=446" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+    <?php
+        $nome = "eduardo rodrigues";
+        print("Seu nome é " .ucwords($nome) .".");
+        // Seu nome é Eduardo Rodrigues.
+    ?>
+```
+
+<br>
+
+18. Função strrev( )		        
+: Reverte uma string.
+: Exibe a string ao contrário.
+
+<img src="img/f18-strrev.png">
+<a href="https://youtu.be/1KdhIz0Gh5A?t=518" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+    <?php
+        $nome = "Eduardo Rodrigues";
+        $nomeInvertido = strrev($nome);
+        print($nomeInvertido);
+        // seugirdoR odraudE
+    ?>
+```
+
+<br>
+
+
+19. Função strpos( ) 	
+: Encontra a posição da primeira ocorrência de uma string.        
+: Posição númerica da primeira ocorrência da string referenciada.
+: A função diferencia as palavras maiúsculas e minúsculas.
+: Se não encontrar a palavra, retorna FALSE, ou seja, vazio em PHP. 
+
+<img src="img/f19-strpos.png">
+<a href="https://youtu.be/1KdhIz0Gh5A?t=553" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+    <?php
+        $frase = "Eu estou aprendendo PHP";
+        $posicao = strpos($frase, "PHP");
+        print("Encontrado a ocorrência da palavra 'PHP' na posição $posicao.");
+        // Encontrado a ocorrência da palavra 'PHP' na posição 20.
+    ?>
+```
+
+```php
+    <?php
+        $frase = "Eu estou aprendendo PHP";
+
+        $posicao = strpos($frase, "PHP");
+
+        print("O tamanho da string : " .strlen($frase) . " posições <br><br>");
+        // O tamanho da string : 23 posições
+
+        print("Encontrado a ocorrência da palavra 'PHP' na posição $posicao.");
+        // Encontrado a ocorrência da palavra 'PHP' na posição 20.
+    ?>
+```
+
+<br>
+
+20. Função stripos( )
+: Encontra a primeira ocorrencia de uma string sem diferenciar maiúsculas e minúsculas.
+: Ignorando maiúsculas ou minúsculas.
+
+```php
+    <?php
+        $frase = "Eu estou aprendendo PHP";
+
+        $posicao = stripos($frase, "php"); 
+        // stripos -> Encontra a primeira ocorrencia de uma string sem diferenciar maiúsculas e minúsculas
+
+        print("Analisando a string : <br>'$frase'<br><br>");
+
+        print("O tamanho da string : " .strlen($frase) . " posições <br><br>");
+        // O tamanho da string : 23 posições
+
+        print("Encontrado a ocorrência da palavra 'php' na posição $posicao.");
+        // Encontrado a ocorrência da palavra 'php' na posição 20.
+    ?>
+```
+
+<br> 
+
+21. Função substr_count( )	
+: Conta o número de ocorrências de uma substring.
+: Contagem de aparições de uma palavra.
+
+<img src="img/f21-substr_count.png">
+<a href="https://youtu.be/1KdhIz0Gh5A?t=762" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+    <?php
+        $frase = "Eu estou aprendendo PHP no curso em video de PHP";
+        $count = substr_count($frase, "PHP");
+        print ("PHP encontrado $count vezes.");
+        // PHP encontrado 2 vezes.
+    ?>
+```
+
+<br>
+
+22. Função substr( )	
+: Retorna uma parte de uma string.	        
+
+<img src="img/f22-substr.png">
+<a href="https://youtu.be/1KdhIz0Gh5A?t=791" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+    <?php
+        $site = "Curso em Video";
+        $substring = substr($site, 0, 5);
+        print($substring); // Curso
+        echo  "<br>";
+        $substring = substr($site, 9, 5);
+        print($substring); // Video
+    ?>
+```
+
+<br>
+
+23. Função str_pad( )
+: Preenche uma string para um certo tamanho com outra string.
+
+<img src="img/f23-str_pad.png">
+<a href="https://youtu.be/1KdhIz0Gh5A?t=974" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+    <?php
+        $nome = "GG";
+        $nome1 = str_pad($nome, 6, "*", STR_PAD_RIGHT);
+        $nome2 = str_pad($nome, 6, "*", STR_PAD_BOTH);
+        $nome3 = str_pad($nome, 6, "*", STR_PAD_LEFT);
+
+        print("<br>Meu professor <span class='foco'> $nome1 </span> é legal!<br>");
+        print("<br>Meu professor <span class='foco'> $nome2 </span> é legal!<br>");
+        print("<br>Meu professor <span class='foco'> $nome3 </span> é legal!<br>");
+
+        /*
+        Meu professor GG**** é legal!
+        
+        Meu professor **GG** é legal!
+        
+        Meu professor ****GG é legal!
+        */
+    ?>
+```
+
+<u>OBS:</u>
+str_pad( ); -> Parameters - pad_type:
+    - Optional argument pad_type can be **STR_PAD_RIGHT**, **STR_PAD_LEFT**, or **STR_PAD_BOTH**. 
+    - If pad_type is not specified it is assumed to be STR_PAD_RIGHT.
+
+```php
+    str_pad(
+        string $string,
+        int $length,
+        string $pad_string = " ",
+        int $pad_type = STR_PAD_RIGHT
+    ): strin
+?>
+```
+
+<br>
+
+24. Função str_repeat( )		
+: Repete uma string.
+
+<img src="img/f24-str_repeat.png">
+<a href="https://youtu.be/1KdhIz0Gh5A?t=1135" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+    <?php
+        $str_rep_1 = str_repeat(">", 3);
+        $str_rep_2 = str_repeat("ha", 3);
+        $str_rep_3 = str_repeat("<", 3);
+
+        print($str_rep_1);
+        print($str_rep_2);
+        print($str_rep_3);
+
+        >>>hahaha<<<
+    ?>
+```
+
+<br>
+
+25. Função str_replace( )  
+: Substitui todas as ocorrências da string de procura com a string de substituição.       
+: Substitui uma string por outra.
+
+<img src="img/f25-replace.png">
+<a href="https://youtu.be/1KdhIz0Gh5A?t=1196" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+
+```
+
+<br>
+
+26. Função str_ireplace( )	  
+: Versão que não diferencia maiúsculas e minúsculas de str_replace( ). 
+: A letra **i** da função str_**i**replace, significa "**ignore**".     
+: Ignorando maiúsculas ou minúsculas
+
+<img src="img/f.png">
+<a href="" target="_blank">Print tirado dessa vídeoaula</a>
+
+```php
+    <?php
+        $frase = "Gosto de estudar javascript";
+        $novaFrase = str_replace("javascript", "PHP", $frase);
+        print($novaFrase);
+        echo "<br>";
+
+        $str = "Gosto de estudar JavaScript";
+        $novaStr = str_replace("javascript", "PHP", $str);
+        print($novaStr);
+        echo "<br>";
+
+        $novaStr2 = str_ireplace("javascript", "PHP", $str);
+        print($novaStr2);
+        /*    
+        Gosto de estudar PHP
+        Gosto de estudar JavaScript
+        Gosto de estudar PHP
+        */
+    ?>
+```
 
 <br>
 
