@@ -147,6 +147,10 @@
 
 [Curso de PHP para Iniciantes](https://www.youtube.com/playlist?list=PLHz_AreHm4dm4beCCCmW4xwpmLf6EHY9k)
 
+### Certificado: :trophy: :100: 
+
+[Certificado de Conclusão | Teste Final -> 10 de 10 Pontos(100% de aproveitamento)](https://github.com/eduardodsr/cursoemvideo/tree/master/php-basico/certificado) 
+
 ### Links: :link:
 
 <a href="https://github.com/eduardodsr/cursoemvideo#php-basico" target="_blank">Meu repositório do curso em vídeo, PHP </a>
