@@ -2247,7 +2247,7 @@ Saída do script php:
 
 <span id="aula19">
 
-19. Aula 19 – Vetores e Matrizes – Parte 2 ❌
+19. Aula 19 – Vetores e Matrizes – Parte 2 ✅
 
 Nessa aula vamos dar continuidade aos nossos estudos sobre variáveis compostas, e encerraremos o curso de PHP para iniciantes.
 
