@@ -5,7 +5,34 @@
 - Você vai aprender os primeiros passos para criar sites que utilizem a tecnologia PHP incorporada. Para isso, aprenderá como instalar um servidor, criar scripts básicos, interatividade com formulários e acesso a bancos de dados simples. No final, vai aprender como colocar seu site no ar utilizando um servidor profissional de hospedagem.
 
 
+<h1 align="center"> PHP - Índice</h1> 
+
+<p align="center"> |&nbsp;&nbsp;&nbsp; 
+  <a href="#aula01">Aula 01</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#aula02">Aula 02</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#aula03">Aula 03</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#aula04">Aula 04</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#aula05">Aula 05</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#aula06">Aula 06</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#aula07">Aula 07</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#aula08">Aula 08</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#aula09">Aula 09</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#aula10">Aula 10</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#aula11">Aula 11</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#aula12">Aula 12</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#aula13">Aula 13</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#aula14">Aula 14</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#aula15">Aula 15</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#aula16">Aula 16</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#aula17">Aula 17</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#aula18">Aula 18</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#aula19">Aula 19</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+
+</p>
+
 ### Conteúdo do Módulo :bookmark:
+
+<span id="aula01">
 
 1. Aula 1 – História do PHP ✅
 
@@ -16,6 +43,8 @@ Com o objetivo de fazer sua ferramenta crescer, Rasmus liberou o acesso ao códi
 Em 2000, a quarta versão do PHP surge para eliminar a maioria dos erros e falhas de segurança encontrados pela comunidade. Enquanto isso, Zeev e Andi resolveram reescrever todo o núcleo da linguagem, abandonando quase que completamente o projeto original de Rasmus Lerdorf. Quatro anos depois, em 2004, surge o PHP5 que ficou mundialmente conhecido e atualmente conta com 32 versões internas, com mais de 1000 correções de falhas de segurança.
 
 <br>
+
+<span id="aula02">
 
 2. Aula 2 – Como funciona o PHP ✅
 
@@ -38,6 +67,8 @@ Para transformar seu computador em um servidor com suporte PHP, você precisa de
 
 <br>
 
+<span id="aula03">
+
 3. Aula 3 – Como Instalar o PHP ✅
 
 Nessa aula do Curso Grátis de PHP para Iniciantes você vai aprender como instalar um servidor PHP no seu computador e vai ver como criar o seu primeiro exemplo de código PHP: o “Olá, Mundo!”.
@@ -53,6 +84,8 @@ Nessa aula do Curso Grátis de PHP para Iniciantes você vai aprender como insta
 É possível instalar o PHP no seu PC, bem como todas as ferramentas necessárias para o desenvolvimento na linguagem, como o Apache, MySQL, PHPMyAdmin, interpretadores e etc.
 
 <br>
+
+<span id="aula04">
 
 4. Aula 4 – Variáveis em PHP ✅
 
@@ -133,6 +166,8 @@ Porém, já que os identificadores PHP começam com um $, é possível realizar 
 O comando acima pode ser usado sem problemas, contanto que sejam utilizadas aspas duplas.
 
 <br>
+
+<span id="aula05">
 
 5. Aula 5 – Operadores Aritméticos ✅
 
@@ -246,6 +281,8 @@ Obs: Ainda existem os métodos <code> ceil() </code> e <code> floor() </code> pa
 A função <code> round() </code> vai usar as regras de arredondamento.
 
 <br>
+
+<span id="aula06">
 
 6. Aula 6 – Operadores de Atribuição ✅
 
@@ -380,6 +417,8 @@ Colocar um segundo <code> $ </code> na frente de uma variável também possui um
 
 <br>
 
+<span id="aula07">
+
 7. Aula 7 – Operadores Relacionais  ✅
 
 **Operadores Relacionais**
@@ -421,7 +460,9 @@ Uma condição é avaliada, e se ela for **verdadeira**, atribui-se um valor, e 
 <img src="img/OperadoresLogicos.png">
 <a href="https://youtu.be/YrmPk8zL9Qw?t=1075" target="_blank">Print tirado dessa vídeoaula</a>
 
-<br><br>
+<br>
+
+<span id="aula08">
 
 8. Aula 8 – Integração HTML5 + PHP  ✅
 
@@ -488,6 +529,8 @@ Para obter o ano atual no PHP, utilizamos:
     $idade = date(“Y”) – $ano;
 
 <br>
+
+<span id="aula09">
 
 9. Aula 9 – Estrutura Condicional if  ✅
 
@@ -568,6 +611,8 @@ if ($tipo == “nacional”) {
 
 <br>
 
+<span id="aula10">
+
 10. Aula 10 – Estrutura Condicional Switch ✅
 
 <img src="img/Switch.png">
@@ -580,6 +625,8 @@ Estruturas de condição de múltipla escolha em PHP.
 **Switch** case em PHP usa a mesma sintaxe do Java e da Linguagem C e C++.
 
 <br>
+
+<span id="aula11">
 
 11. Aula 11 – Estrutura de Repetição While ✅
 
@@ -617,6 +664,7 @@ while ($c >= 1) {
     $c--;   // $c = $c - 1;  // $c - 1  // $c--
 }
 ```
+
 **Modificando o laço (break e continue)**
 
 <code> break; </code>    -> comando para sair do laço, ou seja, vai direto ao final do laço (while)
@@ -627,6 +675,8 @@ while ($c >= 1) {
 <a href="https://youtu.be/3jk8fSWpQIg?t=900" target="_blank">Print tirado dessa vídeoaula</a>
 
 <br>
+
+<span id="aula12">
 
 12. Aula 12 – Estrutura de Repetição Do While ✅
 
@@ -697,6 +747,8 @@ Na aula de hoje veremos como funciona a estrutura de repetição **do while**.
 ```
 
 <br>
+
+<span id="aula13">
 
 13. Aula 13 – Estrutura de Repetição For ✅
 
@@ -792,7 +844,10 @@ Exemplo verifica se um número é primo utilizando o laço for.
 </html>
 
 ```
+
 <br>
+
+<span id="aula14">
 
 14. Aula 14 – Rotinas em PHP – Parte 1 ✅
 
@@ -892,6 +947,8 @@ Rotinas com múltiplos parâmetros em PHP
 ```
 
 <br>
+
+<span id="aula15">
 
 15. Aula 15 – Rotinas em PHP – Parte 2  ✅
 
@@ -1018,6 +1075,8 @@ Isso depende do que você espera, pois a funcionalidade é a mesma, mas o result
 
 
 <br>
+
+<span id="aula16">
 
 16. Aula 16 – Funções String em PHP (Parte 1) ✅
 
@@ -1376,6 +1435,8 @@ A função **print_r** é muito utilizado para fazer testes.
 ```
 
 <br>
+
+<span id="aula17">
 
 17. Aula 17 – Funções String em PHP (Parte 2)  ✅
 
@@ -1804,6 +1865,8 @@ str_pad( ); -> Parameters - pad_type:
 
 <br>
 
+<span id="aula18">
+
 18. Aula 18 – Vetores e Matrizes – Parte 1  ✅
 
 Na aula de hoje vamos dar início as variáveis compostas.
@@ -2182,6 +2245,409 @@ Saída do script php:
 
 <br>
 
+<span id="aula19">
+
 19. Aula 19 – Vetores e Matrizes – Parte 2 ❌
 
 Nessa aula vamos dar continuidade aos nossos estudos sobre variáveis compostas, e encerraremos o curso de PHP para iniciantes.
+
+
+**Exibindo vetor -> foreach( )**
+ 
+ O construtor foreach fornece uma maneira fácil de iterar sobre arrays. 
+ O foreach funciona somente em arrays e objetos, e emitirá um erro ao tentar usá-lo em uma variável com um tipo de dado diferente ou em uma variável não inicializada. 
+
+ https://www.php.net/manual/pt_BR/control-structures.foreach.php
+
+<img src="img/aula19-array01.png">
+<a href="#" target="_blank"></a>
+
+**Exibindo vetor -> print_r( )**
+
+O print_r( ) — Imprime informação sobre uma variável de forma legível.
+
+<u>OBS</u> : Adicione a tag &lt;pre&gt; antes do script php. No final do script php script adiciona a tag &lt;/pre&gt;. Assim, você terá uma melhor visualização do array.
+
+https://www.php.net/manual/pt_BR/function.print-r
+
+<img src="img/aula19-array02.png">
+<a href="#" target="_blank"></a>
+
+```php
+<pre>
+    <div>
+        <?php
+            $arr = array(0 => 3, 1 => 5, 2 => 8, 3 => 2);
+//            print_r($arr);
+            foreach ($arr as $valor) {
+                echo "$valor "; // 3 5 8 2
+            }
+        ?>
+    </div>
+</pre>
+```
+
+**Exibindo vetor -> var_dump( )**
+
+var_dump( ) — Mostra informações sobre a variável. 
+O var_dump mostra mais detalhes de forma mais completa. 
+Por exemplo, o var_dump coloca quanto itens tem o vetor e mostra o tipo de cada indice do vetor.
+
+https://www.php.net/manual/pt_BR/function.var-dump.php
+
+<img src="img/aula19-array03.png">
+<a href="#" target="_blank"></a>
+
+```php
+<pre>
+    <div>
+        <?php
+            $arr = array(0 => 3, 1 => 5, 2 => 8, 3 => 2);
+
+//            print_r($arr);
+
+            var_dump($arr);
+        ?>
+    </div>
+</pre>
+```
+
+**Contando os itens -> count( )**
+
+count( ) — Conta o número de elementos de uma variável, ou propriedades de um objeto.
+
+https://www.php.net/manual/pt_BR/function.count.php
+
+<img src="img/aula19-array04.png">
+<a href="#" target="_blank"></a>
+
+```php
+        <?php
+            $arr = array(0 => 3, 1 => 5, 2 => 8, 3 => 2);
+
+            echo count($arr); //  4   
+        ?>
+```
+
+**Gerenciando os <u>últimos</u> elementos**
+
+array_push( ) — Adiciona um ou mais elementos no **final** de um array.
+
+https://www.php.net/manual/pt_BR/function.array-push
+
+<img src="img/aula19-array05.png">
+<a href="#" target="_blank"></a>
+
+```php
+<pre>
+    <div>
+        <?php
+            $arr = array(0 => 3, 1 => 5, 2 => 8, 3 => 2);
+
+            print_r($arr);
+
+            array_push($arr, 7); // array_push() — Adiciona um ou mais elementos no final de um array.
+
+            print_r($arr);
+        ?>
+    </div>
+</pre>
+```
+
+**Gerenciando os <u>últimos</u> elementos**
+
+array_pop( ) — Extrai (elimina) um elemento do **final** do array.
+
+https://www.php.net/manual/pt_BR/function.array-pop
+
+<img src="img/aula19-array06.png">
+<a href="#" target="_blank"></a>
+
+```php
+<pre>
+    <div>
+        <?php
+            $arr = array(0 => 3, 1 => 5, 2 => 8, 3 => 2);
+
+            print_r($arr);
+
+            array_push($arr, 7); // Adiciona um ou mais elementos no final de um array.
+
+            print_r($arr);
+
+            array_pop($arr); // Extrai (elimina) um elemento do final do array
+
+            print_r($arr);
+
+            array_unshift($arr, 7); // Adiciona um ou mais elementos no início de um array.
+
+            print_r($arr);
+        ?>
+    </div>
+</pre>
+```
+
+**Gerenciando os <u>primeiros</u> elementos**
+
+array_unshift( ) - adiciona um ou mais elementos no **início** de um array.
+
+https://www.php.net/manual/pt_BR/function.array-unshift
+
+<img src="img/aula19-array07.png">
+<a href="#" target="_blank"></a>
+
+```php
+<pre>
+    <div>
+        <?php
+            $arr = array(0 => 3, 1 => 5, 2 => 8, 3 => 2);
+
+            print_r($arr);
+
+            array_push($arr, 7); // array_push() — Adiciona um ou mais elementos no final de um array.
+
+            print_r($arr);
+
+            array_pop($arr);
+
+            print_r($arr);
+
+            array_unshift($arr, 7); // adiciona um ou mais elementos no início de um array.
+
+            print_r($arr);
+        ?>
+    </div>
+</pre>
+```
+
+**Gerenciando os <u>primeiros</u> elementos**
+
+array_shift( ) - Retira o primeiro elemento de um array.
+
+https://www.php.net/manual/pt_BR/function.array-shift.php
+
+<img src="img/aula19-array08.png">
+<a href="#" target="_blank"></a>
+
+```php
+<pre>
+    <div>
+        <?php
+            $arr = array(0 => 3, 1 => 5, 2 => 8, 3 => 2);
+
+            print_r($arr);
+
+            array_push($arr, 7); // array_push() — Adiciona um ou mais elementos no final de um array.
+
+            print_r($arr);
+
+            array_pop($arr); // Extrai (deleta) um elemento do final do array
+
+            print_r($arr);
+
+            array_unshift($arr, 7); // adiciona um ou mais elementos no início de um array.
+
+            print_r($arr);
+
+            array_shift($arr); // Retira o primeiro elemento de um array.
+
+            print_r($arr);
+        ?>
+    </div>
+</pre>
+```
+
+<hr>
+
+### Resumo: Gerenciando Elementos (Array)
+
+
+array_shift( ); &rarr; Retira o primeiro elemento de um array.
+
+array_unshift( ); &rarr; Adiciona um ou mais elementos no início de um array.
+
+<br>
+
+array_pop( ); &rarr; Extrai um elemento do final do array.
+
+array_push( );  &rarr; Adiciona um ou mais elementos no final de um array.
+
+<img src="img/aula19-array09.png">
+<a href="#" target="_blank"></a>
+
+<hr>
+
+**Ordenando Vetores**
+
+sort( ) - Ordena um array.
+
+https://www.php.net/manual/pt_BR/function.sort.php
+
+<img src="img/aula19-array10.png">
+<a href="#" target="_blank"></a>
+
+```php
+<pre>
+    <div>
+        <?php
+            $arr = array(0 => 3, 1 => 5, 2 => 8, 3 => 2);
+
+            print_r($arr);
+
+            echo "<br>";
+
+            sort($arr); // Ordena um array
+
+            print_r($arr);
+        ?>
+    </div>
+</pre>
+```
+
+**Ordem Reversa**
+
+rsort( ) - Ordena um array em ordem descrescente.
+
+https://www.php.net/manual/pt_BR/function.rsort.php
+
+<img src="img/aula19-array11.png">
+<a href="#" target="_blank"></a>
+
+```php
+<pre>
+    <div>
+        <?php
+            $arr = array(0 => 3, 1 => 5, 2 => 8, 3 => 2);
+
+            print_r($arr);
+
+            rsort($arr); // Ordena um array em ordem descrescente
+
+            print_r($arr);
+        ?>
+    </div>
+</pre>
+```
+
+**Ordenação Associativa**
+
+asort( ) - Ordena um array mantendo a associação entre índices e valores.
+
+https://www.php.net/manual/pt_BR/function.asort
+
+<img src="img/aula19-array12.png">
+<a href="#" target="_blank"></a>
+
+```php
+<pre>
+    <div>
+        <?php
+            $arr = array(0 => 3, 1 => 5, 2 => 8, 3 => 2);
+
+            print_r($arr);
+
+            asort($arr); // Ordena um array mantendo a associação entre índices e valores.
+
+            print_r($arr);
+        ?>
+    </div>
+</pre>
+```
+
+**Ordem Associativa Reversa**
+
+arsort( ) - Ordena um array em ordem descrescente mantendo a associação entre índices e valores.
+
+https://www.php.net/manual/pt_BR/function.arsort
+
+<img src="img/aula19-array13.png">
+<a href="#" target="_blank"></a>
+
+```php
+<pre>
+    <div>
+        <?php
+            $arr = array(0 => 3, 1 => 5, 2 => 8, 3 => 2);
+
+            print_r($arr);
+
+            arsort($arr); // Ordena um array em ordem descrescente mantendo a associação entre índices e valores.
+
+            print_r($arr);
+        ?>
+    </div>
+</pre>
+```
+
+**Ordenando por Chaves**
+
+ksort( ) - Ordena um array pelas chaves (índices). As chaves (índices) ficam em ordem crescente.
+
+https://www.php.net/manual/pt_BR/function.ksort
+
+<img src="img/aula19-array14.png">
+<a href="#" target="_blank"></a>
+
+<img src="img/aula19-array15.png">
+<a href="#" target="_blank"></a>
+
+```php
+<pre>
+    <div>
+        <?php
+            $arr = array(3 => "C", 2 => "E", 0 => "H", 1 => "B");
+
+            print_r($arr);
+
+            ksort($arr); // Ordena um array pelas chaves.
+
+            print_r($arr);
+
+        ?>
+    </div>
+</pre>
+```
+
+**Ordem Reversa por Chaves**
+
+krsort( ) - Ordena um array pelas chaves (índices) em ordem descrescente (ordem reversa).
+
+https://www.php.net/manual/pt_BR/function.krsort
+
+<img src="img/aula19-array16.png">
+<a href="#" target="_blank"></a>
+
+```php
+<pre>
+    <div>
+        <?php
+            $arr = array(3 => "C", 2 => "E", 0 => "H", 1 => "B");
+
+            print_r($arr);
+
+            krsort($arr); // Ordena um array pelas chaves em ordem descrescente.
+
+            print_r($arr);
+
+        ?>
+    </div>
+</pre>
+```
+
+<hr>
+
+<span id="autor">
+
+### Autor :smile:
+
+<div align="rigth">
+  <a href="https://github.com/eduardodsr">
+   <img align="center" style="border-radius: 100%;" src="https://avatars.githubusercontent.com/u/66234125?s=400" width="100px;" alt="Foto do GitHub de eduardodsr"/>
+  </a>
+</div>
+
+  * ` Dev: ` Eduardo da Silva Rodrigues
+  
+  * ` GitHub: ` [github.com/eduardodsr](https://www.github.com/eduardodsr) :link:
+ 
+  * ` E-mail: ` <eduardodsr@gmail.com> :email:
