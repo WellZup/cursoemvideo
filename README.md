@@ -10,6 +10,7 @@
 <p align="center"> |&nbsp;&nbsp;&nbsp; 
   <a href="#algoritmo">01. Algoritmo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#php-basico">02. PHP Básico</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#php-poo">03. PHP POO</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
    <a href="#autor">Autor &rarr; eduardodsr</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
@@ -24,7 +25,7 @@
 <a href="#" target="_blank"></a>
 
 
-## 01. Curso de Algoritmo [40 Horas]  :blue_book: :one:
+## 01. Curso de Algoritmo [40 Horas] :one:
 
 - O **Visualg** é um programa que permite criar, editar, interpretar e que também executa os algoritmos em português como se fosse um “programa” normal de computador.
 
@@ -105,7 +106,7 @@
 <img src="https://www.geekproject.com.br/wp-content/uploads/2011/01/elephpant-elephant-php-logo.png" alt="logo elephant php" width="150px" /> 
 
 
-## 02. PHP Básico [40 Horas] :green_book: :two:
+## 02. PHP Básico [40 Horas] :two:
 
 - Criado em 1995, por Rasmus Lerdorf, o **PHP** (acrônimo para PHP: Hypertext Preprocessor) é uma linguagem de script Open Source de uso geral. Com ela, desenvolvedores podem criar sites dinâmicos, extensões para aplicativos e otimizar tanto programas quanto Sistemas Operacionais. Ela é especialmente adequada para o desenvolvimento web e pode ser embutida dentro do HTML.
 
@@ -170,10 +171,118 @@
 [phpstorm - Teclas de Atalhos](https://resources.jetbrains.com/storage/products/phpstorm/docs/phpstorm_Leaflet.pdf)
 
 
-## Agradecimentos: :clap:
+### Agradecimentos: :clap:
 
 - Prof. *Gustavo Guanabara*, criador do site Curso em Vídeo.
     - Obrigado pela criação do projeto, oferecendo ensino de alta qualidade, onde aprendi a programar com a linguagem PGP. 
+
+<br>
+
+<hr>
+
+<span id="php-poo">
+
+<img src="https://www.cursoemvideo.com/wp-content/uploads/2019/08/poo-php-300x300.jpg" alt="logo algoritmo" width="100px" />
+&nbsp;&nbsp;&nbsp;
+
+<img src="https://www.geekproject.com.br/wp-content/uploads/2011/01/elephpant-elephant-php-logo.png" alt="logo elephant php" width="150px" /> 
+
+
+
+## 03. PHP POO [40 Horas] :three:
+
+- Curso completo de **Programação Orientada a Objetos (POO)** com a linguagem PHP. 
+- Aborda os principais conceitos como Classes, Objetos, instanciamento, abstração, encapsulamento, herança, polimorfismo e muito mais. 
+- Criado pelo professor Gustavo Guanabara para o Curso em Vídeo, explica todos os conceitos de POO de uma maneira simples, objetiva e divertida.
+
+
+
+### Conteúdo do Módulo :bookmark:
+
+1. Aula 1
+    - Aula Teórica 1 – O que é Programação Orientada a Objetos?
+    - Aula Prática 1 – Instalando o XAMPP e o NetBeans
+2. Aula 2
+    - Aula Teórica 2 – O que é um Objeto?
+    - Aula Prática 2 – Criando Classes e Objetos em PHP
+3. Aula 3
+    - Aula Teórica 3 – O que é Visibilidade em um Objeto?
+    - Aula Prática 3 – Configurando Visibilidade de Atributos e Métodos
+4. Aula 4
+    - Aula Teórica 4 – Métodos Especiais
+    - Aula Prática 4 – Métodos Getter, Setter e Construtor
+5. Aula 5
+    - Aula Teórica 5 – Exemplo Prático com Objetos
+    - Aula Prática 5 – Exemplo Prático em PHP
+6. Aula 6
+    - Aula Teórica 6 – Pilares da POO: Encapsulamento
+    - Aula Prática 6 – Encapsulamento
+7. Aula 7
+    - Aula Teórica 7 – Relacionamento entre Classes
+    - Aula Prática 7 – Objetos Compostos em PHP
+8. Aula 8
+    - Aula Teórica 8 – Relacionamento de Agregação
+    - Aula Prática 8 – Agregação entre Objetos em PHP
+9. Aula 9
+    - Aula Teórica 9 – Exercícios de POO
+    - Aula Prática 9 – Exercício prático POO em PHP
+10. Aula 10
+    - Aula Teórica 10 – Herança (Parte 1)
+    - Aula Prática 10 – Herança (Parte 1)
+11. Aula 11
+    - Aula Teórica 11 – Herança (Parte 2)
+    - Aula Prática 11 – Herança (Parte 2)
+12. Aula 12
+    - Aula Teórica 12 – Conceito Polimorfismo (Parte 1)
+    - Aula Prática 12 – Polimorfismo em PHP (Parte 1)
+13. Aula 13
+    - Aula Teórica 13 – Conceito Polimorfismo (Parte 2)
+    - Aula Prática 13 – Polimorfismo Sobrecarga (Parte 2)
+14. Aula 14
+    - Aula Teórica 14 – Exercícios de POO (Parte 2)
+    - Aula Prática 14 – Projeto Final em PHP (Parte 1)
+15. Aula 15
+    - Aula Teórica 15 – Exercícios de POO (Parte 3)
+    - Aula Prática 15 – Projeto Final em PHP (Parte 2)
+
+
+### Anotações das Aulas: :open_book: :writing_hand:
+
+[Anotações das Aulas com Código Fonte](https://github.com/eduardodsr/cursoemvideo/blob/master/php-poo/README.md)
+
+### Código Fonte / Projetos: :computer: :file_folder:
+
+[Código Fonte das Aulas - PHP POO - Projetos](https://github.com/eduardodsr/cursoemvideo/tree/master/php-poo/Projetos) 
+
+### YouTube - Playlist: :desktop_computer: :headphones:
+
+[Curso de Algoritmos](https://www.youtube.com/playlist?list=PLHz_AreHm4dmGuLII3tsvryMMD7VgcT7x)
+
+### Certificado: :trophy: :100: 
+
+[Certificado de Conclusão | Teste Final -> __ de __ Pontos(__% de aproveitamento)]() 
+
+### Links: :link:
+
+<a href="https://github.com/eduardodsr/cursoemvideo#php-poo" target="_blank">Meu repositório do curso em vídeo, PHP </a>
+
+<a href="https://www.cursoemvideo.com/curso/php-poo/" target="_blank">Site do Curso em Vídeo, curso de PHP Básico</a>
+
+[Curso de PHP POO](https://www.cursoemvideo.com/curso/php-poo/ "cursoemvideo.com")
+
+[Manual do PHP - php.net - manual pt_BR](https://www.php.net/manual/pt_BR/ "php.net")
+
+[XAMP - Download - Windows | Linux | MacOS](https://www.apachefriends.org/download.html "apachefriends.org")
+
+[phpstorm - Teclas de Atalhos](https://resources.jetbrains.com/storage/products/phpstorm/docs/phpstorm_Leaflet.pdf)
+
+
+
+### Agradecimentos: :clap:
+
+- Prof. *Gustavo Guanabara*, criador do site Curso em Vídeo.
+ 
+
 <br>
 
 <hr>
