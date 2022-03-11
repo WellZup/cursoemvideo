@@ -250,17 +250,14 @@
 
 [Anotações das Aulas com Código Fonte](https://github.com/eduardodsr/cursoemvideo/blob/master/php-poo/README.md)
 
-### Código Fonte / Projetos: :computer: :file_folder:
+### Código Fonte das Aulas : :computer: :file_folder:
 
-[Código Fonte das Aulas - PHP POO - Projetos](https://github.com/eduardodsr/cursoemvideo/tree/master/php-poo/Projetos) 
+[Código Fonte das Aulas - PHP POO](https://github.com/eduardodsr/cursoemvideo/tree/master/php-poo/aulas) 
 
 ### YouTube - Playlist: :desktop_computer: :headphones:
 
 [Curso de Algoritmos](https://www.youtube.com/playlist?list=PLHz_AreHm4dmGuLII3tsvryMMD7VgcT7x)
 
-### Certificado: :trophy: :100: 
-
-[Certificado de Conclusão | Teste Final -> __ de __ Pontos(__% de aproveitamento)]() 
 
 ### Links: :link:
 
@@ -282,7 +279,6 @@
 
 - Prof. *Gustavo Guanabara*, criador do site Curso em Vídeo.
  
-
 <br>
 
 <hr>
