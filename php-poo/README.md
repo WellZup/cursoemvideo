@@ -271,7 +271,6 @@ class Caneta
     function destampar() {
         $this->tampada = false;
     }
-
 }
 ```
 
@@ -285,11 +284,28 @@ class Caneta
 
 Nessa aula de POO, vamos aprender qual a importância dos modificadores de visibilidade público (+), privado (-) e protegido (#) na Programação Orientada a Objetos.
 
-**UML - Linguagem Modelada Unificada**
+- UML - Linguagem Modelada Unificada
 
 - Diagrama de Classes
 
-Toda classe será representada por um retangulo.
+    No Diagrama de Classes -> toda classe será representada por um retangulo.
+
+- Modificadores de Visibilidade
+
+    Indicam o nível de acesso aos componentes internos de uma classe na Programação Orientada a Objetos (POO):
+
+    - público (+)
+    - privado (-)
+    - protegido (#)
+
+   
+
+| Simbolo   | Modificadores de Visibilidade | Definição |
+| :---------:                   | :-----:| :-----|
+| +  | **public** (público)     | a classe atual e todas as outras classes |
+| -  | **private** (privado)    | somente a classe atual |
+| #  | **protected** (protegido)| a classe atual e todas as suas sub-classes |
+
 
 <img src="img/aula3-01.png" widf="400px">
 <a href="#" target="_blank"></a>
@@ -312,21 +328,68 @@ Toda classe será representada por um retangulo.
 <img src="img/aula3-10.png" widf="400px">
 
 
-
-
-
 #### Aula Prática 3 – Configurando Visibilidade de Atributos e Métodos
 
-<code></code>
+<code>Caneta.php</code>
 
 ```php
+<?php
 
+class Caneta
+{
+    public $modelo;
+    public $cor;
+    private $ponta;
+    protected $carga;
+    protected $tampada;
+
+    public function rabiscar() {
+        if ($this->tampada == true) {
+            echo "<p>ERRO. Não posso rabiscar!</p>";
+        } else {
+        echo "<p>Estou rabiscando...</p>";
+        }
+    }
+
+    public function tampar() {
+        $this->tampada = true;
+    }
+
+    public function destampar() {
+        $this->tampada = false;
+    }
+}
 ```
 
-<code></code>
+<code>index.php</code>
 
 ```php
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Aula 03  - PHP POO</title>
+</head>
+<body>
+<pre>
+    <?php
+        require_once 'Caneta.php';
 
+        $c1 = new Caneta;
+        $c1->modelo = "BIC cristal";
+        $c1->cor = "Azul";
+
+//        $c1->ponta = 0.5;     // Fatal error:  Uncaught Error: Cannot access private property Caneta::$ponta
+//        $c1->carga = 99;      // Fatal error:  Uncaught Error: Cannot access protected property Caneta::$carga
+//        $c1->tampada = true;  // Fatal error:  Uncaught Error: Cannot access protected property Caneta::$tampada
+
+        $c1->rabiscar();
+        $c1->tampar();
+        $c1->destampar();
+        var_dump($c1);
+    ?>
+</pre>
+</body>
+</html>
 ```
 
 <br>
