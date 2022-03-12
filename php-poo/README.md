@@ -23,10 +23,6 @@
   <a href="#aula13">Aula 13</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#aula14">Aula 14</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#aula15">Aula 15</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#aula16">Aula 16</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#aula17">Aula 17</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#aula18">Aula 18</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#aula19">Aula 19</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
 
@@ -77,7 +73,6 @@
 15. Aula 15
     - Aula Teórica 15 – Exercícios de POO (Parte 3)
     - Aula Prática 15 – Projeto Final em PHP (Parte 2)
-
 
 
 ### Conteúdo do Módulo :bookmark:
@@ -203,12 +198,9 @@ Classes são os modelos ou moldes nos quais surgirão os objetos. As classes def
 
 É a instância de uma classe.
 
-
 - **ABSTRAÇÃO**
 
 Abstração consiste de focalizar nos aspectos essenciais inerentes a uma entidade e ignorar propriedades ``acidentais.'' Em termos de desenvolvimento de sistemas, isto significa concentrar-se no que um objeto é e faz antes de se decidir como ele será implementado. O uso de abstração preserva a liberdade para tomar decisões de desenvolvimento ou de implementação apenas quando há um melhor entendimento do problema a ser resolvido.
-
-
 
 <br>
 
@@ -287,14 +279,52 @@ class Caneta
 
 <span id="aula03">
 
-3. Aula 3
+### 3. Aula 3
+
+#### Aula Teórica 3 – O que é Visibilidade em um Objeto?
+
+Nessa aula de POO, vamos aprender qual a importância dos modificadores de visibilidade público (+), privado (-) e protegido (#) na Programação Orientada a Objetos.
+
+**UML - Linguagem Modelada Unificada**
+
+- Diagrama de Classes
+
+Toda classe será representada por um retangulo.
+
+<img src="img/aula3-01.png" widf="400px">
+<a href="#" target="_blank"></a>
+<img src="img/aula3-02.png" widf="400px">
+<a href="#" target="_blank"></a>
+<img src="img/aula3-03.png" widf="400px">
+<a href="#" target="_blank"></a>
+<img src="img/aula3-04.png" widf="400px">
+<a href="#" target="_blank"></a>
+<img src="img/aula3-05.png" widf="400px">
+<a href="#" target="_blank"></a>
+<img src="img/aula3-06.png" widf="400px">
+<a href="#" target="_blank"></a>
+<img src="img/aula3-07.png" widf="400px">
+<a href="#" target="_blank"></a>
+<img src="img/aula3-08.png" widf="400px">
+<a href="#" target="_blank"></a>
+<img src="img/aula3-09.png" widf="400px">
+<a href="#" target="_blank"></a>
+<img src="img/aula3-10.png" widf="400px">
+
+
+
+
+
+#### Aula Prática 3 – Configurando Visibilidade de Atributos e Métodos
 
 <code></code>
+
 ```php
 
 ```
 
 <code></code>
+
 ```php
 
 ```
@@ -303,14 +333,283 @@ class Caneta
 
 <span id="aula04">
 
-4. Aula 4
+### 4. Aula 4
+
+#### Aula Teórica 4 – Métodos Especiais
+
+#### Aula Prática 4 – Métodos Getter, Setter e Construtor
 
 <code></code>
+
 ```php
 
 ```
 
 <code></code>
+
 ```php
 
 ```
+
+<br>
+
+<span id="aula05">
+
+### 5. Aula 5
+
+#### Aula Teórica 5 – Exemplo Prático com Objetos
+
+#### Aula Prática 5 – Exemplo Prático em PHP
+
+<code></code>
+
+```php
+
+```
+
+<code></code>
+
+```php
+
+```
+
+<br>
+
+<span id="aula06">
+
+### 6. Aula 6
+
+#### Aula Teórica 6 – Pilares da POO: Encapsulamento
+
+#### Aula Prática 6 – Encapsulamento
+
+<code></code>
+
+```php
+
+```
+
+<code></code>
+
+```php
+
+```
+
+<br>
+
+<span id="aula07">
+
+### 7. Aula 7
+
+#### Aula Teórica 7 – Relacionamento entre Classes
+
+#### Aula Prática 7 – Objetos Compostos em PHP
+
+<code></code>
+
+```php
+
+```
+
+<code></code>
+
+```php
+
+```
+
+<br>
+
+<span id="aula08">
+
+### 8. Aula 8
+
+#### Aula Teórica 8 – Relacionamento de Agregação
+
+#### Aula Prática 8 – Agregação entre Objetos em PHP
+
+<code></code>
+
+```php
+
+```
+
+<code></code>
+
+```php
+
+```
+
+<br>
+
+<span id="aula09">
+
+### 9. Aula 9
+
+#### Aula Teórica 9 – Exercícios de POO
+
+#### Aula Prática 9 – Exercício prático POO em PHP
+
+<code></code>
+
+```php
+
+```
+
+<code></code>
+
+```php
+
+```
+
+<br>
+
+<span id="aula10">
+
+### 10. Aula 10
+
+#### Aula Teórica 10 – Herança (Parte 1)
+
+#### Aula Prática 10 – Herança (Parte 1)
+
+<code></code>
+
+```php
+
+```
+
+<code></code>
+
+```php
+
+```
+
+<br>
+
+<span id="aula11">
+
+### 11. Aula 11
+
+#### Aula Teórica 11 – Herança (Parte 2)
+
+#### Aula Prática 11 – Herança (Parte 2)
+
+<code></code>
+
+```php
+
+```
+
+<code></code>
+
+```php
+
+```
+
+<br>
+
+<span id="aula12">
+
+### 12. Aula 12
+
+#### Aula Teórica 12 – Conceito Polimorfismo (Parte 1)
+
+#### Aula Prática 12 – Polimorfismo em PHP (Parte 1)
+
+<code></code>
+
+```php
+
+```
+
+<code></code>
+
+```php
+
+```
+
+<br>
+
+<span id="aula13">
+
+### 13. Aula 13
+
+#### Aula Teórica 13 – Conceito Polimorfismo (Parte 2)
+
+#### Aula Prática 13 – Polimorfismo Sobrecarga (Parte 2)
+
+<code></code>
+
+```php
+
+```
+
+<code></code>
+
+```php
+
+```
+
+<br>
+
+<span id="aula14">
+
+### 14. Aula 14
+
+#### Aula Teórica 14 – Exercícios de POO (Parte 2)
+
+#### Aula Prática 14 – Projeto Final em PHP (Parte 1)
+
+<code></code>
+
+```php
+
+```
+
+<code></code>
+
+```php
+
+```
+
+<br>
+
+<span id="aula15">
+
+### 15. Aula 15
+
+#### Aula Teórica 15 – Exercícios de POO (Parte 3)
+
+#### Aula Prática 15 – Projeto Final em PHP (Parte 2)
+
+<code></code>
+
+```php
+
+```
+
+<code></code>
+
+```php
+
+```
+
+<br>
+
+<hr>
+
+<span id="autor">
+
+### Autor :smile:
+
+<div align="rigth">
+  <a href="https://github.com/eduardodsr">
+   <img align="center" style="border-radius: 100%;" src="https://avatars.githubusercontent.com/u/66234125?s=400" width="100px;" alt="Foto do GitHub de eduardodsr"/>
+  </a>
+</div>
+
+  * ` Dev: ` Eduardo da Silva Rodrigues
+  
+  * ` GitHub: ` [github.com/eduardodsr](https://www.github.com/eduardodsr) :link:
+ 
+  * ` E-mail: ` <eduardodsr@gmail.com> :email:
+
