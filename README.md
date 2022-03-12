@@ -199,10 +199,10 @@
 
 ### Conteúdo do Módulo :bookmark:
 
-1. Aula 1
+1. Aula 1  ✅
     - Aula Teórica 1 – O que é Programação Orientada a Objetos?
     - Aula Prática 1 – Instalando o XAMPP e o NetBeans
-2. Aula 2
+2. Aula 2  ✅
     - Aula Teórica 2 – O que é um Objeto?
     - Aula Prática 2 – Criando Classes e Objetos em PHP
 3. Aula 3
