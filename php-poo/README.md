@@ -83,7 +83,7 @@
 
 #### Aula Teórica 1 – O que é Programação Orientada a Objetos?
 
-Nessa aula de POO, vamos aprender o que é Programação Orientada a Objetos e quais são as suas principais vantagens em relação a outros tipos de Linguagem de Programação.
+Nessa aula de POO, <mark>vamos aprender o que é Programação Orientada a Objetos e quais são as suas principais vantagens em relação a outros tipos de Linguagem de Programação.</mark>
 
 * Como era?
 
@@ -114,17 +114,18 @@ Acrônimo das vantagens da POO: <strong><big> C O M E R N </strong>a d a </big>
 - R -> Reutilizável
 - N -> Natural
 
+<br>
 
 #### Aula Prática 1 – Instalando o XAMPP e o NetBeans
 
-Nessa aula de POO, vamos aprender como instalar o XAMPP e o NetBeans.
+Nessa aula de POO, <mark>vamos aprender como instalar o XAMPP</mark> e o NetBeans.
 
 - O que é o XAMPP?
 
 **XAMPP** é o ambiente de desenvolvimento PHP mais popular
 O XAMPP é completamente gratuito, de fácil de instalar a distribuição Apache, contendo MySQL, PHP e Perl. O pacote de código aberto do XAMPP foi criado para ser extremamente fácil de instalar e de usar.
 
-[XAMPP ](https://www.apachefriends.org/pt_br/index.html)
+[XAMPP - Donwload ](https://www.apachefriends.org/pt_br/index.html)
 
 
 <br>
@@ -135,11 +136,11 @@ O XAMPP é completamente gratuito, de fácil de instalar a distribuição Apache
 
 #### Aula Teórica 2 – O que é um Objeto?
 
-Nessa aula de POO, vamos aprender os conceitos de Classes e Objetos, passando pela teoria de Atributos, Métodos, Estado e Instâncias. Veja como criar uma classe e instanciar, criando objetos.
+Nessa aula de POO, <mark> vamos aprender os conceitos de Classes e Objetos, passando pela teoria de Atributos, Métodos, Estado e Instâncias. </mark> Veja como criar uma classe e instanciar, criando objetos.
 
 - O que é um objeto?
 
-<mark>Coisa material ou abstrata que pode ser percebida pelos sentidos e descrita por meio das suas características, comportamentos e estado atual.</mark>
+Coisa material ou abstrata que pode ser percebida pelos sentidos e descrita por meio das suas características, comportamentos e estado atual (status).
 
 Tudo que tiver característica, comportamento e estado atual é considerado um **objeto**.
 
@@ -147,37 +148,38 @@ Exemplo:
     - Caneta pode ser um objeto ou uma classe.
 
 - **OBJETO** - Caneta.
-
+    
 Todo objeto vem a partir de uma classe (molde que foi gerado para criar o objeto).
  
-- **CLASSE** - Serve para classificar a caneta. Pensar no molde que foi considerado para gerar o objeto.
-Uma classe precisa responde as 3 perguntas abaixo.
+- **CLASSE** - Classificar a caneta (molde para gerar o objeto). 
 
-    * **ATRIBUTO - Coisas que eu tenho?**
+    - Uma **classe** precisa responde as 3 perguntas abaixo.
+
+    * **Coisas que eu tenho? (ATRIBUTO)**
         - Modelo
         - Cor
         - Ponta
         - Carga
         - Tampada
 
-    * **MÉTODO - Coisas que eu faço?**
+    * **Coisas que eu faço? (MÉTODO)**
         - Escrever
         - Rabiscar
         - Pintar
         - Tampar
         - Destampar
 
-    * **ESTADO - Como eu estou agora?**
+    * **Como eu estou agora? (ESTADO ATUAL)**
         - Cor azul
         - Ponta do tipo fina
         - 50% de carga
-        - A caneta está sem tampa
+        - A caneta está sem tampa (tampa aberta)
         - A caneta está escrevendo agora
 
-Todo **OBJETO** tem:
-- Atributos (características);
-- Métodos (comportamentos);
-- Estado atual (status / características atuais no momento que estou analisando o objeto).
+**POO - OBJETO** :
+- **Atributos** (características) -> Coisas que eu tenho;
+- **Métodos** (comportamentos) -> Coisas que eu faço;
+- **Estado atual** (estado/características atuais no momento que estou analisando o objeto) -> Como eu estou agora.
 
 <img src="img/aula2-01.png">
 <a href="#" target="_blank"></a>
@@ -186,13 +188,13 @@ Todo **OBJETO** tem:
 <a href="#" target="_blank"></a>
 
 
-**Resumo**
+**POO - Resumo** :
 
 - **CLASSE**
 
 Define os atributos e métodos comuns que serão compartilhados por um objeto.
 
-Classes são os modelos ou moldes nos quais surgirão os objetos. As classes definem algumas propriedades e métodos que deverão fazer parte do objeto que derivar dela ou então, como dizemos, os objetos que serão instanciados a partir dela.
+**Classes** são os modelos ou moldes nos quais surgirão os objetos. As classes definem algumas propriedades e métodos que deverão fazer parte do objeto que derivar dela ou então, como dizemos, os objetos que serão instanciados a partir dela.
 
 - **OBJETO**
 
@@ -200,11 +202,13 @@ Classes são os modelos ou moldes nos quais surgirão os objetos. As classes def
 
 - **ABSTRAÇÃO**
 
-Abstração consiste de focalizar nos aspectos essenciais inerentes a uma entidade e ignorar propriedades ``acidentais.'' Em termos de desenvolvimento de sistemas, isto significa concentrar-se no que um objeto é e faz antes de se decidir como ele será implementado. O uso de abstração preserva a liberdade para tomar decisões de desenvolvimento ou de implementação apenas quando há um melhor entendimento do problema a ser resolvido.
+Abstração consiste de focalizar nos aspectos essenciais inerentes a uma entidade e ignorar propriedades "acidentais." Em termos de desenvolvimento de sistemas, isto significa concentrar-se no que um objeto é e faz antes de se decidir como ele será implementado. O uso de abstração preserva a liberdade para tomar decisões de desenvolvimento ou de implementação apenas quando há um melhor entendimento do problema a ser resolvido.
 
 <br>
 
 #### Aula Prática 2 – Criando Classes e Objetos em PHP
+
+Nessa aula de POO, <mark>vamos aprender como criar classes e objetos.</mark>
 
 <code>index.php</code>
 
@@ -282,21 +286,22 @@ class Caneta
 
 #### Aula Teórica 3 – O que é Visibilidade em um Objeto?
 
-Nessa aula de POO, vamos aprender qual a importância dos modificadores de visibilidade público (+), privado (-) e protegido (#) na Programação Orientada a Objetos.
+Nessa aula de POO, <mark> vamos aprender qual a importância dos modificadores de visibilidade público (+), privado (-) e protegido (#) na Programação Orientada a Objetos. </mark>
 
 - UML - Linguagem Modelada Unificada
+
 
 - Diagrama de Classes
 
     No Diagrama de Classes -> toda classe será representada por um retangulo.
 
-- Modificadores de Visibilidade
+- **Modificadores de Visibilidade**
 
     Indicam o nível de acesso aos componentes internos de uma classe na Programação Orientada a Objetos (POO):
 
-    - público (+)
-    - privado (-)
-    - protegido (#)
+    - público   ( + )
+    - privado   ( - )
+    - protegido ( # )
 
    
 
@@ -329,6 +334,8 @@ Nessa aula de POO, vamos aprender qual a importância dos modificadores de visib
 
 
 #### Aula Prática 3 – Configurando Visibilidade de Atributos e Métodos
+
+Nessa aula de POO, <mark> vamos aprender na prática como utilizar os modificadores de visibilidade public, private e protected e qual é o efeito de cada um deles. </mark>
 
 <code>Caneta.php</code>
 
@@ -399,6 +406,50 @@ class Caneta
 ### 4. Aula 4
 
 #### Aula Teórica 4 – Métodos Especiais
+
+Nessa aula de POO, <mark> vamos aprender como funcionam os Métodos Acessores (Getters), Métodos Modificadores (Setters) e Métodos Construtores (Construct) </mark> para a Programação Orientada a Objetos. 
+
+- **Métodos Acessores (Getters)** &rarr; são métodos que dão acesso a uma determinada coisa; Getter (sentido de pegar/acessar alguma coisa), ele pega/acessa alguma informação c/ segurança. 
+
+Os Métodos Acessores (Getters) conseguem acessar um determinado atributo mantendo a segurança de acesso a ele.
+
+
+- **Métodos Modificadores (Setters)** &rarr; são métodos que modificam coisas dentro de um objeto. Setters (sentido de modificar/atualizar alguma coisa), ele modifica alguma informação c/ segurança.
+
+
+**Getters** e **setters** são usados para proteger seus dados, especialmente na criação de classes.
+
+Para cada instância de variável, um método **getter** retorna seu valor, enquanto um método **setter** o define ou atualiza. Com isso em mente, getters e setters também são conhecidos como métodos de acesso e de modificação, respectivamente.
+
+Por convenção, **getters** começam com a palavra "**get**" e **setters** com a palavra "**set**", seguidos de um nome de variável.
+
+**Por que usar getters e setters?**
+Getters e setters permitem controlar a forma como variáveis importantes são acessadas e atualizadas no seu código. 
+
+
+- **Métodos Construtores (Construct)** &rarr; Classes que tem um método construtor chamam o método a cada objeto recém criado, sendo apropriado para qualquer inicialização que o objeto necessite antes de ser utilizado.
+
+O método construtor (Construct) de uma classe serve para executar algum comportamento(atribuição de valor, execução de método, etc) logo no momento em que uma instancia da mesma for criada. Isso traz vantagens pois evita a execução de tarefas repetitivas e obrigatórias.
+
+**Construtores** são métodos ordinários que são chamados durante a criação do objeto correspondente. Eles podem definir um número arbitrários de argumentos, quais podem ser obrigatórios, podem ter um tipo, e podem ter valores padrão. Argumentos de construtores são informados dentro de parênteses depois do nome da classe.
+
+O **construtor** pode ser private ou protected para evitar que ele seja chamado externamente.
+
+
+<img src="img/aula4-01.png" widf="400px">
+<a href="#" target="_blank"></a>
+<img src="img/aula4-02.png" widf="400px">
+<a href="#" target="_blank"></a>
+<img src="img/aula4-03.png" widf="400px">
+<a href="#" target="_blank"></a>
+<img src="img/aula4-04.png" widf="400px">
+<a href="#" target="_blank"></a>
+<img src="img/aula4-05.png" widf="400px">
+<a href="#" target="_blank"></a>
+<img src="img/aula4-06.png" widf="400px">
+<a href="#" target="_blank"></a>
+<img src="img/aula4-07.png" widf="400px">
+<a href="#" target="_blank"></a>
 
 #### Aula Prática 4 – Métodos Getter, Setter e Construtor
 
