@@ -32,6 +32,10 @@
  └────────────┘└─────────────┘└──────────┘
 ```
 
+
+<img src="./uml/uml_curso.svg" >
+<a href="#" target="_blank"></a>
+
 ## Cursos Concluídos
 
 <span id="algoritmo">
