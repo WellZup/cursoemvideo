@@ -751,17 +751,261 @@ Nessa aula de POO, vamos fazer um exemplo prático com Programação Orientada a
 Nessa aula de POO, vamos fazer um exercício prático em PHP com Programação Orientada a Objetos.
 
 
-
-<code></code>
+<code>ContaBanco.php</code>
 
 ```php
+<?php
+
+class ContaBanco
+{
+    // ATRIBUTOS
+    public $numConta;
+    protected $tipo;
+    private $dono;
+    private $saldo;
+    private $status;
+
+    // METODO CONSTRUTOR
+    public function __construct()
+    {
+        $this->setSaldo(0); // $this->saldo = 0;
+        $this->getStatus(false);  // $this->status = false;
+
+        echo "<br> Conta criada com sucesso! <br>"; 
+    }
+
+    // METODOS Getters & Setters (get & set)
+    public function getNumConta()
+    {
+        return $this->numConta;
+    }
+
+    public function setNumConta($numConta): void
+    {
+        $this->numConta = $numConta;
+    }
+
+    public function getTipo()
+    {
+        return $this->tipo;
+    }
+
+    public function setTipo($tipo): void
+    {
+        $this->tipo = $tipo;
+    }
+
+    public function getDono()
+    {
+        return $this->dono;
+    }
+
+    public function setDono($dono): void
+    {
+        $this->dono = $dono;
+    }
+
+    public function getSaldo()
+    {
+        return $this->saldo;
+    }
+
+    public function setSaldo($saldo): void
+    {
+        $this->saldo = $saldo;
+    }
+
+    public function getStatus()
+    {
+        return $this->status;
+    }
+
+    public function setStatus($status): void
+    {
+        $this->status = $status;
+    }
+
+
+    // METODOS ESPECIAIS
+
+    public function abrirConta($t){
+        $this->setTipo($t);
+        $this->setStatus(true);
+
+        if ($t == "CC") {
+            $this->setSaldo(50);
+        }
+        elseif ($t == "CP") {
+            $this->setSaldo(150);
+        }
+    }
+
+    public function fecharConta() {
+
+        if ($this->getSaldo() > 0) {
+            echo "<br> [ERRO] Conta de {$this->getDono()} com dinheiro, saldo de R$ {$this->getSaldo()}, não posso fechar a conta! <br>";
+        }
+        elseif ($this->getSaldo() < 0) {
+            echo "<br> [ERRO] Conta de {$this->getDono()} com débito, saldo de R$ {$this->getSaldo()}, não posso fechar a conta! <br>";
+        }
+        else {
+            $this->setStatus(false);
+            echo "<br> Conta de {$this->getDono()} fechada com sucesso. <br>";
+        }
+    }
+
+    public function depositar($v){
+
+        if ($this->getStatus() == true) {
+            $this->setSaldo($this->getSaldo() + $v);
+            echo "<br> Depósito de R$ $v na conta de {$this->getDono()}.<br>";
+        } else {
+            echo "<br> [ERRO] Impossível depositar <br>";
+        }
+    }
+
+    public function sacar($v){
+
+        if ($this->getStatus() == true) {
+            if ($this->getSaldo() >= $v) {
+                $this->setSaldo($this->getSaldo() - $v);
+                echo "<br> Saque de R$ $v autorizado na conta de {$this->getDono()}. <br>";
+                echo "<br> {$this->getDono()} - saldo da conta - R$ {$this->getSaldo()}. <br>";
+            } else {
+                echo "<br> {$this->getDono()} - [ERRO] Saldo Insuficiente para saque! <br>";
+            }
+        } else {
+            echo "<br> [ERRO] Impossível sacar, conta está fechada! <br>";
+        }
+    }
+
+    public function pagarMensal(){
+
+        if ($this->getTipo() == "CC") {
+            $v = 12;
+        }
+        elseif ($this->getTipo() == "CP") {
+            $v = 20;
+        }
+
+        //  if ($this->getStatus())
+        if ($this->getStatus() == true) {
+            $this->setSaldo($this->getSaldo() - $v);
+            echo "<br> Mensalidade de R$ $v debitada na conta de {$this->getDono()} <br>";
+        }
+        else {
+            echo "<br>[ERRO] Impossível débitar a mensalidade, a conta está fechada! </br>";
+        }
+    }
+}
 
 ```
 
-<code></code>
+<code>index.php</code>
 
 ```php
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="#">
+    <title>Aula 05 - PHP POO</title>
+</head>
+<body>
+<pre>
+    <?php
+        require_once 'ContaBanco.php';
 
+        $p1 = new ContaBanco(); // Jubileu
+        $p2 = new ContaBanco(); // Creuza
+
+        $p1->abrirConta("CC");
+        $p1->setDono("Jubileu");
+        $p1->setNumConta(1001);
+
+        $p2->abrirConta("CP");
+        $p2->setDono("Creuza");
+        $p2->setNumConta(2001);
+
+        $p1->depositar(300); // 300 [deposito] + 50 (CC) [abertura] = 350 [saldo]
+        $p2->depositar(500); // 500 [deposito] + 150(CP) [abertura] = 650 [saldo]
+
+        $p2->sacar(100); // 650 - 100 = 550 [saldo]
+
+        $p1->pagarMensal(); // CC = 12 de mensalidade; // 350 - 12 = 338 [saldo]
+        $p2->pagarMensal(); // CP = 20 de mensalidade; // 550 - 20 = 530 [saldo]
+
+        $p2->sacar(1000); // Creuza - [ERRO] Saldo Insuficiente para saque!
+
+        $p1->sacar(338); // Jubileu - saldo da conta - R$ 0.
+        $p1->fecharConta();
+
+        $p2->sacar(530); // Creuza - saldo da conta - R$ 0.
+        $p2->fecharConta();
+
+        echo "<br>";
+        print_r($p1);
+        echo "<br>";
+        print_r($p2);
+
+    ?>
+</pre>
+</body>
+</html>
+```
+
+Resultado dos comandos print_r :
+
+```php
+ Conta criada com sucesso! 
+
+ Conta criada com sucesso! 
+
+ Depósito de R$ 300 na conta de Jubileu.
+
+ Depósito de R$ 500 na conta de Creuza.
+
+ Saque de R$ 100 autorizado na conta de Creuza. 
+
+ Creuza - saldo da conta - R$ 550. 
+
+ Mensalidade de R$ 12 debitada na conta de Jubileu 
+
+ Mensalidade de R$ 20 debitada na conta de Creuza 
+
+ Creuza - [ERRO] Saldo Insuficiente para saque! 
+
+ Saque de R$ 338 autorizado na conta de Jubileu. 
+
+ Jubileu - saldo da conta - R$ 0. 
+
+ Conta de Jubileu fechada com sucesso. 
+
+ Saque de R$ 530 autorizado na conta de Creuza. 
+
+ Creuza - saldo da conta - R$ 0. 
+
+ Conta de Creuza fechada com sucesso. 
+
+ContaBanco Object
+(
+    [numConta] => 1001
+    [tipo:protected] => CC
+    [dono:ContaBanco:private] => Jubileu
+    [saldo:ContaBanco:private] => 0
+    [status:ContaBanco:private] => 
+)
+
+ContaBanco Object
+(
+    [numConta] => 2001
+    [tipo:protected] => CP
+    [dono:ContaBanco:private] => Creuza
+    [saldo:ContaBanco:private] => 0
+    [status:ContaBanco:private] => 
+)
 ```
 
 <br>
