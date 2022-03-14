@@ -192,6 +192,8 @@
 
 [phpstorm - Teclas de Atalhos](https://resources.jetbrains.com/storage/products/phpstorm/docs/phpstorm_Leaflet.pdf)
 
+[PHP - Design Patterns - PADRÕES de PROJETO](https://refactoring.guru/pt-br/design-patterns/php)
+
 
 ### Agradecimentos: :clap:
 
