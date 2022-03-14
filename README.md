@@ -14,7 +14,25 @@
    <a href="#autor">Autor &rarr; eduardodsr</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
-## Cursos Concluídos :brazil:
+
+## Cursos: Diagrama de Controle :brazil:
+
+```txt
+ ┌────────────┐┌─────────────┐┌──────────┐
+ │1. Algoritmo││2. PHP Básico││3. PHP POO│
+ └─────┬──────┘└──────┬──────┘└────┬─────┘
+       │              │            │      
+       │              │     OK     │      
+       │              │───────────>│      
+       │              │            │      
+       │      OK      │            │      
+       │─────────────>│            │      
+ ┌─────┴──────┐┌──────┴──────┐┌────┴─────┐
+ │    100 %   ││     100 %   ││   25%    │
+ └────────────┘└─────────────┘└──────────┘
+```
+
+## Cursos Concluídos
 
 <span id="algoritmo">
 
@@ -25,7 +43,7 @@
 <a href="#" target="_blank"></a>
 
 
-## 01. Curso de Algoritmo [40 Horas] :one:
+## 01. Curso de Algoritmo [40 Horas] :one: 🏆
 
 - O **Visualg** é um programa que permite criar, editar, interpretar e que também executa os algoritmos em português como se fosse um “programa” normal de computador.
 
@@ -106,7 +124,7 @@
 <img src="https://www.geekproject.com.br/wp-content/uploads/2011/01/elephpant-elephant-php-logo.png" alt="logo elephant php" width="150px" /> 
 
 
-## 02. PHP Básico [40 Horas] :two:
+## 02. PHP Básico [40 Horas] :two: 🏆
 
 - Criado em 1995, por Rasmus Lerdorf, o **PHP** (acrônimo para PHP: Hypertext Preprocessor) é uma linguagem de script Open Source de uso geral. Com ela, desenvolvedores podem criar sites dinâmicos, extensões para aplicativos e otimizar tanto programas quanto Sistemas Operacionais. Ela é especialmente adequada para o desenvolvimento web e pode ser embutida dentro do HTML.
 
@@ -280,6 +298,8 @@
 - Prof. *Gustavo Guanabara*, criador do site Curso em Vídeo.
  
 <br>
+
+
 
 <hr>
 
