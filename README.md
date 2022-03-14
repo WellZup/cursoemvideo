@@ -205,13 +205,13 @@
 2. Aula 2  ✅
     - Aula Teórica 2 – O que é um Objeto?
     - Aula Prática 2 – Criando Classes e Objetos em PHP
-3. Aula 3
+3. Aula 3  ✅
     - Aula Teórica 3 – O que é Visibilidade em um Objeto?
     - Aula Prática 3 – Configurando Visibilidade de Atributos e Métodos
-4. Aula 4
+4. Aula 4  ✅
     - Aula Teórica 4 – Métodos Especiais
     - Aula Prática 4 – Métodos Getter, Setter e Construtor
-5. Aula 5
+5. Aula 5  ✅
     - Aula Teórica 5 – Exemplo Prático com Objetos
     - Aula Prática 5 – Exemplo Prático em PHP
 6. Aula 6

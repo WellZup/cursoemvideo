@@ -83,7 +83,7 @@
 
 #### Aula Teórica 1 – O que é Programação Orientada a Objetos?
 
-Nessa aula de POO, <mark>vamos aprender o que é Programação Orientada a Objetos e quais são as suas principais vantagens em relação a outros tipos de Linguagem de Programação.</mark>
+Nessa aula de POO, vamos aprender o que é Programação Orientada a Objetos e quais são as suas principais vantagens em relação a outros tipos de Linguagem de Programação.
 
 * Como era?
 
@@ -118,7 +118,9 @@ Acrônimo das vantagens da POO: <strong><big> C O M E R N </strong>a d a </big>
 
 #### Aula Prática 1 – Instalando o XAMPP e o NetBeans
 
-Nessa aula de POO, <mark>vamos aprender como instalar o XAMPP</mark> e o NetBeans.
+Nessa aula de POO, vamos aprender como instalar o XAMPP e o NetBeans.
+
+Estou utilizando o PhpStorm.
 
 - O que é o XAMPP?
 
@@ -136,7 +138,7 @@ O XAMPP é completamente gratuito, de fácil de instalar a distribuição Apache
 
 #### Aula Teórica 2 – O que é um Objeto?
 
-Nessa aula de POO, <mark> vamos aprender os conceitos de Classes e Objetos, passando pela teoria de Atributos, Métodos, Estado e Instâncias. </mark> Veja como criar uma classe e instanciar, criando objetos.
+Nessa aula de POO, vamos aprender os conceitos de Classes e Objetos, passando pela teoria de Atributos, Métodos, Estado e Instâncias. Veja como criar uma classe e instanciar, criando objetos.
 
 - O que é um objeto?
 
@@ -208,7 +210,7 @@ Abstração consiste de focalizar nos aspectos essenciais inerentes a uma entida
 
 #### Aula Prática 2 – Criando Classes e Objetos em PHP
 
-Nessa aula de POO, <mark>vamos aprender como criar classes e objetos.</mark>
+Nessa aula de POO, vamos aprender como criar classes e objetos.
 
 <code>index.php</code>
 
@@ -286,7 +288,7 @@ class Caneta
 
 #### Aula Teórica 3 – O que é Visibilidade em um Objeto?
 
-Nessa aula de POO, <mark> vamos aprender qual a importância dos modificadores de visibilidade público (+), privado (-) e protegido (#) na Programação Orientada a Objetos. </mark>
+Nessa aula de POO, vamos aprender qual a importância dos modificadores de visibilidade público (+), privado (-) e protegido (#) na Programação Orientada a Objetos.
 
 - UML - Linguagem Modelada Unificada
 
@@ -335,7 +337,7 @@ Nessa aula de POO, <mark> vamos aprender qual a importância dos modificadores d
 
 #### Aula Prática 3 – Configurando Visibilidade de Atributos e Métodos
 
-Nessa aula de POO, <mark> vamos aprender na prática como utilizar os modificadores de visibilidade public, private e protected e qual é o efeito de cada um deles. </mark>
+Nessa aula de POO, vamos aprender na prática como utilizar os modificadores de visibilidade public, private e protected e qual é o efeito de cada um deles.
 
 <code>Caneta.php</code>
 
@@ -385,10 +387,6 @@ class Caneta
         $c1->modelo = "BIC cristal";
         $c1->cor = "Azul";
 
-//        $c1->ponta = 0.5;     // Fatal error:  Uncaught Error: Cannot access private property Caneta::$ponta
-//        $c1->carga = 99;      // Fatal error:  Uncaught Error: Cannot access protected property Caneta::$carga
-//        $c1->tampada = true;  // Fatal error:  Uncaught Error: Cannot access protected property Caneta::$tampada
-
         $c1->rabiscar();
         $c1->tampar();
         $c1->destampar();
@@ -407,7 +405,7 @@ class Caneta
 
 #### Aula Teórica 4 – Métodos Especiais
 
-Nessa aula de POO, <mark> vamos aprender como funcionam os Métodos Acessores (Getters), Métodos Modificadores (Setters) e Métodos Construtores (Construct) </mark> para a Programação Orientada a Objetos. 
+Nessa aula de POO, vamos aprender como funcionam os Métodos Acessores (Getters), Métodos Modificadores (Setters) e Métodos Construtores (Construct) para a Programação Orientada a Objetos. 
 
 - **Métodos Acessores (Getters)** &rarr; são métodos que dão acesso a uma determinada coisa; Getter (sentido de pegar/acessar alguma coisa), ele pega/acessa alguma informação c/ segurança. 
 
@@ -429,7 +427,7 @@ Getters e setters permitem controlar a forma como variáveis importantes são ac
 
 - **Métodos Construtores (Construct)** &rarr; Classes que tem um método construtor chamam o método a cada objeto recém criado, sendo apropriado para qualquer inicialização que o objeto necessite antes de ser utilizado.
 
-O método construtor (Construct) de uma classe serve para executar algum comportamento(atribuição de valor, execução de método, etc) logo no momento em que uma instancia da mesma for criada. Isso traz vantagens pois evita a execução de tarefas repetitivas e obrigatórias.
+O método construtor (Construct) de uma classe serve para executar algum comportamento (atribuição de valor, execução de método, etc) logo no momento em que uma instancia da mesma for criada. Isso traz vantagens pois evita a execução de tarefas repetitivas e obrigatórias.
 
 **Construtores** são métodos ordinários que são chamados durante a criação do objeto correspondente. Eles podem definir um número arbitrários de argumentos, quais podem ser obrigatórios, podem ter um tipo, e podem ter valores padrão. Argumentos de construtores são informados dentro de parênteses depois do nome da classe.
 
@@ -451,18 +449,262 @@ O **construtor** pode ser private ou protected para evitar que ele seja chamado 
 <img src="img/aula4-07.png" widf="400px">
 <a href="#" target="_blank"></a>
 
+<br>
+
 #### Aula Prática 4 – Métodos Getter, Setter e Construtor
 
-<code></code>
+Nessa aula de POO, vamos aprender como criar em PHP os Métodos Acessores (Getters), Métodos Modificadores (Setters) e Métodos Construtores (Construct).
+
+Por convenção, getters começam com a palavra "get" e setters com a palavra "set", seguidos de um nome de variável.
+
+**Exemplo do Métodos Modificadores (Setters) e Métodos Acessores (Getters)**
+
+<code>Caneta.php</code>
 
 ```php
+<?php
 
+class Caneta
+{
+    private $modelo;
+    private $ponta;
+
+    public function getModelo() {
+        return $this->modelo;
+    }
+
+    public function setModelo($m) {
+        $this->modelo = $m;
+    }
+
+    public function getPonta() {
+        return $this->ponta;
+    }
+
+    public function setPonta($p) {
+        $this->ponta = $p;
+    }
+}
 ```
 
-<code></code>
+<code>index.php</code>
 
 ```php
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Aula 04 - PHP POO</title>
+</head>
+<body>
+<pre>
+    <?php
+        require_once 'Caneta.php';
 
+        $c1 = new Caneta();
+
+        /* Métodos Modificadores (Setters) - 
+        Por convenção, setters com a palavra "set", seguidos de um nome de variável.  */
+
+        $c1->setModelo("BIC");
+
+        $c1->setPonta(0.5);
+
+        /* Métodos Acessores (Getters) - 
+        Por convenção, getters com a palavra "get", seguidos de um nome de variável. */
+
+        print "Eu tenho uma caneta {$c1->getModelo()} de ponta {$c1->getPonta()}";
+
+        echo "<br><br>";
+        print_r($c1);
+        
+        echo "<br>";
+        var_dump($c1);
+    ?>
+</pre>
+</body>
+</html>
+```
+
+**Método Construtor (Construct), exemplo mais simples, sem argumentos.**
+
+<code>Caneta.php</code>
+
+```php
+<?php
+
+class Caneta
+{
+    private $modelo;
+    private $cor;
+    private $ponta;
+    private $tampada;
+
+    // Método Construtor, 1º forma: public function __construct() {}
+    // Método Construtor, 2º forma: public function Caneta() {}
+
+    public function __construct() {
+        $this->cor = "Azul";
+        $this->tampar();
+    }
+    public function tampar() {
+        $this->tampada = true;
+    }
+    public function getModelo() {
+        return $this->modelo;
+    }
+    public function setModelo($m) {
+        $this->modelo = $m;
+    }
+    public function getPonta() {
+        return $this->ponta;
+    }
+    public function setPonta($p) {
+        $this->ponta = $p;
+    }
+}
+```
+
+<code>index.php</code>
+
+```php
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Aula 04 - PHP POO</title>
+</head>
+<body>
+<pre>
+    <?php
+        require_once 'Caneta.php';
+
+        $c1 = new Caneta();
+
+        /* Exemplo do Método Construtor (Construct) */
+
+        print_r($c1);
+
+        echo "<br>";
+
+        var_dump($c1);
+    ?>
+</pre>
+</body>
+</html>
+```
+
+<code> print_r($c1) </code> :
+
+    Caneta Object
+    (
+        [modelo:Caneta:private] => 
+        [cor:Caneta:private] => Azul
+        [ponta:Caneta:private] => 
+        [tampada:Caneta:private] => 1
+    )
+
+**Método Construtor (Construct), exemplo mais complexo, com argumentos.**
+
+Argumentos de construtores são informados dentro de parênteses depois do nome da classe.
+
+Construtor que recebe parametros e consegue fazer a instanciação e consegue fazer a inicialização mais rapido.
+
+<code>Caneta.php</code>
+
+```php
+<?php
+
+class Caneta
+{
+    private $modelo;
+    private $cor;
+    private $ponta;
+    private $tampada;
+
+    public function __construct($m, $c, $p) {
+        $this->modelo = $m;
+        $this->cor = $c;
+        $this->ponta = $p;
+        $this->tampar(); // tampar todas as canetas que forem criadas
+    }
+    public function tampar() {
+        $this->tampada = true;
+    }
+    public function getModelo() {
+        return $this->modelo;
+    }
+    public function setModelo($m) {
+        $this->modelo = $m;
+    }
+    public function getPonta() {
+        return $this->ponta;
+    }
+    public function setPonta($p) {
+        $this->ponta = $p;
+    }
+}
+```
+
+<code>index.php</code>
+
+```php
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Aula 04 - PHP POO</title>
+</head>
+<body>
+<pre>
+    <?php
+        require_once 'Caneta.php';
+
+        /* Exemplo do Método Construtor (Construct) com argumentos */
+
+        $c1 = new Caneta("BIC Cristal Ponta Fina", "Azul", 0.8);
+        $c2 = new Caneta("BIC Cristal", "Vermelha", 1.0);
+        $c3 = new Caneta("BIC Cristal Ponta Fina", "Preta", 0.8);
+        $c4 = new Caneta("BIC Cristal", "Verde", 1.0);
+
+        print_r($c1);
+        print_r($c2);
+        print_r($c3);
+        print_r($c4);
+    ?>
+</pre>
+</body>
+</html>
+```
+
+* Resultado (print_r):
+
+```php
+    Caneta Object
+(
+    [modelo:Caneta:private] => BIC Cristal Ponta Fina
+    [cor:Caneta:private] => Azul
+    [ponta:Caneta:private] => 0.8
+    [tampada:Caneta:private] => 1
+)
+Caneta Object
+(
+    [modelo:Caneta:private] => BIC Cristal
+    [cor:Caneta:private] => Vermelha
+    [ponta:Caneta:private] => 1
+    [tampada:Caneta:private] => 1
+)
+Caneta Object
+(
+    [modelo:Caneta:private] => BIC Cristal Ponta Fina
+    [cor:Caneta:private] => Preta
+    [ponta:Caneta:private] => 0.8
+    [tampada:Caneta:private] => 1
+)
+Caneta Object
+(
+    [modelo:Caneta:private] => BIC Cristal
+    [cor:Caneta:private] => Verde
+    [ponta:Caneta:private] => 1
+    [tampada:Caneta:private] => 1
+)
 ```
 
 <br>
@@ -473,7 +715,42 @@ O **construtor** pode ser private ou protected para evitar que ele seja chamado 
 
 #### Aula Teórica 5 – Exemplo Prático com Objetos
 
+Nessa aula de POO, vamos fazer um exemplo prático com Programação Orientada a Objetos, usando tudo aquilo que aprendemos até aqui.
+
+<img src="img/aula5-01.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula5-02.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula5-03.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula5-04.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula5-05.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula5-06.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula5-07.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula5-08.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula5-09a.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula5-09b.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula5-10.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula5-11.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula5-12.png">
+<a href="#" target="_blank"></a>
+
+
+
 #### Aula Prática 5 – Exemplo Prático em PHP
+
+Nessa aula de POO, vamos fazer um exercício prático em PHP com Programação Orientada a Objetos.
+
+
 
 <code></code>
 
