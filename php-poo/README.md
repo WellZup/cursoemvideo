@@ -74,6 +74,101 @@
     - Aula Teórica 15 – Exercícios de POO (Parte 3)
     - Aula Prática 15 – Projeto Final em PHP (Parte 2)
 
+<hr>
+
+## **Resumo de POO:**
+
+## **Objeto**
+
+Do dicionário Aurélio, um **objeto** é: "1. Tudo que é perceptível por qualquer dos sentidos. 2. Coisa, peça (...)."
+
+A partir da necessidade de modelar objetos do mundo real em simulações de computador, surgiu o conceito de objetos de software.
+
+Há várias definições do que é um **objeto de software**. Seguem algumas utilizadas:
+  1. Um **objeto** é um pacote de software que contém atributos e operações. Estes atributos (dados) também são chamados de propriedades. Às operações (comportamento) também dá-se o nome de métodos. 
+  2. Um **objeto** é uma "caixa preta" que recebe e envia mensagens. Uma "caixa preta" que contém código (seqüências de instruções de computador)  e dados (informação na qual as instruções operam). Uma regra primária da programação orientada a objetos: como um usuário de um objeto, você nunca deve ter que entrar na caixa, pois toda a comunicação é feita via mensagens. As mensagens definem a interface com o objeto.
+  3. Um **objeto** é um conjunto de variáveis e métodos afins. (...) A idéia básica por trás de objetos é a de simulação.(...) Nas metodologias de orientação a objetos, programas devem ser escritos para simular estados e atividades de objetos do mundo real.
+  4. Um **objeto** é uma instância de uma classe. Ele pode ser unicamente identificado por seu nome e ele define um estado que é representado pelos valores de seus atributos em um momento particular. O estado de um objeto varia de acordo com os métodos que são aplicados a eles.
+ 
+O termo '**objeto**' foi utilizado formalmente pela primeira vez na linguagem Simula, e objetos tipicamente existem nos programas em Simula para simular algum aspecto da realidade. 
+
+## **O Estado de um Objeto**
+
+Como foi dito nas várias definições apresentadas, um **objeto** contém atributos, representados em programas por variáveis, que por sua vez armazenam dados (valores) que podem mudar a cada momento. Os valores dos atributos de um objeto definem seu estado em um determinado instante de tempo.
+
+## **Métodos** (Comportamento do Objeto)
+
+O comportamento de um objeto é a forma como ele age e reage a mudanças de seus estados (...), ou seja, como ele responde às mensagens que lhe são enviadas. O comportamento de um objeto é definido pelo conjunto de métodos que podem ser aplicados a ele.
+
+Um **método** é uma operação que acessa o interior de um objeto e executa alguma alteração ou simples verificação no estado interno desse objeto. Um método só existe no contexto de um objeto, e opera exclusivamente com o estado desse objeto que o executa. O objeto no qual o método opera é chamado de receptor.
+
+Somente um método do próprio objeto pode alterar seu estado. Não se pode alterar os atributos de um objeto a não ser utilizando-se seus métodos.
+
+Um objeto invoca um método como reação à recepção de uma mensagem.
+
+## **Encapsulamento**
+
+O princípio de esconder a estrutura de dados utilizada e somente prover uma interface bem definida é chamado de encapsulamento.
+
+**Algumas definições comuns de encapsulamento:**
+1. Encapsulamento é o processo de esconder todos os detalhes de um objeto que não contribuem para as suas características essenciais.
+2. Encapsulamento é um princípio, utilizando quando se está desenvolvendo a estrutura geral de um programa, no qual cada componente de um programa deve encapsular ou esconder cada decisão de projeto (...) A interface com cada módulo é definida de forma a revelar o mínimo possível sobre o seu funcionamento interno.
+3. O encapsulamento esconde detalhes de implementação do objeto (métodos) e o que sobra visível é a sua interface, isto é, o conjunto de todas as mensagens a que ele pode responder. Uma vez que o objeto é encapsulado, seus detalhes de implementação não são mais imediatamente acessíveis. Ao invés disso, eles são empacotados e são somente indiretamente acessíveis através da interface do objeto. A única forma de acessar a um objeto encapsulado é através da troca de mensagens: é enviada uma mensagem ao objeto, o objeto mesmo seleciona o método pelo qual ele irá reagir à mensagem.
+ 
+Podemos dizer portanto que os objetos possuem uma parte interna, os dados, que não podem ser acessados por outros objetos do sistema, e outra externa, os métodos, que permitem a alteração ou verificação de seu estado.
+
+A rosquinha (donut) é uma representação gráfica clássica para objetos comumente encontrada na literatura. A idéia é que não se pode chegar a seu recheio (dados) sem passar por sua massa (métodos)
+
+**Os Benefícios do Encapsulamento:**
+
+**Modularidade**: o código-fonte para um objeto pode ser escrito e mantido independentemente do código-fonte de outros objetos (desacoplamento). Além disso, como não dependem de outros objetos, cada objeto pode ser utilizado livremente no sistema. Por exemplo, você pode dar sua bicicleta a alguém e mesmo assim ela funcionará. O objeto bicicleta deve ser independente dos objetos que a utilizam (objetos ciclistas).
+
+**Ocultação de informações**: um objeto possui uma interface pública que outros objetos podem utilizar para comunicarem-se com ele. Mas o objeto pode manter informações privadas e métodos podem ser modificados em qualquer momento sem afetar os outros objetos que dependem dele. Por exemplo, você não precisa de entender o funcionamento interno do mecanismo de marchas da sua bicicleta para utilizá-lo.
+
+A única parte do objeto que o resto do sistema precisa conhecer é sua interface.
+
+## **Mensagens (Chamada de um método)**
+
+A utilidade de um objeto vem da sua interação com os demais objetos do sistema. Objetos de software interagem e se comunicam uns com os outros enviando mensagens. Quando um objeto A quer que o objeto B execute um dos seus métodos, ele envia uma mensagem para o objeto B.
+
+Portanto: uma mensagem é uma requisição para que um objeto invoque um de seus métodos. Uma mensagem por sua vez possui três componentes: o **objeto** para o qual a mensagem está endereçado, o **nome do método** a ser executado e os **argumentos** necessários para a execução do método. 
+
+Estes três componentes são informação suficiente para que o objeto receptor execute o método desejado. Não é necessária nenhuma informação adicional. Os objetos podem também recusar a execução de um método, por exemplo, se o objeto que enviou a mensagem não tem a permissão para executar o método requisitado.
+
+Consequentemente, a invocação de um método é uma reação causada pela recepção de uma mensagem. Isso somente é possivel se o método realmente existe para o objeto.
+
+Para enfatizar a independência dos objetos, frequentemente fala-se de objetos como comunicando-se através da troca de mensagens. Quando uma mensagem é enviada para um objeto, o método correspondente é procurado (procura do método) e executado (invocação do método) e possivelmente o resultado é retornado. O resultado é tipicamente um objeto. 
+ 
+
+**Os Benefícios das Mensagens:**
+O comportamento de um objeto é expressado através de seus métodos, então a passagem de mensagens possibilita todas as possíveis interações entre objetos.
+Objetos não necessitam estar no mesmo processo ou até mesmo na mesma máquina para trocar mensagens entre si. 
+
+## **Classe**
+
+Do dicionário Aurélio, uma das definições de classe é: "Numa série ou num conjunto, grupo ou divisão que apresenta características semelhantes; categoria."
+
+Algumas **definições de classe** no contexto de orientação a objetos:
+1. Uma classe é um modelo ou protótipo que define as variáveis e métodos comuns para todos os objetos de um determinado tipo. [1] 
+2. Uma classe é a especificação da estrutura (atributos de instância), comportamento (métodos) (...) para objetos. (...) Esta definição enfatiza uma classe como um descritor/construtor para objetos. [2]
+3.  Uma classe pode ser vista como uma fábrica de objetos. Uma classe é uma entidade cujas principais finalidades são definir um tipo abstrato de dados em particular e prover mecanismos para a criação de objetos desse tipo. [3]
+
+No mundo real, frequentemente temos objetos do mesmo tipo. Por exemplo, sua bicicleta é somente uma das diversas bicicletas no mundo. Utilizando a terminologia de orientação a objetos, poderíamos dizer que sua bicicleta é uma instância da classe de objetos conhecida como bicicletas. Bicicletas possuem um estado (marcha atual, velocidade) e comportamento (troca de marcha, freios) em comum. No entanto, o estado de cada bicicleta é independente e pode ser diferente do estado de outras bicicletas.
+
+Ao construir bicicletas, fabricantes tiram vantagem do fato  de que bicicletas compartilham características construindo diversas bicicletas do mesmo modelo - seria extemamente ineficiente produzir um novo modelo para cada bicicleta construída.
+
+Em software orientado a objeto, também é possível ter diversos objetos do mesmo tipo que compartilham características: retângulos, registros de empregados, videoclips, etc. Como os fabricantes de bicicleta, você pode tirar vantagem do fato que objetos do mesmo tipo são similares e você pode criar um modelo para eles. "Modelos" em OO são chamados classes.
+
+O valor de atributos de instância são dados por cada instância da classe. Portanto, após ter criado a classe, deve-se instanciá-la antes de poder usá-la. Quando se cria uma instância da classe, cria-se um objeto daquele tipo e o sistema aloca memória para as variáveis de instância declaradas pela classe.  Então pode-se invocar os métodos do objeto. Todos os objetos de uma classe possuem os mesmos métodos. Desta forma, a implementação desses métodos fica armazenada na própria classe (por economia de memória). Portanto todos os objetos de uma determinada classe compartilham a mesma área de código. Mas cada objeto possui uma área de dados (atributos) independente.
+
+Atributos de classe são atributos compartilhados por todas as instâncias (objetos) de uma determinada classe. Os atributos de classes são guardados pela classe, e não pelos objetos da classe. Se um objeto altera o valor de um atributo de classe, esse valor muda para todos os objetos do mesmo tipo (instâncias da mesma classe).
+
+Em oposição a métodos de instância, que servem para alterar ou consultar o estado de um objeto, métodos de classe servem para alterar ou consultar o estado de uma classe, ou seja, alterar ou consultar seus atributos de classe. Métodos de classe só podem atuar em atributos de classe, nunca em atributos de instância.
+
+<hr>
+
+
+
 
 ### Conteúdo do Módulo :bookmark:
 
@@ -430,8 +525,6 @@ Getters e setters permitem controlar a forma como variáveis importantes são ac
 O método construtor (Construct) de uma classe serve para executar algum comportamento (atribuição de valor, execução de método, etc) logo no momento em que uma instancia da mesma for criada. Isso traz vantagens pois evita a execução de tarefas repetitivas e obrigatórias.
 
 **Construtores** são métodos ordinários que são chamados durante a criação do objeto correspondente. Eles podem definir um número arbitrários de argumentos, quais podem ser obrigatórios, podem ter um tipo, e podem ter valores padrão. Argumentos de construtores são informados dentro de parênteses depois do nome da classe.
-
-O **construtor** pode ser private ou protected para evitar que ele seja chamado externamente.
 
 
 <img src="img/aula4-01.png" widf="400px">
@@ -1016,18 +1109,464 @@ ContaBanco Object
 
 #### Aula Teórica 6 – Pilares da POO: Encapsulamento
 
+Nessa aula de POO, vamos aprender quais são os três pilares da Programação Orientada a Objetos e vamos estudar o primeiro pilar: o **Encapsulamento** da POO.
+
+**Encapsulamento**
+
+O princípio de esconder a estrutura de dados utilizada e somente prover uma interface bem definida é chamado de encapsulamento.
+
+**Algumas definições comuns de encapsulamento:**
+  1. Encapsulamento é o processo de esconder todos os detalhes de um objeto que não contribuem para as suas características essenciais.
+2. Encapsulamento é um princípio, utilizando quando se está desenvolvendo a estrutura geral de um programa, no qual cada componente de um programa deve encapsular ou esconder cada decisão de projeto (...) A interface com cada módulo é definida de forma a revelar o mínimo possível sobre o seu funcionamento interno.
+3. O encapsulamento esconde detalhes de implementação do objeto (métodos) e o que sobra visível é a sua interface, isto é, o conjunto de todas as mensagens a que ele pode responder. Uma vez que o objeto é encapsulado, seus detalhes de implementação não são mais imediatamente acessíveis. Ao invés disso, eles são empacotados e são somente indiretamente acessíveis através da interface do objeto. A única forma de acessar a um objeto encapsulado é através da troca de mensagens: é enviada uma mensagem ao objeto, o objeto mesmo seleciona o método pelo qual ele irá reagir à mensagem.
+ 
+Podemos dizer portanto que os objetos possuem uma parte interna, os dados, que não podem ser acessados por outros objetos do sistema, e outra externa, os métodos, que permitem a alteração ou verificação de seu estado.
+
+
+
+**Os Benefícios do Encapsulamento:**
+
+**Modularidade**: o código-fonte para um objeto pode ser escrito e mantido independentemente do código-fonte de outros objetos (desacoplamento). Além disso, como não dependem de outros objetos, cada objeto pode ser utilizado livremente no sistema. Por exemplo, você pode dar sua bicicleta a alguém e mesmo assim ela funcionará. O objeto bicicleta deve ser independente dos objetos que a utilizam (objetos ciclistas).
+
+**Ocultação de informações**: um objeto possui uma interface pública que outros objetos podem utilizar para comunicarem-se com ele. Mas o objeto pode manter informações privadas e métodos podem ser modificados em qualquer momento sem afetar os outros objetos que dependem dele. Por exemplo, você não precisa de entender o funcionamento interno do mecanismo de marchas da sua bicicleta para utilizá-lo.
+
+A única parte do objeto que o resto do sistema precisa conhecer é sua interface.
+
+<br>
+
+<img src="img/aula6-01.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula6-02.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula6-03.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula6-04.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula6-05.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula6-06.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula6-07.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula6-08.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula6-09.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula6-10.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula6-11.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula6-12.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula6-13.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula6-14.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula6-15.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula6-16.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula6-17.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula6-18.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula6-19.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula6-20.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula6-21.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula6-22.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula6-23.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula6-24.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula6-25.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula6-26.png">
+
+
+<hr>
+
+
 #### Aula Prática 6 – Encapsulamento
 
-<code></code>
+Nessa aula de POO, vamos aprender como fazer encapsulamento em PHP, entendendo melhor o primeiro dos três pilares da POO.
+
+<code>interface Controlador (Controlador.php)</code>
 
 ```php
+<?php
 
+interface Controlador
+{
+    // Metodos Abstratos
+    public function ligar();
+    public function desligar();
+    public function abrirMenu();
+    public function fecharMenu();
+    public function maisVolume();
+    public function menosVolume();
+    public function ligarMudo();
+    public function desligarMudo();
+    public function play();
+    public function pause();
+}
 ```
 
-<code></code>
+<code>class ControleRemoto (ControleRemoto.php)</code>
 
 ```php
+<?php
+require_once 'Controlador.php';
+class ControleRemoto implements Controlador
+{
+    // Atributos
+    private $volume;
+    private $ligado;
+    private $tocando;
 
+    // Metodos Especiais
+    public function __construct()
+    {
+        $this->volume = 0;
+        $this->ligado = false;
+        $this->tocando = false;
+    }
+
+    // Metodos Getters e Setters
+   
+    private function getVolume(): int
+    {
+        return $this->volume;
+    }
+
+    private function setVolume(int $volume): void
+    {
+        $this->volume = $volume;
+    }
+
+    private function getLigado(): bool
+    {
+        return $this->ligado;
+    }
+
+    private function setLigado(bool $ligado): void
+    {
+        $this->ligado = $ligado;
+    }
+
+    private function getTocando(): bool
+    {
+        return $this->tocando;
+    }
+
+    private function setTocando(bool $tocando): void
+    {
+        $this->tocando = $tocando;
+    }
+
+    public function ligar()
+    {
+        // TODO: Implement ligar() method.
+        $this->setLigado(true);
+        $this->setVolume(50);
+    }
+
+    public function desligar()
+    {
+        // TODO: Implement desligar() method.
+        $this->setLigado(false);
+        $this->setTocando(false);
+        $this->setVolume(0);
+        // $this->setVolume(0);
+    }
+
+    public function abrirMenu()
+    {
+        // TODO: Implement abrirMenu() method.
+        echo "<br> -------------------- MENU -------------------- </br>";
+
+        echo "<br> Está ligado? " .($this->getLigado() ? "SIM" : "NÃO") ."<br>";
+
+        echo "<br> Está tocando? " .($this->getTocando() ? "SIM" : "NÃO") ."<br>";
+
+        echo "<br> Volume: " .$this->getVolume();
+        for ($i = 0; $i <= $this->getVolume(); $i+=10 ) {
+            echo "|";
+        }
+        echo "<br>";
+    }
+
+    public function fecharMenu()
+    {
+        // TODO: Implement fecharMenu() method.
+        echo "<br> Fechando Menu... <br>";
+    }
+
+    public function maisVolume()
+    {
+        // TODO: Implement maisVolume() method.
+        if ($this->getLigado()) {
+            $this->setVolume($this->getVolume() + 10);
+        } else {
+             echo "<br> <span class='erro'> [ ERRO!] Não posso aumentar o volume. O controle não está ligado ! </span> <br> ";
+        }
+    }
+
+    public function menosVolume()
+    {
+        // TODO: Implement menosVolume() method.
+        if ($this->getLigado()) {
+            $this->setVolume($this->getVolume() - 10);
+        } else {
+            echo "<br> <span class='erro'> [ ERRO!] Não posso diminuir o volume. O controle não está ligado ! </span> <br> ";
+        }
+    }
+
+    public function ligarMudo()
+    {
+        // TODO: Implement ligarMudo() method.
+        if ($this->getLigado() && $this->getVolume() > 0) {
+            $this->setVolume(0);
+        } else {
+            echo "<br> <span class='erro'> [ ERRO!] Não posso ligar o mudo. O controle não está ligado ! </span> <br> ";
+        }
+    }
+
+    public function desligarMudo()
+    {
+        // TODO: Implement desligarMudo() method.
+        if ( ($this->getLigado()) && ($this->getVolume()) == 0 ) {
+            $this->setVolume(50);
+        }
+    }
+
+    public function play()
+    {
+        // TODO: Implement play() method.
+        if ($this->getLigado() && !$this->getTocando()) {
+            $this->setTocando(true);
+        }
+    }
+
+    public function pause()
+    {
+        // TODO: Implement pause() method.
+        if ($this->getLigado() && $this->getTocando()) {
+            $this->setTocando(false);
+        }
+    }
+}
+```
+
+<code>index.php</code>
+
+```php
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Aula 06 - Projeto Controle Remoto</title>
+</head>
+<body>
+<pre>
+    <h1> Projeto Controle Remoto </h1>
+    <?php
+        require_once 'ControleRemoto.php';
+
+        $c = new ControleRemoto();
+        $c->abrirMenu();
+
+        echo "<br><br> #####1 <strong> TESTE DE LIGAR O CONTROLE REMOTO </strong> <br>";
+        $c->ligar();    // [ligado:ControleRemoto:private] => 1 (true)
+        $c->abrirMenu();
+
+        echo "<br><br> #####2 <strong> TESTE DE DESLIGAR O CONTROLE REMOTO </strong> <br>";
+        $c->desligar(); // [ligado:ControleRemoto:private] => false (vazio no PHP)
+        $c->abrirMenu();
+
+        echo "<br><br> #####3 <strong> TESTES COM O CONTROLE REMOTO DESLIGADO </strong> <br>";
+        $c->maisVolume();   // [ ERRO!] Não posso aumentar o volume. O controle não está ligado !
+        $c->menosVolume();  // [ ERRO!] Não posso diminuir o volume. O controle não está ligado !
+        $c->ligarMudo();    // [ ERRO!] Não posso ligar o mudo. O controle não está ligado !
+        // $c->abrirMenu();
+
+        echo "<br><br> ######4 <strong> TESTE DE LIGAR O CONTROLE REMOTO </strong> <br>";
+        $c->ligar();        // [volume:ControleRemoto:private] => 50 // Volume: 50
+        $c->abrirMenu();
+
+        echo "<br><br> #####5 <strong> TESTE DE PLAY NO CONTROLE REMOTO </strong> <br>";
+        $c->play();         // [tocando:ControleRemoto:private] => 1 (true)
+        $c->abrirMenu();
+
+        echo "<br><br> #####6 <strong> TESTE DE MAIS VOLUME (2 VEZES) </strong> <br>";
+        $c->maisVolume();   // +10
+        $c->maisVolume();   // +10
+        $c->abrirMenu();    // [volume:ControleRemoto:private] => 70 // Volume: 70
+
+        echo "<br><br> #####7 <strong> TESTE DE MENOS VOLUME (1 VEZ) </strong> <br>";
+        $c->menosVolume();
+        $c->abrirMenu();    // [volume:ControleRemoto:private] => 60 // Volume: 60
+
+        echo "<br><br> #####8 <strong> TESTE DE PAUSE NO CONTROLE REMOTO </strong> <br>";
+        $c->pause();
+        $c->abrirMenu();    // [tocando:ControleRemoto:private] => false (vazio no PHP)
+
+        echo "<br><br> #####9 <strong> TESTE DE PLAY NO CONTROLE REMOTO </strong> <br>";
+        $c->play();         // [tocando:ControleRemoto:private] => 1 (true)
+        $c->abrirMenu();
+
+        echo "<br><br> #####10 <strong> TESTE DE DESLIGAR O CONTROLE REMOTO </strong> <br>";
+        $c->desligar(); // [ligado:ControleRemoto:private] => false (vazio no PHP)
+        $c->abrirMenu();
+
+        echo "<br><br> #####11 <strong> TESTE DE LIGAR O CONTROLE REMOTO </strong> <br>";
+        $c->ligar();
+        $c->abrirMenu();
+
+    ?>
+</pre>
+</body>
+</html>
+```
+
+<code>RESULTADO DO PROGRAMA:</code>
+
+```php
+Projeto Controle Remoto 
+
+    
+ -------------------- MENU -------------------- 
+
+ Está ligado? NÃO
+
+ Está tocando? NÃO
+
+ Volume: 0|
+
+
+ #####1  TESTE DE LIGAR O CONTROLE REMOTO  
+
+ -------------------- MENU -------------------- 
+
+ Está ligado? SIM
+
+ Está tocando? NÃO
+
+ Volume: 50||||||
+
+
+ #####2  TESTE DE DESLIGAR O CONTROLE REMOTO  
+
+ -------------------- MENU -------------------- 
+
+ Está ligado? NÃO
+
+ Está tocando? NÃO
+
+ Volume: 0|
+
+
+ #####3  TESTES COM O CONTROLE REMOTO DESLIGADO  
+
+  [ ERRO!] Não posso aumentar o volume. O controle não está ligado !  
+ 
+  [ ERRO!] Não posso diminuir o volume. O controle não está ligado !  
+ 
+  [ ERRO!] Não posso ligar o mudo. O controle não está ligado !  
+ 
+
+ ######4  TESTE DE LIGAR O CONTROLE REMOTO  
+
+ -------------------- MENU -------------------- 
+
+ Está ligado? SIM
+
+ Está tocando? NÃO
+
+ Volume: 50||||||
+
+
+ #####5  TESTE DE PLAY NO CONTROLE REMOTO  
+
+ -------------------- MENU -------------------- 
+
+ Está ligado? SIM
+
+ Está tocando? SIM
+
+ Volume: 50||||||
+
+
+ #####6  TESTE DE MAIS VOLUME (2 VEZES)  
+
+ -------------------- MENU -------------------- 
+
+ Está ligado? SIM
+
+ Está tocando? SIM
+
+ Volume: 70||||||||
+
+
+ #####7  TESTE DE MENOS VOLUME (1 VEZ)  
+
+ -------------------- MENU -------------------- 
+
+ Está ligado? SIM
+
+ Está tocando? SIM
+
+ Volume: 60|||||||
+
+
+ #####8  TESTE DE PAUSE NO CONTROLE REMOTO  
+
+ -------------------- MENU -------------------- 
+
+ Está ligado? SIM
+
+ Está tocando? NÃO
+
+ Volume: 60|||||||
+
+
+ #####9  TESTE DE PLAY NO CONTROLE REMOTO  
+
+ -------------------- MENU -------------------- 
+
+ Está ligado? SIM
+
+ Está tocando? SIM
+
+ Volume: 60|||||||
+
+
+ #####10  TESTE DE DESLIGAR O CONTROLE REMOTO  
+
+ -------------------- MENU -------------------- 
+
+ Está ligado? NÃO
+
+ Está tocando? NÃO
+
+ Volume: 0|
+
+
+ #####11  TESTE DE LIGAR O CONTROLE REMOTO  
+
+ -------------------- MENU -------------------- 
+
+ Está ligado? SIM
+
+ Está tocando? NÃO
+
+ Volume: 50||||||
 ```
 
 <br>
