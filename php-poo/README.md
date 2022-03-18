@@ -8,6 +8,7 @@
 <h1 align="center"> PHP POO - Índice</h1> 
 
 <p align="center"> |&nbsp;&nbsp;&nbsp; 
+  <a href="#aula00">Aula 00</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#aula01">Aula 01</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#aula02">Aula 02</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#aula03">Aula 03</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -76,9 +77,73 @@
 
 <hr>
 
-## **Resumo de POO:**
 
-## **Objeto**
+### Conteúdo do Módulo :bookmark:
+
+<span id="aula00">
+
+### 0. Aula 00
+
+### Orientação a Objetos
+
+### Tópico 1: Conceitos Básicos
+
+
+### Nomenclatura
+
+Buscando evitar qualquer dúvida ou ambiguidade que possa surgir no desenvolvimento de cada tema, deixa-se o leitor a par da nomenclatura empregada nas linguagens orientadas a objetos.
+
+<table border="1" cellpadding="4" width="551"
+bordercolor="#808080">
+    <tr>
+        <td valign="top" width="23%" bgcolor="#C0C0C0"><font
+        color="#800080" size="2"><b>Definição</b></font> </td>
+        <td valign="top" width="30%" bgcolor="#C0C0C0"><font
+        color="#800080" size="2"><b>C++</b></font></td>
+        <td valign="top" width="23%" bgcolor="#C0C0C0"><font
+        color="#800080" size="2"><b>Java</b></font></td>
+        <td valign="top" width="23%" bgcolor="#C0C0C0"><font
+        color="#800080" size="2"><b>Smalltalk</b></font></td>
+    </tr>
+    <tr>
+        <td valign="top" width="23%" bgcolor="#C0C0C0"><font
+        size="2"><b>Objeto da classe</b></font></td>
+        <td valign="top" width="30%" bgcolor="#C0C0C0"><font
+        size="2">Objeto</font></td>
+        <td valign="top" width="23%" bgcolor="#C0C0C0"><font
+        size="2">Objeto</font></td>
+        <td valign="top" width="23%" bgcolor="#C0C0C0"><font
+        size="2">Instância</font></td>
+    </tr>
+    <tr>
+        <td valign="top" width="23%" bgcolor="#C0C0C0"><font
+        size="2"><b>Comportamento do objeto</b></font></td>
+        <td valign="top" width="30%" bgcolor="#C0C0C0"><font
+        size="2">Função membro</font></td>
+        <td valign="top" width="23%" bgcolor="#C0C0C0"><font
+        size="2">Método</font></td>
+        <td valign="top" width="23%" bgcolor="#C0C0C0"><font
+        size="2">Método</font></td>
+    </tr>
+    <tr>
+        <td valign="top" width="23%" bgcolor="#C0C0C0"><font
+        color="#000080" size="2"><b>Chamada do Comportamento</b></font></td>
+        <td valign="top" width="30%" bgcolor="#C0C0C0"><font
+        size="2">Chamada de função membro</font></td>
+        <td valign="top" width="23%" bgcolor="#C0C0C0"><font
+        size="2">Chamada de método</font></td>
+        <td valign="top" width="23%" bgcolor="#C0C0C0"><font
+        size="2">Mensagem</font></td>
+    </tr>
+</table>
+
+Neste tópico, vamos preferir a notação usada em Smalltalk. Mas isto não impede que sejam descritos trechos em que as definições acima apareçam misturadas.
+
+
+
+
+
+### Objeto
 
 Do dicionário Aurélio, um **objeto** é: "1. Tudo que é perceptível por qualquer dos sentidos. 2. Coisa, peça (...)."
 
@@ -90,15 +155,14 @@ Há várias definições do que é um **objeto de software**. Seguem algumas uti
   3. Um **objeto** é um conjunto de variáveis e métodos afins. (...) A idéia básica por trás de objetos é a de simulação.(...) Nas metodologias de orientação a objetos, programas devem ser escritos para simular estados e atividades de objetos do mundo real.
   4. Um **objeto** é uma instância de uma classe. Ele pode ser unicamente identificado por seu nome e ele define um estado que é representado pelos valores de seus atributos em um momento particular. O estado de um objeto varia de acordo com os métodos que são aplicados a eles.
  
-O termo '**objeto**' foi utilizado formalmente pela primeira vez na linguagem Simula, e objetos tipicamente existem nos programas em Simula para simular algum aspecto da realidade. 
 
-## **O Estado de um Objeto**
+### O Estado de um Objeto
 
 Como foi dito nas várias definições apresentadas, um **objeto** contém atributos, representados em programas por variáveis, que por sua vez armazenam dados (valores) que podem mudar a cada momento. Os valores dos atributos de um objeto definem seu estado em um determinado instante de tempo.
 
-## **Métodos** (Comportamento do Objeto)
+### Métodos (Comportamento do Objeto)
 
-O comportamento de um objeto é a forma como ele age e reage a mudanças de seus estados (...), ou seja, como ele responde às mensagens que lhe são enviadas. O comportamento de um objeto é definido pelo conjunto de métodos que podem ser aplicados a ele.
+O *comportamento de um objeto* é a forma como ele age e reage a mudanças de seus estados (...), ou seja, como ele responde às mensagens que lhe são enviadas. O comportamento de um objeto é definido pelo conjunto de métodos que podem ser aplicados a ele.
 
 Um **método** é uma operação que acessa o interior de um objeto e executa alguma alteração ou simples verificação no estado interno desse objeto. Um método só existe no contexto de um objeto, e opera exclusivamente com o estado desse objeto que o executa. O objeto no qual o método opera é chamado de receptor.
 
@@ -106,7 +170,7 @@ Somente um método do próprio objeto pode alterar seu estado. Não se pode alte
 
 Um objeto invoca um método como reação à recepção de uma mensagem.
 
-## **Encapsulamento**
+### **Encapsulamento**
 
 O princípio de esconder a estrutura de dados utilizada e somente prover uma interface bem definida é chamado de encapsulamento.
 
@@ -127,7 +191,7 @@ A rosquinha (donut) é uma representação gráfica clássica para objetos comum
 
 A única parte do objeto que o resto do sistema precisa conhecer é sua interface.
 
-## **Mensagens (Chamada de um método)**
+### **Mensagens (Chamada de um método)**
 
 A utilidade de um objeto vem da sua interação com os demais objetos do sistema. Objetos de software interagem e se comunicam uns com os outros enviando mensagens. Quando um objeto A quer que o objeto B execute um dos seus métodos, ele envia uma mensagem para o objeto B.
 
@@ -144,7 +208,7 @@ Para enfatizar a independência dos objetos, frequentemente fala-se de objetos c
 O comportamento de um objeto é expressado através de seus métodos, então a passagem de mensagens possibilita todas as possíveis interações entre objetos.
 Objetos não necessitam estar no mesmo processo ou até mesmo na mesma máquina para trocar mensagens entre si. 
 
-## **Classe**
+### **Classe**
 
 Do dicionário Aurélio, uma das definições de classe é: "Numa série ou num conjunto, grupo ou divisão que apresenta características semelhantes; categoria."
 
@@ -165,12 +229,152 @@ Atributos de classe são atributos compartilhados por todas as instâncias (obje
 
 Em oposição a métodos de instância, que servem para alterar ou consultar o estado de um objeto, métodos de classe servem para alterar ou consultar o estado de uma classe, ou seja, alterar ou consultar seus atributos de classe. Métodos de classe só podem atuar em atributos de classe, nunca em atributos de instância.
 
+### Tópico 2: Relacionamentos
+
+### Associação
+
+Uma associação descreve um *grupo de ligações* entre instâncias com estrutura e semântica comuns. Por exemplo, uma Pessoa trabalha-para uma Empresa. Uma associação descreve um conjunto de potenciais ligações da mesma maneira que uma classe descreve um conjunto de potenciais objetos.
+
+As associações são intrinsecamente bidirecionais. O nome de uma associação binária costuma ser lido em uma determinada direção, mas ela pode ser percorrida em direção diferente. A direção que o nome implica é a direção para frente; a direção oposta é a direção inversa. Por exemplo, trabalha-para interliga uma Pessoa a uma Empresa. O inverso de trabalha-para poderia ser chamado de emprega e liga uma Empresa a uma Pessoa. Na realidade, ambos os sentidos são igualmente significativos, e referem-se à mesma associação subjacente; são apenas os nomes que estabelecem uma direção.
+
+Ex.:
+
+<img src="https://web.tecgraf.puc-rio.br/~marcio/cursos/oo/Assoc.gif">
+<a href="#" target="_blank"></a>
+
+
+### Generalização e Herança
+
+A generalização e a herança são abstrações poderosas para o compartilhamento de semelhanças entre classes, ao mesmo tempo em que suas diferenças são preservadas. Por exemplo, gostaríamos de poder modelar a seguinte situação: Cada peça de equipamento tem fabricante, peso e preço. As bombas têm, além disso, pressão de sucção e taxa de fluxo. Os tanques também têm volume e pressão. Queremos definir características dos equipamentos.
+
+**Generalização** é o relacionamento entre uma classe e uma ou mais versões refinadas dela. A classe que estiver em processo de refinamento é chamada de superclasse e cada versão refinada é denominada subclasse. Por exemplo, Equipamento é a superclasse de Bomba e de Tanque. Os atributos e operações comuns a um grupo de subclasses são incluídos na superclasse e compartilhados por todas as subclasses. Diz-se que cada subclasse herda as características de sua superclasse. Como por exemplo, Bomba herda os atributos fabricantes, peso e preço de Equipamento. A generalização às vezes é chamada de relacionamento é-um porque cada instância de uma subclasse é também uma instância da superclasse.
+
+**A generalização e a herança** são transitivas através de um número arbitrário de níveis. Os termos ancestral e descendentes referem-se à generalização de classes através de múltiplos níveis. Uma instância de uma subclasse é simultaneamente uma instância de todas as suas classes ancestrais. O estado de uma instância inclui um valor para cada atributo de cada classe ancestral. Qualquer operação em qualquer classe ancestral pode ser pode ser aplicada a uma instância. Cada subclasse não só herda todas as características de seus ancestrais como também acrescenta seus próprios atributos específicos e suas próprias operações. Por exemplo, Bomba adiciona o atributo taxa de fluxo, que não é compartilhado por outros tipos de equipamento.
+
+Ex.:
+
+<img src="https://web.tecgraf.puc-rio.br/~marcio/cursos/oo/General.gif">
+<a href="#" target="_blank"></a>
+
+
+### Herança Múltipla
+
+A herança múltipla permite que uma classe possua mais de uma superclasse e herde características de todos os seus ancentrais. Isso permite a mesclagem de informações de duas ou mais origens. Essa é uma forma mais complicada de generalização do que a herança simples, que restringe a hierarquia de classes a uma árvore. A vantagem da herança múltipla é a maior capacidade de especificação de classes e a maior oportunidade de reutilização. Ela traz a modelagem de objetos para mais próximo da maneira como se costuma pensar. A desvantagem é a perda em simplicidade conceitual e de implementação. Em princípio, os tipos de diferentes regras de mesclagem podem ser definidos para solucionar conflitos entre características definidas por diferentes caminhos.
+
+Uma classe com mais de uma superclasse é denominada classe de junção. Uma característica proveniente da mesma classe ancestral encontrada em mais de um caminho é herdada apenas uma vez; é a mesma característica. Os conflitos entre definições paralelas criam ambiguidades que precisam ser resolvidas nas implementações. Na prática, esses conflitos devem ser evitados ou explicitamente resolvidos para se evitar ambiguidades ou mal-entendidos, mesmo quando uma determinada linguagem fornece uma regra de prioridade para solução de conflitos.
+
+
+### Agregação
+
+Agregação, ou, relacionamento parte-de, é um modo de relacionamento no qual um objeto é feito de componentes. Os componentes fazem parte do agregado. O agregado é, em termos semânticos, um objeto estendido tratado como uma unidade em muitas operações, embora fisicamente ele seja composto por objetos menores. Um objeto agregado pode ter diversas partes. As partes podem ou não existir fora do agregado ou constar em muitos agregados. A agregação é inerentemente transitiva - um agregado possui partes, que, por sua vez, podem ter partes. Muitas operações agregadas implicam em fechamento. A agregação recursiva é comum.
+
+Ex.:
+
+<img src="https://web.tecgraf.puc-rio.br/~marcio/cursos/oo/Agreg.gif">
+<a href="#" target="_blank"></a>
+
+### Agregação versus Generalização
+
+Agregação não é a mesma coisa que generalização. 
+**Agregação** relaciona-se a instâncias. Estão envolvidos dois objetos distintos; um deles é parte do outro. 
+A **generalização** é relativa a classes e é uma forma de se estruturar a descrição de um objeto isolado. Tanto a superclasse quanto a subclasse referem-se às propriedades de um único objeto. Com a generalização, um objeto é simultaneamente uma instância da superclasse e uma instância da subclasse. A confusão pode surgir porque tanto a agregação quanto a generalização dão origem a árvores através do fechamento transitivo. Uma árvore de agregação é composta por instâncias de objetos que fazem parte de um objeto composto; Uma árvore de generalização é composta por classes que descrevem um objeto. A agregação muitas vezes é chamada de relacionamento parte-de e a generalização é frequentemente chamada de relacionamento tipo-de ou é-um.
+
+Ex.:
+
+<img src="https://web.tecgraf.puc-rio.br/~marcio/cursos/oo/AgrXGen.gif">
+<a href="#" target="_blank"></a>
+
+
+#### Agregação versus Associação
+
+Se dois objetos forem estritamente ligados por um relacionamento parte-de, eles formam uma agregação. Se os objetos forem habitualmente considerados como independentes, embora possam muitas vezes estar ligados, eles formam um associação.
+
+Ex:
+
+<img src="https://web.tecgraf.puc-rio.br/~marcio/cursos/oo/AssXAgr.gif">
+<a href="#" target="_blank"></a>
+
+
+Empresa emprega Funcionário é uma *associação*.
+
+Departamento é parte de Divisão que, por sua vez, é parte de Empresa. Estes elementos formam uma *agregação* multinivelada.
+
+Dizemos também que instâncias agregadas tem o mesmo tempo de vida. Para instâncias associadas isto não é necessariamente verdade.
+
+
+### Tópico 3: Conceitos Avançados
+
+### Classes abstratas
+
+Diz-se que uma classe é abstrata quando pelo menos um de seus métodos está declarado mas não têm implementação associada. Métodos com esta características são também chamados de abstratos.
+
+Uma vez abstrata a classe não poderá ter instâncias e só poderá ser empregada como base para classes derivadas por herança. Então cada subclasse deverá implementar aqueles métodos que forem abstratos.
+
+O exemplo clássico de classe abstrata é a classe polígono.
+
+<img src="https://web.tecgraf.puc-rio.br/~marcio/cursos/oo/poligonos.gif">
+<a href="#" target="_blank"></a>
+
+ 
+Como um polígono é uma entidade que opera apenas com qualidades e relações, sem participar diretamente da realidade física, o consideramos como bom candidato a classe abstrata.
+
+Da classe polígono seriam derivadas subclasses presentes no mundo sensível, como por exemplo, as classes Círculo e Triângulo. Cada uma deve implementar de forma conveniente o método desenhar, abstrato em polígono.
+
+Em casos como este, a utilização de classes abstratas irá melhorar a clareza na modelagem orientada a objetos.
+
+Ex.
+
+*Exemplo 1*
+
+Considere-se uma universidade onde os professores podem ser horistas ou associados.
+
+Num sistema OO para pagamentos, será comum o emprego de um esquema de classes abstratas como o da figura abaixo, uma vez que os cálculos de salário de horistas e associados seguem rotinas diferentes.
+
+<img src="https://web.tecgraf.puc-rio.br/~marcio/cursos/oo/abstrata1.gif">
+<a href="#" target="_blank"></a>
+
+*Exemplo 2*
+
+A classe Fruta é abstrata. Se definirmos uma mensagem chamada Descascar, frutas com casca dura e frutas com casca mole certamente devem ter tratamentos diferenciados.
+
+<img src="https://web.tecgraf.puc-rio.br/~marcio/cursos/oo/abstrata2.gif">
+<a href="#" target="_blank"></a>
+
+
+### Referência a uma instância
+
+Uma **instância de uma classe** é um conjunto de informações e métodos relacionados, armazenados em uma região encadeada de memória. É um objeto, que poderá ser referenciado por uma ou mais variáveis em tempo de execução.
+
+
+
+  A variável em si não é a instância, mas uma referência a ela. As várias linguagens orientadas a objeto declaram variáveis que referenciam objetos de formas diferentes, e as formas de duas variáveis referenciarem o mesmo espaço de memória podem envolver desde mecanismos implícitos para passagem de parâmetro por referência até manipulação explícita de ponteiros.
+
+
+### Tipagem
+
+Em diversas linguagens de programação, toda variável declarada deve ter um tipo, uma palavra reservada que indica o formato do dado a que se referencia. Caracter e número em ponto flutuante são exemplos de formatos.
+
+Em outras linguagens não existe esta restrição, embora isto possa trazer uma perda natural de performance em fase de compilação.
+
+Em linguagens orientadas a objetos, o conceito de tipo pode se misturar com o conceito de classe. Uma classe é o tipo de uma instância.
+
+Como existem linguagens tipadas e não tipadas, costuma-se fazer a seguinte distinção - toda instância possui um tipo, mas uma variável que a referencia pode não possuir.
+
+C++ e Java são tipadas. Smalltalk não é.
+
+
+### Polimorfismo
+
+Uma classe é dita polimórfica quando instâncias suas, ou instâncias de classes derivadas suas, possuem mensagens que nem sempre são respondidas da mesma maneira - a resposta irá depender do contexto da execução. Sob este especto, diz-se que polimorfismo é a habilidade de diferentes instâncias, de classes diferentes, responderem a mesma mensagem de diferentes maneiras.
+
+Por outro lado, podemos analisar polimorfismo como sendo a contrapartida dinâmica do processo de compilação conhecido como amarração estática de nomes.
+
+Sob o ponto de vista estático, se uma classe derivada não redefine uma mensagem da classe base, então uma instância da classe derivada irá usar a mesma mensagem definida na classe base. No caso contrário, a instância irá usar a nova definição.
+
+Sob o ponto de vista dinâmico, tanto as instâncias da classe base quanto as instâncias de suas derivadas podem alternar entre mais de uma definição de mensagem, durante uma mesma execução do programa. Esta diversidade de formas pode ser obtida, por exemplo, com o emprego de mudanças de referência do tipo instância_base := instância_derivada ou instância_derivada := instância_base.
+
 <hr>
 
-
-
-
-### Conteúdo do Módulo :bookmark:
 
 <span id="aula01">
 
@@ -1576,6 +1780,10 @@ Projeto Controle Remoto
 ### 7. Aula 7
 
 #### Aula Teórica 7 – Relacionamento entre Classes
+
+Nessa aula de POO, vamos aprender como fazer relacionamentos entre as classes.
+
+
 
 #### Aula Prática 7 – Objetos Compostos em PHP
 
