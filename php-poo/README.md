@@ -2163,17 +2163,240 @@ Nessa aula de POO, vamos aprender como realizar um relacionamento de agregação
 
 Nessa aula de POO, vamos aprender como realizar a agregação entre objetos usando a linguagem PHP..
 
-<code></code>
+<code>Luta.php</code>
 
 ```php
+<?php
+require_once 'Lutador.php';
+class Luta
+{
+    // Atributos
+    public $desafiado;
+    private $desafiante;
+    private $rounds;
+    private $aprovada;
 
+    // Métodos Públicos
+    public function marcarLuta($l1, $l2) {
+        // TODO implement method - √
+        if ( $l1->getCategoria() === $l2->getCategoria()
+            && ($l1 != $l2) )
+        {
+            $this->aprovada = true;
+            $this->desafiado = $l1;
+            $this->desafiante = $l2;
+        } else {
+            $this->aprovada = false;
+            $this->desafiado =  null; // O valor especial null representa uma variável sem valor.
+            $this->desafiante = null;
+        }
+    }
+    public function lutar() {
+        // TODO implement method
+        if ($this->aprovada) {
+
+            $this->desafiado->apresentar();
+            $this->desafiante->apresentar();
+
+            $vencedor = rand(0,2);
+            // 0-> empate;
+            // 1 -> vitoria do desafiado;
+            // 2 -> vitoria do desafiante;
+
+            echo "<br>";
+            $tracejadoInicial = str_repeat("-", 40);
+            echo($tracejadoInicial);
+
+            switch ($vencedor) {
+                case 0: // TODO - EMPATE
+                    echo "<br><strong> EMPATE! </strong><br>";
+                    $this->desafiado->empatarLuta();
+                    $this->desafiante->empatarLuta();
+                    break;
+                case 1: // TODO - GANHOU O DESAFIADO
+                    echo "<br><strong> GANHOU A LUTA: " .$this->desafiado->getNome() ."</strong><br>";
+                    $this->desafiado->ganharLuta();
+                    $this->desafiante->perderLuta();
+                    break;
+                case 2 : // TODO - GANHOU O DESAFIANTE
+                    echo "<br><strong> GANHOU A LUTA: " .$this->desafiante->getNome() ."</strong><br>";
+                    $this->desafiante->ganharLuta();
+                    $this->desafiado->perderLuta();
+                    break;
+                }
+
+        } else {
+            echo "<br>";
+            $tracejadoInicial = str_repeat("-", 40);
+            echo($tracejadoInicial);
+
+            echo "<br><span class='foco'> LUTA NÃO PODE ACONTECER! </span> <br>";
+        }
+
+        $tracejadoFinal = str_repeat("-", 40);
+        echo($tracejadoFinal);
+        echo "<br>";
+    }
+
+    // Métodos Especiais (Getters e Setters)
+    public function getDesafiado()
+    {
+        return $this->desafiado;
+    }
+
+    public function setDesafiado($desafiado): void
+    {
+        $this->desafiado = $desafiado;
+    }
+
+    public function getDesafiante()
+    {
+        return $this->desafiante;
+    }
+
+    public function setDesafiante($desafiante): void
+    {
+        $this->desafiante = $desafiante;
+    }
+
+    public function getRounds()
+    {
+        return $this->rounds;
+    }
+
+    public function setRounds($rounds): void
+    {
+        $this->rounds = $rounds;
+    }
+
+    public function getAprovada()
+    {
+        return $this->aprovada;
+    }
+
+    public function setAprovada($aprovada): void
+    {
+        $this->aprovada = $aprovada;
+    }
+
+}
 ```
 
-<code></code>
+<code>Mensagem.php</code>
 
 ```php
+<?php
 
+class Mensagem
+{
+    public function mensagem() {
+        echo "<br><strong># <u> MENSAGEM INICIAL </u> # </strong><br>";
+
+        // https://www.php.net/manual/pt_BR/timezones.america.php
+        $dtz = new DateTimeZone("America/Sao_Paulo");
+        $dt = new DateTime("now", $dtz);
+        $currentTime = $dt->format("d-m-Y") . ". Hora: " . $dt->format("H:i:s");
+        echo "<br> Data: " .$currentTime;
+
+        echo "\n\n";
+        echo "<img src='./img.jpg' width='300px'>";
+        echo "<br><br> 'Welcome to the UEC'!";
+        echo "<br> 'Ladies and gentlemen, we are live!' (Senhoras e senhores, estamos ao vivo!)";
+        echo "<br> 'This is the moment you've all been waiting for' (Este é o momento que todos estavam esperando)";
+        echo "<br> 'It's time!' (Está na hora!) <br>";
+    }
+}
 ```
+
+<code>index.php</code>
+
+```php
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Aula 08 - Relacionamento entre Classes </title>
+</head>
+<body>
+<pre>
+    <?php
+        require_once 'Lutador.php';
+        require_once 'Luta.php';
+        require_once 'Mensagem.php';
+
+        $arr = array();
+        $arr[0] = new Lutador('[0]. Pretty Boy', 'França', '31', '1.75', '68.9', '11', '2', '1' );
+        $arr[1] = new Lutador('[1]. Putscript', 'Brasil', '29', '1.68', '57.8', '14', '2', '3' );
+        $arr[2] = new Lutador('[2]. Snapshadown', 'EUA', '35', '1.65', '80.9', '12', '2', '1' );
+        $arr[3] = new Lutador('[3]. Dead Code', 'Austrália', '28', '1.93', '81.6', '13', '0', '2' );
+        $arr[4] = new Lutador('[4]. Ufocobol', 'Brasil', '37', '1.70', '119.3', '5', '4', '3' );
+        $arr[5] = new Lutador('[5]. Nerdaar', 'EUA', '30', '1.81', '105.7', '12', '2', '4' );
+
+        $MSG = new Mensagem(); // Mensagem inicial antes da luta
+
+        echo "<br><strong>########## <u> CATEGORIA DOS PESOS LEVES </u> ########## </strong> <br><br>";
+        $UEC_1 = new Luta();
+        $UEC_1->marcarLuta($arr[0], $arr[1]);
+        $UEC_1->lutar();
+        $arr[0]->status();
+        $arr[1]->status();
+
+        echo "<br><strong>########## <u> CATEGORIA DOS PESOS MÉDIOS </u> ########## </strong> <br><br>";
+        $UEC_2 = new Luta();
+        $UEC_2->marcarLuta($arr[2], $arr[3]);
+        $UEC_2->lutar();
+        $arr[2]->status();
+        $arr[3]->status();
+
+        echo "<br><strong>########## <u> CATEGORIA DOS PESOS PESADOS </u> ########## </strong> <br><br>";
+        $UEC_3 = new Luta();
+        $UEC_3->marcarLuta($arr[4], $arr[5]);
+        $UEC_3->lutar();
+        $arr[4]->status();
+        $arr[5]->status();
+
+        echo "<br><strong>########## <u> TESTANDO AS REGRAS </u> ########## </strong> <br><br>";
+
+        $testeRegra01 = new Luta();
+        $testeRegra02 = new Luta();
+        $testeRegra03 = new Luta();
+        $testeRegra04 = new Luta();
+        $testeRegra05 = new Luta();
+
+        echo "<br> <u> REGRA 1 </u> &rarr; Só pode ser marcada luta entre lutadores da mesma categoria <br>";
+        $testeRegra01->marcarLuta($arr[0], $arr[2]);
+        $testeRegra01->lutar(); // TODO √
+
+        echo "<br> <u> REGRA 2 </u> &rarr; Desafiado e desafiante devem ser lutadores diferentes <br>";
+        $testeRegra02->marcarLuta($arr[0], $arr[0]);
+        $testeRegra02->lutar(); // TODO √
+
+        echo "<br> <u> REGRA 3 </u> &rarr; Só pode acontecer se tiver aprovada <br>";
+        $testeRegra03->marcarLuta($arr[0], $arr[0]);
+        $testeRegra03->setAprovada(false);
+        $testeRegra03->lutar(); // TODO √
+
+        echo "<br> <u> REGRA 4 </u> &rarr; Resultados possiveis Vitoria Empate e Derrota <br>";
+        $testeRegra04->marcarLuta($arr[0], $arr[1]);
+        $testeRegra04->lutar(); // TODO √
+
+    ?>
+</pre>
+</body>
+</html>
+```
+
+
+<code>Resultado do programa da aula 08</code>
+
+<img src="./img/php-poo-resultado-aula08.png">
+<a href="#" target="_blank"></a>
+
+[Resultado do programa da aula 08 - PDF](https://github.com/eduardodsr/cursoemvideo/tree/master/php-poo/pdf/php-poo-resultado-aula08.pdf) 
+
 
 <br>
 

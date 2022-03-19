@@ -28,7 +28,7 @@
        │      OK      │            │      
        │─────────────>│            │      
  ┌─────┴──────┐┌──────┴──────┐┌────┴─────┐
- │    100%    ││     100%    ││   45%    │
+ │    100%    ││     100%    ││   60%    │
  └────────────┘└─────────────┘└──────────┘
 ```
 
@@ -244,10 +244,10 @@
 7. Aula 7 ✅
     - Aula Teórica 7 – Relacionamento entre Classes
     - Aula Prática 7 – Objetos Compostos em PHP
-8. Aula 8
+8. Aula 8 ✅
     - Aula Teórica 8 – Relacionamento de Agregação
     - Aula Prática 8 – Agregação entre Objetos em PHP
-9. Aula 9
+9. Aula 9 ✅
     - Aula Teórica 9 – Exercícios de POO
     - Aula Prática 9 – Exercício prático POO em PHP
 10. Aula 10
