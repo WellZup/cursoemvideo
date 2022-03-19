@@ -1338,8 +1338,8 @@ A única parte do objeto que o resto do sistema precisa conhecer é sua interfac
 
 <br>
 
-<!-- <img src="img/aula6-01.png">
-<a href="#" target="_blank"></a> -->
+<img src="img/aula6-01.png">
+<a href="#" target="_blank"></a>
 <img src="img/aula6-02.png">
 <a href="#" target="_blank"></a>
 <img src="img/aula6-03.png">
@@ -1784,8 +1784,8 @@ Projeto Controle Remoto
 Nessa aula de POO, vamos aprender como fazer relacionamentos entre as classes.
 
 
-<img src="img/aula7-01.png">
-<a href="#" target="_blank"></a>
+<!-- <img src="img/aula7-01.png">
+<a href="#" target="_blank"></a> -->
 <img src="img/aula7-02.png">
 <a href="#" target="_blank"></a>
 <img src="img/aula7-03.png">
@@ -2135,7 +2135,7 @@ class Lutador
 <img src="./img/php-poo-resultado-aula07.png">
 <a href="#" target="_blank"></a>
 
-[Resultado do programa da aula 07 - PDF](https://github.com/eduardodsr/cursoemvideo/tree/master/php-poo/pdf/php-poo-resultado-aula07) 
+[Resultado do programa da aula 07 - PDF](https://github.com/eduardodsr/cursoemvideo/tree/master/php-poo/pdf/php-poo-resultado-aula07.pdf) 
 
 <br>
 
