@@ -442,6 +442,7 @@ Exemplo:
     
 Todo objeto vem a partir de uma classe (molde que foi gerado para criar o objeto).
  
+
 - **CLASSE** - Classificar a caneta (molde para gerar o objeto). 
 
     - Uma **classe** precisa responde as 3 perguntas abaixo.
@@ -475,22 +476,29 @@ Todo objeto vem a partir de uma classe (molde que foi gerado para criar o objeto
 <a href="#" target="_blank"></a>
 
 
-**POO - OBJETO** :
-- **Atributos** (características) -> Coisas que eu tenho;
-- **Métodos** (comportamentos) -> Coisas que eu faço;
-- **Estado atual** (estado/características atuais no momento que estou analisando o objeto) -> Como eu estou agora.
-
 **POO - Resumo** :
+
+- **OBJETO**
+
+    - **Atributos** (características) -> Coisas que eu tenho;
+    - **Métodos** (comportamentos) -> Coisas que eu faço;
+    - **Estado atual** (estado/características atuais no momento que estou analisando o objeto) -> Como eu estou agora.
+
+<br>
 
 - **CLASSE**
 
-Define os atributos e métodos comuns que serão compartilhados por um objeto.
+    - Define os atributos e métodos comuns que serão compartilhados por um objeto.
 
-**Classes** são os modelos ou moldes nos quais surgirão os objetos. As classes definem algumas propriedades e métodos que deverão fazer parte do objeto que derivar dela ou então, como dizemos, os objetos que serão instanciados a partir dela.
+    - **Classes** são os modelos ou moldes nos quais surgirão os objetos. As classes definem algumas propriedades e métodos que deverão fazer parte do objeto que derivar dela ou então, como dizemos, os objetos que serão instanciados a partir dela.
+
+<br>
 
 - **OBJETO**
 
 É a instância de uma classe.
+
+<br>
 
 - **ABSTRAÇÃO**
 
