@@ -2318,7 +2318,7 @@ class Mensagem
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Aula 08 - Relacionamento entre Classes </title>
+    <title>Aula 08 - Agregação entre Objetos  </title>
 </head>
 <body>
 <pre>
@@ -2364,7 +2364,6 @@ class Mensagem
         $testeRegra02 = new Luta();
         $testeRegra03 = new Luta();
         $testeRegra04 = new Luta();
-        $testeRegra05 = new Luta();
 
         echo "<br> <u> REGRA 1 </u> &rarr; Só pode ser marcada luta entre lutadores da mesma categoria <br>";
         $testeRegra01->marcarLuta($arr[0], $arr[2]);
