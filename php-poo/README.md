@@ -2619,6 +2619,36 @@ class Mensagem
 
 Nessa aula de POO, vamos fazer alguns exercícios de Programação Orientada a Objeto conceituais que já apareceram em concursos. Coloque em prática tudo aquilo que aprendeu até aqui.
 
+<img src="img/aula9-01.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula9-02.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula9-03.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula9-04.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula9-05.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula9-06.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula9-07.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula9-08.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula9-09.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula9-10.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula9-11.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula9-12.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula9-13.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula9-14.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula9-15.png">
+<a href="#" target="_blank"></a>
 
 #### Aula Prática 9 – Exercício prático POO em PHP
 
