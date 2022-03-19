@@ -277,7 +277,7 @@ Ex.:
 *Agregação* **não é** a mesma coisa que *generalização*. 
 **Agregação** relaciona-se a instâncias. Estão envolvidos dois objetos distintos; um deles é parte do outro. 
 A **generalização** é relativa a classes e é uma forma de se estruturar a descrição de um objeto isolado. Tanto a superclasse quanto a subclasse referem-se às propriedades de um único objeto. Com a generalização, um objeto é simultaneamente uma instância da superclasse e uma instância da subclasse. 
-A confusão pode surgir porque tanto a agregação quanto a generalização dão origem a árvores através do fechamento transitivo. Uma árvore de agregação é composta por instâncias de objetos que fazem parte de um objeto composto; Uma árvore de generalização é composta por classes que descrevem um objeto. A **agregação** muitas vezes é chamada de relacionamento *parte-de* e a **generalização** é frequentemente chamada de relacionamento *tipo-de* ou *é-um*.
+A confusão pode surgir porque tanto a agregação quanto a generalização dão origem a árvores através do fechamento transitivo. Uma árvore de agregação é composta por instâncias de objetos que fazem parte de um objeto composto; Uma árvore de generalização é composta por classes que descrevem um objeto. A **agregação** muitas vezes é chamada de relacionamento *parte-de* e a **generalização** é frequentemente chamada de relacionamento *tipo-de* ou *é-um(a)*.
 
 Ex.:
 
@@ -287,7 +287,7 @@ Ex.:
 
 #### Agregação versus Associação
 
-Se dois objetos forem estritamente ligados por um relacionamento parte-de, eles formam uma agregação. Se os objetos forem habitualmente considerados como independentes, embora possam muitas vezes estar ligados, eles formam um associação.
+Se dois objetos forem estritamente ligados por um relacionamento *parte-de*, eles formam uma **agregação**. Se os objetos forem habitualmente considerados como independentes, embora possam muitas vezes estar ligados, eles formam um **associação**.
 
 Ex:
 
@@ -295,9 +295,9 @@ Ex:
 <a href="#" target="_blank"></a>
 
 
-Empresa emprega Funcionário é uma *associação*.
+- Empresa **emprega** Funcionário é uma *associação*.
 
-Departamento é parte de Divisão que, por sua vez, é parte de Empresa. Estes elementos formam uma *agregação* multinivelada.
+Departamento é **parte de** Divisão que, por sua vez, é parte de Empresa. Estes elementos formam uma *agregação* multinivelada.
 
 Dizemos também que instâncias agregadas tem o mesmo tempo de vida. Para instâncias associadas isto não é necessariamente verdade.
 
@@ -309,18 +309,6 @@ Dizemos também que instâncias agregadas tem o mesmo tempo de vida. Para instâ
 Diz-se que uma classe é abstrata quando pelo menos um de seus métodos está declarado mas não têm implementação associada. Métodos com esta características são também chamados de abstratos.
 
 Uma vez abstrata a classe não poderá ter instâncias e só poderá ser empregada como base para classes derivadas por herança. Então cada subclasse deverá implementar aqueles métodos que forem abstratos.
-
-O exemplo clássico de classe abstrata é a classe polígono.
-
-<img src="https://web.tecgraf.puc-rio.br/~marcio/cursos/oo/poligonos.gif">
-<a href="#" target="_blank"></a>
-
- 
-Como um polígono é uma entidade que opera apenas com qualidades e relações, sem participar diretamente da realidade física, o consideramos como bom candidato a classe abstrata.
-
-Da classe polígono seriam derivadas subclasses presentes no mundo sensível, como por exemplo, as classes Círculo e Triângulo. Cada uma deve implementar de forma conveniente o método desenhar, abstrato em polígono.
-
-Em casos como este, a utilização de classes abstratas irá melhorar a clareza na modelagem orientada a objetos.
 
 Ex.
 
@@ -352,7 +340,7 @@ Uma **instância de uma classe** é um conjunto de informações e métodos rela
 
 ### Tipagem
 
-Em diversas linguagens de programação, toda variável declarada deve ter um tipo, uma palavra reservada que indica o formato do dado a que se referencia. Caracter e número em ponto flutuante são exemplos de formatos.
+Em diversas linguagens de programação, toda variável declarada deve ter um tipo, uma palavra reservada que indica o formato do dado a que se referencia. *Caracter* e *número em ponto flutuante* são exemplos de formatos.
 
 Em outras linguagens não existe esta restrição, embora isto possa trazer uma perda natural de performance em fase de compilação.
 
@@ -365,13 +353,15 @@ C++ e Java são tipadas. Smalltalk não é.
 
 ### Polimorfismo
 
-Uma classe é dita polimórfica quando instâncias suas, ou instâncias de classes derivadas suas, possuem mensagens que nem sempre são respondidas da mesma maneira - a resposta irá depender do contexto da execução. Sob este especto, diz-se que polimorfismo é a habilidade de diferentes instâncias, de classes diferentes, responderem a mesma mensagem de diferentes maneiras.
+Uma classe é dita polimórfica quando instâncias suas, ou instâncias de classes derivadas suas, possuem mensagens que nem sempre são respondidas da mesma maneira - a resposta irá depender do contexto da execução. Sob este especto, diz-se que **polimorfismo** é a habilidade de diferentes instâncias, de classes diferentes, responderem a mesma mensagem de diferentes maneiras.
 
 Por outro lado, podemos analisar polimorfismo como sendo a contrapartida dinâmica do processo de compilação conhecido como amarração estática de nomes.
 
 Sob o ponto de vista estático, se uma classe derivada não redefine uma mensagem da classe base, então uma instância da classe derivada irá usar a mesma mensagem definida na classe base. No caso contrário, a instância irá usar a nova definição.
 
-Sob o ponto de vista dinâmico, tanto as instâncias da classe base quanto as instâncias de suas derivadas podem alternar entre mais de uma definição de mensagem, durante uma mesma execução do programa. Esta diversidade de formas pode ser obtida, por exemplo, com o emprego de mudanças de referência do tipo instância_base := instância_derivada ou instância_derivada := instância_base.
+Sob o ponto de vista dinâmico, tanto as instâncias da classe base quanto as instâncias de suas derivadas podem alternar entre mais de uma definição de mensagem, durante uma mesma execução do programa. Esta diversidade de formas pode ser obtida, por exemplo, com o emprego de mudanças de referência do tipo:
+ 
+instância_base := instância_derivada ou instância_derivada := instância_base.
 
 <hr>
 
@@ -402,16 +392,16 @@ Alan Kay
     - Visual Basic
 
 
--  Vantagens da POO
+-  **Vantagens da POO**
 
 Acrônimo das vantagens da POO: <strong><big> C O M E R N </strong>a d a </big>
 
-- C -> Confiável
-- O -> Oportuno
-- M -> Manutenível
-- E -> Extensível
-- R -> Reutilizável
-- N -> Natural
+- **C** -> Confiável
+- **O** -> Oportuno
+- **M** -> Manutenível
+- **E** -> Extensível
+- **R** -> Reutilizável
+- **N**ada -> Natural
 
 <br>
 
@@ -439,7 +429,7 @@ O XAMPP é completamente gratuito, de fácil de instalar a distribuição Apache
 
 Nessa aula de POO, vamos aprender os conceitos de Classes e Objetos, passando pela teoria de Atributos, Métodos, Estado e Instâncias. Veja como criar uma classe e instanciar, criando objetos.
 
-- O que é um objeto?
+- **O que é um objeto?**
 
 Coisa material ou abstrata que pode ser percebida pelos sentidos e descrita por meio das suas características, comportamentos e estado atual (status).
 
@@ -477,10 +467,6 @@ Todo objeto vem a partir de uma classe (molde que foi gerado para criar o objeto
         - A caneta está sem tampa (tampa aberta)
         - A caneta está escrevendo agora
 
-**POO - OBJETO** :
-- **Atributos** (características) -> Coisas que eu tenho;
-- **Métodos** (comportamentos) -> Coisas que eu faço;
-- **Estado atual** (estado/características atuais no momento que estou analisando o objeto) -> Como eu estou agora.
 
 <img src="img/aula2-01.png">
 <a href="#" target="_blank"></a>
@@ -488,6 +474,11 @@ Todo objeto vem a partir de uma classe (molde que foi gerado para criar o objeto
 <img src="img/aula2-02.png">
 <a href="#" target="_blank"></a>
 
+
+**POO - OBJETO** :
+- **Atributos** (características) -> Coisas que eu tenho;
+- **Métodos** (comportamentos) -> Coisas que eu faço;
+- **Estado atual** (estado/características atuais no momento que estou analisando o objeto) -> Como eu estou agora.
 
 **POO - Resumo** :
 
