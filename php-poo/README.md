@@ -150,10 +150,10 @@ Do dicionário Aurélio, um **objeto** é: "1. Tudo que é perceptível por qual
 A partir da necessidade de modelar objetos do mundo real em simulações de computador, surgiu o conceito de objetos de software.
 
 Há várias definições do que é um **objeto de software**. Seguem algumas utilizadas:
-  1. Um **objeto** é um pacote de software que contém atributos e operações. Estes atributos (dados) também são chamados de propriedades. Às operações (comportamento) também dá-se o nome de métodos. 
-  2. Um **objeto** é uma "caixa preta" que recebe e envia mensagens. Uma "caixa preta" que contém código (seqüências de instruções de computador)  e dados (informação na qual as instruções operam). Uma regra primária da programação orientada a objetos: como um usuário de um objeto, você nunca deve ter que entrar na caixa, pois toda a comunicação é feita via mensagens. As mensagens definem a interface com o objeto.
+  1. Um **objeto** é um pacote de software que contém *atributos* e *operações*. Estes *atributos (dados)* também são chamados de propriedades. Às *operações (comportamento)* também dá-se o nome de *métodos*. 
+  2. Um **objeto** é uma "caixa preta" que recebe e envia *mensagens*. Uma "caixa preta" que contém código (seqüências de instruções de computador)  e dados (informação na qual as instruções operam). Uma regra primária da programação orientada a objetos: como um usuário de um objeto, você nunca deve ter que entrar na caixa, pois toda a comunicação é feita via mensagens. As *mensagens* definem a interface com o objeto.
   3. Um **objeto** é um conjunto de variáveis e métodos afins. (...) A idéia básica por trás de objetos é a de simulação.(...) Nas metodologias de orientação a objetos, programas devem ser escritos para simular estados e atividades de objetos do mundo real.
-  4. Um **objeto** é uma instância de uma classe. Ele pode ser unicamente identificado por seu nome e ele define um estado que é representado pelos valores de seus atributos em um momento particular. O estado de um objeto varia de acordo com os métodos que são aplicados a eles.
+  4. Um **objeto** é uma *instância de uma classe*. Ele pode ser unicamente identificado por seu nome e ele define um estado que é representado pelos valores de seus atributos em um momento particular. O estado de um objeto varia de acordo com os métodos que são aplicados a eles.
  
 
 ### O Estado de um Objeto
@@ -175,13 +175,11 @@ Um objeto invoca um método como reação à recepção de uma mensagem.
 O princípio de esconder a estrutura de dados utilizada e somente prover uma interface bem definida é chamado de encapsulamento.
 
 **Algumas definições comuns de encapsulamento:**
-1. Encapsulamento é o processo de esconder todos os detalhes de um objeto que não contribuem para as suas características essenciais.
-2. Encapsulamento é um princípio, utilizando quando se está desenvolvendo a estrutura geral de um programa, no qual cada componente de um programa deve encapsular ou esconder cada decisão de projeto (...) A interface com cada módulo é definida de forma a revelar o mínimo possível sobre o seu funcionamento interno.
-3. O encapsulamento esconde detalhes de implementação do objeto (métodos) e o que sobra visível é a sua interface, isto é, o conjunto de todas as mensagens a que ele pode responder. Uma vez que o objeto é encapsulado, seus detalhes de implementação não são mais imediatamente acessíveis. Ao invés disso, eles são empacotados e são somente indiretamente acessíveis através da interface do objeto. A única forma de acessar a um objeto encapsulado é através da troca de mensagens: é enviada uma mensagem ao objeto, o objeto mesmo seleciona o método pelo qual ele irá reagir à mensagem.
+1. **Encapsulamento** é o processo de esconder todos os detalhes de um objeto que não contribuem para as suas características essenciais.
+2. **Encapsulamento** é um princípio, utilizando quando se está desenvolvendo a estrutura geral de um programa, no qual cada componente de um programa deve encapsular ou esconder cada decisão de projeto (...) A **interface** com cada módulo é definida de forma a revelar o mínimo possível sobre o seu funcionamento interno.
+3. O **encapsulamento** esconde detalhes de implementação do objeto (métodos) e o que sobra visível é a sua **interface**, isto é, o conjunto de todas as mensagens a que ele pode responder. Uma vez que o objeto é encapsulado, seus detalhes de implementação não são mais imediatamente acessíveis. Ao invés disso, eles são empacotados e são somente indiretamente acessíveis através da interface do objeto. A única forma de acessar a um objeto encapsulado é através da *troca de mensagens*: é enviada uma mensagem ao objeto, o objeto mesmo seleciona o método pelo qual ele irá reagir à mensagem.
  
-Podemos dizer portanto que os objetos possuem uma parte interna, os dados, que não podem ser acessados por outros objetos do sistema, e outra externa, os métodos, que permitem a alteração ou verificação de seu estado.
-
-A rosquinha (donut) é uma representação gráfica clássica para objetos comumente encontrada na literatura. A idéia é que não se pode chegar a seu recheio (dados) sem passar por sua massa (métodos)
+Podemos dizer portanto que os objetos possuem uma parte *interna*, os dados, que não podem ser acessados por outros objetos do sistema, e outra *externa*, os métodos, que permitem a alteração ou verificação de seu estado.
 
 **Os Benefícios do Encapsulamento:**
 
@@ -189,19 +187,20 @@ A rosquinha (donut) é uma representação gráfica clássica para objetos comum
 
 **Ocultação de informações**: um objeto possui uma interface pública que outros objetos podem utilizar para comunicarem-se com ele. Mas o objeto pode manter informações privadas e métodos podem ser modificados em qualquer momento sem afetar os outros objetos que dependem dele. Por exemplo, você não precisa de entender o funcionamento interno do mecanismo de marchas da sua bicicleta para utilizá-lo.
 
-A única parte do objeto que o resto do sistema precisa conhecer é sua interface.
+A única parte do objeto que o resto do sistema precisa conhecer é sua **interface**.
+
 
 ### **Mensagens (Chamada de um método)**
 
-A utilidade de um objeto vem da sua interação com os demais objetos do sistema. Objetos de software interagem e se comunicam uns com os outros enviando mensagens. Quando um objeto A quer que o objeto B execute um dos seus métodos, ele envia uma mensagem para o objeto B.
+A utilidade de um objeto vem da sua interação com os demais objetos do sistema. Objetos de software interagem e se comunicam uns com os outros enviando **mensagens**. Quando um *objeto A* quer que o *objeto B* execute um dos seus métodos, ele envia uma **mensagem** para o *objeto B*.
 
-Portanto: uma mensagem é uma requisição para que um objeto invoque um de seus métodos. Uma mensagem por sua vez possui três componentes: o **objeto** para o qual a mensagem está endereçado, o **nome do método** a ser executado e os **argumentos** necessários para a execução do método. 
+Portanto: uma **mensagem** é uma requisição para que um objeto invoque um de seus métodos. Uma mensagem por sua vez possui três componentes: o **objeto** para o qual a mensagem está endereçado, o **nome do método** a ser executado e os **argumentos** necessários para a execução do método. 
 
 Estes três componentes são informação suficiente para que o objeto receptor execute o método desejado. Não é necessária nenhuma informação adicional. Os objetos podem também recusar a execução de um método, por exemplo, se o objeto que enviou a mensagem não tem a permissão para executar o método requisitado.
 
 Consequentemente, a invocação de um método é uma reação causada pela recepção de uma mensagem. Isso somente é possivel se o método realmente existe para o objeto.
 
-Para enfatizar a independência dos objetos, frequentemente fala-se de objetos como comunicando-se através da troca de mensagens. Quando uma mensagem é enviada para um objeto, o método correspondente é procurado (procura do método) e executado (invocação do método) e possivelmente o resultado é retornado. O resultado é tipicamente um objeto. 
+Para enfatizar a independência dos objetos, frequentemente fala-se de objetos como comunicando-se através da *troca de mensagens*. Quando uma mensagem é enviada para um objeto, o método correspondente é *procurado* (procura do método) e *executado* (invocação do método) e possivelmente o resultado é *retornado*. O resultado é tipicamente um objeto. 
  
 
 **Os Benefícios das Mensagens:**
@@ -213,9 +212,9 @@ Objetos não necessitam estar no mesmo processo ou até mesmo na mesma máquina 
 Do dicionário Aurélio, uma das definições de classe é: "Numa série ou num conjunto, grupo ou divisão que apresenta características semelhantes; categoria."
 
 Algumas **definições de classe** no contexto de orientação a objetos:
-1. Uma classe é um modelo ou protótipo que define as variáveis e métodos comuns para todos os objetos de um determinado tipo. [1] 
-2. Uma classe é a especificação da estrutura (atributos de instância), comportamento (métodos) (...) para objetos. (...) Esta definição enfatiza uma classe como um descritor/construtor para objetos. [2]
-3.  Uma classe pode ser vista como uma fábrica de objetos. Uma classe é uma entidade cujas principais finalidades são definir um tipo abstrato de dados em particular e prover mecanismos para a criação de objetos desse tipo. [3]
+1. Uma **classe** é um modelo ou protótipo que define as variáveis e métodos comuns para todos os objetos de um determinado tipo. [1] 
+2. Uma **classe** é a especificação da estrutura (atributos de instância), comportamento (métodos) (...) para objetos. (...) Esta definição enfatiza uma classe como um descritor/construtor para objetos. [2]
+3.  Uma **classe** pode ser vista como uma fábrica de objetos. Uma classe é uma entidade cujas principais finalidades são definir um tipo abstrato de dados em particular e prover mecanismos para a criação de objetos desse tipo. [3]
 
 No mundo real, frequentemente temos objetos do mesmo tipo. Por exemplo, sua bicicleta é somente uma das diversas bicicletas no mundo. Utilizando a terminologia de orientação a objetos, poderíamos dizer que sua bicicleta é uma instância da classe de objetos conhecida como bicicletas. Bicicletas possuem um estado (marcha atual, velocidade) e comportamento (troca de marcha, freios) em comum. No entanto, o estado de cada bicicleta é independente e pode ser diferente do estado de outras bicicletas.
 
@@ -2143,9 +2142,26 @@ class Lutador
 
 ### 8. Aula 8
 
+Objetos são instância de classes.
+
+Preciso de uma Classe para poder instanciar um Objeto.
+
+Não consigo ter Objetos sem ter uma Classe definindo a estrutura.
+
+Uma Classe encapsula dados e funcionalidades.
+
+Na programação OO, o encapsulamento se refere ao agrupamento de dados com os métodos que operam nesses dados ou à restrição do acesso direto a alguns dos componentes de um objeto.
+
+
+
 #### Aula Teórica 8 – Relacionamento de Agregação
 
+Nessa aula de POO, vamos aprender como realizar um relacionamento de agregação entre classes para gerar objetos ainda mais poderosos.
+
+
 #### Aula Prática 8 – Agregação entre Objetos em PHP
+
+Nessa aula de POO, vamos aprender como realizar a agregação entre objetos usando a linguagem PHP..
 
 <code></code>
 
@@ -2167,7 +2183,12 @@ class Lutador
 
 #### Aula Teórica 9 – Exercícios de POO
 
+Nessa aula de POO, vamos fazer alguns exercícios de Programação Orientada a Objeto conceituais que já apareceram em concursos. Coloque em prática tudo aquilo que aprendeu até aqui.
+
+
 #### Aula Prática 9 – Exercício prático POO em PHP
+
+Nessa aula de POO, vamos fazer um exercício de Programação Orientada a Objeto em PHP com tudo aquilo que aprendemos até aqui.
 
 <code></code>
 
@@ -2189,7 +2210,12 @@ class Lutador
 
 #### Aula Teórica 10 – Herança (Parte 1)
 
+Nessa aula de POO, vamos aprender o que é Herança em Programação Orientada a Objetos.
+
+
 #### Aula Prática 10 – Herança (Parte 1)
+
+Nessa aula de POO, vamos aprender a aplicar o conceito de Herança ao PHP.
 
 <code></code>
 
@@ -2211,7 +2237,12 @@ class Lutador
 
 #### Aula Teórica 11 – Herança (Parte 2)
 
+Nessa aula de POO, vamos aprender como funcionam os tipos de Herança, que são a Herança de Implementação e Herança para Diferença. Além disso, vamos ver algumas nomenclaturas importantes para a Programação Orientada a Objetos.
+
+
 #### Aula Prática 11 – Herança (Parte 2)
+
+Nessa aula de POO com PHP, vamos aprender a colocar a Herança em prática, usando as técnicas de Herança de Implementação e Herança para Diferença.
 
 <code></code>
 
@@ -2233,7 +2264,12 @@ class Lutador
 
 #### Aula Teórica 12 – Conceito Polimorfismo (Parte 1)
 
+Nessa aula de POO, vamos aprender como funciona o Polimorfismo em Programação Orientada a Objetos, o terceiro pilar de teoria.
+
+
 #### Aula Prática 12 – Polimorfismo em PHP (Parte 1)
+
+Nessa aula de POO, vamos aprender como fazer Polimorfismo de Sobreposição (Override) em PHP.
 
 <code></code>
 
@@ -2255,7 +2291,12 @@ class Lutador
 
 #### Aula Teórica 13 – Conceito Polimorfismo (Parte 2)
 
+Nessa aula de POO, vamos aprender como aplicar o Polimorfismo de Sobrecarga às nossas classes. Veja também a diferença entre sobrecarga e sobreposição, algo que muita gente confunde.
+
+
 #### Aula Prática 13 – Polimorfismo Sobrecarga (Parte 2)
+
+Nessa aula de POO, vamos aprender uma maneira alternativa de implementar sobrecarga aos métodos em PHP. Veja como fazer polimorfismo de sobrecarga em PHP.
 
 <code></code>
 
@@ -2277,7 +2318,11 @@ class Lutador
 
 #### Aula Teórica 14 – Exercícios de POO (Parte 2)
 
+Nessa aula de POO, vamos fazer uma lista de exercícios de programação orientada a objetos para você testar os seus conhecimentos adquiridos durante as 13 primeiras aulas do curso.
+
 #### Aula Prática 14 – Projeto Final em PHP (Parte 1)
+
+Nessa aula de POO, vamos iniciar a construção de um exemplo completo de um modelo 100% construído em Programação Orientada a Objetos com PHP.
 
 <code></code>
 
@@ -2299,7 +2344,12 @@ class Lutador
 
 #### Aula Teórica 15 – Exercícios de POO (Parte 3)
 
+Nessa aula de POO, vamos fazer mais 10 Exercícios de Programação Orientada a Objetos e continuar a construção do modelo do Diagrama de Classes da aula anterior.
+
+
 #### Aula Prática 15 – Projeto Final em PHP (Parte 2)
+
+Nessa aula de POO, vamos aplicar o modelo de agregação em Classes utilizando linguagem PHP. Um exercício prático e completamente feito em Programação Orientada a Objetos.
 
 <code></code>
 
