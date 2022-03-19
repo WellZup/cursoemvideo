@@ -1338,8 +1338,8 @@ A única parte do objeto que o resto do sistema precisa conhecer é sua interfac
 
 <br>
 
-<img src="img/aula6-01.png">
-<a href="#" target="_blank"></a>
+<!-- <img src="img/aula6-01.png">
+<a href="#" target="_blank"></a> -->
 <img src="img/aula6-02.png">
 <a href="#" target="_blank"></a>
 <img src="img/aula6-03.png">
@@ -1784,20 +1784,358 @@ Projeto Controle Remoto
 Nessa aula de POO, vamos aprender como fazer relacionamentos entre as classes.
 
 
+<img src="img/aula7-01.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula7-02.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula7-03.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula7-04.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula7-05.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula7-06.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula7-07.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula7-08.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula7-09.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula7-10.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula7-11.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula7-12.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula7-13.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula7-14.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula7-15.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula7-16.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula7-17.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula7-18.png">
+<a href="#" target="_blank"></a>
+<img src="img/aula7-19.png">
+<a href="#" target="_blank"></a>
+
+
+
 
 #### Aula Prática 7 – Objetos Compostos em PHP
 
-<code></code>
+<code>Lutador.php</code>
 
 ```php
+<?php
 
+class Lutador
+{
+    // ATRIBUTOS
+
+    private $nome;
+    private $nacionalidade;
+    private $idade;
+    private $altura;
+    private $peso;
+    private $categoria;
+    private $vitorias;
+    private $derrotas;
+    private $empates;
+
+    // METODO CONSTRUTOR
+    // Nao quero $categoria no metodo construtor! A $categoria sera calcula nos metodos:
+    //  function setPeso($peso) chama function setCategoria()
+
+    public function __construct($nome, $nacionalidade, $idade, $altura, $peso, $vitorias, $derrotas, $empates)
+    {
+        $this->nome = $nome;
+        $this->nacionalidade = $nacionalidade;
+        $this->idade = $idade;
+        $this->altura = $altura;
+        $this->setPeso($peso);      // $this->peso = $peso; [Não apresenta o peso dessa forma]
+        $this->vitorias = $vitorias;
+        $this->derrotas = $derrotas;
+        $this->empates = $empates;
+    }
+
+    // METODOS
+
+    public function mensagem() {
+        // https://www.php.net/manual/pt_BR/timezones.america.php
+        $dtz = new DateTimeZone("America/Sao_Paulo");
+        $dt = new DateTime("now", $dtz);
+        $currentTime = $dt->format("d-m-Y") . ". Hora: " . $dt->format("H:i:s");
+        echo "<br> Data: " .$currentTime;
+
+        echo "\n\n";
+        echo "<img src='./img.jpg' width='300px'>";
+        echo "<br><br> 'Welcome to the UEC'!";
+        echo "<br> 'Ladies and gentlemen, we are live!' (Senhoras e senhores, estamos ao vivo!)";
+        echo "<br> 'This is the moment you've all been waiting for' (Este é o momento que todos estavam esperando)";
+        echo "<br> 'It's time!' (Está na hora!) <br>";
+    }
+
+    public function apresentar() {
+        echo "<br><strong># <u> APRESENTACAO DO LUTADOR </u> # </strong><br>";
+
+        echo "<br> Lutador: <strong>" .$this->getNome() ."</strong>.";
+        echo "<br> Origem: " .$this->getNacionalidade() .".";
+        echo "<br> Idade: " .$this->getIdade() ." anos.";
+        echo "<br> Pesando: " .$this->getPeso() ." Kg.";
+        echo "<br> Categoria: " .$this->getCategoria() .".";
+        echo "<br> Ganhou:  <span class='foco'>" .$this->getVitorias() ."</span>.";
+        echo "<br> Perdeu:  <span class='foco'>" .$this->getDerrotas() ."</span>.";
+        echo "<br> Empatou: <span class='foco'>" .$this->getEmpates() ."</span>.";
+        echo "<br>";
+    }
+    public function status() {
+        echo "<br><strong> # <u> STATUS DO LUTADOR </u> # </strong><br>";
+
+        echo "<br> Nome: <strong>" .$this->getNome() ."</strong>";
+        echo "<br> Categoria: " .$this->getCategoria();
+        echo "<br> Vitórias: <span class='foco'>" .$this->getVitorias() ."</span>";
+        echo "<br> Derrotas: <span class='foco'>" .$this->getDerrotas() ."</span>";
+        echo "<br> Empates:  <span class='foco'>" .$this->getEmpates() ."</span>";
+        echo "<br>";
+    }
+    public function ganharLuta() {
+       $this->setVitorias($this->getVitorias() + 1);
+       // $this->vitorias = $this->vitorias + 1; // declarar de outra forma, sem utilizar os metodos getters e setters
+    }
+    public function perderLuta() {
+        $this->setDerrotas($this->getDerrotas() + 1);
+    }
+    public function empatarLuta() {
+        $this->setEmpates($this->getEmpates() + 1);
+    }
+
+    // METODOS ESPECIAIS, GETTERS E SETTERS
+
+    public function getNome()
+    {
+        return $this->nome;
+    }
+
+    public function setNome($nome): void
+    {
+        $this->nome = $nome;
+    }
+
+    public function getNacionalidade()
+    {
+        return $this->nacionalidade;
+    }
+
+    public function setNacionalidade($nacionalidade): void
+    {
+        $this->nacionalidade = $nacionalidade;
+    }
+
+    public function getIdade()
+    {
+        return $this->idade;
+    }
+
+    public function setIdade($idade): void
+    {
+        $this->idade = $idade;
+    }
+
+    public function getAltura()
+    {
+        return $this->altura;
+    }
+
+    public function setAltura($altura): void
+    {
+        $this->altura = $altura;
+    }
+
+    public function getPeso()
+    {
+        return $this->peso;
+    }
+
+    public function setPeso($peso): void
+    {
+        $this->peso = $peso;
+        $this->setCategoria();
+    }
+
+    public function getCategoria()
+    {
+        return $this->categoria;
+    }
+
+    private function setCategoria(): void
+    {
+        if ($this->peso < 52.2) {
+            $this->categoria = "Inválido";
+        }
+        else if ($this->peso <= 70.3) {
+            $this->categoria = "Leve";
+        }
+        else if ($this->peso <= 83.9) {
+            $this->categoria = "Médio";
+        }
+        else if ($this->peso <= 120.2) {
+            $this->categoria = "Pesado";
+        }
+        else {
+            $this->categoria = "Inválido";
+        }
+    }
+
+     public function getVitorias()
+    {
+        return $this->vitorias;
+    }
+
+     public function setVitorias($vitorias): void
+    {
+        $this->vitorias = $vitorias;
+    }
+
+    public function getDerrotas()
+    {
+        return $this->derrotas;
+    }
+
+    public function setDerrotas($derrotas): void
+    {
+        $this->derrotas = $derrotas;
+    }
+
+    public function getEmpates()
+    {
+        return $this->empates;
+    }
+
+    public function setEmpates($empates): void
+    {
+        $this->empates = $empates;
+    }
+
+}
 ```
 
-<code></code>
+<code>index.php</code>
 
 ```php
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Aula 07 - Relacionamento entre Classes </title>
+</head>
+<body>
+<pre>
+    <?php
+        require_once 'Lutador.php';
 
+        $arr = array();
+        $arr[0] = new Lutador('[0]. Pretty Boy', 'França', '31', '1.75', '68.9', '11', '2', '1' );
+        $arr[1] = new Lutador('[1]. Putscript', 'Brasil', '29', '1.68', '57.8', '14', '2', '3' );
+        $arr[2] = new Lutador('[2]. Snapshadown', 'EUA', '35', '1.65', '80.9', '12', '2', '1' );
+        $arr[3] = new Lutador('[3]. Dead Code', 'Austrália', '28', '1.93', '81.6', '13', '0', '2' );
+        $arr[4] = new Lutador('[4]. Ufocobol', 'Brasil', '37', '1.70', '119.3', '5', '4', '3' );
+        $arr[5] = new Lutador('[5]. Nederland', 'EUA', '30', '1.81', '105.7', '12', '2', '4' );
+
+        $arr[0]->mensagem(); // Mensagem inicial antes da luta
+
+
+        echo "<br><strong>########## <u> CATEGORIA DOS PESOS LEVES </u> ########## </strong> <br><br>";
+        // selecionar o indice do array dos 2 lutadores
+        $i0 = $arr[0]->getNome();
+        $i1 = $arr[1]->getNome();
+
+        echo "<strong> Luta: </strong> " .$i0 . " VS " .$i1;
+        echo "\n";
+
+        // Apresentação dos 2 lutadores antes da luta
+        $arr[0]->apresentar();
+        $arr[1]->apresentar();
+
+        echo "<p><strong> # <u> RESULTADO DA LUTA ENTRE OS DOIS LUTADORES: </u> # </strong></p>";
+
+        echo "Empatou a luta entre <span class='foco'>" .$i0  . " VS " .$i1 ."</span> <br>";
+        $arr[0]->empatarLuta();
+        $arr[1]->empatarLuta();
+
+        // Status dos 2 lutadores apos a luta
+        $arr[0]->status();
+        $arr[1]->status();
+
+        echo "\n";
+        echo "<br><strong>########## <u> CATEGORIA DOS PESOS MÉDIOS </u> ########## </strong> <br><br>";
+        // selecionar o indice do array dos 2 lutadores
+        $i2 = $arr[2]->getNome();
+        $i3 = $arr[3]->getNome();
+
+        echo "<strong> Luta: </strong> " .$i2 . " VS " .$i3;
+        echo "\n";
+
+        // Apresentação dos 2 lutadores antes da luta
+        $arr[2]->apresentar();
+        $arr[3]->apresentar();
+
+        echo "<p><strong> # <u> RESULTADO DA LUTA ENTRE OS DOIS LUTADORES: </u> # </strong></p>";
+
+        echo "Ganhou a luta : <span class='foco'>" .$i2 ."</span> <br>";
+        $arr[2]->ganharLuta();
+
+        echo "Perdeu a luta : <span class='foco'>" .$i3 ."</span> <br>";
+        $arr[3]->perderLuta();
+
+        // Status dos 2 lutadores apos a luta
+        $arr[2]->status();
+        $arr[3]->status();
+
+        echo "\n";
+        echo "<br><strong>########## <u> CATEGORIA DOS PESOS PESADOS </u> ########## </strong> <br><br>";
+        // selecionar o indice do array dos 2 lutadores
+        $i4 = $arr[4]->getNome();
+        $i5 = $arr[5]->getNome();
+
+        echo "<strong> Luta: </strong> " .$i4 . " VS " .$i5; // Lutador $i2 X Lutador $i3
+        echo "\n";
+
+        // Apresentação dos 2 lutadores
+        $arr[4]->apresentar();
+        $arr[5]->apresentar();
+
+        echo "<p><strong> # <u> RESULTADO DA LUTA ENTRE OS DOIS LUTADORES: </u> # </strong></p>";
+
+        echo "Ganhou a luta : <span class='foco'>" .$i4 ."</span> <br>";
+        $arr[4]->ganharLuta();
+
+        echo "Perdeu a luta : <span class='foco'>" .$i5 ."</span> <br>";
+        $arr[5]->perderLuta();
+
+        // Status dos 2 lutadores apos a luta
+        $arr[4]->status(); 
+        $arr[5]->status(); 
+
+    ?>
+</pre>
+</body>
+</html>
 ```
+
+<code>Resultado do programa da aula 07</code>
+
+<img src="./img/php-poo-resultado-aula07.png">
+<a href="#" target="_blank"></a>
+
+[Resultado do programa da aula 07 - PDF](https://github.com/eduardodsr/cursoemvideo/tree/master/php-poo/pdf/php-poo-resultado-aula07) 
 
 <br>
 

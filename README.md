@@ -28,7 +28,7 @@
        │      OK      │            │      
        │─────────────>│            │      
  ┌─────┴──────┐┌──────┴──────┐┌────┴─────┐
- │    100%    ││     100%    ││   40%    │
+ │    100%    ││     100%    ││   45%    │
  └────────────┘└─────────────┘└──────────┘
 ```
 
@@ -241,7 +241,7 @@
 6. Aula 6 ✅
     - Aula Teórica 6 – Pilares da POO: Encapsulamento
     - Aula Prática 6 – Encapsulamento
-7. Aula 7
+7. Aula 7 ✅
     - Aula Teórica 7 – Relacionamento entre Classes
     - Aula Prática 7 – Objetos Compostos em PHP
 8. Aula 8
