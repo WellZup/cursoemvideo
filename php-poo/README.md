@@ -2650,33 +2650,31 @@ Nessa aula de POO, vamos fazer alguns exercícios de Programação Orientada a O
 <a href="#" target="_blank"></a>
 
 
-- Q1 -> Uma casa está para uma planta arquitetônica assim como um **objeto** está para... 
+* Q1 -> Uma casa está para uma planta arquitetônica assim como um **objeto** está para... 
 
 **uma classe**
 
-- Q2 -> Vantagens da POO
+* Q2 -> Vantagens da POO
 
 **C O M E R N**ada
-**C** -> Confiável
-**O**-> Oportuno
-**M** -> Manutenível
-**E** -> Extensível
-**R** -> Reutilizavel
-**N**ada -> Natural
+- **C** -> Confiável
+- **O**-> Oportuno
+- **M** -> Manutenível
+- **E** -> Extensível
+- **R** -> Reutilizavel
+- **N**ada -> Natural
 
-- Q3
+* Q3
 
-Uma **classe** é instância de um **objeto**.
+- Uma **classe** é instância de um **objeto**.
 
-- Q4
+* Q4
 
-**OBJETO** -> construção de sw que encapsula estado e comportamento
-**CLASSE** -> define os atributos e comportamentos comuns
-**ATRITUBO** -> característica de uma classe que é visível
-**COMPORTAMENTO** -> ação executada por um objeto
-**DOMÍNIO** -> espaço onde o problema reside
-
-
+- **OBJETO** -> construção de sw que encapsula estado e comportamento
+- **CLASSE** -> define os atributos e comportamentos comuns
+- **ATRITUBO** -> característica de uma classe que é visível
+- **COMPORTAMENTO** -> ação executada por um objeto
+- **DOMÍNIO** -> espaço onde o problema reside
 
 * Q5 
 
@@ -2712,18 +2710,18 @@ Uma **classe** é instância de um **objeto**.
 
 * Q10 - niveis de acesso (Visibilidade dos Modificadores)
 
-público -> qualquer um pode acessar. A classe atual e outras classes.
-privado -> é visível somente dentro da classe. Somente a classe atual.
-protegido -> nível intermediário entre o publico e o privado. A classe atual e todas as sub-classes (filhas)
+- público (+) -> qualquer um pode acessar. A classe atual e outras classes.
+- privado (-) -> é visível somente dentro da classe. Somente a classe atual.
+- protegido (#) -> nível intermediário entre o publico e o privado. A classe atual e todas as sub-classes (filhas)
 
 - Q11
 
-Conceito de **Encapsulamento** -> A proteção de atributos e operações das classes, fazendo com que estas se comuniquem com o meio externo por meio de suas interfaces.
+- Conceito de **Encapsulamento** -> A proteção de atributos e operações das classes, fazendo com que estas se comuniquem com o meio externo por meio de suas interfaces.
 
 - Q12
 
-**Implementação** -> define os detalhes internos do componente
-**Interface** -> lista os serviços fornecidos por ele.
+- **Implementação** -> define os detalhes internos do componente
+- **Interface** -> lista os serviços fornecidos por ele.
 
 - Q13
 
