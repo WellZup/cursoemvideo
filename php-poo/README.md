@@ -2725,7 +2725,7 @@ Nessa aula de POO, vamos fazer alguns exercícios de Programação Orientada a O
 
 - Q13
 
-**ENCAPSULAMENTO** -> é a característica da POO que permite separar o programa em várias partes menores e independentes. Cada parte possui sua implementação isolada e realiza seu trabalho de forma autônoma. Com essa característica é possível ocultar os detalhes internos de cada parte através de uma interface.
+- **ENCAPSULAMENTO** -> é a característica da POO que permite separar o programa em várias partes menores e independentes. Cada parte possui sua implementação isolada e realiza seu trabalho de forma autônoma. Com essa característica é possível ocultar os detalhes internos de cada parte através de uma interface.
 
 * Q14
 
@@ -2744,17 +2744,305 @@ Nessa aula de POO, vamos fazer alguns exercícios de Programação Orientada a O
 
 Nessa aula de POO, vamos fazer um exercício de Programação Orientada a Objeto em PHP com tudo aquilo que aprendemos até aqui.
 
-<code></code>
+<code>Livro.php</code>
 
 ```php
+<?php
+require_once 'Pessoa.php';
+require_once 'Publicacao.php';
+class Livro implements Publicacao
+{
+    private $titulo;
+    private $autor;
+    private $totPaginas;
+    private $pagAtual;
+    private $aberto;
+    private $leitor; // o leitor é um pessoa, no inicio da classe, require_once 'Pessoa.php';
 
+    /**
+     * Não estou usando os parametos no construtor: $pagAtual e $aberto
+     * ao comprar um novo livro, $pagAtual = 0 e $aberto = false
+     */
+    public function __construct($titulo, $autor, $totPaginas, $leitor)
+    {
+        $this->titulo = $titulo;
+        $this->autor = $autor;
+        $this->totPaginas = $totPaginas;
+        $this->leitor = $leitor;
+        $this->pagAtual = 0;
+        $this->leitor = $leitor;
+
+    }
+
+    public function detalhes() {
+        // TODO implement method
+        echo "<br><strong> Livro: " .$this->titulo .".</strong> Autor: " .$this->autor;
+        echo "<br> Total de Páginas: ".$this->totPaginas .". Página Atual: ".$this->getPagAtual();
+        echo "<br> Leitor: " .$this->leitor->getNome();
+        echo "<hr>";
+    }
+
+    /**
+     * Methods Getters and Setters
+     */
+    public function getTitulo()
+    {
+        return $this->titulo;
+    }
+
+    public function setTitulo($titulo): void
+    {
+        $this->titulo = $titulo;
+    }
+
+    public function getAutor()
+    {
+        return $this->autor;
+    }
+
+    public function setAutor($autor): void
+    {
+        $this->autor = $autor;
+    }
+
+    public function getTotPaginas()
+    {
+        return $this->totPaginas;
+    }
+
+    public function setTotPaginas($totPaginas): void
+    {
+        $this->totPaginas = $totPaginas;
+    }
+
+    public function getPagAtual()
+    {
+        return $this->pagAtual;
+    }
+
+    public function setPagAtual($pagAtual): void
+    {
+        $this->pagAtual = $pagAtual;
+    }
+
+    public function getAberto()
+    {
+        return $this->aberto;
+    }
+
+    public function setAberto($aberto): void
+    {
+        $this->aberto = $aberto;
+    }
+
+    public function getLeitor()
+    {
+        return $this->leitor;
+    }
+
+    public function setLeitor($leitor): void
+    {
+        $this->leitor = $leitor;
+    }
+
+    // Implementar Todos os Métodos Abstratos
+
+    public function abrir()
+    {
+        // TODO: Implement abrir() method.
+        $this->aberto = true;
+    }
+
+    public function fechar()
+    {
+        // TODO: Implement fechar() method.
+        $this->aberto = false;
+    }
+
+    public function folhear($p)
+    {
+        // TODO: Implement folhear() method.
+        if ($p > $this->totPaginas) {
+            echo "<br><span class='erro'> [ERRO - Não é possível folhear mais páginas que Total de Páginas !] </span> <br>";
+            $this->pagAtual = 0;
+        } else {
+            $this->pagAtual = $p;
+        }
+    }
+
+    public function avancarPag()
+    {
+        // TODO: Implement avancarPag() method.
+        $this->pagAtual ++;
+    }
+
+    public function voltarPag()
+    {
+        // TODO: Implement voltarPag() method.
+        $this->pagAtual --;
+    }
+}
 ```
 
-<code></code>
+<code>Pessoa.php</code>
 
 ```php
+<?php
+require_once 'Pessoa.php';
+class Pessoa
+{
+    // Attributes
+    private $nome;
+    private $idade;
+    private $sexo;
 
+    // Method Construct
+    public function __construct($nome, $idade, $sexo)
+    {
+        $this->nome = $nome;
+        $this->idade = $idade;
+        $this->sexo = $sexo;
+    }
+
+    // Method
+    public function fazerAniver() {
+        $this->idade++;
+    }
+
+    // Method Getters and Setters
+    public function getNome()
+    {
+        return $this->nome;
+    }
+
+    public function setNome($nome): void
+    {
+        $this->nome = $nome;
+    }
+
+    public function getIdade()
+    {
+        return $this->idade;
+    }
+
+    public function setIdade($idade): void
+    {
+        $this->idade = $idade;
+    }
+
+    public function getSexo()
+    {
+        return $this->sexo;
+    }
+
+    public function setSexo($sexo): void
+    {
+        $this->sexo = $sexo;
+    }
+
+
+}
 ```
+
+<code>Publicacao.php</code>
+
+```php
+<?php
+
+interface Publicacao
+{
+    public function abrir();
+    public function fechar();
+    public function folhear($p);
+    public function avancarPag();
+    public function voltarPag();
+}
+```
+
+<code>Index.html</code>
+
+```php
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Aula 09 - Exercício prático POO em PHP</title>
+</head>
+<body>
+<pre>
+    <?php
+        require_once 'Livro.php';
+        require_once 'Pessoa.php';
+
+        $pes[0] = new Pessoa('Pedro', 18, 'M');
+        $pes[1] = new Pessoa('Sofia', 20, 'F');
+
+        // print_r($pes[0]);
+        // print_r($pes[1]);
+
+        $liv[0] = new Livro('PHP Básico','G. Guanabara', 100, $pes[0]);
+        $liv[1] = new Livro('PHP POO','G. Guanabara', 200, $pes[0]);
+        $liv[2] = new Livro('PHP Avançado','G. Guanabara', 300, $pes[1]);;
+
+        echo "<br> # <u> O Pedro vai Folhear até página 10 </u> # <br>";
+        $liv[0]->abrir();
+        $liv[0]->folhear(10);
+        $liv[0]->detalhes();
+
+        echo "<br> # <u> O Pedro vai Avançar 3 páginas e voltar 1 página </u> # <br>";
+        $liv[1]->abrir();
+        $liv[1]->avancarPag();
+        $liv[1]->avancarPag();
+        $liv[1]->avancarPag();
+        $liv[1]->voltarPag();
+        $liv[1]->detalhes();
+
+        echo "<br> # <u> A Sofia vai tentar folhear o livro que está fechado até página 1000 </u> # <br>";
+        $liv[2]->abrir();
+        $liv[2]->folhear(1000);
+        $liv[2]->fechar();
+        $liv[2]->detalhes();
+
+        echo "<br> # <u> A Sofia vai abrir o Livro e avançar uma página </u> # <br>";
+        $liv[2]->abrir();
+        $liv[2]->avancarPag();
+        $liv[2]->detalhes();
+
+         print("\n");
+         print_r($liv[0]);
+         print("\n");
+         print_r($liv[1]);
+         print("\n");
+         print_r($liv[2]);
+
+    ?>
+</pre>
+</body>
+</html>
+```
+
+<code>style.css</code>
+
+```css
+.foco {
+    font-weight: bold;
+    color: blue;
+}
+.erro {
+    font-weight: bold;
+    color: red;
+}
+```
+
+<code>Resultado do programa da aula 09</code>
+
+<img src="./img/php-poo-resultado-aula09.png">
+<a href="#" target="_blank"></a>
+
+[Resultado do programa da aula 09 - PDF](https://github.com/eduardodsr/cursoemvideo/tree/master/php-poo/pdf/php-poo-resultado-aula09.pdf) 
 
 <br>
 
