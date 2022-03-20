@@ -2600,7 +2600,6 @@ class Mensagem
 </html>
 ```
 
-
 <code>Resultado do programa da aula 08</code>
 
 <img src="./img/php-poo-resultado-aula08.png">
@@ -2649,6 +2648,99 @@ Nessa aula de POO, vamos fazer alguns exercícios de Programação Orientada a O
 <a href="#" target="_blank"></a>
 <img src="img/aula9-15.png">
 <a href="#" target="_blank"></a>
+
+
+- Q1 -> Uma casa está para uma planta arquitetônica assim como um **objeto** está para... 
+
+**uma classe**
+
+- Q2 -> Vantagens da POO
+
+**C O M E R N**ada
+**C** -> Confiável
+**O**-> Oportuno
+**M** -> Manutenível
+**E** -> Extensível
+**R** -> Reutilizavel
+**N**ada -> Natural
+
+- Q3
+
+Uma **classe** é instância de um **objeto**.
+
+- Q4
+
+**OBJETO** -> construção de sw que encapsula estado e comportamento
+**CLASSE** -> define os atributos e comportamentos comuns
+**ATRITUBO** -> característica de uma classe que é visível
+**COMPORTAMENTO** -> ação executada por um objeto
+**DOMÍNIO** -> espaço onde o problema reside
+
+
+
+* Q5 
+
+- Uma **variável interna** é um valor mantido dentro do objeto
+- **Atributos** são as características de uma classe visíveis externamente
+- **Comportamentos (Métodos)** são funcionalidades externas.
+- O **estado de um objeto** é o significado das variáveis internas do objeto
+
+* Q6
+
+- **Construtor** -> métodos usados para inicializar objetos durante a inicialização
+- **Acessor** -> métodos que dão acessos aos dados internos
+- **Mutante (Modificador)** -> métodos que permitem que se altere o estado de um objeto.
+- **Tipos** -> define as diferentes espécies de valores que podem ser usados
+
+* Q7 - 3 Pilares da POO (Programação Orientada a Objetos)
+
+-  E H P
+- **Encapsulamento**
+- **Herança**
+- **Polimorfismo** 
+
+* Q8
+
+- **CLASSE** -> define os atributos e comportamentos (métodos) compartilhados
+- **OBJETO** -> instanciação de uma classe
+- **CONSTRUTOR** -> utilizado para inicializar objetos
+- **INTERFACE** -> Define o que uma entidade pode fazer com o objeto. A interface diz quais são os métodos que são determinados como públicos que estão diretamente acessíveis.
+
+* Q9 - Níveis de acesso (visibilidade) em POO
+
+- público (+) , privado (-) e protegido (#).
+
+* Q10 - niveis de acesso (Visibilidade dos Modificadores)
+
+público -> qualquer um pode acessar. A classe atual e outras classes.
+privado -> é visível somente dentro da classe. Somente a classe atual.
+protegido -> nível intermediário entre o publico e o privado. A classe atual e todas as sub-classes (filhas)
+
+- Q11
+
+Conceito de **Encapsulamento** -> A proteção de atributos e operações das classes, fazendo com que estas se comuniquem com o meio externo por meio de suas interfaces.
+
+- Q12
+
+**Implementação** -> define os detalhes internos do componente
+**Interface** -> lista os serviços fornecidos por ele.
+
+- Q13
+
+**ENCAPSULAMENTO** -> é a característica da POO que permite separar o programa em várias partes menores e independentes. Cada parte possui sua implementação isolada e realiza seu trabalho de forma autônoma. Com essa característica é possível ocultar os detalhes internos de cada parte através de uma interface.
+
+* Q14
+
+- **ABSTRAÇÃO** -> significa representar uma entidade, incluindo apenas seus atributos relevantes.
+
+* Q15
+
+- **CLASSES** -> são tipos abstratos de dados
+- **OBJETOS** -> são instâncias de uma classe
+- **SUBCLASSE** -> é um classe definida por meio de outra classe
+- **MÉTODOS** -> são subprogramas que definem as operações em objetos de uma classe.
+
+<br>
 
 #### Aula Prática 9 – Exercício prático POO em PHP
 
