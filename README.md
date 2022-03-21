@@ -28,7 +28,7 @@
        │      OK      │            │      
        │─────────────>│            │      
  ┌─────┴──────┐┌──────┴──────┐┌────┴─────┐
- │    100%    ││     100%    ││   75%    │
+ │    100%    ││     100%    ││   80%    │
  └────────────┘└─────────────┘└──────────┘
 ```
 
@@ -253,7 +253,7 @@
 10. Aula 10 ✅
     - Aula Teórica 10 – Herança (Parte 1)
     - Aula Prática 10 – Herança (Parte 1)
-11. Aula 11
+11. Aula 11 ✅
     - Aula Teórica 11 – Herança (Parte 2)
     - Aula Prática 11 – Herança (Parte 2)
 12. Aula 12

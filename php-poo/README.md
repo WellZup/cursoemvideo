@@ -3351,22 +3351,273 @@ class Professor extends Pessoa
 
 Nessa aula de POO, vamos aprender como funcionam os tipos de Herança, que são a Herança de Implementação e Herança para Diferença. Além disso, vamos ver algumas nomenclaturas importantes para a Programação Orientada a Objetos.
 
+<img src="img/Aula11/aula11-01.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula11/aula11-02.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula11/aula11-03.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula11/aula11-04.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula11/aula11-05.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula11/aula11-06.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula11/aula11-07.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula11/aula11-08.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula11/aula11-09.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula11/aula11-10.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula11/aula11-11.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula11/aula11-12.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula11/aula11-13.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula11/aula11-14.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula11/aula11-15.png">
+<a href="#" target="_blank"></a>
+
 
 #### Aula Prática 11 – Herança (Parte 2)
 
 Nessa aula de POO com PHP, vamos aprender a colocar a Herança em prática, usando as técnicas de Herança de Implementação e Herança para Diferença.
 
-<code></code>
+<code>Pessoa.php</code>
 
 ```php
+<?php
+
+abstract class Pessoa
+{
+    // Atributes
+    protected $nome; // acessar diretamente o nome, no lugar do private, troco por protected
+    private $idade;
+    private $sexo;
+
+    // Method
+    public final function fazerAniversario() {
+        // TODO
+        $this->idade ++;
+    }
+
+    // Special Methods, Getters and Setters
+    public function getNome()
+    {
+        return $this->nome;
+    }
+
+    public function setNome($nome): void
+    {
+        $this->nome = $nome;
+    }
+
+    public function getIdade()
+    {
+        return $this->idade;
+    }
+
+    public function setIdade($idade): void
+    {
+        $this->idade = $idade;
+    }
+
+    public function getSexo()
+    {
+        return $this->sexo;
+    }
+
+    public function setSexo($sexo): void
+    {
+        $this->sexo = $sexo;
+    }
+
+}
+```
+
+<code>Aluno.php</code>
+
+```php
+<?php
+require_once 'Pessoa.php';
+class Aluno extends Pessoa
+{
+    // Atributes
+    private $matricula;
+    private $curso;
+
+    // Method
+    public function pagarMensalidade() {
+        // TODO
+        echo "<hr> Foi paga a mensalidade com sucesso.";
+        // echo "<br> Aluno: " .$this->getNome();
+        echo "<br> Nome: " .$this->nome; // o atributo $nome está protected e agora consigo acessar diremanente pelo nome
+        echo "<br> Curso: " .$this->getCurso();
+        echo "<br> Matricula: " .$this->getMatricula();
+        echo "<br><hr>";
+    }
+
+    // Special Methods, Getters and Setters
+    public function getMatricula()
+    {
+        return $this->matricula;
+    }
+
+    public function setMatricula($matricula): void
+    {
+        $this->matricula = $matricula;
+    }
+
+    public function getCurso()
+    {
+        return $this->curso;
+    }
+
+    public function setCurso($curso): void
+    {
+        $this->curso = $curso;
+    }
+}
+```
+
+<code>Visitante.php</code>
+
+```php
+<?php
+require_once 'Pessoa.php';
+class Visitante extends Pessoa
+{
+
+    /* A CLASSE VISITANTE É UM EXEMPLO DE  HERANÇA PARA IMPLEMENTAÇÃO (HERANÇA POBRE), não tem nenhum código, porque:
+     * -> A classe Visitante herdará tudo da classe Pessoa;
+     * -> A sub-classe (classe filha / classe Visitante) herdará tudo da classe progenitoria (classe mãe / classe Pessoa).
+     */
+}
+```
+
+<code>Bolsista.php</code>
+
+```php
+<?php
+require_once 'Aluno.php';
+class Bolsista extends Aluno
+{
+    // Atributes
+    private $bolsa;
+
+    // Method
+    public function renovarBolsa() {
+        // TODO
+        echo "<hr> Foi renovada a bolsa com sucesso.";
+        // echo "<br> Bolsa: $this->bolsa %<br><hr>";
+    }
+
+    // Method está sobrepondo o Method pagarMensalidade da Classe Aluno
+    public function pagarMensalidade() {
+
+        /* Herança para Diferença:
+         * Pagar a mensalidade de um bolsista e diferente de pagar mensalidade de um aluno;
+         * Foi criado um método com o mesmo nome e a mesma assinatura.
+         * O PHP vai "Sobrepor" qualquer outro método que exista na superclasse (classe mãe).
+         */
+
+        echo "<hr> Foi paga a mensalidade do aluno bolsista com sucesso.";
+        // echo "<br> Aluno: " .$this->getNome();
+        echo "<br> Nome: " .$this->getNome(); // o atributo $nome está protected e agora consigo acessar diremanente pelo nome
+        echo "<br> Curso: " .$this->getCurso();
+        echo "<br> Matricula: " .$this->getMatricula();
+        echo "<br> Bolsa: " .$this->getBolsa() ."%";
+        echo "<br><hr>";
+    }
+
+    // Special Method, Getters and Setters
+    public function getBolsa()
+    {
+        return $this->bolsa;
+    }
+
+    public function setBolsa($bolsa): void
+    {
+        $this->bolsa = $bolsa;
+    }
+
+}
+```
+
+<code>index.php</code>
+
+```php
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="#">
+    <title>Aula 11 - Herança (Parte 2)</title>
+</head>
+<body>
+<pre>
+    <?php
+        require_once 'Pessoa.php';
+        require_once 'Visitante.php';
+        require_once 'Aluno.php';
+        require_once 'Bolsista.php';
+
+        // $p1 = new Pessoa(); // Fatal error:  Cannot instantiate abstract class Pessoa
+        /* Uma classe abstrata (abstract class Pessoa):
+         * -> não pode ser instanciada; Não pode gerar objetos;
+         * -> Só pode servir como progenitora (mãe, classe principal);
+         * -> Só pode ser utilizada para Herança.
+         */
+
+        /* Herança para Implementação */
+        $v1 = new Visitante();
+            $v1->setNome("Bibiana Bolson");
+            $v1->setIdade("32");
+            $v1->setSexo("F");
+
+            print_r($v1);
+
+         /* Herança para Diferença */
+        $a1 = new Aluno();
+            $a1->setNome("Juvenal da Silva");
+            $a1->setIdade(16);
+            $a1->setSexo("M");
+            $a1->setCurso("Informática");
+            $a1->setMatricula(1001);
+            $a1->pagarMensalidade();
+
+            print_r($a1);
+
+        /* Herança para Diferença */
+        $b1 = new Bolsista();
+            $b1->setMatricula(1002);
+            $b1->setNome("Jubileu Pereira");
+            $b1->setBolsa(50); // Valor Inteiro do Percentual da Bolsa
+            $b1->setCurso("Programação PHP");
+            $b1->setIdade(18);
+            $b1->setSexo("M");
+            $b1->pagarMensalidade();
+
+            print_r($b1);
+    ?>
+</pre>
+</body>
+</html>
 
 ```
 
-<code></code>
+<code>Resultado do programa da aula 11</code>
 
-```php
+<img src="./img/php-poo-resultado-aula11.png">
+<a href="#" target="_blank"></a>
 
-```
+[Resultado do programa da aula 11 - PDF](https://github.com/eduardodsr/cursoemvideo/tree/master/php-poo/pdf/php-poo-resultado-aula11.pdf) 
 
 <br>
 
