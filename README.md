@@ -28,7 +28,7 @@
        │      OK      │            │      
        │─────────────>│            │      
  ┌─────┴──────┐┌──────┴──────┐┌────┴─────┐
- │    100%    ││     100%    ││   60%    │
+ │    100%    ││     100%    ││   75%    │
  └────────────┘└─────────────┘└──────────┘
 ```
 
@@ -250,7 +250,7 @@
 9. Aula 9 ✅
     - Aula Teórica 9 – Exercícios de POO
     - Aula Prática 9 – Exercício prático POO em PHP
-10. Aula 10
+10. Aula 10 ✅
     - Aula Teórica 10 – Herança (Parte 1)
     - Aula Prática 10 – Herança (Parte 1)
 11. Aula 11

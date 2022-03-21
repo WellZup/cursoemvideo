@@ -3091,17 +3091,255 @@ Nessa aula de POO, vamos aprender o que é Herança em Programação Orientada a
 
 Nessa aula de POO, vamos aprender a aplicar o conceito de Herança ao PHP.
 
-<code></code>
+<code>Pessoa.php</code>
 
 ```php
+<?php
 
+class Pessoa
+{
+    // Atributos (Attributes)
+    private $nome;
+    private $idade;
+    private $sexo;
+
+    // Métodos (Methods)
+    public function fazerAniversario(){
+        $this->idade++;
+    }
+
+    // Métodos Especiais (Special Methods - Getters and Setters)
+    public function getNome()
+    {
+        return $this->nome;
+    }
+
+    public function setNome($nome): void
+    {
+        $this->nome = $nome;
+    }
+
+    public function getIdade()
+    {
+        return $this->idade;
+    }
+
+    public function setIdade($idade): void
+    {
+        $this->idade = $idade;
+    }
+
+    public function getSexo()
+    {
+        return $this->sexo;
+    }
+
+    public function setSexo($sexo): void
+    {
+        $this->sexo = $sexo;
+    }
+
+}
 ```
 
-<code></code>
+<code>Aluno.php</code>
 
 ```php
+<?php
+require_once 'Pessoa.php';
+class Aluno extends Pessoa
+{
+    // Atributes
+    private $matricula;
+    private $curso;
 
+    // Method
+    public function cancelarMatricula() {
+        echo "<br> A sua matrícula será cancelada! <br>";
+    }
+
+    // Special Methods - Getters and Setters
+    public function getMatricula()
+    {
+        return $this->matricula;
+    }
+
+    public function setMatricula($matricula): void
+    {
+        $this->matricula = $matricula;
+    }
+
+    public function getCurso()
+    {
+        return $this->curso;
+    }
+
+    public function setCurso($curso): void
+    {
+        $this->curso = $curso;
+    }
+
+}
 ```
+
+<code>Funcionario.php</code>
+
+```php
+<?php
+require_once 'Pessoa.php';
+class Funcionario extends Pessoa
+{
+    // Atributes
+    private $setor;
+    private $trabalhando;
+
+    // Method
+    public function mudarTrabalho() {
+        // TODO
+        $this->trabalhando = ! $this->trabalhando;
+    }
+
+    // Special Mehods - Getters and Setters
+    public function getSetor()
+    {
+        return $this->setor;
+    }
+
+    public function setSetor($setor): void
+    {
+        $this->setor = $setor;
+    }
+
+    public function getTrabalhando()
+    {
+        return $this->trabalhando;
+    }
+
+    public function setTrabalhando($trabalhando): void
+    {
+        $this->trabalhando = $trabalhando;
+    }
+
+}
+```
+
+<code>Professor.php</code>
+
+```php
+<?php
+require_once 'Pessoa.php';
+class Professor extends Pessoa
+{
+    // Atributes
+    private $especialidade;
+    private $salario;
+
+    // Method
+    public function receberAumento($aumento) {
+        $this->salario += $aumento;
+    }
+
+    // Special Methods - Getters and Setters
+    public function getEspecialidade()
+    {
+        return $this->especialidade;
+    }
+
+    public function setEspecialidade($especialidade): void
+    {
+        $this->especialidade = $especialidade;
+    }
+
+    public function getSalario()
+    {
+        return $this->salario;
+    }
+
+    public function setSalario($salario): void
+    {
+        $this->salario = $salario;
+    }
+
+}
+```
+
+<code>index.php</code>
+
+```php
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="#">
+    <title>Aula 10 - Herança</title>
+</head>
+<body>
+<pre>
+    <?php
+        require_once 'Pessoa.php';
+        require_once 'Aluno.php';
+        require_once 'Funcionario.php';
+        require_once 'Professor.php';
+
+        // Programa Principal
+        $p1 = new Pessoa();
+        $p2 = new Aluno();
+        $p3 = new Professor();
+        $p4 = new Funcionario();
+
+        $p1->setNome("Pedro");
+        $p2->setNome("Maria");
+        $p3->setNome("Claudio");
+        $p4->setNome("Fabiana");
+
+        $p1->setIdade(18);
+        $p2->setIdade(20);
+        $p3->setIdade(30);
+        $p4->setIdade(40);
+
+        $p1->setSexo("M");
+        $p2->setSexo("F");
+        $p3->setSexo("M");
+        $p4->setSexo("F");
+
+        $p2->setCurso("Informatica");
+        $p3->setSalario(2500.50);
+        $p4->setSetor("Estoque");
+
+        $p2->setMatricula(171);
+        $p3->setEspecialidade("Programação");
+        $p4->setTrabalhando(true);
+
+        // TESTES COM ERROS
+        // $p1->receberAumento(550.20); // Fatal error:  Uncaught Error: Call to undefined method Pessoa::receberAumento()
+        // $p2->mudarTrabalho();        // Fatal error:  Uncaught Error: Call to undefined method Aluno::mudarTrabalho()
+        // $p3->cancelarMatricula();    // Fatal error:  Uncaught Error: Call to undefined method Professor::cancelarMatricula()
+
+        // TESTES DE CORREÇÃO DO ERROS
+        $p3->receberAumento(500.50);            // $p3 [Professor]
+        $p4->mudarTrabalho();                   // $p4 [Funcionario]
+        $p2->cancelarMatricula();               // $p2 [Aluno]
+
+        print_r($p1);
+        print_r($p2);
+        print_r($p3);
+        print_r($p4);
+    ?>
+</pre>
+</body>
+</html>
+```
+
+
+<code>Resultado do programa da aula 10</code>
+
+<img src="./img/php-poo-resultado-aula10.png">
+<a href="#" target="_blank"></a>
+
+[Resultado do programa da aula 10 - PDF](https://github.com/eduardodsr/cursoemvideo/tree/master/php-poo/pdf/php-poo-resultado-aula10.pdf) 
+
 
 <br>
 
@@ -3144,6 +3382,18 @@ Nessa aula de POO, vamos aprender como funciona o Polimorfismo em Programação 
 #### Aula Prática 12 – Polimorfismo em PHP (Parte 1)
 
 Nessa aula de POO, vamos aprender como fazer Polimorfismo de Sobreposição (Override) em PHP.
+
+<code></code>
+
+```php
+
+```
+
+<code></code>
+
+```php
+
+```
 
 <code></code>
 
