@@ -2178,8 +2178,6 @@ Nessa aula de POO, vamos aprender como realizar um relacionamento de agregação
 <a href="#" target="_blank"></a>
 <img src="img/aula8-10.png">
 <a href="#" target="_blank"></a>
-<!-- <img src="img/aula8-11.png">
-<a href="#" target="_blank"></a> -->
 <img src="img/aula8-12.png">
 <a href="#" target="_blank"></a>
 <img src="img/aula8-13.png">
@@ -2192,6 +2190,9 @@ Nessa aula de POO, vamos aprender como realizar um relacionamento de agregação
 #### Aula Prática 8 – Agregação entre Objetos em PHP
 
 Nessa aula de POO, vamos aprender como realizar a agregação entre objetos usando a linguagem PHP..
+
+<img src="img/aula8-11.png">
+<a href="#" target="_blank"></a>
 
 
 <code>Luta.php</code>
@@ -3053,6 +3054,37 @@ interface Publicacao
 #### Aula Teórica 10 – Herança (Parte 1)
 
 Nessa aula de POO, vamos aprender o que é Herança em Programação Orientada a Objetos.
+
+<img src="img/Aula10/aula10-00.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula10/aula10-01.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula10/aula10-02.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula10/aula10-03.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula10/aula10-04.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula10/aula10-05.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula10/aula10-06.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula10/aula10-07.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula10/aula10-08.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula10/aula10-09.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula10/aula10-10.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula10/aula10-11.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula10/aula10-12.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula10/aula10-13.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula10/aula10-14.png">
+<a href="#" target="_blank"></a>
 
 
 #### Aula Prática 10 – Herança (Parte 1)
