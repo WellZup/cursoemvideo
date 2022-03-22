@@ -28,7 +28,7 @@
        │      OK      │            │      
        │─────────────>│            │      
  ┌─────┴──────┐┌──────┴──────┐┌────┴─────┐
- │    100%    ││     100%    ││   80%    │
+ │    100%    ││     100%    ││   85%    │
  └────────────┘└─────────────┘└──────────┘
 ```
 
@@ -256,7 +256,7 @@
 11. Aula 11 ✅
     - Aula Teórica 11 – Herança (Parte 2)
     - Aula Prática 11 – Herança (Parte 2)
-12. Aula 12
+12. Aula 12 ✅
     - Aula Teórica 12 – Conceito Polimorfismo (Parte 1)
     - Aula Prática 12 – Polimorfismo em PHP (Parte 1)
 13. Aula 13

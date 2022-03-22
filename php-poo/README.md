@@ -3629,34 +3629,483 @@ class Bolsista extends Aluno
 
 Nessa aula de POO, vamos aprender como funciona o Polimorfismo em Programação Orientada a Objetos, o terceiro pilar de teoria.
 
+<img src="img/Aula12/aula12-01.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula12/aula12-02.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula12/aula12-03.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula12/aula12-04.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula12/aula12-05.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula12/aula12-06.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula12/aula12-07.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula12/aula12-08.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula12/aula12-09.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula12/aula12-10.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula12/aula12-11.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula12/aula12-12.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula12/aula12-13.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula12/aula12-14.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula12/aula12-15.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula12/aula12-16.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula12/aula12-17.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula12/aula12-18.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula12/aula12-19.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula12/aula12-20.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula12/aula12-21.png">
+<a href="#" target="_blank"></a>
 
 #### Aula Prática 12 – Polimorfismo em PHP (Parte 1)
 
 Nessa aula de POO, vamos aprender como fazer Polimorfismo de Sobreposição (Override) em PHP.
 
-<code></code>
+<code>Animal.php</code>
 
 ```php
+<?php
 
+abstract class Animal
+{
+    // Attribute
+    protected $peso;
+    protected $idade;
+    protected $membros;
+
+    // Abstract Method (declarado mais não implementado na progenitora, classe Animal)
+    abstract function locomover();
+    abstract function alimentar();
+    abstract function emitirSom();
+
+    // Special Method, Getters and Setters
+    public function getPeso()
+    {
+        return $this->peso;
+    }
+
+    public function setPeso($peso): void
+    {
+        $this->peso = $peso;
+    }
+
+    public function getIdade()
+    {
+        return $this->idade;
+    }
+
+    public function setIdade($idade): void
+    {
+        $this->idade = $idade;
+    }
+
+    public function getMembros()
+    {
+        return $this->membros;
+    }
+
+    public function setMembros($membros): void
+    {
+        $this->membros = $membros;
+    }
+
+}
 ```
 
-<code></code>
+<code>Arara.php</code>
 
 ```php
-
+<?php
+require_once 'Ave.php';
+class Arara extends Ave
+{
+    public function alimentar()
+    {
+        echo "<p> Comendo frutas de palmeiras! </p>";
+    }
+    public function emitirSom()
+    {
+        echo "<p> reco-reco! </p>";
+    }
+}
 ```
 
-<code></code>
+
+<code>Cachorro.php</code>
 
 ```php
+<?php
+require_once 'Mamifero.php';
+class Cachorro extends Mamifero
+{
+    public function enterrarOsso() {
+        echo "<p> Enterrando o osso! </p>";
+    }
+    public function abanarRabo() {
+        echo "<p> Abanando o Rabo! </p>";
+    }
 
+    // @Sobrepor
+    public function emitirSom()
+    {
+        echo "<p> au au au! </p>";
+    }
+}
 ```
 
-<code></code>
+
+<code>Canguru.php</code>
 
 ```php
+<?php
+require_once 'Mamifero.php';
+class Canguru extends Mamifero
+{
+    public function usarBolsa() {
+        echo "<p> Usando bolsa! </p>";
+    }
 
+    // @Sobrepor
+    public function locomover()
+    {
+        echo "<p> Saltando! </p>";
+    }
+}
 ```
+
+
+<code>Cobra.php</code>
+
+```php
+<?php
+require_once 'Reptil.php';
+class Cobra extends Reptil
+{
+    public function emitirSom()
+    {
+        echo "<p> Som da cobra: sibilar, silvar, chocalhar - ssssss! </p>";
+    }
+}
+```
+
+<code>GoldFish.php</code>
+
+```php
+<?php
+require_once 'Peixe.php';
+class GoldFish extends Peixe
+{
+    // Não tem nada!
+}
+```
+
+<code>Mamifero.php</code>
+
+```php
+<?php
+require_once 'Animal.php';
+class Mamifero extends Animal
+{
+    // Attribute
+    private $corPelo;
+
+    // @Sobrepor
+    public function locomover()
+    {
+        echo "<p> Correndo! </p>";
+    }
+    public function alimentar()
+    {
+        echo "<p> Mamando! </p>";
+    }
+    public function emitirSom()
+    {
+        echo "<p> Som de mamífero! </p>";
+    }
+
+    // Special Method, Getters and Setters
+    public function getCorPelo()
+    {
+        return $this->corPelo;
+    }
+    public function setCorPelo($corPelo): void
+    {
+        $this->corPelo = $corPelo;
+    }
+
+}
+```
+
+<code>Peixe.php</code>
+
+```php
+<?php
+require_once 'Animal.php';
+class Peixe extends Animal
+{
+    // Attribute
+    private $corEscama;
+
+    // @Sobrepor
+    public function locomover()
+    {
+        echo "<p> Nadando! </p>";
+    }
+    public function alimentar()
+    {
+        echo "<p> Comendo substâncias! </p>";
+    }
+    public function emitirSom()
+    {
+        echo "<p> Peixe não emite som! </p>";
+    }
+
+    // Método exclusivo do Peixe
+    public function soltarBolha() {
+        echo "<p> Soltou uma bolha! Glub Glub! </p>";
+    }
+
+    // Special Method, Getters and Setters
+    public function getCorEscama()
+    {
+        return $this->corEscama;
+    }
+
+    public function setCorEscama($corEscama): void
+    {
+        $this->corEscama = $corEscama;
+    }
+
+}
+```
+
+<code>Reptil.php</code>
+
+```php
+<?php
+require_once 'Animal.php';
+class Reptil extends Animal
+{
+    // Attribute
+    private $corEscama;
+
+    // @Sobrepor
+    public function locomover()
+    {
+        echo "<p> Rastejando! </p>";
+    }
+    public function alimentar()
+    {
+        echo "<p> Comendo vegetais! </p>";
+    }
+    public function emitirSom()
+    {
+        echo "<p> Som de réptil! </p>";
+    }
+
+    // Special Method, Getters and Setters
+    public function getCorEscama()
+    {
+        return $this->corEscama;
+    }
+    public function setCorEscama($corEscama): void
+    {
+        $this->corEscama = $corEscama;
+    }
+
+}
+```
+
+<code>Tartaruga.php</code>
+
+```php
+<?php
+require_once 'Reptil.php';
+class Tartaruga extends Reptil
+{
+    // @Sobrepor
+    public function locomover()
+    {
+        echo "<p> Andando beeeem devagar! </p>";
+    }
+}
+```
+
+<code>index.php</code>
+
+```php
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="#">
+    <title>Aula 12 - Polimorfismo PHP (Parte 1)</title>
+</head>
+<body>
+<pre>
+    <?php
+        require_once 'Mamifero.php';
+            require_once 'Canguru.php';
+            require_once 'Cachorro.php';
+
+        require_once 'Reptil.php';
+            require_once 'Cobra.php';
+            require_once 'Tartaruga.php';
+
+        require_once 'Peixe.php';
+            require_once 'GoldFish.php';
+
+        require_once 'Ave.php';
+            require_once 'Arara.php';
+
+        // $a = new Animal(); // Fatal error:  Cannot instantiate abstract class Animal
+
+
+        // class Mamifero extends Animal
+        $ma = new Mamifero();
+            echo "<br><u> Mamifero </u><br>";
+            $ma->locomover(); // Correndo!
+            $ma->alimentar(); // Mamando!
+            $ma->emitirSom(); // Som de mamífero
+
+            print_r($ma);
+            echo "<hr>";
+
+            // class Canguru extends Mamifero
+            $cg = new Canguru();
+                echo "<br><u> Canguru </u><br>";
+                $cg->usarBolsa(); // Usando bolsa!
+                $cg->locomover(); // Saltando!
+                $cg->alimentar(); // Mamando!
+                $cg->emitirSom(); // Som de mamífero!
+                $cg->setPeso(55.30);
+                $cg->setMembros(4);
+                $cg->setCorPelo("Cinza");
+
+                print_r($cg);
+                echo "<hr>";
+
+            // class Cachorro extends Mamifero
+            $ch = new Cachorro();
+                echo "<br><u> Cachorro </u><br>";
+                $ch->enterrarOsso(); // Enterrando o osso!
+                $ch->abanarRabo();  // Abanando o Rabo!
+                $ch->emitirSom(); // au au au!
+                $ch->setMembros(4);
+
+                print_r($ch);
+                echo "<hr>";
+
+        // class Reptil extends Animal
+        $rp = new Reptil();
+            echo "<br><u> Reptil </u><br>";
+            $rp->locomover(); // Rastejando!
+            $rp->alimentar(); // Comendo vegetais!
+            $rp->emitirSom(); // Som de réptil!
+
+            print_r($rp);
+            echo "<hr>";
+
+            // class Cobra extends Reptil
+            $co = new Cobra();
+                echo "<br><u> Cobra </u><br>";
+                $co->locomover(); // Rastejando
+                $co->emitirSom(); // ssssss!
+                $co->setPeso(10);
+                $co->setCorEscama("verde");
+
+                print_r($co);
+                echo "<hr>";
+
+                // class Tartaruga extends Reptil
+                $tr = new Tartaruga();
+                echo "<br><u> Tartaruga </u><br>";
+                $tr->locomover(); // Rastejando
+                $tr->setPeso(5);
+                $tr->setCorEscama("castanho");
+                $tr->setIdade(8);
+                $tr->setMembros(4);
+
+                print_r($tr);
+                echo "<hr>";
+
+
+        // class Peixe extends Animal
+        $px = new Peixe();
+            echo "<br><u> Peixe </u><br>";
+            $px->locomover(); // Nadando!
+            $px->alimentar(); // Comendo substâncias!
+            $px->emitirSom(); // Peixe não emite som!
+            $px->soltarBolha(); // Soltou uma bolha!
+
+            print_r($px);
+            echo "<hr>";
+
+            // class GoldFish extends Peixe
+            $gf = new GoldFish();
+                echo "<br><u> GoldFish </u><br>";
+                $px->locomover(); // Nadando!
+                $px->soltarBolha();  // Soltou uma bolha!
+
+                print_r($px);
+                echo "<hr>";
+
+        // class Ave extends Animal
+        $av = new Ave();
+            echo "<br><u> Ave </u><br>";
+            $av->locomover();
+            $av->alimentar();
+            $av->emitirSom();
+            $av->fazerNinho();
+
+            print_r($av);
+            echo "<hr>";
+
+            // class Arara extends Ave
+            $ar = new Arara();
+                echo "<br><u> Arara </u><br>";
+                $ar->locomover(); // Voando!
+                $ar->alimentar(); // Comendo frutas de palmeiras!
+                $ar->emitirSom(); // Som de ave!
+                $ar->fazerNinho(); // Construir um ninho!
+
+                $ar->setCorPena("vermelha, verde e azul");
+                $ar->setPeso(0.2);
+                $ar->setIdade(3);
+                $ar->setMembros(2);
+
+                print_r($ar);
+                echo "<hr>";
+
+    ?>
+</pre>
+</body>
+</html>
+```
+
+<code>Resultado do programa da aula 12</code>
+
+<img src="./img/php-poo-resultado-aula12.png">
+<a href="#" target="_blank"></a>
+
+[Resultado do programa da aula 12 - PDF](https://github.com/eduardodsr/cursoemvideo/tree/master/php-poo/pdf/php-poo-resultado-aula12.pdf) 
 
 <br>
 
@@ -3699,17 +4148,7 @@ Nessa aula de POO, vamos fazer uma lista de exercícios de programação orienta
 
 Nessa aula de POO, vamos iniciar a construção de um exemplo completo de um modelo 100% construído em Programação Orientada a Objetos com PHP.
 
-<code></code>
 
-```php
-
-```
-
-<code></code>
-
-```php
-
-```
 
 <br>
 
