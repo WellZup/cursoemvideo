@@ -4364,10 +4364,355 @@ class Cachorro extends Lobo
 
 Nessa aula de POO, vamos fazer uma lista de exercícios de programação orientada a objetos para você testar os seus conhecimentos adquiridos durante as 13 primeiras aulas do curso.
 
+- Exercícios de POO
+
+<img src="img/Aula14/aula14-01.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula14/aula14-02.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula14/aula14-03.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula14/aula14-04.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula14/aula14-05.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula14/aula14-06.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula14/aula14-07.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula14/aula14-08.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula14/aula14-09.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula14/aula14-10.png">
+<a href="#" target="_blank"></a>
+
+<br>
+
+- Respostas aos Exercícios de POO
+
+<img src="img/Aula14/aula14-resp01.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula14/aula14-resp02.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula14/aula14-resp03.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula14/aula14-resp04.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula14/aula14-resp05.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula14/aula14-resp06.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula14/aula14-resp07.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula14/aula14-resp08.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula14/aula14-resp09.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula14/aula14-resp10.png">
+<a href="#" target="_blank"></a>
+
+<br>
+
 #### Aula Prática 14 – Projeto Final em PHP (Parte 1)
 
 Nessa aula de POO, vamos iniciar a construção de um exemplo completo de um modelo 100% construído em Programação Orientada a Objetos com PHP.
 
+<img src="img/Aula14/aula14b-pratica-01.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula14/aula14b-pratica-02.png">
+<a href="#" target="_blank"></a>
+
+<br>
+
+#### Projeto YouTube
+
+<code> Pessoa.php </code>
+
+```php
+<?php
+
+abstract class Pessoa
+{
+    // Atritube
+    protected $nome;
+    protected $idade;
+    protected $sexo;
+    protected $experiencia;
+
+    // Method Construct
+    public function __construct($nome, $idade, $sexo)
+    {
+        $this->nome = $nome;
+        $this->idade = $idade;
+        $this->sexo = $sexo;
+        $this->experiencia = 0;
+    }
+
+    // Method
+    protected function ganharExp() {
+        $this->experiencia += 1;
+    }
+
+    // Special Methods, Getters and Setters
+    public function getNome()
+    {
+        return $this->nome;
+    }
+
+    public function setNome($nome): void
+    {
+        $this->nome = $nome;
+    }
+
+    public function getIdade()
+    {
+        return $this->idade;
+    }
+
+    public function setIdade($idade): void
+    {
+        $this->idade = $idade;
+    }
+
+    public function getSexo()
+    {
+        return $this->sexo;
+    }
+
+    public function setSexo($sexo): void
+    {
+        $this->sexo = $sexo;
+    }
+
+    public function getExperiencia(): int
+    {
+        return $this->experiencia;
+    }
+
+    public function setExperiencia(int $experiencia): void
+    {
+        $this->experiencia = $experiencia;
+    }
+
+}
+```
+
+<code> Gafanhoto.php </code>
+
+```php
+<?php
+require_once 'Pessoa.php';
+class Gafanhoto extends Pessoa
+{
+    // Attributes
+    private $login;
+    private $totalAssistido;
+
+    // Method Construct
+    /**
+     * @param $nome, $idade, $sexo, $login
+     */
+    public function __construct($nome, $idade, $sexo, $login)
+    {
+        // Parent constructors => Chamada ao construtor da SuperClasse (Classe Pessoa)
+       parent::__construct($nome, $idade, $sexo);
+
+       $this->login = $login;
+       $this->totalAssistido = 0;
+    }
+
+
+    // Method
+    public function assistirMaisUm() {
+        $this->totalAssistido += 1;
+    }
+
+
+    // Special Methods, Getters and Setters
+    public function getLogin()
+    {
+        return $this->login;
+    }
+
+    public function setLogin($login): void
+    {
+        $this->login = $login;
+    }
+
+     public function getTotalAssistido(): int
+    {
+        return $this->totalAssistido;
+    }
+
+    public function setTotalAssistido(int $totalAssistido): void
+    {
+        $this->totalAssistido = $totalAssistido;
+    }
+
+}
+```
+
+<code> AcoesVideo.php </code>
+
+```php
+<?php
+
+interface AcoesVideo
+{
+    // Método Abstrato é declarado, mais não implementado
+    public function play();
+    public function pause();
+    public function like();
+}
+```
+
+<code> Video.php </code>
+
+```php
+<?php
+require_once 'AcoesVideo.php';
+class Video implements AcoesVideo
+{
+    // Atributos
+    private $titulo;
+    private $avaliacao;
+    private $views;
+    private $curtidas;
+    private $reproduzindo;
+
+    /*
+     *  class Video implements AcoesVideo (Metodos de implementação)
+     *  Vou sobre-escrever os 3 métodos, sendo eles: play(), pause() e like()
+     *  @Override (@SobreEscrever)
+     *      JAVA => obrigatório declarar antes!
+     *      PHP => não declarada nada antes!
+     */
+
+    // @Override
+    public function play()
+    {
+        $this->reproduzindo = true;
+    }
+    public function pause()
+    {
+        $this->reproduzindo = false;
+    }
+    public function like()
+    {
+        $this->curtidas++;
+    }
+
+
+    // Método construtor => recebe somente um parametro que é o titulo
+    public function __construct($titulo)
+    {
+        $this->titulo = $titulo;
+        $this->avaliacao = 1;
+        $this->views = 0;
+        $this->curtidas = 0;
+        $this->reproduzindo = false;
+    }
+
+    // Métodos especiais, Getters and Setters
+    public function getTitulo()
+    {
+        return $this->titulo;
+    }
+
+    public function setTitulo($titulo): void
+    {
+        $this->titulo = $titulo;
+    }
+
+    public function getAvaliacao()
+    {
+        return $this->avaliacao;
+    }
+
+    public function setAvaliacao($avaliacao): void
+    {
+        $this->avaliacao = $avaliacao;
+    }
+
+    public function getViews()
+    {
+        return $this->views;
+    }
+
+    public function setViews($views): void
+    {
+        $this->views = $views;
+    }
+
+    public function getCurtidas()
+    {
+        return $this->curtidas;
+    }
+
+    public function setCurtidas($curtidas): void
+    {
+        $this->curtidas = $curtidas;
+    }
+
+    public function getReproduzindo()
+    {
+        return $this->reproduzindo;
+    }
+
+    public function setReproduzindo($reproduzindo): void
+    {
+        $this->reproduzindo = $reproduzindo;
+    }
+
+}
+```
+
+<code> index.php </code>
+
+```php
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="#">
+    <title>Aula 14 - Projeto YouTube</title>
+</head>
+<body>
+<pre>
+    <?php
+        require_once 'Video.php';
+        require_once 'Gafanhoto.php';
+
+        $v[0] = new Video("Aula 01 – POO");
+        $v[1] = new Video("Aula 12 – PHP");
+        $v[2] = new Video("Aula 15 – HTML");
+
+        print_r($v);
+
+        print("\n");
+
+        $g[0] = new Gafanhoto("Jubileu", 22, "M", "juba");
+        $g[1] = new Gafanhoto("Creuza", 44, "F", "creuzita");
+
+        print_r($g);
+
+    ?>
+</pre>
+</body>
+</html>
+```
+
+<br>
+
+<code>Resultado do programa da aula 14</code>
+
+<img src="./img/php-poo-resultado-aula14.png">
+<a href="#" target="_blank"></a>
+
+[Resultado do programa da aula 14 - PDF](https://github.com/eduardodsr/cursoemvideo/tree/master/php-poo/pdf/php-poo-resultado-aula14.pdf) 
 
 
 <br>
@@ -4384,7 +4729,6 @@ Nessa aula de POO, vamos fazer mais 10 Exercícios de Programação Orientada a 
 #### Aula Prática 15 – Projeto Final em PHP (Parte 2)
 
 Nessa aula de POO, vamos aplicar o modelo de agregação em Classes utilizando linguagem PHP. Um exercício prático e completamente feito em Programação Orientada a Objetos.
-
 
 
 
