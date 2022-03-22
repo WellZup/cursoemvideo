@@ -28,7 +28,7 @@
        │      OK      │            │      
        │─────────────>│            │      
  ┌─────┴──────┐┌──────┴──────┐┌────┴─────┐
- │    100%    ││     100%    ││   85%    │
+ │    100%    ││     100%    ││   95%    │
  └────────────┘└─────────────┘└──────────┘
 ```
 
@@ -259,7 +259,7 @@
 12. Aula 12 ✅
     - Aula Teórica 12 – Conceito Polimorfismo (Parte 1)
     - Aula Prática 12 – Polimorfismo em PHP (Parte 1)
-13. Aula 13
+13. Aula 13  ✅
     - Aula Teórica 13 – Conceito Polimorfismo (Parte 2)
     - Aula Prática 13 – Polimorfismo Sobrecarga (Parte 2)
 14. Aula 14

@@ -4117,21 +4117,241 @@ class Tartaruga extends Reptil
 
 Nessa aula de POO, vamos aprender como aplicar o Polimorfismo de Sobrecarga às nossas classes. Veja também a diferença entre sobrecarga e sobreposição, algo que muita gente confunde.
 
+<img src="img/Aula13/aula13-01.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula13/aula13-02.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula13/aula13-03.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula13/aula13-04.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula13/aula13-05.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula13/aula13-06.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula13/aula13-07.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula13/aula13-08.png">
+<a href="#" target="_blank"></a>
+
+
 
 #### Aula Prática 13 – Polimorfismo Sobrecarga (Parte 2)
 
 Nessa aula de POO, vamos aprender uma maneira alternativa de implementar sobrecarga aos métodos em PHP. Veja como fazer polimorfismo de sobrecarga em PHP.
 
-<code></code>
+<code>Animal.php</code>
 
 ```php
+<?php
+
+abstract class Animal
+{
+    // Attributes
+    protected $peso;
+    protected $idade;
+    protected $membros;
+
+    public abstract function emitirSom();
+
+}
+```
+
+<code>Mamifero.php</code>
+
+```php
+<?php
+require_once 'Animal.php';
+class Mamifero extends Animal
+{
+    // Attribute
+    protected $corPelo;
+
+    // @Sobrepor
+    public function emitirSom()
+    {
+        echo "<p> Som de  mamífero! </p>";
+    }
+}
+```
+
+<code>Lobo.php</code>
+
+```php
+<?php
+require_once 'Mamifero.php';
+class Lobo extends Mamifero
+{
+    //@Sobrepor
+    public function emitirSom()
+    {
+        echo "<p> Auuuuuuuuuu! </p>";
+    }
+}
+```
+
+<code>Cachorro.php</code>
+
+```php
+<?php
+require_once 'Lobo.php';
+class Cachorro extends Lobo
+{
+    //@Sobrepor
+    public function emitirSom()
+    {
+        echo "<p> Au! Au! Au! </p>";
+    }
+    function reagirFrase($frase){
+        if( ($frase == "Toma Comida") || ($frase == "Olá") ) {
+            echo "<p> Abanar e Latir! </p>";
+        } else {
+            echo "<p> Rosnar! </p>";
+        }
+    }
+    function reagirHoraMinuto($hora, $minuto){
+        if($hora < 12) {
+            echo "<p> Abanar! </p>";
+        } elseif($hora >= 18) {
+            echo "<p> Ignorar! </p>";
+        } else {
+            echo "<p> Abanar e Latir! </p>";
+        }
+    }
+    function reagirDono($dono){
+        if($dono == true) {
+            echo "<p> Abanar! </p>";
+        } else {
+            echo "<p> Rosnar e Latir! </p>";
+        }
+    }
+    function reagirIdadePeso($idade, $peso){
+        if ($idade < 5) {
+
+            if($peso < 10) {
+                echo "<p> Abanar! </p>";
+            } else {
+                echo "<p> Latir! </p>";
+            }
+
+        } else {
+
+            if($peso < 10) {
+                echo "<p> Rosnar! </p>";
+            } else {
+                echo "<p> Ignorar! </p>";
+            }
+        }
+    }
+
+        /* 2. Polimorfismo de Sobrecarga
+         * Assinatura Diferentes no Método (Quantidade e os tipos dos parâmetros diferentes);
+         * Mesma Classe.
+         *
+         * Vimos na aula o exemplo da Classe Cachorro - utilizando o metodo reagir()!
+         * Ao tentar executar o Polimorfismo Sobrecarga, o PHP apresenta "fatal error:  Cannot redeclare Cachorro::reagir()";
+         * O PHP não suporta o Polimorfismo Sobrecarga!
+         * Solução simples: "Utilizar funções com nomes diferentes (nomes parecidos) " (dica do prof. Gustavo Guanabara)
+         * Criamos:
+         * function reagirFrase()
+         * function reagirHoraMinuto()
+         * function reagirDono()
+         * function reagirFrasePeso()
+         */
+}
+```
+
+<code>index.php</code>
+
+```php
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="#">
+    <title>Aula 13 - Polimorfismo Sobrecarga (parte 2) </title>
+</head>
+<body>
+<pre>
+    <?php
+        require_once 'Mamifero.php';
+        require_once 'Lobo.php';
+        require_once 'Cachorro.php';
+
+        /* 1. Polimorfismo de Sobreposição
+         * Mesma Assinatura no Método (Quantidade e os tipos dos parâmetros)
+         * Classes Diferentes
+         */
+
+        // $c = new Mamifero(); // Som de  mamífero!
+        // $c = new Lobo();     // Auuuuuuuuuu!a
+        // $c = new Cachorro();    // Au! Au! Au!
+        // $c->emitirSom();
+
+
+        /* 2. Polimorfismo de Sobrecarga
+         * Assinatura Diferentes no Método (Quantidade e os tipos dos parâmetros);
+         * Mesma Classe.
+         *
+         * Vimos na aula o exemplo da Classe Cachorro - utilizando o metodo reagir()!
+         * Ao tentar executar o Polimorfismo Sobrecarga, o PHP apresenta "fatal error:  Cannot redeclare Cachorro::reagir()";
+         * O PHP não suporta o Polimorfismo Sobrecarga!
+         * Solução simples: "Utilizar funções com nomes diferentes (nomes parecidos) " (dica do prof. Gustavo Guanabara)
+         */
+
+        // Programa Principal
+        $c = new Cachorro();
+            $c->reagirFrase("Olá");           // Abanar e Latir!
+            $c->reagirFrase("Toma Comida");   // Abanar e Latir!
+            $c->reagirFrase("Vai Apanhar");   // Ronar!
+
+            $c->reagirHoraMinuto(11,45); // Abanar!
+            $c->reagirHoraMinuto(21,00); // Ignorar!
+            $c->reagirHoraMinuto(16,00); //  Abanar e Latir!
+
+            $c->reagirDono(true);   // Abanar!
+            $c->reagirDono(false);  // Rosnar e Latir!
+
+            $c->reagirIdadePeso(2, 3); //  Abanar!
+            $c->reagirIdadePeso(4, 16); //  Latir!
+            $c->reagirIdadePeso(8, 9);  // Rosnar!
+            $c->reagirIdadePeso(8, 16); //  Ignorar!
+
+    ?>
+</pre>
+</body>
+</html>
 
 ```
 
-<code></code>
+<code>Resultado do programa da aula 13</code>
 
 ```php
+ Abanar e Latir! 
 
+ Abanar e Latir! 
+
+ Rosnar! 
+
+ Abanar! 
+
+ Ignorar! 
+
+ Abanar e Latir! 
+
+ Abanar! 
+
+ Rosnar e Latir! 
+
+ Abanar! 
+
+ Latir! 
+
+ Rosnar! 
+
+ Ignorar! 
 ```
 
 <br>
@@ -4165,19 +4385,9 @@ Nessa aula de POO, vamos fazer mais 10 Exercícios de Programação Orientada a 
 
 Nessa aula de POO, vamos aplicar o modelo de agregação em Classes utilizando linguagem PHP. Um exercício prático e completamente feito em Programação Orientada a Objetos.
 
-<code></code>
 
-```php
 
-```
 
-<code></code>
-
-```php
-
-```
-
-<br>
 
 <hr>
 
