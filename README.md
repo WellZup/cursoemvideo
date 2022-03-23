@@ -295,6 +295,10 @@
 
 [Curso de PHP POO](https://www.youtube.com/playlist?list=PLHz_AreHm4dmGuLII3tsvryMMD7VgcT7x)
 
+### Certificado: :trophy: :100: 
+
+[Certificado de Conclusão | Teste Final -> 10 de 10 Pontos (100% de aproveitamento)](https://github.com/eduardodsr/cursoemvideo/tree/master/php-poo/certificado) 
+
 
 ### Links: :link:
 
