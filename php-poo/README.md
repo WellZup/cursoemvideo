@@ -4725,13 +4725,466 @@ class Video implements AcoesVideo
 
 Nessa aula de POO, vamos fazer mais 10 Exercícios de Programação Orientada a Objetos e continuar a construção do modelo do Diagrama de Classes da aula anterior.
 
+- Exercícios de POO
+
+<img src="img/Aula15/aula15-01.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula15/aula15-02.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula15/aula15-03.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula15/aula15-04.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula15/aula15-05.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula15/aula15-06.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula15/aula15-07.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula15/aula15-08.png">
+<a href="#" target="_blank"></a>
+
+<br><br>
+
+- Respostas aos Exercícios de POO
+
+<img src="img/Aula15/aula15-resp01.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula15/aula15-resp02.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula15/aula15-resp03.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula15/aula15-resp04.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula15/aula15-resp05.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula15/aula15-resp06.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula15/aula15-resp07.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula15/aula15-resp08.png">
+<a href="#" target="_blank"></a>
+
 
 #### Aula Prática 15 – Projeto Final em PHP (Parte 2)
 
 Nessa aula de POO, vamos aplicar o modelo de agregação em Classes utilizando linguagem PHP. Um exercício prático e completamente feito em Programação Orientada a Objetos.
 
+<img src="img/Aula14/aula14b-pratica-01.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula14/aula14b-pratica-02.png">
+<a href="#" target="_blank"></a>
+
+<img src="img/Aula15/aula15-proj1.png">
+<a href="#" target="_blank"></a>
+<img src="img/Aula15/aula15-proj2.png">
+<a href="#" target="_blank"></a>
 
 
+<code> Pessoa.php </code>
+
+```php
+<?php
+
+abstract class Pessoa
+{
+    // Atritube
+    protected $nome;
+    protected $idade;
+    protected $sexo;
+    protected $experiencia;
+
+    // Method Construct
+    public function __construct($nome, $idade, $sexo)
+    {
+        $this->nome = $nome;
+        $this->idade = $idade;
+        $this->sexo = $sexo;
+        $this->experiencia = 0;
+    }
+
+    // Method
+    protected function ganharExp() {
+        $this->experiencia += 1;
+    }
+
+    // Special Methods, Getters and Setters
+    public function getNome()
+    {
+        return $this->nome;
+    }
+
+    public function setNome($nome): void
+    {
+        $this->nome = $nome;
+    }
+
+    public function getIdade()
+    {
+        return $this->idade;
+    }
+
+    public function setIdade($idade): void
+    {
+        $this->idade = $idade;
+    }
+
+    public function getSexo()
+    {
+        return $this->sexo;
+    }
+
+    public function setSexo($sexo): void
+    {
+        $this->sexo = $sexo;
+    }
+
+    public function getExperiencia(): int
+    {
+        return $this->experiencia;
+    }
+
+    public function setExperiencia(int $experiencia): void
+    {
+        $this->experiencia = $experiencia;
+    }
+
+}
+```
+
+<code> Gafanhoto.php </code>
+
+```php
+<?php
+require_once 'Pessoa.php';
+class Gafanhoto extends Pessoa
+{
+    // Attributes
+    private $login;
+    private $totalAssistido;
+
+    // Method Construct
+    /**
+     * @param $nome, $idade, $sexo, $login
+     */
+    public function __construct($nome, $idade, $sexo, $login)
+    {
+        // Parent constructors => Chamada ao construtor da SuperClasse (Classe Pessoa)
+       parent::__construct($nome, $idade, $sexo);
+
+       $this->login = $login;
+       $this->totalAssistido = 0;
+    }
+
+
+    // Method
+    public function assistirMaisUm() {
+        $this->totalAssistido += 1;
+    }
+
+
+    // Special Methods, Getters and Setters
+    public function getLogin()
+    {
+        return $this->login;
+    }
+
+    public function setLogin($login): void
+    {
+        $this->login = $login;
+    }
+
+     public function getTotalAssistido(): int
+    {
+        return $this->totalAssistido;
+    }
+
+    public function setTotalAssistido(int $totalAssistido): void
+    {
+        $this->totalAssistido = $totalAssistido;
+    }
+
+}
+```
+
+<code> AcoesVideo.php </code>
+
+```php
+<?php
+
+interface AcoesVideo
+{
+    // Método Abstrato é declarado, mais não implementado
+    public function play();
+    public function pause();
+    public function like();
+}
+```
+
+<code> Video.php </code>
+
+```php
+<?php
+require_once 'AcoesVideo.php';
+class Video implements AcoesVideo
+{
+    // Atributos
+    private $titulo;
+    private $avaliacao;
+    private $views;
+    private $curtidas;
+    private $reproduzindo;
+
+      // @Override
+    public function play()
+    {
+        $this->reproduzindo = true;
+    }
+    public function pause()
+    {
+        $this->reproduzindo = false;
+    }
+    public function like()
+    {
+        $this->curtidas++;
+    }
+
+
+    // Método construtor => recebe somente um parametro que é o titulo
+    public function __construct($titulo)
+    {
+        $this->titulo = $titulo;
+        $this->avaliacao = 1;
+        $this->views = 0;
+        $this->curtidas = 0;
+        $this->reproduzindo = false;
+    }
+
+    // Métodos especiais, Getters and Setters
+    public function getTitulo()
+    {
+        return $this->titulo;
+    }
+
+    public function setTitulo($titulo): void
+    {
+        $this->titulo = $titulo;
+    }
+
+    public function getAvaliacao()
+    {
+        return $this->avaliacao;
+    }
+
+    public function setAvaliacao($avaliacao): void
+    {
+        $media = ($this->avaliacao + $avaliacao) / ($this->views);
+        $this->avaliacao = $media;
+    }
+
+    public function getViews()
+    {
+        return $this->views;
+    }
+
+    public function setViews($views): void
+    {
+        $this->views = $views;
+    }
+
+    public function getCurtidas()
+    {
+        return $this->curtidas;
+    }
+
+    public function setCurtidas($curtidas): void
+    {
+        $this->curtidas = $curtidas;
+    }
+
+    public function getReproduzindo()
+    {
+        return $this->reproduzindo;
+    }
+
+    public function setReproduzindo($reproduzindo): void
+    {
+        $this->reproduzindo = $reproduzindo;
+    }
+
+}
+```
+
+
+<code> Visualizacao.php </code>
+
+```php
+<?php
+require_once 'Video.php';
+require_once 'Gafanhoto.php';
+class Visualizacao
+{
+    // Attribute
+    private $espectador;
+    private $filme;
+
+    // Method Construct
+    public function __construct($espectador, $filme)
+    {
+        $this->espectador = $espectador;
+        $this->filme = $filme;
+        $this->filme->setViews($this->filme->getViews() + 1); // contar o $views (Classe Video)
+        $this->espectador->setTotalAssistido($this->espectador->getTotalAssistido() + 1 ); // contar o $totalAssistido (Classe Gaganhoto)
+    }
+
+    // @override @Sobrescrever
+    public function avaliar() {
+        $this->filme->setAvaliacao(5);
+    }
+
+    public function avaliarNota($nota) {
+        $this->filme->setAvaliacao($nota);
+    }
+
+    public function avaliarPorc($porc) {
+        $nova = 0;
+        if ($porc <= 20) {
+            $nova = 3;
+        } elseif ($porc <= 50) {
+            $nova = 5;
+        } elseif ($porc <= 90) {
+            $nova = 8;
+        } else {
+            $nova = 10;
+        }
+        $this->filme->setAvaliacao($nova);
+    }
+
+
+    // Special Methods, Getters and Setters
+    public function getEspectador()
+    {
+        return $this->espectador;
+    }
+
+    public function setEspectador($espectador): void
+    {
+        $this->espectador = $espectador;
+    }
+
+    public function getFilme()
+    {
+        return $this->filme;
+    }
+
+    public function setFilme($filme): void
+    {
+        $this->filme = $filme;
+    }
+
+}
+```
+
+<code> index.php </code>
+
+```php
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="#">
+    <title>Aula 15 - Projeto YouTube em PHP (Parte2)</title>
+</head>
+<body>
+<pre>
+    <?php
+        require_once 'Video.php';
+        require_once 'Gafanhoto.php';
+        require_once 'Visualizacao.php';
+
+        $v[0] = new Video("Aula 01 – POO");
+        $v[1] = new Video("Aula 12 – PHP");
+        $v[2] = new Video("Aula 15 – HTML");
+
+//        print_r($v);
+//        print("\n");
+
+        $g[0] = new Gafanhoto("Jubileu", 22, "M", "juba");
+        $g[1] = new Gafanhoto("Creuza", 44, "F", "creuzita");
+
+//        print_r($g);
+//        print("\n");
+
+        $vis[0] = new Visualizacao($g[0], $v[2]);   // 'Julibeu' assiste 'Aula 15 - HTML'
+        $vis[1] = new Visualizacao($g[0], $v[1]);   // 'Julibeu' assiste 'Aula 12 - PHP'
+
+        $vis[0]->avaliar();
+        $vis[1]->avaliarPorc(85); // nota=8
+
+        print_r($vis);
+
+    ?>
+</pre>
+</body>
+</html>
+```
+
+- Resultado do Projeto
+
+```php
+    Array
+(
+    [0] => Visualizacao Object
+        (
+            [espectador:Visualizacao:private] => Gafanhoto Object
+                (
+                    [login:Gafanhoto:private] => juba
+                    [totalAssistido:Gafanhoto:private] => 2
+                    [nome:protected] => Jubileu
+                    [idade:protected] => 22
+                    [sexo:protected] => M
+                    [experiencia:protected] => 0
+                )
+
+            [filme:Visualizacao:private] => Video Object
+                (
+                    [titulo:Video:private] => Aula 15 – HTML
+                    [avaliacao:Video:private] => 6
+                    [views:Video:private] => 1
+                    [curtidas:Video:private] => 0
+                    [reproduzindo:Video:private] => 
+                )
+
+        )
+
+    [1] => Visualizacao Object
+        (
+            [espectador:Visualizacao:private] => Gafanhoto Object
+                (
+                    [login:Gafanhoto:private] => juba
+                    [totalAssistido:Gafanhoto:private] => 2
+                    [nome:protected] => Jubileu
+                    [idade:protected] => 22
+                    [sexo:protected] => M
+                    [experiencia:protected] => 0
+                )
+
+            [filme:Visualizacao:private] => Video Object
+                (
+                    [titulo:Video:private] => Aula 12 – PHP
+                    [avaliacao:Video:private] => 9
+                    [views:Video:private] => 1
+                    [curtidas:Video:private] => 0
+                    [reproduzindo:Video:private] => 
+                )
+
+        )
+
+)
+```
+- The End !
 
 <hr>
 

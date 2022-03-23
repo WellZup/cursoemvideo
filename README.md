@@ -18,18 +18,31 @@
 ## Cursos: Diagrama de Controle :brazil:
 
 ```txt
- ┌────────────┐┌─────────────┐┌──────────┐
- │1. Algoritmo││2. PHP Básico││3. PHP POO│
- └─────┬──────┘└──────┬──────┘└────┬─────┘
-       │              │            │      
-       │              │     OK     │      
-       │              │───────────>│      
-       │              │            │      
-       │      OK      │            │      
-       │─────────────>│            │      
- ┌─────┴──────┐┌──────┴──────┐┌────┴─────┐
- │    100%    ││     100%    ││   95%    │
- └────────────┘└─────────────┘└──────────┘
+ ┌────────────┐┌─────────────┐┌──────────┐┌──────────────┐┌───────────┐┌───────┐┌─────────────┐
+ │1. Algoritmo││2. PHP Básico││3. PHP POO││4. Java Básico││5. Java POO││6. HTML││7. JavaScript│
+ └─────┬──────┘└──────┬──────┘└────┬─────┘└──────┬───────┘└─────┬─────┘└───┬───┘└──────┬──────┘
+       │              │            │             │              │          │           │       
+       │              │            │             │              │          │   TODO    │       
+       │              │            │             │              │          │──────────>│       
+       │              │            │             │              │          │           │       
+       │              │            │             │              │   TODO   │           │       
+       │              │            │             │              │─────────>│           │       
+       │              │            │             │              │          │           │       
+       │              │            │             │     TODO     │          │           │       
+       │              │            │             │─────────────>│          │           │       
+       │              │            │             │              │          │           │       
+       │              │            │    3. OK    │              │          │           │       
+       │              │            │────────────>│              │          │           │       
+       │              │            │             │              │          │           │       
+       │              │   2. OK    │             │              │          │           │       
+       │              │───────────>│             │              │          │           │       
+       │              │            │             │              │          │           │       
+       │     1. OK    │            │             │              │          │           │       
+       │─────────────>│            │             │              │          │           │       
+ ┌─────┴──────┐┌──────┴──────┐┌────┴─────┐┌──────┴───────┐┌─────┴─────┐┌───┴───┐┌──────┴──────┐
+ │1. Algoritmo││2. PHP Básico││3. PHP POO││4. Java Básico││5. Java POO││6. HTML││7. JavaScript│
+ └────────────┘└─────────────┘└──────────┘└──────────────┘└───────────┘└───────┘└─────────────┘
+
 ```
 
 
@@ -265,7 +278,7 @@
 14. Aula 14 ✅
     - Aula Teórica 14 – Exercícios de POO (Parte 2)
     - Aula Prática 14 – Projeto Final em PHP (Parte 1)
-15. Aula 15
+15. Aula 15 ✅
     - Aula Teórica 15 – Exercícios de POO (Parte 3)
     - Aula Prática 15 – Projeto Final em PHP (Parte 2)
 
@@ -297,6 +310,8 @@
 
 [phpstorm - Teclas de Atalhos](https://resources.jetbrains.com/storage/products/phpstorm/docs/phpstorm_Leaflet.pdf)
 
+[mysqli (MySQLi) - Representa uma conexão entre o PHP e um banco de dados MySQL.](https://www.php.net/manual/pt_BR/class.mysqli.php)
+
 
 
 ### Agradecimentos: :clap:
@@ -305,7 +320,68 @@
  
 <br>
 
+<hr>
 
+
+
+<span id="php-poo">
+
+<img src="https://www.cursoemvideo.com/wp-content/uploads/bb-plugin/cache/java-circle.jpg" alt="logo algoritmo" width="100px" />
+&nbsp;&nbsp;&nbsp;
+
+<img src="./logo/java_logo.png" alt="logo java" width="100px" /> 
+
+
+
+
+## 04. Java Básico [40 Horas] :four:
+
+- Java é uma linguagem de programação, orientada a objetos, desenvolvida na década de 90 por uma equipe de programadores chefiada por James Gosling, na empresa Sun Microsystems.
+
+- Este curso é indicado para qualquer pessoa que já possua bons conhecimentos de algoritmos e lógica de programação. 
+
+- Caso você já domine a construção de algoritmos e a lógica de programação, o professor Gustavo Guanabara vai mostrar a história, introdução e explicação do funcionamento da linguagem, assim como suas sintaxes e estruturas de maneira fácil e descontraída.
+
+
+
+
+### Conteúdo do Módulo :bookmark:
+
+
+1. Aula 1 – História do Java  ✅
+    - Exercícios de Java #01
+2. Aula 02 – Como Funciona o Java
+    - Exercícios de Java #02
+3. Aula 3 – Instalando o JDK no seu Computador
+    - Exercícios de Java #03
+4. Aula 4 – Primeiro Programa em Java
+    - Exercícios de Java #04
+5. Aula 5 – Introdução ao Swing e JavaFX
+    - Exercícios de Java #05
+6. Aula 6 – Tipos Primitivos e Manipulação de Dados
+    - Exercícios de Java #06
+7. Aula 7 – Operadores Aritméticos e Classe Math
+    - Exercícios de Java #07
+8. Aula 8 – Operadores Lógicos e Relacionais
+    - Exercícios de Java #08
+9. Aula 9 – Estruturas Condicionais (Parte 1)
+    - Exercícios de Java #09
+10. Aula 10 – Estruturas Condicionais (Parte 2)
+    - Exercícios de Java #10
+11. Aula 11 – Estruturas de Repetição (Parte 1)
+    - Exercícios de Java #11
+12. Aula 12 – Estruturas de Repetição (Parte 2)
+    - Exercício de Java #12
+13. Aula 13 – Estruturas de Repetição (Parte 3)
+    - Exercícios de Java #13
+14. Aula 14 – Vetores
+    - Exercícios de Java #14
+15. Aula 15 – Métodos
+    - Exercícios de Java #15
+
+
+ 
+<br>
 
 <hr>
 
