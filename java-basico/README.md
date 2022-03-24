@@ -161,7 +161,7 @@ Na próxima aula, veremos as versões do Java que usaremos (SE/EE/ME), em qual l
 <a href="#" target="_blank"></a>
 <img src="./img/aula02/aula02-08.png" width="45%">
 <a href="#" target="_blank"></a>
-<img src="./img/aula02/aula02-89.png" width="45%">
+<img src="./img/aula02/aula02-09.png" width="45%">
 <a href="#" target="_blank"></a>
 <img src="./img/aula02/aula02-10.png" width="45%">
 <a href="#" target="_blank"></a>
