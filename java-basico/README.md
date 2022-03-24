@@ -32,11 +32,11 @@
 
 1. Aula 01 – História do Java  ✅
     - Exercícios de Java #01
-2. Aula 02 – Como Funciona o Java
+2. Aula 02 – Como Funciona o Java  ✅
     - Exercícios de Java #02
-3. Aula 3 – Instalando o JDK no seu Computador
+3. Aula 3 – Instalando o JDK no seu Computador  ✅
     - Exercícios de Java #03
-4. Aula 4 – Primeiro Programa em Java
+4. Aula 4 – Primeiro Programa em Java  ✅
     - Exercícios de Java #04
 5. Aula 5 – Introdução ao Swing e JavaFX
     - Exercícios de Java #05
@@ -168,16 +168,78 @@ Na próxima aula, veremos as versões do Java que usaremos (SE/EE/ME), em qual l
 <img src="./img/aula02/aula02-11.png" width="45%">
 <a href="#" target="_blank"></a>
 
+<hr>
 
 <span id="aula03">
 
+#### Conteúdo para o Curso de Java
+
+Download do JDK Java SE + NetBeans
+
+Para aprender JAVA você precisa instalar um Kit de Desenvolvimento Java (JDK) e uma IDE. Para isso, deve instalar a versão à sua escolha. 
+
+Existem várias opções no site da Oracle, indicamos aqui algumas versões encontradas no site oficial:
+
+ [Download Grátis Java JDK](https://www.oracle.com/br/java/technologies/javase/javase8-archive-downloads.html)
+
+ [Download Grátis Java JRE](https://www.oracle.com/br/java/technologies/javase/javase8-archive-downloads.html)
+
+[JavaFX Scene Builder](https://www.oracle.com/java/technologies/javafxscenebuilder-1x-archive-downloads.html)
+
+[Vídeo - Como instalar o Java JDK](https://www.youtube.com/watch?v=yWU5bm_pZzY)
+
+[Google Drive - Download dos SLIDES usados em Aula](https://info.cursoemvideo.com/asset/1:slides-curso-java)
+
+[Java Tutorial](https://www.javatpoint.com/pt/primeiro-programa-em-java)
+
+<hr>
+
 #### 03. Aula 3 – Instalando o JDK no seu Computador
+
+Veja o passo-a-passo para Instalar o Java Development Kit (JDK) do Java SE 8.
+
+Para instalar o pacote do JDK Java, você deve baixar os arquivos diretamente do site da Oracle.
+
+**Edições do Java**
+
+- **Java SE (Standard Edition)** é usado para o desenvolvimento da maioria das aplicações que você vai criar em Java.
+- **Java EE (Enterprise Edition)** usado para aplicações maiores, com acesso a servidores, grandes bases de dados, etc.
+- **Java ME (Micro Edition)** é usado para o desenvolvimento de aplicativos voltados para dispositivos móveis.
+
+**Qual é a melhor IDE para programar em Java?**
+
+Nós utilizaremos o **NetBeans** durante o curso. 
+Uma **IDE (Integrated Development Environment)** é um **Ambiente de Desenvolvimento Integrado** que permite utilizar técnicas de RAD (Rapid Application Development). 
+
+**Algumas vantagens são:**
+
+- É um editor completo
+- Possui integração entre compilador, linker e debugger
+- Gerador Automático de Código
+- Possui um ambiente de teste
+- Distribuição simplificada
+
+<br>
+
 - Exercícios de Java #03
+
+<img src="./img/aula03/aula03-01.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula03/aula03-02.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula03/aula03-03.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula03/aula03-04.png" width="45%">
+<a href="#" target="_blank"></a>
+
 
 <span id="aula04">
 
 #### 04. Aula 4 – Primeiro Programa em Java
+
 - Exercícios de Java #04
+
+
 
 <span id="aula05">
 
