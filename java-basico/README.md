@@ -97,9 +97,62 @@ Atualmente, a Linguagem Java pode ser encontrada em chips de cartão de crédito
 
 - Exercícios de Java #01
 
+<img src="./img/aula01/aula01-01.png" width="40%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula01/aula01-02.png" width="40%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula01/aula01-03.png" width="40%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula01/aula01-04.png" width="40%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula01/aula01-05.png" width="40%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula01/aula01-06.png" width="40%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula01/aula01-07.png" width="50%">
+<a href="#" target="_blank"></a>
+
+
 <span id="aula02">
 
 #### 02. Aula 02 – Como Funciona o Java
+
+Como funciona o Java? Você sabe o que é JVM, JRE, JDK, JavaC, bytecode? É exatamente isso que você vai aprender durante essa aula.
+
+O *JavaC (Java Compiler)* vai transformar o Código Fonte Java em Bytecode, um código específico que vai executar em uma Máquina Virtual Java (Java Virtual Machine - JVM).
+
+Uma *JVM* é uma solução de software capaz de executar bytecode em qualquer máquina, independente da plataforma que o Código Fonte foi compilado. Java é multiplataforma sem a necessidade de recompilação.
+
+A JVM é composta por várias partes internas, como por exemplo Loader, Verificador, Interpretador, Gerenciador de Memória e Compilador JIT (Just in Time).
+
+Atualmente existem JVMs em várias plataformas, como Computadores Pessoais (Windows, Linux, MacOS), dispositivos móveis (Android) e até mesmo os modernos wearables (relógios inteligentes, óculos inteligentes).
+
+O princípio de funcionamento desse mecanismo explicado acima é conhecido pela sigla WORA (Write Once Run Anywhere) que significa “Escreva uma vez, execute em qualquer lugar”.
+
+*JRE (Java Runtime Environment)* é um conjunto de software que forma um ambiente para a execução de bytecodes feitos em Java. Ela é composta da JVM e bibliotecas adicionais.
+
+*JDK (Java Development Kit)* é um conjunto de programas que todo programador Java deve ter. 
+Ele é um kit de desenvolvimento Java composto pela JRE (item acima), o JavaLang, o JavaTools (JavaC, Debugger, APIs). 
+Além disso, você ainda pode adicionar uma IDE para facilitar o desenvolvimento Java.
+
+As IDEs mais conhecidas são o Eclipse, o IntelliJ e o NetBeans. 
+O Curso em Vídeo de Java vai adotar o NetBeans para o aprendizado da Linguagem Java.
+
+Na próxima aula, veremos as versões do Java que usaremos (SE/EE/ME), em qual lugar vamos fazer o download do JDK para o Java SE e veremos as instruções para a instalação da plataforma Java que será utilizada durante todo o curso.
+
+- Slides 
+
+<img src="./img/aula02/aula02-01.png">
+<a href="#" target="_blank"></a>
+<img src="./img/aula02/aula02-02.png">
+<a href="#" target="_blank"></a>
+<img src="./img/aula02/aula02-03.png">
+<a href="#" target="_blank"></a>
+<img src="./img/aula02/aula02-04.png">
+<a href="#" target="_blank"></a>
+<img src="./img/aula02/aula02-05.png">
+<a href="#" target="_blank"></a>
+
 - Exercícios de Java #02
 
 <span id="aula03">

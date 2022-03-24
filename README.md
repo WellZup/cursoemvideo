@@ -383,7 +383,27 @@
 15. Aula 15 – Métodos
     - Exercícios de Java #15
 
+### Anotações das Aulas: :open_book: :writing_hand:
 
+[Anotações das aulas](https://github.com/eduardodsr/cursoemvideo/tree/master/java-basico)
+
+### YouTube - Playlist Educativa: :desktop_computer: :headphones:
+
+[Curso de Java Básico](https://www.youtube.com/playlist?list=PLHz_AreHm4dkI2ZdjTwZA4mPMxWTfNSpR)
+
+
+
+### Links: :link:
+
+<a href="https://www.cursoemvideo.com/curso/java-basico" target="_blank">Site do Curso em Vídeo, curso de Java Básico</a>
+
+https://www.oracle.com/br/java
+
+https://www.java.com/pt-BR/download/help/whatis_java.html
+
+https://docs.oracle.com/en/
+
+[Java API Documentation](https://docs.oracle.com/en/java/javase/11/docs/api/index.html)
  
 <br>
 
