@@ -155,6 +155,20 @@ Na próxima aula, veremos as versões do Java que usaremos (SE/EE/ME), em qual l
 
 - Exercícios de Java #02
 
+<img src="./img/aula02/aula02-06.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula02/aula02-07.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula02/aula02-08.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula02/aula02-89.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula02/aula02-10.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula02/aula02-11.png" width="45%">
+<a href="#" target="_blank"></a>
+
+
 <span id="aula03">
 
 #### 03. Aula 3 – Instalando o JDK no seu Computador
