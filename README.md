@@ -358,9 +358,9 @@
     - Exercícios de Java #01
 2. Aula 02 – Como Funciona o Java  ✅
     - Exercícios de Java #02
-3. Aula 3 – Instalando o JDK no seu Computador
+3. Aula 3 – Instalando o JDK no seu Computador ✅
     - Exercícios de Java #03
-4. Aula 4 – Primeiro Programa em Java
+4. Aula 4 – Primeiro Programa em Java ✅
     - Exercícios de Java #04
 5. Aula 5 – Introdução ao Swing e JavaFX
     - Exercícios de Java #05
@@ -404,6 +404,14 @@ https://www.oracle.com/br/java
 https://www.java.com/pt-BR/download/help/whatis_java.html
 
 https://docs.oracle.com/en/
+
+https://www.jetbrains.com/help/idea/getting-started.html
+
+https://www.jetbrains.com/help/idea/creating-and-running-your-first-java-application.html
+
+https://www.jetbrains.com/idea/guide/tutorials
+
+https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf
 
 [Java API Documentation](https://docs.oracle.com/en/java/javase/11/docs/api/index.html)
  

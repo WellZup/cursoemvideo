@@ -237,6 +237,26 @@ Uma **IDE (Integrated Development Environment)** é um **Ambiente de Desenvolvim
 
 #### 04. Aula 4 – Primeiro Programa em Java
 
+Como criar um tradicional “Olá, Mundo!” (Hello World) em Java.
+
+Estou utilizando o IntelliJ IDEA da JetBrains.
+
+[YouTube - Creating your first Java application with IntelliJ IDEA](https://www.youtube.com/watch?v=H_XxH66lm3U&list=PLoWO2Tlnu1Ow8AWoQ7kj0U3QCdsfQvPmW&index=1)
+
+[Help - Create your first Java application](https://www.jetbrains.com/help/idea/creating-and-running-your-first-java-application.html#run_jar_artifact)
+
+[IntelliJIDEA_ReferenceCard](https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf)
+
+```java
+package com.example.helloworld;
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+
 - Exercícios de Java #04
 
 
