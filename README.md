@@ -11,6 +11,8 @@
   <a href="#algoritmo">01. Algoritmo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#php-basico">02. PHP Básico</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#php-poo">03. PHP POO</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#java-basico">04. Java Básico</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#java-poo">05. Java POO</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
    <a href="#autor">Autor &rarr; eduardodsr</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
@@ -328,7 +330,7 @@
 
 
 
-<span id="php-poo">
+<span id="java-basico">
 
 <img src="https://www.cursoemvideo.com/wp-content/uploads/bb-plugin/cache/java-circle.jpg" alt="logo algoritmo" width="100px" />
 &nbsp;&nbsp;&nbsp;
@@ -354,7 +356,7 @@
 
 1. Aula 1 – História do Java  ✅
     - Exercícios de Java #01
-2. Aula 02 – Como Funciona o Java
+2. Aula 02 – Como Funciona o Java  ✅
     - Exercícios de Java #02
 3. Aula 3 – Instalando o JDK no seu Computador
     - Exercícios de Java #03
