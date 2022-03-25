@@ -237,6 +237,29 @@ Uma **IDE (Integrated Development Environment)** é um **Ambiente de Desenvolvim
 
 #### 04. Aula 4 – Primeiro Programa em Java
 
+- Slides
+
+<img src="./img/aula04/aula04-01.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula04/aula04-02.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula04/aula04-03.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula04/aula04-04.png" width="45%">
+<a href="#" target="_blank"></a>
+
+<br>
+
+- Exercícios de Java #04
+
+<img src="./img/aula04/aula04-05.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula04/aula04-06.png" width="45%">
+<a href="#" target="_blank"></a>
+
+
+#### Hello, World
+
 Como criar um tradicional “Olá, Mundo!” (Hello World) em Java.
 
 Estou utilizando o IntelliJ IDEA da JetBrains.
@@ -248,7 +271,7 @@ Estou utilizando o IntelliJ IDEA da JetBrains.
 [IntelliJIDEA_ReferenceCard](https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf)
 
 
-#### DICAS:
+#### Code completion (IntelliSense):
 
 - Ao digital <code> psvm </code> apresenta <code> public static void main </code> 
 ```java
@@ -262,6 +285,8 @@ public static void main(String[] args) {
 ```java
     System.out.println(""); 
 ```
+
+#### Projects
 
 -  Programa <code> class HelloWorld </code>
 
@@ -278,6 +303,10 @@ public class HelloWorld {
     }
 }
 ```
+
+
+
+
 
 - Programa <code> class HoraDoSistema </code>
 
@@ -346,10 +375,7 @@ public class ResolucaoTela {
 }
 
 ```
-
-- Exercícios de Java #04
-
-
+<br>
 
 <span id="aula05">
 
