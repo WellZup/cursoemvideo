@@ -247,14 +247,104 @@ Estou utilizando o IntelliJ IDEA da JetBrains.
 
 [IntelliJIDEA_ReferenceCard](https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf)
 
+
+#### DICAS:
+
+- Ao digital <code> psvm </code> apresenta <code> public static void main </code> 
+```java
+public static void main(String[] args) {
+         
+    } 
+```
+
+- Ao digital <code> sout </code> apresenta <code> System.out.println </code> 
+
+```java
+    System.out.println(""); 
+```
+
+-  Programa <code> class HelloWorld </code>
+
 ```java
 package com.example.helloworld;
 
 public class HelloWorld {
+
+    // digitar 'psvm' <TAB>
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+
+        // digitar 'sout' <TAB>
+        System.out.println("Hello, World!"); 
     }
 }
+```
+
+- Programa <code> class HoraDoSistema </code>
+
+```java
+import java.util.Date;
+
+public class HoraDoSistema {
+    public static void main(String[] args) {
+        Date data = new Date();
+        System.out.println("A hora do sistema é");
+        System.out.println(data);
+    }
+}
+```
+
+- Programa <code> class IdiomaSistema </code>
+
+```java
+package idiomasistema;
+
+import java.util.Locale;
+
+public class IdiomaSistema {
+    public static void main(String[] args) {
+        Locale currentLocale = Locale.getDefault();
+
+        System.out.println(currentLocale.getDisplayLanguage()); // "English"
+        System.out.println(currentLocale.getDisplayCountry());  // "Brazil"
+
+        System.out.println(currentLocale.getLanguage());        // "en"
+        System.out.println(currentLocale.getCountry());         // "BR"
+
+        System.out.println(System.getProperty("user.language")); // "en"
+        System.out.println(System.getProperty("user.country")); // "BR"
+
+        /**
+         * Locale getLanguage() Method in Java with Examples
+         */
+        // Create a new locale
+        Locale brazil_locale = new Locale("pt","BR");
+
+        // Displaying brazil_locale locale
+        System.out.println("\n Brazil Locale: " + brazil_locale); // Brazil Locale: pt_BR
+
+        // Displaying the language_code of this locale
+        System.out.println("\n Language: " + brazil_locale.getLanguage()); // Language: pt
+    }
+}
+```
+
+- Programa <code> class ResolucaoTela </code>
+
+```java
+package resolucaotela;
+
+import java.awt.*;
+
+public class ResolucaoTela {
+    public static void main(String[] args) {
+        Toolkit tk = Toolkit.getDefaultToolkit();
+        System.out.println("Screen resolution = " + tk.getScreenResolution());
+        Dimension d = tk.getScreenSize();                   // Screen resolution = 96
+        System.out.println("Screen width = " + d.width);    // Screen width = 1920
+        System.out.println("Screen height = " + d.height);  // Screen height = 1080
+    }
+}
+
 ```
 
 - Exercícios de Java #04

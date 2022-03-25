@@ -362,7 +362,7 @@
     - Exercícios de Java #03
 4. Aula 4 – Primeiro Programa em Java ✅
     - Exercícios de Java #04
-5. Aula 5 – Introdução ao Swing e JavaFX
+5. Aula 5 – Introdução ao Swing e JavaFX  ✅
     - Exercícios de Java #05
 6. Aula 6 – Tipos Primitivos e Manipulação de Dados
     - Exercícios de Java #06
@@ -393,7 +393,9 @@
 
 [Curso de Java Básico](https://www.youtube.com/playlist?list=PLHz_AreHm4dkI2ZdjTwZA4mPMxWTfNSpR)
 
+### Código Fonte / Projetos: :computer: :file_folder:
 
+[Código Fonte das Aulas - Curso de Algoritmo - Projetos](https://github.com/eduardodsr/cursoemvideo/tree/master/java-basico/projects) 
 
 ### Links: :link:
 
@@ -411,9 +413,13 @@ https://www.jetbrains.com/help/idea/creating-and-running-your-first-java-applica
 
 https://www.jetbrains.com/idea/guide/tutorials
 
-https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf
+[IntelliJIDEA_ReferenceCard.pdf](https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf)
 
 [Java API Documentation](https://docs.oracle.com/en/java/javase/11/docs/api/index.html)
+
+[Jata Tutorial - Java T Point](https://www.javatpoint.com/java-tutorial)
+
+[JetBrains.gitignore](https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore)
  
 <br>
 
