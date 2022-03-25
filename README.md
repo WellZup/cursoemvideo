@@ -395,7 +395,7 @@
 
 ### Código Fonte / Projetos: :computer: :file_folder:
 
-[Código Fonte das Aulas - Curso de Algoritmo - Projetos](https://github.com/eduardodsr/cursoemvideo/tree/master/java-basico/projects) 
+[Código Fonte das Aulas - Curso de Java Básico - Projetos](https://github.com/eduardodsr/cursoemvideo/tree/master/java-basico/projects) 
 
 ### Links: :link:
 
