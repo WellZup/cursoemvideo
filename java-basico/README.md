@@ -38,7 +38,7 @@
     - Exercícios de Java #03
 4. Aula 4 – Primeiro Programa em Java  ✅
     - Exercícios de Java #04
-5. Aula 5 – Introdução ao Swing e JavaFX
+5. Aula 5 – Introdução ao Swing e JavaFX ✅
     - Exercícios de Java #05
 6. Aula 6 – Tipos Primitivos e Manipulação de Dados
     - Exercícios de Java #06
@@ -304,10 +304,6 @@ public class HelloWorld {
 }
 ```
 
-
-
-
-
 - Programa <code> class HoraDoSistema </code>
 
 ```java
@@ -383,31 +379,234 @@ public class ResolucaoTela {
 <span id="aula05">
 
 #### 05. Aula 5 – Introdução ao Swing e JavaFX
+
+Por ser uma linguagem multiplataforma, o Java tem que utilizar pacotes adicionais para que os seus arquivos não sejam sobrecarregados sem necessidade.
+
+Para isso, é necessário utilizar a instrução "import" para carregar bibliotecas de pacotes adicionais. 
+
+Por padrão, apenas o pacote java.lang é carregado automaticamente. 
+Porém, caso você precise carregar bibliotecas adicionais, utilize a importação desses pacotes.
+
+**Biblioteca Swing**
+
+O Swing é uma evolução do antigo AWT (Abstract Windows Toolkit) que permite criar interfaces gráficas atraentes para qualquer sistema operacional baseado em janelas. 
+
+**Plataforma JavaFX** 
+
+Com o objetivo de substituir o Swing, o JavaFX cria interfaces para qualquer tipos de dispositivos, como ambientes de Janela, celulares e navegadores. Para a próxima versão, já está previsto o suporte para videogames, blu-rays e smart TVs.
+
+Nessa aula, você vai aprender como criar uma aplicação simples utilizando Swing e JavaFX com XML. Não se esqueça de praticar bastante!
+
+---
+
+**Informações gerais sobre o JavaFX**
+
+O JavaFX expande o poder do Java, permitindo que os desenvolvedores usem qualquer biblioteca Java em aplicações JavaFX. Dessa forma, os desenvolvedores podem expandir seus recursos no Java e aproveitar a tecnologia de apresentação que o JavaFX fornece para criar experiências visuais envolventes. Como usuário, você será capaz de executar as aplicações JavaFX em um browser ou arrastá-las e soltá-las na área de trabalho.
+
+**Destaques do JavaFX:**
+
+Permite que os desenvolvedores integrem gráficos de vetor, recursos Web de animação, áudio e vídeo em uma aplicação rica, interativa e imersiva;
+Estende a tecnologia Java permitindo o uso de qualquer biblioteca Java em uma aplicação JavaFX;
+Permite um fluxo de trabalho eficiente de designer para desenvolvedor, no qual os designers podem trabalhar com suas ferramentas preferidas, em colaboração com desenvolvedores.
+
+Fonte: https://www.java.com/pt-BR/download/help/javafx.html
+
+---
+
+
+- **Swing UI Design -> GUI Design**
+
+<code> class HelloDemo </code>
+
+```java
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class HelloDemo extends JFrame {
+    private JPanel panelMain;
+    private JTextField txtName;
+    private JButton btnClick;
+    private JTextField txtMessage;
+
+    public HelloDemo() {
+        btnClick.addActionListener(new ActionListener() {
+            @Override // @SobrePor
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(btnClick, txtName.getText()+ ", Hello!");
+
+                txtMessage.setText(txtName.getText());
+             }
+        });
+    }
+
+    public static void main(String[] args) {
+
+        HelloDemo h = new HelloDemo();
+        h.setContentPane(h.panelMain);
+        h.setTitle("Hello");
+        h.setSize(300,300);
+        h.setVisible(true);
+        h.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+}
+```
+
+<code> Program hello.gif </code>
+
+<img src="./img/aula05/hello.gif" width="40%">
+<a href="#" target="_blank"></a>
+
+<br>
+
+---
+
+- **Program Hello JavaFX**
+
+<code> hello-view.fxml </code>
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.olamundojavafx.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label fx:id="welcomeText"/>
+    <Button text="Click Me!" onAction="#onHelloButtonClick"/>
+</VBox>
+```
+
+<code> HelloController.java </code>
+
+```java
+package com.example.olamundojavafx;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+
+public class HelloController {
+    @FXML
+    private Label welcomeText;
+
+    @FXML
+    protected void onHelloButtonClick() {
+        welcomeText.setText("Welcome to JavaFX Application!");
+    }
+}
+```
+
+<code> HelloApplication.java </code>
+
+```java
+package com.example.olamundojavafx;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+
+public class HelloApplication extends Application {
+    @Override
+    public void start(Stage stage) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        stage.setTitle("Hello!");
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public static void main(String[] args) {
+        launch();
+    }
+}
+```
+
+<code> Program hello - JavaFx </code>
+
+<img src="./img/aula05/hello-javafx.gif" width="40%">
+<a href="#" target="_blank"></a>
+
+<br>
+
 - Exercícios de Java #05
+
+<img src="./img/aula05/aula05-01.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula05/aula05-02.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula05/aula05-03.png" width="45%">
+<a href="#" target="_blank"></a>
+
+<br>
 
 <span id="aula06">
 
 #### 06. Aula 6 – Tipos Primitivos e Manipulação de Dados
+
+<code> </code>
+
+```java
+
+```
+
 - Exercícios de Java #06
 
 <span id="aula07">
 
 #### 07. Aula 7 – Operadores Aritméticos e Classe Math
+
+<code> </code>
+
+```java
+
+```
+
 - Exercícios de Java #07
 
 <span id="aula08">
 
 #### 08. Aula 8 – Operadores Lógicos e Relacionais
+
+<code> </code>
+
+```java
+
+```
+
 - Exercícios de Java #08
 
 <span id="aula09">
 
 #### 09. Aula 9 – Estruturas Condicionais (Parte 1)
+
+<code> </code>
+
+```java
+
+```
+
  - Exercícios de Java #09
 
 <span id="aula10">
 
 #### 10. Aula 10 – Estruturas Condicionais (Parte 2)
+
+<code> </code>
+
+```java
+
+```
+
 - Exercícios de Java #10
 
 <span id="aula11">
