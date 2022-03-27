@@ -553,11 +553,162 @@ public class HelloApplication extends Application {
 
 #### 06. Aula 6 – Tipos Primitivos e Manipulação de Dados
 
-<code> </code>
+Aprenda durante a aula a utilizar tipos primitivos, typecast ou classes invólucro para declarar variáveis/objetos para o seu programa.
+
+**Tipos Primitivos do Java**
+
+O Java tem os tipos primitivos:
+
+- **Lógico**: boolean
+- **Literal**: char
+- **Inteiro**: byte, short, int, long
+- **Real**: float, double
+
+Além disso existem as classes Wrapper para os tipos: Boolean, Character, String, Byte, Short, Integer, Long, Float e Double.
+
+Aprenda durante a aula a utilizar tipos primitivos, typecast ou classes invólucro para declarar variáveis/objetos para o seu programa.
+
+**Comentários em Java**
+
+Você pode utilizar comentários em Java utilizando os símbolos de 
+
+// para comentários de uma linha 
+
+e 
+
+/* */ para múltiplas linhas.
+
+Além disso você vai aprender os **comandos de saída**: println, printf e String.format.
+
+Aprenda também a utilizar a **classe Scanner** para ler dados via teclado usando os métodos nextInt, nextLine e nextFloat.
+
+Por fim, aprenda a realizar **conversões de dados** usando as classes invólucro e seus métodos de parsing como parseInt, parseFloat e toString.
+
+
+- Slides
+
+<img src="./img/aula06/aula06-01.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula06/aula06-02.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula06/aula06-03.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula06/aula06-04.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula06/aula06-04.png" width="45%">
+<a href="#" target="_blank"></a>
+
+<br>
+
+- **Saída de dados**: <code> println, printf e String.format </code>
+
+<code> class TiposPrimitivosSaidaDados </code>
 
 ```java
+package tiposprimitivos;
+/**
+ * #author: Eduardo Rodrigues
+ */
+public class TiposPrimitivosSaidaDados {
+    public static void main(String[] args) {
+        // TODO code application logic here
+        float nota = 8.5F;
+        String nome = "Eduardo";
+
+        System.out.print("A nota é " + nota);           // A nota é 8.5
+
+        System.out.print("\n");                         // pula linha
+
+        System.out.println("A nota é " + nota);         // A nota é 8.5
+
+        System.out.printf("A sua nota é %.2f", nota);   // A sua nota é 8.50
+
+        System.out.printf("\n A nota de %s é %.4f", nome, nota); // A nota de Eduardo é 8.5000
+
+        System.out.format("\n A nota de %s é %.1f", nome, nota); // A nota de Eduardo é 8.5
+    }
+}
+```
+
+- **Entrada de dados**: métodos <code> nextInt, nextLine e nextFloat </code>
+
+<code> class TiposPrimitivosEntradaDados </code>
+
+```java
+import java.util.Scanner;
+
+public class TiposPrimitivosEntradaDados {
+    public static void main(String[] args) {
+
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.print("Digite o seu nome: "); // Eduardo
+        String nome = teclado.nextLine();
+
+        System.out.print("Digite a sua nota: "); // 8.55
+        float nota = teclado.nextFloat();
+
+        System.out.format("A nota de %s é %.1f \n", nome, nota); // A nota de Eduardo é 8.6 
+    }
+}
 
 ```
+
+- **Conversões de dados:** métodos <code> parseInt, parseFloat e toString</code>
+
+<code> class TesteTipos (toString) </code>
+
+```java
+public class TesteTipos {
+
+    public static void main(String[] args) {
+        int idade = 30;
+        String valor = Integer.toString(idade);
+        System.out.println(valor); // "30" [String]
+
+        /*
+         * Verificar o tipo de uma variável em Java:
+         * Utilize getClass().getSimpleName()
+         */
+        System.out.println(valor.getClass().getSimpleName()); // String
+    }
+}
+
+```
+
+<code> class TesteTipos (parseInt) </code>
+
+```java
+public class TesteTipos {
+
+    public static void main(String[] args) {
+
+        String valor = "30";
+        int idade = Integer.parseInt(valor); 
+        System.out.println(idade); // 30 [int]
+        System.out.println(((Object)idade).getClass().getSimpleName()); // Integer
+    }
+}
+```
+
+
+<code> class TesteTipos (parseFloat) </code>
+
+
+```java
+public class TesteTipos {
+
+    public static void main(String[] args) {
+
+        String valor = "30.5";
+        float idade = Float.parseFloat(valor);
+        System.out.println(idade); // 30.5 [float]
+        System.out.println(((Object)idade).getClass().getSimpleName()); // Float
+
+    }
+}
+```
+
 
 - Exercícios de Java #06
 
@@ -565,11 +716,9 @@ public class HelloApplication extends Application {
 
 #### 07. Aula 7 – Operadores Aritméticos e Classe Math
 
-<code> </code>
+Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas para ajudar você a se especializar, incluindo testes com certificados para agregar em sua carreira. Todas as aulas com vídeos excelentes, super práticos e dinâmicos.
 
-```java
 
-```
 
 - Exercícios de Java #07
 
@@ -577,17 +726,16 @@ public class HelloApplication extends Application {
 
 #### 08. Aula 8 – Operadores Lógicos e Relacionais
 
-<code> </code>
+Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas para ajudar você a se especializar, incluindo testes com certificados para agregar em sua carreira. Todas as aulas com vídeos excelentes, super práticos e dinâmicos.
 
-```java
-
-```
 
 - Exercícios de Java #08
 
 <span id="aula09">
 
 #### 09. Aula 9 – Estruturas Condicionais (Parte 1)
+
+Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas para ajudar você a se especializar, incluindo testes com certificados para agregar em sua carreira. Todas as aulas com vídeos excelentes, super práticos e dinâmicos.
 
 <code> </code>
 
@@ -601,6 +749,8 @@ public class HelloApplication extends Application {
 
 #### 10. Aula 10 – Estruturas Condicionais (Parte 2)
 
+Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas para ajudar você a se especializar, incluindo testes com certificados para agregar em sua carreira. Todas as aulas com vídeos excelentes, super práticos e dinâmicos.
+
 <code> </code>
 
 ```java
@@ -612,26 +762,69 @@ public class HelloApplication extends Application {
 <span id="aula11">
 
 #### 11. Aula 11 – Estruturas de Repetição (Parte 1)
+
+Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas para ajudar você a se especializar, incluindo testes com certificados para agregar em sua carreira. Todas as aulas com vídeos excelentes, super práticos e dinâmicos.
+
+<code> </code>
+
+```java
+
+```
+
 - Exercícios de Java #11
 
 <span id="aula12">
 
 #### 12. Aula 12 – Estruturas de Repetição (Parte 2)
+
+<code> </code>
+
+```java
+
+```
+
 - Exercício de Java #12
 
 <span id="aula13">
 
 #### 13. Aula 13 – Estruturas de Repetição (Parte 3)
+
+Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas para ajudar você a se especializar, incluindo testes com certificados para agregar em sua carreira. Todas as aulas com vídeos excelentes, super práticos e dinâmicos.
+
+<code> </code>
+
+```java
+
+```
+
 - Exercícios de Java #13
 
 <span id="aula14">
 
 #### 14. Aula 14 – Vetores
+
+Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas para ajudar você a se especializar, incluindo testes com certificados para agregar em sua carreira. Todas as aulas com vídeos excelentes, super práticos e dinâmicos.
+
+<code> </code>
+
+```java
+
+```
+
 - Exercícios de Java #14
 
 <span id="aula15">
 
 #### 15. Aula 15 – Métodos
+
+Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas para ajudar você a se especializar, incluindo testes com certificados para agregar em sua carreira. Todas as aulas com vídeos excelentes, super práticos e dinâmicos.
+
+<code> </code>
+
+```java
+
+```
+
 - Exercícios de Java #15
 
 
