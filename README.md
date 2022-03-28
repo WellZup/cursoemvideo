@@ -364,7 +364,7 @@
     - Exercícios de Java #04
 5. Aula 5 – Introdução ao Swing e JavaFX  ✅
     - Exercícios de Java #05
-6. Aula 6 – Tipos Primitivos e Manipulação de Dados
+6. Aula 6 – Tipos Primitivos e Manipulação de Dados ✅
     - Exercícios de Java #06
 7. Aula 7 – Operadores Aritméticos e Classe Math
     - Exercícios de Java #07
