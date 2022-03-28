@@ -95,6 +95,8 @@ Em 2009 a Sun Microsystems foi vendida para a Oracle por US$7,4 bilhões.
 
 Atualmente, a Linguagem Java pode ser encontrada em chips de cartão de crédito, discos de blu-ray, vídeo games (PS4 roda Java), leitores de e-books (Kindle roda Java), smartphones (Android roda Java), TV digital (o padrão Ginga é feito em Java), relógios inteligentes (Moto 360 roda Java) e até mesmo no programa para a Declaração de Imposto de Renda.
 
+---
+
 - Exercícios de Java #01
 
 <img src="./img/aula01/aula01-01.png" width="40%">
@@ -112,6 +114,7 @@ Atualmente, a Linguagem Java pode ser encontrada em chips de cartão de crédito
 <img src="./img/aula01/aula01-07.png" width="50%">
 <a href="#" target="_blank"></a>
 
+---
 
 <span id="aula02">
 
@@ -153,6 +156,8 @@ Na próxima aula, veremos as versões do Java que usaremos (SE/EE/ME), em qual l
 <img src="./img/aula02/aula02-05.png">
 <a href="#" target="_blank"></a>
 
+---
+
 - Exercícios de Java #02
 
 <img src="./img/aula02/aula02-06.png" width="45%">
@@ -168,7 +173,8 @@ Na próxima aula, veremos as versões do Java que usaremos (SE/EE/ME), em qual l
 <img src="./img/aula02/aula02-11.png" width="45%">
 <a href="#" target="_blank"></a>
 
-<hr>
+---
+
 
 <span id="aula03">
 
@@ -221,6 +227,8 @@ Uma **IDE (Integrated Development Environment)** é um **Ambiente de Desenvolvim
 
 <br>
 
+---
+
 - Exercícios de Java #03
 
 <img src="./img/aula03/aula03-01.png" width="45%">
@@ -232,6 +240,7 @@ Uma **IDE (Integrated Development Environment)** é um **Ambiente de Desenvolvim
 <img src="./img/aula03/aula03-04.png" width="45%">
 <a href="#" target="_blank"></a>
 
+---
 
 <span id="aula04">
 
@@ -250,6 +259,8 @@ Uma **IDE (Integrated Development Environment)** é um **Ambiente de Desenvolvim
 
 <br>
 
+---
+
 - Exercícios de Java #04
 
 <img src="./img/aula04/aula04-05.png" width="45%">
@@ -257,6 +268,7 @@ Uma **IDE (Integrated Development Environment)** é um **Ambiente de Desenvolvim
 <img src="./img/aula04/aula04-06.png" width="45%">
 <a href="#" target="_blank"></a>
 
+---
 
 #### Hello, World
 
@@ -270,6 +282,7 @@ Estou utilizando o IntelliJ IDEA da JetBrains.
 
 [IntelliJIDEA_ReferenceCard](https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf)
 
+<br>
 
 #### Code completion (IntelliSense):
 
@@ -285,6 +298,8 @@ public static void main(String[] args) {
 ```java
     System.out.println(""); 
 ```
+
+<br>
 
 #### Projects
 
@@ -452,7 +467,7 @@ public class HelloDemo extends JFrame {
 }
 ```
 
-<code> Program hello.gif </code>
+<code> Program Hello (Swing UI Design -> GUI Design) </code>
 
 <img src="./img/aula05/hello.gif" width="40%">
 <a href="#" target="_blank"></a>
@@ -531,12 +546,14 @@ public class HelloApplication extends Application {
 }
 ```
 
-<code> Program hello - JavaFx </code>
+<code> Program hello (JavaFx) </code>
 
 <img src="./img/aula05/hello-javafx.gif" width="40%">
 <a href="#" target="_blank"></a>
 
 <br>
+
+---
 
 - Exercícios de Java #05
 
@@ -547,7 +564,9 @@ public class HelloApplication extends Application {
 <img src="./img/aula05/aula05-03.png" width="45%">
 <a href="#" target="_blank"></a>
 
-<br>
+---
+
+
 
 <span id="aula06">
 
@@ -595,7 +614,7 @@ Por fim, aprenda a realizar **conversões de dados** usando as classes invólucr
 <a href="#" target="_blank"></a>
 <img src="./img/aula06/aula06-04.png" width="45%">
 <a href="#" target="_blank"></a>
-<img src="./img/aula06/aula06-04.png" width="45%">
+<img src="./img/aula06/aula06-05.png" width="45%">
 <a href="#" target="_blank"></a>
 
 <br>
@@ -709,8 +728,138 @@ public class TesteTipos {
 }
 ```
 
+- Programa que realiza a soma de dois números
+
+<code> class TelaSoma </code>
+
+```java
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class TelaSoma extends JDialog {
+    private JPanel contentPane;
+    private JTextField txtN1;
+    private JTextField txtN2;
+    private JButton btnSoma;
+    private JLabel lblResultado;
+    private JButton buttonOK;
+
+    public TelaSoma() {
+        setContentPane(contentPane);
+        setModal(true);
+        getRootPane().setDefaultButton(buttonOK);
+        btnSoma.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int n1 = Integer.parseInt(txtN1.getText());
+                int n2 = Integer.parseInt(txtN2.getText());
+                int s = n1 + n2;
+                lblResultado.setText(Integer.toString(s));
+            }
+        });
+    }
+
+    public static void main(String[] args) {
+        TelaSoma dialog = new TelaSoma();
+        dialog.pack();
+        dialog.setVisible(true);
+        System.exit(0);
+    }
+}
+```
+
+
+<img src="./img/aula06/aula06-06.png" width="80%">
+<a href="#" target="_blank"></a>
+
+<br>
+
+<code> Program TelaSoma </code>
+
+<img src="./img/aula06/soma.gif" width="40%">
+<a href="#" target="_blank"></a>
+
+<br>
+
+- Programa que calcula a idade
+
+```java
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Calendar;
+
+public class TelaSoma extends JDialog {
+    private JPanel contentPane;
+    private JButton buttonOK;
+    private JButton buttonCancel;
+    private JSpinner txtAN;
+    private JButton btnCalc;
+    private JLabel lblIdade;
+    private JLabel lblAno;
+
+    public TelaSoma() {
+        setContentPane(contentPane);
+        setModal(true);
+        getRootPane().setDefaultButton(buttonOK);
+        btnCalc.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                int an = Integer.parseInt(txtAN.getValue().toString());
+
+                Calendar cal = Calendar.getInstance();
+                int ano = cal.get(Calendar.YEAR);
+
+                lblAno.setText(Integer.toString(ano));
+
+                int id = ano - an;
+                lblIdade.setText(Integer.toString(id));
+
+            }
+        });
+        buttonCancel.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                lblIdade.setText("");
+                txtAN.setValue(2000);
+            }
+        });
+    }
+
+    public static void main(String[] args) {
+        TelaSoma dialog = new TelaSoma();
+        dialog.pack();
+        dialog.setVisible(true);
+        System.exit(0);
+    }
+}
+```
+
+<code> Program Idade </code>
+
+<img src="./img/aula06/idade.gif" width="40%">
+<a href="#" target="_blank"></a>
+
+<br>
+
+---
 
 - Exercícios de Java #06
+
+<img src="./img/aula06/aula06-07.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula06/aula06-08.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula06/aula06-09.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula06/aula06-10.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula06/aula06-11.png" width="45%">
+<a href="#" target="_blank"></a>
+
+---
 
 <span id="aula07">
 
@@ -719,6 +868,7 @@ public class TesteTipos {
 Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas para ajudar você a se especializar, incluindo testes com certificados para agregar em sua carreira. Todas as aulas com vídeos excelentes, super práticos e dinâmicos.
 
 
+<br>
 
 - Exercícios de Java #07
 
@@ -728,6 +878,11 @@ Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas par
 
 Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas para ajudar você a se especializar, incluindo testes com certificados para agregar em sua carreira. Todas as aulas com vídeos excelentes, super práticos e dinâmicos.
 
+<code> </code>
+
+```java
+
+```
 
 - Exercícios de Java #08
 
