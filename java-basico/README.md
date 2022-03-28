@@ -42,7 +42,7 @@
     - Exercícios de Java #05
 6. Aula 6 – Tipos Primitivos e Manipulação de Dados ✅
     - Exercícios de Java #06
-7. Aula 7 – Operadores Aritméticos e Classe Math
+7. Aula 7 – Operadores Aritméticos e Classe Math ✅
     - Exercícios de Java #07
 8. Aula 8 – Operadores Lógicos e Relacionais
     - Exercícios de Java #08
@@ -865,12 +865,370 @@ public class TelaSoma extends JDialog {
 
 #### 07. Aula 7 – Operadores Aritméticos e Classe Math
 
-Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas para ajudar você a se especializar, incluindo testes com certificados para agregar em sua carreira. Todas as aulas com vídeos excelentes, super práticos e dinâmicos.
+
+<code> class OperadoresAritmeticos (exemplo Calculo da média entre dois números)</code>
+
+```java
+public class OperadoresAritmeticos {
+    /**
+     * author: Eduardo Rodrigues
+     */
+    public static void main(String[] args) {
+        int n1 = 3;
+        int n2 = 5;
+        float m = (n1 + n2)/2;
+        System.out.println("A média é igual a " + m); // A média é igual a 4.0
+    }
+}
+```
+
+
+<code> class OperadoresAritmeticos (exemplos de pos-incremento e pré-incremento) </code>
+
+```java
+public class OperadoresAritmeticos {
+    /**
+     * author: Eduardo Rodrigues
+     */
+    public static void main(String[] args) {
+
+        int num = 5;
+        num++;
+        System.out.println(num); // 6
+
+        int num = 5;
+        int valor = 5 + num++;      // pos-incremento
+        System.out.println(valor);  // 10 (5 + 5)
+        System.out.println(num);    // 6
+]       
+        int num = 5;
+        int valor = 5 + ++num;      // pré-incremento
+        System.out.println(valor);  // 11 (5 + 6)
+        System.out.println(num);    // 6
+
+        int num = 10;
+        int valor = 4 + num--;      // pos-incremento
+        System.out.println(valor);  // 14 (4 + 10)
+        System.out.println(num);    // 9
+
+        int num = 10;
+        int valor = 4 + --num;      // pré-incremento
+        System.out.println(valor);  // 13 (4 + 9)
+        System.out.println(num);    // 9
+    }
+}
+
+```
+
+<br>
+
+
+<code> class OperadoresAritmeticos (Operadores de Atribuição) </code>
+
+```java
+public class OperadoresAritmeticos {
+    /**
+     * author: Eduardo Rodrigues
+     */
+    public static void main(String[] args) {
+
+       int a = 4;
+        a += 2; // somar e atribuir
+        System.out.println(a); // 6
+
+        int b = 4;
+        b -= 2; // subtrair e atribuir
+        System.out.println(b); // 2
+
+        int c = 4;
+        c *= 2; // multiplicar e atribuir
+        System.out.println(c); // 8
+
+        int d = 9;
+        d /= 3; // dividir e atribuir
+        System.out.println(d); // 3
+
+        int e = 9;
+        e %= 2; // resto e atribuir
+        System.out.println(e); // 1
+    }
+}
+
+```
+
+<br>
+
+- Como gerar um número aleatório em Java
+
+código fonte de exemplo: [clique aqui](https://dicasdejava.com.br/como-gerar-um-numero-aleatorio-em-java/)
+
+<code> class GerarNumeroAleatorio </code>
+
+```java
+import java.util.Random;
+
+public class GerarNumeroAleatorio {
+
+    public static void main(String[] args) {
+
+        Random random = new Random();
+
+        int numeroInteiroAleatorio_0_a_10 = random.nextInt(10);
+        System.out.println("Número inteiro aleatório de 0 até 10: " + numeroInteiroAleatorio_0_a_10);
+
+        double numeroRealAleatorio_0_a_1 = random.nextDouble();
+        System.out.println("Número real aleatório de 0 até 1: " + Math.round(numeroRealAleatorio_0_a_1));
+
+        double numeroRealAleatorio_0_a_10 = random.nextDouble() * 10;
+        System.out.println("Número real aleatório de 0 até 10: " + Math.round(numeroRealAleatorio_0_a_10));
+
+    }
+}
+```
+
+<br>
+
+- Programa que apresenta o valor absoluto e exemplos de arrendondamento
+
+<code> class OperadoresAritmeticos (valor absoluto e exemplos de arrendondamento)</code>
+
+```java
+public class OperadoresAritmeticos {
+    /**
+     * author: Eduardo Rodrigues
+     */
+    public static void main(String[] args) {
+        
+        System.out.println("Valor Absoluto de (-10) = " + Math.abs(-10)); // 10
+
+        float valorFloat = 8.9f;
+
+        int arrendondamentoCima = (int) Math.ceil(valorFloat); // 9
+        System.out.println("arrendondamentoCima (8.9) = " + arrendondamentoCima);
+
+        int arrendondamentoBaixo = (int) Math.floor(valorFloat); // 8
+        System.out.println("arrendondamentoBaixo (8.9) = " + arrendondamentoBaixo);
+
+        int arrendondamentoAritmetico = (int) Math.round(valorFloat); // 9
+        System.out.println("arrendondamentoAritmetico (8.9) = " + arrendondamentoAritmetico);
+    }
+}
+
+```
 
 
 <br>
 
+- Programa que realiza a divisão
+
+<code> TelaValores </code>
+
+```java
+import javax.swing.*;
+import java.awt.event.*;
+
+public class TelaValores extends JDialog {
+    private JPanel contentPane;
+    private JButton buttonOK;
+    private JButton buttonCancel;
+    private JTextField txtN;
+    private JTextField txtD;
+    private JButton btnCalc;
+    private JLabel lblQ;
+    private JLabel lblR;
+    private JLabel ImageLogo;
+
+    public TelaValores() {
+        setContentPane(contentPane);
+        setModal(true);
+        getRootPane().setDefaultButton(buttonOK);
+
+        buttonOK.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                onOK();
+            }
+        });
+
+        buttonCancel.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                onCancel();
+            }
+        });
+
+        // call onCancel() when cross is clicked
+        setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
+        addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                onCancel();
+            }
+        });
+
+        // call onCancel() on ESCAPE
+        contentPane.registerKeyboardAction(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                onCancel();
+            }
+        }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+        btnCalc.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // TODO
+                int dividendo = Integer.parseInt(txtN.getText());
+                int divisor = Integer.parseInt(txtD.getText());
+                float quociente = dividendo / divisor;
+                float resto = dividendo % divisor;
+
+                lblQ.setText(Float.toString(quociente));
+                lblR.setText(Float.toString(resto));
+            }
+        });
+    }
+
+    private void onOK() {
+        // add your code here
+        dispose();
+    }
+
+    private void onCancel() {
+        // add your code here if necessary
+        txtN.setText("");
+        txtD.setText("");
+        lblQ.setText("");
+        lblR.setText("");
+        // dispose();
+    }
+
+    public static void main(String[] args) {
+        TelaValores dialog = new TelaValores();
+        dialog.setTitle("Calcula divisão");
+        dialog.pack();
+        dialog.setVisible(true);
+        System.exit(0);
+    }
+
+    private void createUIComponents() {
+        // TODO: place custom component creation code here
+        ImageLogo = new JLabel(new ImageIcon("divisao.png")); // load the image to a imageIcon
+    }
+}
+```
+
+
+
+<br>
+
+
+<code> Program Calcula Divisão </code>
+
+<img src="./img/aula07/divisao.gif" width="40%">
+<a href="#" target="_blank"></a>
+
+<br>
+
+---
+
 - Exercícios de Java #07
+
+<img src="./img/aula07/aula07-01.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula07/aula07-02.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula07/aula07-03.png" width="45%">
+<a href="#" target="_blank"></a>
+
+
+---
+
+- Program Super Calculadora
+
+<img src="./img/aula07/aula07-04.png" width="45%">
+<a href="#" target="_blank"></a>
+
+<code> class SuperCalculadora </code>
+
+```java
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class SuperCalculadora extends JDialog {
+    private JPanel contentPane;
+    private JButton buttonOK;
+    private JButton buttonCancel;
+    private JSpinner txtNum;
+    private JLabel imgCalc;
+    private JButton panCalc;
+    private JLabel imgBtn;
+    private JLabel lblResto;
+    private JLabel lblCubo;
+    private JLabel lblRaizQ;
+    private JLabel lblRaizC;
+    private JLabel lblAbs;
+
+    public SuperCalculadora() {
+        setContentPane(contentPane);
+        setModal(true);
+        getRootPane().setDefaultButton(buttonOK);
+        panCalc.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int num = Integer.parseInt(txtNum.getValue().toString()); // Numero digitado
+
+                int resto = num % 2;
+                lblResto.setText(Integer.toString(resto));
+
+                double cubo = Math.pow(num, 3);
+                lblCubo.setText(Double.toString(cubo));
+
+                double raizQ = Math.sqrt(num);
+                lblRaizQ.setText(String.format("%.2f", raizQ));
+                // lblRaizQ.setText(Double.toString(raizQ));
+
+                double raizC = Math.cbrt(num);
+                lblRaizC.setText(String.format("%.2f", raizC));
+
+                int abs = Math.abs(num);
+                lblAbs.setText(Integer.toString(abs));
+
+            }
+        });
+
+        buttonCancel.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                    // add your code here if necessary
+                    txtNum.setValue(0);
+
+            }
+        });
+    }
+
+    public static void main(String[] args) {
+        SuperCalculadora dialog = new SuperCalculadora();
+        dialog.setTitle("Super Calculadora");
+        dialog.pack();
+        dialog.setVisible(true);
+        System.exit(0);
+    }
+
+    private void createUIComponents() {
+        // TODO: place custom component creation code here
+        imgCalc = new JLabel(new ImageIcon("calculadora.png"));
+        imgBtn = new JLabel(new ImageIcon("calc-botao.png"));
+    }
+}
+
+```
+
+<code> Program Super Calculadora </code>
+
+<img src="./img/aula07/SuperCalculadora.gif" width="40%">
+<a href="#" target="_blank"></a>
+
+<br>
+
+
+<br>
 
 <span id="aula08">
 
@@ -878,11 +1236,7 @@ Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas par
 
 Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas para ajudar você a se especializar, incluindo testes com certificados para agregar em sua carreira. Todas as aulas com vídeos excelentes, super práticos e dinâmicos.
 
-<code> </code>
 
-```java
-
-```
 
 - Exercícios de Java #08
 

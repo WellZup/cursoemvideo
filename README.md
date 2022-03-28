@@ -366,7 +366,7 @@
     - Exercícios de Java #05
 6. Aula 6 – Tipos Primitivos e Manipulação de Dados ✅
     - Exercícios de Java #06
-7. Aula 7 – Operadores Aritméticos e Classe Math
+7. Aula 7 – Operadores Aritméticos e Classe Math ✅
     - Exercícios de Java #07
 8. Aula 8 – Operadores Lógicos e Relacionais
     - Exercícios de Java #08
@@ -420,6 +420,8 @@ https://www.jetbrains.com/idea/guide/tutorials
 [Jata Tutorial - Java T Point](https://www.javatpoint.com/java-tutorial)
 
 [JetBrains.gitignore](https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore)
+
+[Dicas de Java - Site dicasdejava.com.br](https://dicasdejava.com.br/)
  
 <br>
 
