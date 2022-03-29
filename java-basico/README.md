@@ -50,7 +50,7 @@
     - Exercícios de Java #08
 9. Aula 9 – Estruturas Condicionais (Parte 1)  ✅
     - Exercícios de Java #09
-10. Aula 10 – Estruturas Condicionais (Parte 2)
+10. Aula 10 – Estruturas Condicionais (Parte 2)  ✅
     - Exercícios de Java #10
 11. Aula 11 – Estruturas de Repetição (Parte 1)
     - Exercícios de Java #11
@@ -1333,13 +1333,17 @@ public class OperadoresLogicos {
 
 ```
 
-<code> </code>
-
-```java
-
-```
+---
 
 - Exercícios de Java #08
+
+<img src="./img/aula08/aula08-01.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula08/aula08-02.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula08/aula08-03.png" width="45%">
+
+---
 
 <span id="aula09">
 
@@ -1371,31 +1375,146 @@ public class CalculaMedia {
 }
 ```
 
-<code> </code>
+<code> class CalculaIdade </code>
 
 ```java
+import java.util.Calendar;
+import java.util.Scanner;
+
+public class CalculaIdade {
+    public static void main(String[] args) {
+
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.print("Ano que você nasceu? ");
+        int anoNas = teclado.nextInt();
+
+        // anoAtual
+        Calendar cal = Calendar.getInstance();
+        int anoAtual = cal.get(Calendar.YEAR); // anoAtual = 2022
+
+        int idade = anoAtual - anoNas; // int idade = 2022 - anoNas;
+
+        System.out.println("Sua idade é " + idade);
+
+        if (idade >= 18) {
+            System.out.println("Maior de idade");
+        } else {
+            System.out.println("Menot de idade");
+        }
+    }
+}
+```
+
+<code> class ParOuImpar </code>
+
+```java
+import java.util.Scanner;
+
+public class ParOuImpar {
+    public static void main(String[] args) {
+
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.print("Digite um valor inteiro: ");
+        int valor = teclado.nextInt();
+
+        if (valor % 2 == 0) {
+            System.out.println("Número é PAR!");
+        } else {
+            System.out.println("Número é ÍMPAR!");
+        }
+    }
+}
 
 ```
 
-<code> </code>
+<code> class EquacaoSegundoGrau </code>
 
 ```java
+import java.util.Scanner;
+
+public class SegundoGrau {
+    public static void main(String[] args) {
+
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.println("-----------------------------------------");
+        System.out.println("              Equação do 2º Grau         ");
+        System.out.println("-----------------------------------------");
+
+        System.out.print("Digite o valor de a: ");
+        int a = Integer.parseInt(teclado.next());
+
+        System.out.print("Digite o valor de b: ");
+        int b = Integer.parseInt(teclado.next());
+
+        System.out.print("Digite o valor de c: ");
+        int c = Integer.parseInt(teclado.next());
+
+        System.out.println("\n Sua equação é " + a + "x² + " + b + "x + " + c + " = 0");
+
+        double delta = Math.pow(b, 2) - 4 * a * c;
+
+        System.out.printf("\n O valor de delta é = " + String.valueOf(delta));
+        System.out.println("\n");
+
+        if (delta < 0) {
+            System.out.println("\nPara Delta negativo. Não existe raizes reais!");
+        }
+        else if (delta == 0) {
+            double x1 = (-b + Math.sqrt(delta)) / (2 * a);
+            System.out.println("\nPara Delta zero. Temos duas raizes iguais a = " + x1);
+
+        }
+        else if (delta > 0) {
+            double x1 = (-b + Math.sqrt(delta)) / (2 * a);
+            double x2 = (-b - Math.sqrt(delta)) / (2 * a);
+            System.out.println("Para Delta positivo. Temos duas diferentes: ");
+            System.out.println("Primeira raiz (x1) = " + x1);
+            System.out.println("Segunda  raiz (x2) = " + x2);
+        }
+    }
+
+    /**
+     *  Teste de equação do segundo grau:
+     *  Ex1: Δ = 1;
+     *  x² – 5x + 6 = 0
+     *  a = 1, b = -5, c = 6.
+     *  Δ = 1;
+     *  Como Δ > 0,
+     *  Para Delta positivo, essa equação terá duas soluções reais; x1 = 3 ; x2 = 2
+     *
+     *  Ex2: Δ = 0;
+     *  4x² – 4x + 1 = 0.
+     *  a = 4, b = -4, c = 1
+     *  Δ = 0 ;
+     *  Para Delta zero. Temos duas raizes iguais a = 0.5
+     *
+     * Ex3: Δ < 0, ou seja, Δ negativo
+     * 5x² + x + 6 = 0.
+     * a = 5 , b = 1, c = 6
+     * Δ = -119 ;
+     * Para Delta negativo. Não existe raizes reais!
+     *
+     */
+
+}
 
 ```
 
-<code> </code>
+ ---
 
-```java
+- Exercícios de Java #09
 
-```
+<img src="./img/aula09/aula09-01.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula09/aula09-02.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula09/aula09-03.png" width="45%">
 
-<code> </code>
+---
 
-```java
-
-```
-
- - Exercícios de Java #09
 
 <span id="aula10">
 
@@ -1403,7 +1522,14 @@ public class CalculaMedia {
 
 [Slide da aula 10](https://github.com/eduardodsr/cursoemvideo/tree/master/java-basico/slides/10-aula-curso-java-slides.pdf)
 
-Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas para ajudar você a se especializar, incluindo testes com certificados para agregar em sua carreira. Todas as aulas com vídeos excelentes, super práticos e dinâmicos.
+
+
+
+<code> </code>
+
+```java
+
+```
 
 <code> </code>
 
