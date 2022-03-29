@@ -368,11 +368,11 @@
     - Exercícios de Java #06
 7. Aula 7 – Operadores Aritméticos e Classe Math ✅
     - Exercícios de Java #07
-8. Aula 8 – Operadores Lógicos e Relacionais
+8. Aula 8 – Operadores Lógicos e Relacionais ✅
     - Exercícios de Java #08
-9. Aula 9 – Estruturas Condicionais (Parte 1)
+9. Aula 9 – Estruturas Condicionais (Parte 1) ✅
     - Exercícios de Java #09
-10. Aula 10 – Estruturas Condicionais (Parte 2)
+10. Aula 10 – Estruturas Condicionais (Parte 2) ✅
     - Exercícios de Java #10
 11. Aula 11 – Estruturas de Repetição (Parte 1)
     - Exercícios de Java #11
