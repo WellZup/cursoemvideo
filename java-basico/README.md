@@ -1523,21 +1523,187 @@ public class SegundoGrau {
 [Slide da aula 10](https://github.com/eduardodsr/cursoemvideo/tree/master/java-basico/slides/10-aula-curso-java-slides.pdf)
 
 
-
-
-<code> </code>
+<code> class CalculaIdade </code>
 
 ```java
+import java.util.Calendar;
+import java.util.Scanner;
+
+public class CalculaIdade {
+    public static void main(String[] args) {
+
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.print("Ano que você nasceu? ");
+        int anoNas = teclado.nextInt();
+
+        // anoAtual
+        Calendar cal = Calendar.getInstance();
+        int anoAtual = cal.get(Calendar.YEAR); // anoAtual = 2022
+
+        int idade = anoAtual - anoNas; // int idade = 2022 - anoNas;
+
+        System.out.println("Sua idade é " + idade);
+
+        if (idade >= 18) {
+            System.out.println("Maior de idade");
+        } else {
+            System.out.println("Menot de idade");
+        }
+    }
+}
+```
+
+<code> class Votacao </code>
+
+```java
+import java.util.Calendar;
+import java.util.Scanner;
+
+public class Votacao {
+    public static void main(String[] args) {
+
+        Scanner teclado = new Scanner(System.in);
+
+/*      System.out.print("Ano que você nasceu? ");
+        int anoNas = teclado.nextInt();
+
+        // anoAtual
+        Calendar cal = Calendar.getInstance();
+        int anoAtual = cal.get(Calendar.YEAR); // anoAtual = 2022
+
+        int idade = anoAtual - anoNas; // int idade = 2022 - anoNas;
+
+        System.out.println("Sua idade é " + idade);
+*/
+        System.out.println(" ┌────────────────────────┐");
+        System.out.println(" │     IDADE DE VOTAÇÃO   │");
+        System.out.println(" └────────────────────────┘");
+
+        System.out.print("Qwal a sua idade? ");
+        int idade = teclado.nextInt();
+
+        if (idade < 16) {
+            System.out.println("Não Vota!");
+        } else {
+            if ( (idade >= 16 && idade < 18) || (idade > 70) ) {
+                System.out.println("Voto Opcional");
+            } else {
+                System.out.println("Voto Obrigatório!");
+            }
+        }
+    }
+}
 
 ```
 
-<code> </code>
+- Programa que utiliza o **switch** que é uma estrutura de repetição
+
+<code> class QuantasPernas </code>
 
 ```java
+import java.util.Scanner;
 
+public class QuantasPernas {
+    public static void main(String[] args) {
+
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.print("Qual a quantidade de pernas? ");
+        int pernas = teclado.nextInt();
+
+        System.out.print("Isso é um(a) ");
+
+        String tipo;
+        switch (pernas) {
+            case 1:
+                tipo = "Saci (folcore brasileiro, uma perna)";
+                break;
+            case 2:
+                tipo = "Bípede (duas pernas)";
+                break;
+            case 4:
+                tipo = "Quadrúpede (quadro pernas)";
+                break;
+            case 6, 8:
+                tipo = "Aranha";
+                break;
+            default:
+                tipo = "Animal desconhecido!";
+        }
+        System.out.println(tipo);
+    }
+}
 ```
+
+---
 
 - Exercícios de Java #10
+
+<img src="./img/aula10/aula10-01.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula10/aula10-02.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula10/aula10-03.png" width="45%">
+
+
+- Lista de Exercícios (Q2), pegadinha!!!
+
+<code> TesteQuestaoTres </code>
+
+```java
+public class TesteQuestaoTres {
+    public static void main(String[] args) {
+        String nome = "João";
+        imprimeNome("Empty");
+    }
+    public static void imprimeNome(String nome) {
+
+        System.out.println("Nome: " +nome); // "Empty"
+
+        // A String nome está Vazia? True or False
+        if (!nome.isEmpty()) {
+            System.out.println("Tudo bem " + nome + "?"); // Tudo bem Empty?
+        } else {
+            System.out.println("O nome é " + nome + "?");
+        }
+    }
+}
+```
+
+- Lista de Exercícios (Q3)
+
+<code> class TesteQuestaoQuatro </code>
+
+```java
+public class TesteQuestaoQuatro {
+    public static void main(String[] args) {
+
+        char ch;
+
+        String test2 = "abcde";             // Objeto não instanciado
+        String test = new String("abcde");  // Objeto instanciado
+
+        if(test.equals(test2)) {
+            ch = (test == test2) ? test.charAt(0) : test.charAt(1); //  teste lógico (false) => test.charAt(1) = 'b'
+        } else {
+            ch = (test == test2) ? test.charAt(2) : test.charAt(3);
+        }
+        System.out.println(ch); // b
+        // test.charAt(1) = 'b'
+        // 'b' é 2º posição do Objeto String, ou seja, String test = new String("abcde");
+
+        /**
+         * O que será impresso quando o seguinte programa escrito na
+         * liguagem JAVA for compitado e executado?
+         * Respostas:
+         * a) a ;   b) b ;  c) c ;  d) d ;  e) e
+         */
+    }
+}
+```
+
+---
 
 <span id="aula11">
 
@@ -1548,11 +1714,9 @@ public class SegundoGrau {
 
 Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas para ajudar você a se especializar, incluindo testes com certificados para agregar em sua carreira. Todas as aulas com vídeos excelentes, super práticos e dinâmicos.
 
-<code> </code>
 
-```java
 
-```
+
 
 - Exercícios de Java #11
 
