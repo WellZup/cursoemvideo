@@ -7,7 +7,7 @@
 - Caso você já domine a construção de algoritmos e a lógica de programação, o professor Gustavo Guanabara vai mostrar a história, introdução e explicação do funcionamento da linguagem, assim como suas sintaxes e estruturas de maneira fácil e descontraída.
 
 
-<h1 align="center"> Java Básico - Índice</h1> 
+<h2 align="center"> Java Básico - Índice</h2> 
 
 <p align="center"> |&nbsp;&nbsp;&nbsp; 
   <a href="#aula01">Aula 01</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -27,6 +27,8 @@
   <a href="#aula15">Aula 15</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
+<hr>
+
 ### Conteúdo do Módulo :bookmark:
 
 
@@ -44,9 +46,9 @@
     - Exercícios de Java #06
 7. Aula 7 – Operadores Aritméticos e Classe Math ✅
     - Exercícios de Java #07
-8. Aula 8 – Operadores Lógicos e Relacionais
+8. Aula 8 – Operadores Lógicos e Relacionais  ✅
     - Exercícios de Java #08
-9. Aula 9 – Estruturas Condicionais (Parte 1)
+9. Aula 9 – Estruturas Condicionais (Parte 1)  ✅
     - Exercícios de Java #09
 10. Aula 10 – Estruturas Condicionais (Parte 2)
     - Exercícios de Java #10
@@ -61,17 +63,15 @@
 15. Aula 15 – Métodos
     - Exercícios de Java #15
 
-
-
 <hr>
-
 
 ### Aulas :bookmark:
 
-
 <span id="aula01">
 
-#### 01. Aula 1 – História do Java  ✅
+#### 01. Aula 1 – História do Java 
+
+[Slide da aula 01](https://github.com/eduardodsr/cursoemvideo/tree/master/java-basico/slides/01-aula-curso-java-slides.pdf)
 
 A História da Linguagem Java se inicia em 1990, quando a Sun Microsystems criou uma equipe chamada Green Team, liderada por James Gosling.
 
@@ -119,6 +119,8 @@ Atualmente, a Linguagem Java pode ser encontrada em chips de cartão de crédito
 <span id="aula02">
 
 #### 02. Aula 02 – Como Funciona o Java
+
+[Slide da aula 02](https://github.com/eduardodsr/cursoemvideo/tree/master/java-basico/slides/02-aula-curso-java-slides.pdf)
 
 Como funciona o Java? Você sabe o que é JVM, JRE, JDK, JavaC, bytecode? É exatamente isso que você vai aprender durante essa aula.
 
@@ -202,6 +204,8 @@ Existem várias opções no site da Oracle, indicamos aqui algumas versões enco
 
 #### 03. Aula 3 – Instalando o JDK no seu Computador
 
+[Slide da aula 03](https://github.com/eduardodsr/cursoemvideo/tree/master/java-basico/slides/03-aula-curso-java-slides.pdf)
+
 Veja o passo-a-passo para Instalar o Java Development Kit (JDK) do Java SE 8.
 
 Para instalar o pacote do JDK Java, você deve baixar os arquivos diretamente do site da Oracle.
@@ -245,6 +249,8 @@ Uma **IDE (Integrated Development Environment)** é um **Ambiente de Desenvolvim
 <span id="aula04">
 
 #### 04. Aula 4 – Primeiro Programa em Java
+
+[Slide da aula 04](https://github.com/eduardodsr/cursoemvideo/tree/master/java-basico/slides/04-aula-curso-java-slides.pdf)
 
 - Slides
 
@@ -394,6 +400,8 @@ public class ResolucaoTela {
 <span id="aula05">
 
 #### 05. Aula 5 – Introdução ao Swing e JavaFX
+
+[Slide da aula 05](https://github.com/eduardodsr/cursoemvideo/tree/master/java-basico/slides/05-aula-curso-java-slides.pdf)
 
 Por ser uma linguagem multiplataforma, o Java tem que utilizar pacotes adicionais para que os seus arquivos não sejam sobrecarregados sem necessidade.
 
@@ -571,6 +579,8 @@ public class HelloApplication extends Application {
 <span id="aula06">
 
 #### 06. Aula 6 – Tipos Primitivos e Manipulação de Dados
+
+[Slide da aula 06](https://github.com/eduardodsr/cursoemvideo/tree/master/java-basico/slides/06-aula-curso-java-slides.pdf)
 
 Aprenda durante a aula a utilizar tipos primitivos, typecast ou classes invólucro para declarar variáveis/objetos para o seu programa.
 
@@ -865,6 +875,7 @@ public class TelaSoma extends JDialog {
 
 #### 07. Aula 7 – Operadores Aritméticos e Classe Math
 
+[Slide da aula 07](https://github.com/eduardodsr/cursoemvideo/tree/master/java-basico/slides/07-aula-curso-java-slides.pdf)
 
 <code> class OperadoresAritmeticos (exemplo Calculo da média entre dois números)</code>
 
@@ -881,7 +892,6 @@ public class OperadoresAritmeticos {
     }
 }
 ```
-
 
 <code> class OperadoresAritmeticos (exemplos de pos-incremento e pré-incremento) </code>
 
@@ -921,7 +931,6 @@ public class OperadoresAritmeticos {
 ```
 
 <br>
-
 
 <code> class OperadoresAritmeticos (Operadores de Atribuição) </code>
 
@@ -1015,7 +1024,6 @@ public class OperadoresAritmeticos {
 }
 
 ```
-
 
 <br>
 
@@ -1113,10 +1121,7 @@ public class TelaValores extends JDialog {
 }
 ```
 
-
-
 <br>
-
 
 <code> Program Calcula Divisão </code>
 
@@ -1141,7 +1146,7 @@ public class TelaValores extends JDialog {
 
 - Program Super Calculadora
 
-<img src="./img/aula07/aula07-04.png" width="45%">
+<img src="./img/aula07/aula07-04.png" width="50%">
 <a href="#" target="_blank"></a>
 
 <code> class SuperCalculadora </code>
@@ -1222,7 +1227,7 @@ public class SuperCalculadora extends JDialog {
 
 <code> Program Super Calculadora </code>
 
-<img src="./img/aula07/SuperCalculadora.gif" width="40%">
+<img src="./img/aula07/SuperCalculadora.gif" width="50%">
 <a href="#" target="_blank"></a>
 
 <br>
@@ -1234,9 +1239,105 @@ public class SuperCalculadora extends JDialog {
 
 #### 08. Aula 8 – Operadores Lógicos e Relacionais
 
-Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas para ajudar você a se especializar, incluindo testes com certificados para agregar em sua carreira. Todas as aulas com vídeos excelentes, super práticos e dinâmicos.
+[Slide da aula 08](https://github.com/eduardodsr/cursoemvideo/tree/master/java-basico/slides/08-aula-curso-java-slides.pdf)
 
 
+<code> class OperadorTernario </code>
+
+```java
+public class OperadorTernario {
+    public static void main(String[] args) {
+        int n1 = 4;
+        int n2 = 8;
+        String resultado;
+
+        resultado = (n1 > n2) ? "n1 é maior" : "n2 é maior ";
+        System.out.println(resultado); // n2 é maior
+    }
+}
+```
+
+<code> class OperadorTernario </code>
+
+```java
+public class OperadorTernario {
+    public static void main(String[] args) {
+        int n1 = 4;
+        int n2 = 8;
+        int resultado;
+
+        resultado = (n1 > n2) ? 0 : 1;
+        System.out.println(resultado); // 1
+    }
+}
+```
+
+<code> class ComparacaoString </code>
+
+```java
+import javax.management.ObjectName;
+
+public class ComparacaoString {
+    public static void main(String[] args) {
+        String nome1 = "Eduardo";
+        String nome2 = "Eduardo";
+        String nome3 = new String("Eduardo");
+        String resultado;
+
+
+        resultado = (nome1 == nome2) ? "igual" : "diferente";
+        System.out.println(resultado); // igual
+
+
+        resultado = (nome1 == nome3) ? "igual" : "diferente";
+        System.out.println(resultado); // diferente
+
+        /*
+        *  equals() -> verifica se o conteudo de um objeto é igual ao outro objeto
+        *  nome1.equals(nome3) -> verificar se nome1 é igual ao nome3
+        */
+
+        resultado = (nome1.equals(nome3)) ? "igual" : "diferente";
+        System.out.println(resultado); // igual
+    }
+}
+
+```
+
+<code> class OperadoresLogicos </code>
+
+```java
+public class OperadoresLogicos {
+    public static void main(String[] args) {
+        int x = 4;
+        int y = 7;
+        int z = 12;
+        boolean r1, r2, r3, r4, r5;
+
+        r1 = (x < y) && (y < z) ? true : false;
+        System.out.println(r1); // true
+
+        r2 = (x < y) && (y == z) ? true : false;
+        System.out.println(r2); // false
+
+        r3 = (x < y) || (y == z) ? true : false;
+        System.out.println(r3); // true
+
+        r4 = (x < y) ^ (y == z) ? true : false;
+        System.out.println(r4); // true
+
+        r5 = (x < y) ^ (y < z) ? true : false;
+        System.out.println(r5); // false
+    }
+}
+
+```
+
+<code> </code>
+
+```java
+
+```
 
 - Exercícios de Java #08
 
@@ -1244,7 +1345,49 @@ Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas par
 
 #### 09. Aula 9 – Estruturas Condicionais (Parte 1)
 
-Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas para ajudar você a se especializar, incluindo testes com certificados para agregar em sua carreira. Todas as aulas com vídeos excelentes, super práticos e dinâmicos.
+[Slide da aula 09](https://github.com/eduardodsr/cursoemvideo/tree/master/java-basico/slides/09-aula-curso-java-slides.pdf)
+
+
+
+
+<code> class CalculaMedia </code>
+
+```java
+import java.util.Scanner;
+
+public class CalculaMedia {
+    public static void main(String[] args) {
+        Scanner keyboard = new Scanner(System.in);
+        System.out.print("Digite a 1º nota: ");
+        float num1 = keyboard.nextFloat();
+        System.out.print("Digite a 2º nota: ");
+        float num2 = keyboard.nextFloat();
+        float media = (num1 + num2) / 2;
+        System.out.println("Sua média foi " + media);
+        if (media >= 9) {
+            System.out.println("Parabéns!");
+        }
+    }
+}
+```
+
+<code> </code>
+
+```java
+
+```
+
+<code> </code>
+
+```java
+
+```
+
+<code> </code>
+
+```java
+
+```
 
 <code> </code>
 
@@ -1257,6 +1400,8 @@ Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas par
 <span id="aula10">
 
 #### 10. Aula 10 – Estruturas Condicionais (Parte 2)
+
+[Slide da aula 10](https://github.com/eduardodsr/cursoemvideo/tree/master/java-basico/slides/10-aula-curso-java-slides.pdf)
 
 Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas para ajudar você a se especializar, incluindo testes com certificados para agregar em sua carreira. Todas as aulas com vídeos excelentes, super práticos e dinâmicos.
 
@@ -1272,6 +1417,9 @@ Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas par
 
 #### 11. Aula 11 – Estruturas de Repetição (Parte 1)
 
+[Slide da aula 11](https://github.com/eduardodsr/cursoemvideo/tree/master/java-basico/slides/11-aula-curso-java-slides.pdf)
+
+
 Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas para ajudar você a se especializar, incluindo testes com certificados para agregar em sua carreira. Todas as aulas com vídeos excelentes, super práticos e dinâmicos.
 
 <code> </code>
@@ -1286,6 +1434,8 @@ Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas par
 
 #### 12. Aula 12 – Estruturas de Repetição (Parte 2)
 
+[Slide da aula 12](https://github.com/eduardodsr/cursoemvideo/tree/master/java-basico/slides/12-aula-curso-java-slides.pdf)
+
 <code> </code>
 
 ```java
@@ -1297,6 +1447,8 @@ Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas par
 <span id="aula13">
 
 #### 13. Aula 13 – Estruturas de Repetição (Parte 3)
+
+[Slide da aula 13](https://github.com/eduardodsr/cursoemvideo/tree/master/java-basico/slides/13-aula-curso-java-slides.pdf)
 
 Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas para ajudar você a se especializar, incluindo testes com certificados para agregar em sua carreira. Todas as aulas com vídeos excelentes, super práticos e dinâmicos.
 
