@@ -1970,11 +1970,6 @@ Cambalhota 5
 Cambalhota 6
 ```
 
-<code> </code>
-
-```java
-
-```
 
 ---
 
@@ -2136,8 +2131,211 @@ public class ProjetoFatorial extends JDialog {
 [Slide da aula 12](https://github.com/eduardodsr/cursoemvideo/tree/master/java-basico/slides/12-aula-curso-java-slides.pdf)
 
 
+- Repetição com Teste no Final
+
+    - do while
+
+* Programa contador de cambalhotas com teste no final
+
+<code> class EstruturaRepeticao1 </code>
+
+```java
+public class EstruturaRepeticao1 {
+    public static void main(String[] args) {
+        int contador = 1;
+        do {
+            System.out.println("Cambalhota " + contador);
+            contador++;
+        } while (contador < 5);
+    }
+}
+```
+
+<code> &rarr; Run  &lt;EstruturaRepeticao1&gt; </code>
+
+```markdown
+Cambalhota 1
+Cambalhota 2
+Cambalhota 3
+Cambalhota 4
+```
+
+- Programa que realiza a soma de todos os valores digitados
+
+<code> class EstruturaRepeticao2 </code>
+
+```java
+import java.util.Scanner;
+
+public class EstruturaRepeticao2 {
+    public static void main(String[] args) {
+        int num = 0;
+        int soma = 0;
+        String resposta = null;
+        Scanner teclado = new Scanner(System.in);
+        do {
+            System.out.print("Digite um número: ");
+            num = teclado.nextInt();
+            soma += num;
+            System.out.print("Quer continuar? (S/N) ");
+            resposta = teclado.next();
+        } while ( resposta.toUpperCase().equals("S") );
+        System.out.println("\nA soma de todos os valores é " + soma);
+    }
+}
+```
+
+<code> &rarr; Run  &lt;EstruturaRepeticao2&gt; </code>
+
+```markdown
+Digite um número: 2
+Quer continuar? (S/N) s
+Digite um número: 3
+Quer continuar? (S/N) s
+Digite um número: 3
+Quer continuar? (S/N) s
+Digite um número: 4
+Quer continuar? (S/N) n
+
+A soma de todos os valores é 12
+```
+
+
+---
+
 
 - Exercício de Java #12
+
+<img src="./img/aula12/aula12-01.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula12/aula12-02.png" width="45%">
+<a href="#" target="_blank"></a>
+
+<br>
+
+- Programa Repita:
+
+* Programa que apresenta as seguintes informações:
+    - Somatório vale:
+    - Valores inseridos:
+    - Valores pares:
+    - Valores ímpares:
+    - Valores acima de 100:
+    - Média dos valores:
+
+<code> class Repita </code>
+
+```java
+import javax.swing.*;
+import java.awt.event.*;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+import static javax.swing.JOptionPane.showMessageDialog;
+
+public class Repita extends JDialog {
+    private JPanel contentPane;
+    private JButton buttonOK;
+    private JButton buttonCancel;
+
+    public Repita() {
+        setContentPane(contentPane);
+        setModal(true);
+        getRootPane().setDefaultButton(buttonOK);
+
+        buttonOK.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                onOK();
+            }
+        });
+
+        buttonCancel.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                onCancel();
+            }
+        });
+
+        // call onCancel() when cross is clicked
+        setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
+        addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                onCancel();
+            }
+        });
+
+        // call onCancel() on ESCAPE
+        contentPane.registerKeyboardAction(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                onCancel();
+            }
+        }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+    }
+
+    private void onOK() {
+        // add your code here
+        dispose();
+    }
+
+    private void onCancel() {
+        // add your code here if necessary
+        dispose();
+    }
+
+    public static void main(String[] args) {
+
+        /* Examples JOptionPane.showMessageDialog */
+        // JOptionPane.showMessageDialog(null, "Olá, Mundo!", "Programa Olá, Mundo", JOptionPane.INFORMATION_MESSAGE);
+        // JOptionPane.showMessageDialog(null, "Olá, Mundo!", "Programa Olá, Mundo", JOptionPane.WARNING_MESSAGE);
+        // JOptionPane.showMessageDialog(null, "Olá, Mundo!", "Programa Olá, Mundo", JOptionPane.ERROR_MESSAGE);
+
+        // TODO code application logic here
+        int n, s=0, c=0, p=0, i=0, a=0;
+
+        float media;
+
+        do {
+            n = Integer.parseInt(JOptionPane.showInputDialog(null,
+                    "Informe um número: (valor 0 interrompe)"));
+
+            s += n; // somatorio de valores => armazena os números digitados
+            c++; // contador
+
+            if (n % 2 == 0){
+                p++; // contador pares
+            } else {
+                i++; // contador impares
+            }
+
+            if ( n > 100){
+                a++; // contador valores acima de 100
+            }
+
+        } while (n != 0);
+
+        media = (float) (s / c); // media = somatorio / quantidades de valores inseridos
+
+        JOptionPane.showMessageDialog(null, "<html>Resultado final<br><hr>"
+                + "Somatório vale: &nbsp;<strong>" + s
+                + ".</strong><br>Valores inseridos: &nbsp;<strong>" + c
+                + ".</strong><br>Valores pares: &nbsp;&nbsp;<strong>" + p
+                + ".</strong><br>Valores ímpares: &nbsp;<strong>" + i
+                + ".</strong><br>Valores acima de 100: &nbsp;<strong>" + a
+                + ".</strong><br>Média dos valores: &nbsp;<strong>" + media + "</strong></html>");
+    }
+}
+
+```
+- Programa Repita
+
+<img src="./img/aula12/aula12-03.png">
+<a href="#" target="_blank"></a>
+
+<img src="./img/aula12/aula12-04.png">
+<a href="#" target="_blank"></a>
+
+---
+
+<br>
 
 <span id="aula13">
 
@@ -2147,13 +2345,15 @@ public class ProjetoFatorial extends JDialog {
 
 Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas para ajudar você a se especializar, incluindo testes com certificados para agregar em sua carreira. Todas as aulas com vídeos excelentes, super práticos e dinâmicos.
 
-<code> </code>
-
-```java
-
-```
+---
 
 - Exercícios de Java #13
+
+
+
+
+
+---
 
 <span id="aula14">
 
@@ -2161,11 +2361,7 @@ Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas par
 
 Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas para ajudar você a se especializar, incluindo testes com certificados para agregar em sua carreira. Todas as aulas com vídeos excelentes, super práticos e dinâmicos.
 
-<code> </code>
 
-```java
-
-```
 
 - Exercícios de Java #14
 
@@ -2182,8 +2378,6 @@ Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas par
 ```
 
 - Exercícios de Java #15
-
-
 
 
 
