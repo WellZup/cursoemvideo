@@ -52,7 +52,7 @@
     - Exercícios de Java #09
 10. Aula 10 – Estruturas Condicionais (Parte 2)  ✅
     - Exercícios de Java #10
-11. Aula 11 – Estruturas de Repetição (Parte 1)
+11. Aula 11 – Estruturas de Repetição (Parte 1) ✅
     - Exercícios de Java #11
 12. Aula 12 – Estruturas de Repetição (Parte 2)
     - Exercício de Java #12
@@ -1645,7 +1645,7 @@ public class QuantasPernas {
 <img src="./img/aula10/aula10-02.png" width="45%">
 <a href="#" target="_blank"></a>
 <img src="./img/aula10/aula10-03.png" width="45%">
-
+<a href="#" target="_blank"></a>
 
 - Lista de Exercícios (Q2), pegadinha!!!
 
@@ -1856,14 +1856,118 @@ public class ProjetoTriangulo extends JDialog {
 
 [Slide da aula 11](https://github.com/eduardodsr/cursoemvideo/tree/master/java-basico/slides/11-aula-curso-java-slides.pdf)
 
+- Repetição com teste no início
 
-Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas para ajudar você a se especializar, incluindo testes com certificados para agregar em sua carreira. Todas as aulas com vídeos excelentes, super práticos e dinâmicos.
+    - while
 
-
-<code> </code>
+<code> class Contador </code>
 
 ```java
+public class Contador {
+    public static void main(String[] args) {
+        int contador = 1;
+        while (contador <= 4) {
+            System.out.println("Cambalhota " + contador);
+            contador++;
+        }
+    }
+}
+```
+<code> &rarr; Run  &lt;Contador&gt; </code>
 
+```markdown
+Cambalhota 1
+Cambalhota 2
+Cambalhota 3
+Cambalhota 4
+```
+
+- **Mudando o fluxo de um laço** (continue e break)
+
+<code> class ContadorContinue </code>
+
+```java
+public class ContadorContinue {
+    public static void main(String[] args) {
+        int contador = 0;
+        while (contador < 10) {
+            contador++;
+
+            if ( contador == 5 || contador == 7) {
+                continue;
+            }
+            System.out.println("Cambalhota " + contador);
+        }
+    }
+}
+
+```
+<code> &rarr; Run  &lt;ContadorContinue&gt; </code>
+
+```markdown
+Cambalhota 1
+Cambalhota 2
+Cambalhota 3
+Cambalhota 4
+Cambalhota 6
+Cambalhota 8
+Cambalhota 9
+Cambalhota 10
+```
+
+<code> class ContadorBreak </code>
+
+```java
+public class ContadorBreak {
+    public static void main(String[] args) {
+        int contador = 0;
+        while (contador < 10) {
+            contador++;
+
+            if (contador == 5) {
+                break;
+            }
+            System.out.println("Cambalhota " + contador);
+        }
+    }
+}
+```
+<code> &rarr; Run  &lt;ContadorBreak&gt; </code>
+
+```markdown
+Cambalhota 1
+Cambalhota 2
+Cambalhota 3
+Cambalhota 4
+```
+
+<code> class ContadorContinueBreak </code>
+
+```java
+public class ContadorContinueBreak {
+    public static void main(String[] args) {
+        int contador = 0;
+        while (contador < 10) {
+            contador++;
+
+            if (contador == 2 || contador == 3 || contador == 4) {
+                continue;
+            }
+
+            if (contador == 7) {
+                break;
+            }
+            System.out.println("Cambalhota " + contador);
+        }
+    }
+}
+```
+<code> &rarr; Run  &lt;ContadorContinueBreak&gt; </code>
+
+```markdown
+Cambalhota 1
+Cambalhota 5
+Cambalhota 6
 ```
 
 <code> </code>
@@ -1872,8 +1976,47 @@ Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas par
 
 ```
 
+---
 
 - Exercícios de Java #11
+
+<img src="./img/aula11/aula11-01.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula11/aula11-02.png" width="45%">
+<a href="#" target="_blank"></a>
+
+<code> class Questao1 </code>
+
+```java
+public class Questao1 {
+    public static void main(String[] args) {
+        char c = 'c';
+        int i = 10;
+        double d = 10;
+        long l = 1;
+        String s = "Hello";
+
+        // compila sem apresentar erro?
+
+        // c = c + i;  // erro de tipo
+
+        s += 1; // OK
+        System.out.println(s); // Hello1
+
+        // i += s; // erro de tipo
+
+        // c += s; // incompatible types: String cannot be converted to char
+
+        i += 1; // OK
+        System.out.println(i); // 11
+    }
+}
+```
+
+
+
+---
+
 
 <span id="aula12">
 
@@ -1881,11 +2024,7 @@ Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas par
 
 [Slide da aula 12](https://github.com/eduardodsr/cursoemvideo/tree/master/java-basico/slides/12-aula-curso-java-slides.pdf)
 
-<code> </code>
 
-```java
-
-```
 
 - Exercício de Java #12
 

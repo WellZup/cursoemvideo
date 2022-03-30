@@ -374,7 +374,7 @@
     - Exercícios de Java #09
 10. Aula 10 – Estruturas Condicionais (Parte 2) ✅
     - Exercícios de Java #10
-11. Aula 11 – Estruturas de Repetição (Parte 1)
+11. Aula 11 – Estruturas de Repetição (Parte 1) ✅
     - Exercícios de Java #11
 12. Aula 12 – Estruturas de Repetição (Parte 2)
     - Exercício de Java #12
