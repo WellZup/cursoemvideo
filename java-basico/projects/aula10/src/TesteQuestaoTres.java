@@ -1,17 +1,25 @@
 public class TesteQuestaoTres {
     public static void main(String[] args) {
-        String nome = "João";
-        imprimeNome("Empty");
-    }
-    public static void imprimeNome(String nome) {
 
-        System.out.println("Nome: " +nome); // "Empty"
+        char ch;
 
-        // A String nome está Vazia? True or False
-        if (!nome.isEmpty()) {
-            System.out.println("Tudo bem " + nome + "?"); // Tudo bem Empty?
+        String test2 = "abcde";                     // Objeto não instanciado
+        String test = new String("abcde");  // Objeto instanciado
+
+        if(test.equals(test2)) {
+            ch = (test == test2) ? test.charAt(0) : test.charAt(1); //  teste lógico (false) => test.charAt(1) = 'b'
         } else {
-            System.out.println("O nome é " + nome + "?");
+            ch = (test == test2) ? test.charAt(2) : test.charAt(3);
         }
+        System.out.println(ch); // b
+        // test.charAt(1) = 'b'
+        // 'b' é 2º posição do Objeto String, ou seja, String test = new String("abcde");
+
+        /**
+         * O que será impresso quando o seguinte programa escrito na
+         * liguagem JAVA for compitado e executado?
+         * Respostas:
+         * a) a ;   b) b ;  c) c ;  d) d ;  e) e
+         */
     }
 }
