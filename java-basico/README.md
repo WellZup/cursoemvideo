@@ -54,9 +54,9 @@
     - Exercícios de Java #10
 11. Aula 11 – Estruturas de Repetição (Parte 1) ✅
     - Exercícios de Java #11
-12. Aula 12 – Estruturas de Repetição (Parte 2)
+12. Aula 12 – Estruturas de Repetição (Parte 2)  ✅
     - Exercício de Java #12
-13. Aula 13 – Estruturas de Repetição (Parte 3)
+13. Aula 13 – Estruturas de Repetição (Parte 3)  ✅
     - Exercícios de Java #13
 14. Aula 14 – Vetores
     - Exercícios de Java #14
@@ -2343,14 +2343,231 @@ public class Repita extends JDialog {
 
 [Slide da aula 13](https://github.com/eduardodsr/cursoemvideo/tree/master/java-basico/slides/13-aula-curso-java-slides.pdf)
 
-Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas para ajudar você a se especializar, incluindo testes com certificados para agregar em sua carreira. Todas as aulas com vídeos excelentes, super práticos e dinâmicos.
+- Estruturas de Repetição
+
+    - for
+
+<code> class RepeticaoFor </code>
+
+```java
+public class RepeticaoFor {
+    public static void main(String[] args) {
+        for (int contador = 1; contador <= 4; contador++){
+            System.out.println("Cambalhota " + contador);
+        }
+/*
+      int contador = 1;
+        while (contador <= 4) {
+            System.out.println("Cambalhota " + contador);
+            contador++;
+        }
+*/
+    }
+}
+```
+
+<code> &rarr; Run  &lt;RepeticaoFor&gt; </code>
+
+```markdown
+Cambalhota 1
+Cambalhota 2
+Cambalhota 3
+Cambalhota 4
+```
+
+- Contador de 1 até 100, pulando 10 casas
+
+<code> class RepeticaoFor2 </code>
+
+```java
+public class RepeticaoFor2 {
+    public static void main(String[] args) {
+        for (int i = 0; i <= 100; i += 10){
+            System.out.println(i);
+        }
+    }
+}
+
+```
+
+<code> &rarr; Run  &lt;EstruturaRepeticao1&gt; </code>
+
+```markdown
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+```
+
+- Laços Anilhados
+
+<code> &rarr; RepeticaoForAninhado </code>
+
+```java
+public class RepeticaoForAninhado {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 3; i++) {
+            for (int j = 0; j <= 2; j++) {
+                System.out.println("[ " + i + " , " + j + " ]");
+            }
+        }
+    }
+}
+```
+
+<code> &rarr; Run  &lt;RepeticaoForAninhado&gt; </code>
+
+```markdown
+[ 1 , 0 ]
+[ 1 , 1 ]
+[ 1 , 2 ]
+[ 2 , 0 ]
+[ 2 , 1 ]
+[ 2 , 2 ]
+[ 3 , 0 ]
+[ 3 , 1 ]
+[ 3 , 2 ]
+```
+
+- Program TelaContador (javax.swing) 
+
+<code> class TelaContador </code>
+
+```java
+import javax.swing.*;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
+import java.awt.event.*;
+
+public class TelaContador extends JDialog {
+    private JPanel contentPane;
+    private JButton buttonOK;
+    private JButton buttonCancel;
+    private JSlider sliderInicio;
+    private JButton buttonContador;
+    private JList listContador;
+    private JSlider sliderFim;
+    private JSlider sliderPasso;
+    private JLabel LabelInicio;
+    private JLabel LabelFim;
+    private JLabel LabelPasso;
+    private JLabel Inicio;
+    private JLabel Fim;
+    private JLabel Passo;
+
+    public TelaContador() {
+        setContentPane(contentPane);
+        setModal(true);
+        getRootPane().setDefaultButton(buttonOK);
+
+        buttonOK.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                onOK();
+            }
+        });
+
+        buttonCancel.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                onCancel();
+            }
+        });
+
+        // call onCancel() when cross is clicked
+        setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
+        addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                onCancel();
+            }
+        });
+
+        // call onCancel() on ESCAPE
+        contentPane.registerKeyboardAction(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                onCancel();
+            }
+        }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+        sliderInicio.addChangeListener(new ChangeListener() {
+            @Override
+            public void stateChanged(ChangeEvent e) {
+                int inicio = sliderInicio.getValue();
+                LabelInicio.setText(Integer.toString(inicio));
+            }
+        });
+        sliderFim.addChangeListener(new ChangeListener() {
+            @Override
+            public void stateChanged(ChangeEvent e) {
+                int fim = sliderFim.getValue();
+                LabelFim.setText(Integer.toString(fim));
+            }
+        });
+        sliderPasso.addChangeListener(new ChangeListener() {
+            @Override
+            public void stateChanged(ChangeEvent e) {
+                int passo = sliderPasso.getValue();
+                LabelPasso.setText(Integer.toString(passo));
+            }
+        });
+        buttonContador.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int inicio = sliderInicio.getValue();
+                int fim = sliderFim.getValue();
+                int passo = sliderPasso.getValue();
+
+                DefaultListModel lista = new DefaultListModel();
+
+                for (int c = inicio; c <= fim; c += passo) {
+                    // TODO
+                    lista.addElement(c);
+                }
+                listContador.setModel(lista);
+            }
+        });
+    }
+
+    private void onOK() {
+        // add your code here
+        dispose();
+    }
+
+    private void onCancel() {
+        // add your code here if necessary
+        dispose();
+    }
+
+    public static void main(String[] args) {
+        TelaContador dialog = new TelaContador();
+        dialog.setTitle("Contador");
+        dialog.pack();
+        dialog.setVisible(true);
+        System.exit(0);
+    }
+}
+
+```
+
+<code> Program Contador </code>
+
+<img src="./img/aula13/aula13.gif">
+<a href="#" target="_blank"></a>
 
 ---
 
 - Exercícios de Java #13
 
-
-
+<img src="./img/aula13/aula13-01.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula13/aula13-02.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula13/aula13-02.png" width="45%">
+<a href="#" target="_blank"></a>
 
 
 ---
@@ -2361,6 +2578,17 @@ Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas par
 
 Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas para ajudar você a se especializar, incluindo testes com certificados para agregar em sua carreira. Todas as aulas com vídeos excelentes, super práticos e dinâmicos.
 
+
+
+```java
+
+```
+
+<code> &rarr; Run  &lt;EstruturaRepeticao1&gt; </code>
+
+```markdown
+
+```
 
 
 - Exercícios de Java #14
@@ -2376,6 +2604,29 @@ Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas par
 ```java
 
 ```
+
+
+```java
+
+```
+
+<code> &rarr; Run  &lt;EstruturaRepeticao1&gt; </code>
+
+```markdown
+
+```
+
+```java
+
+```
+
+<code> &rarr; Run  &lt;EstruturaRepeticao1&gt; </code>
+
+```markdown
+
+```
+
+
 
 - Exercícios de Java #15
 

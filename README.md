@@ -376,9 +376,9 @@
     - Exercícios de Java #10
 11. Aula 11 – Estruturas de Repetição (Parte 1) ✅
     - Exercícios de Java #11
-12. Aula 12 – Estruturas de Repetição (Parte 2)
+12. Aula 12 – Estruturas de Repetição (Parte 2)  ✅
     - Exercício de Java #12
-13. Aula 13 – Estruturas de Repetição (Parte 3)
+13. Aula 13 – Estruturas de Repetição (Parte 3)  ✅
     - Exercícios de Java #13
 14. Aula 14 – Vetores
     - Exercícios de Java #14
