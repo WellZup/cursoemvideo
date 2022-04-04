@@ -59,9 +59,9 @@
 13. Aula 13 – Estruturas de Repetição (Parte 3)  ✅
     - Exercícios de Java #13
 14. Aula 14 – Vetores
-    - Exercícios de Java #14
+    - Exercícios de Java #14  ✅
 15. Aula 15 – Métodos
-    - Exercícios de Java #15
+    - Exercícios de Java #15  ✅
 
 <hr>
 
@@ -1873,7 +1873,7 @@ public class Contador {
     }
 }
 ```
-<code> &rarr; Run  &lt;Contador&gt; </code>
+<code> &rarr; Run 🖥️ &lt;Contador&gt; </code>
 
 ```markdown
 Cambalhota 1
@@ -1902,7 +1902,7 @@ public class ContadorContinue {
 }
 
 ```
-<code> &rarr; Run  &lt;ContadorContinue&gt; </code>
+<code> &rarr; Run 🖥️ &lt;ContadorContinue&gt; </code>
 
 ```markdown
 Cambalhota 1
@@ -1932,7 +1932,7 @@ public class ContadorBreak {
     }
 }
 ```
-<code> &rarr; Run  &lt;ContadorBreak&gt; </code>
+<code> &rarr; Run 🖥️ &lt;ContadorBreak&gt; </code>
 
 ```markdown
 Cambalhota 1
@@ -1962,7 +1962,7 @@ public class ContadorContinueBreak {
     }
 }
 ```
-<code> &rarr; Run  &lt;ContadorContinueBreak&gt; </code>
+<code> &rarr; Run 🖥️ &lt;ContadorContinueBreak&gt; </code>
 
 ```markdown
 Cambalhota 1
@@ -2151,7 +2151,7 @@ public class EstruturaRepeticao1 {
 }
 ```
 
-<code> &rarr; Run  &lt;EstruturaRepeticao1&gt; </code>
+<code> &rarr; Run 🖥️ &lt;EstruturaRepeticao1&gt; </code>
 
 ```markdown
 Cambalhota 1
@@ -2185,7 +2185,7 @@ public class EstruturaRepeticao2 {
 }
 ```
 
-<code> &rarr; Run  &lt;EstruturaRepeticao2&gt; </code>
+<code> &rarr; Run 🖥️ &lt;EstruturaRepeticao2&gt; </code>
 
 ```markdown
 Digite um número: 2
@@ -2366,7 +2366,7 @@ public class RepeticaoFor {
 }
 ```
 
-<code> &rarr; Run  &lt;RepeticaoFor&gt; </code>
+<code> &rarr; Run 🖥️ &lt;RepeticaoFor&gt; </code>
 
 ```markdown
 Cambalhota 1
@@ -2390,7 +2390,7 @@ public class RepeticaoFor2 {
 
 ```
 
-<code> &rarr; Run  &lt;EstruturaRepeticao1&gt; </code>
+<code> &rarr; Run 🖥️ &lt;EstruturaRepeticao1&gt; </code>
 
 ```markdown
 0
@@ -2422,7 +2422,7 @@ public class RepeticaoForAninhado {
 }
 ```
 
-<code> &rarr; Run  &lt;RepeticaoForAninhado&gt; </code>
+<code> &rarr; Run 🖥️ &lt;RepeticaoForAninhado&gt; </code>
 
 ```markdown
 [ 1 , 0 ]
@@ -2608,7 +2608,7 @@ public class Vetor01 {
 
 ```
 
-<code> &rarr; Run  &lt;Vetor01&gt; </code>
+<code> &rarr; Run 🖥️ &lt;Vetor01&gt; </code>
 
 ```markdown
 O vetor tem 6 posições (índices).
@@ -2640,7 +2640,7 @@ public class Vetor02 {
 }
 ```
 
-<code> &rarr; Run  &lt;Vetor02&gt; </code>
+<code> &rarr; Run 🖥️ &lt;Vetor02&gt; </code>
 
 ```markdown
 O vetor tem 6 posições (índices).
@@ -2671,7 +2671,7 @@ public class VetorCalendario {
 }
 ```
 
-<code> &rarr; Run  &lt;VetorCalendario&gt; </code>
+<code> &rarr; Run 🖥️ &lt;VetorCalendario&gt; </code>
 
 ```markdown
 Jan = 31
@@ -2797,7 +2797,7 @@ public class Vetor03 {
 }
 ```
 
-<code> &rarr; Run  &lt; Vetor03 &gt; </code>
+<code> &rarr; Run 🖥️ &lt;Vetor03&gt; </code>
 
 ```markdown
 3 5 1 8 4 
@@ -2819,7 +2819,7 @@ public class Vetor04 {
 }
 ```
 
-<code> &rarr; Run  &lt; Vetor04 &gt; </code>
+<code> &rarr; Run 🖥️ &lt;Vetor04&gt; </code>
 
 ```markdown
 3.5 , 2.75 , 9.0 , -4.5 , 
@@ -2846,7 +2846,7 @@ public class Vetor05 {
 }
 ```
 
-<code> &rarr; Run  &lt; Vetor05 &gt; </code>
+<code> &rarr; Run 🖥️ &lt;Vetor05&gt; </code>
 
 ```markdown
 -4.5 , 2.75 , 3.5 , 9.0 , 
@@ -2877,7 +2877,7 @@ public class Vetor06 {
 }
 ```
 
-<code> &rarr; Run  &lt; Vetor06 &gt; </code>
+<code> &rarr; Run 🖥️ &lt;Vetor06&gt; </code>
 
 ```markdown
 3 7 6 1 9 4 2 
@@ -2907,7 +2907,7 @@ public class Vetor07 {
 }
 ```
 
-<code> &rarr; Run  &lt; Vetor07 &gt; </code>
+<code> &rarr; Run 🖥️ &lt;Vetor07&gt; </code>
 
 ```markdown
 0
@@ -2943,7 +2943,7 @@ public class ArrayOld01 {
 }
 ```
 
-<code> &rarr; Run  &lt; ArrayOld01  &gt; </code>
+<code> &rarr; Run 🖥️ &lt;ArrayOld01&gt; </code>
 
 ```markdown
 11
@@ -2970,7 +2970,7 @@ public class ArrayForEach01 {
 }
 ```
 
-<code> &rarr; &lt; ArrayForEach01 &gt; </code>
+<code> &rarr; Run 🖥️  &lt;ArrayForEach01&gt; </code>
 
 ```markdown
 11
@@ -2997,7 +2997,7 @@ public class ArrayForEach02 {
 }
 ```
 
-<code> &rarr; ArrayForEach01  &lt; X &gt; </code>
+<code> &rarr; Run  🖥️ &lt;ArrayForEach01 &gt; </code>
 
 ```markdown
 11
@@ -3031,7 +3031,7 @@ public class ArrayForEach03 {
 }
 ```
 
-<code> &rarr; Run  &lt; ArrayForEach03 &gt; </code>
+<code> &rarr; Run 🖥️ &lt;ArrayForEach03&gt; </code>
 
 ```markdown
 16
@@ -3058,7 +3058,7 @@ public class ArrayForEach04 {
 
 ```
 
-<code> &rarr; Run  &lt; ArrayForEach04 &gt; </code>
+<code> &rarr; Run 🖥️ &lt;ArrayForEach04&gt; </code>
 
 ```markdown
 16
@@ -3089,7 +3089,7 @@ public class ArrayForEach05 {
 }
 ```
 
-<code> &rarr; Run  &lt; ArrayForEach05 &gt; </code>
+<code> &rarr; Run 🖥️ &lt;ArrayForEach05&gt; </code>
 
 ```markdown
 85
@@ -3283,52 +3283,297 @@ public class TelaVetor extends JDialog {
 
 #### 15. Aula 15 – Métodos
 
-<code> </code>
+<img src="./img/aula15/aula15-01.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula15/aula15-02.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula15/aula15-03.png" width="45%">
+<a href="#" target="_blank"></a>
+
+
+- Exemplos de Métodos em Java (Procedimentos em Algoritmos)
+
+<code> TesteFuncao01 </code>
 
 ```java
+public class TesteFuncao01 {
 
+    static void soma(int a, int b) {
+
+        int soma = a + b;
+        System.out.println("A soma de " + a + " + " + b + " = " + soma);
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println("Começou o programa.");
+
+        soma(4, 2);
+        soma(5, 2);
+        soma(6, 4);
+    }
+}
 ```
 
-<code> &rarr; Run  &lt; X &gt; </code>
+<code> &rarr; Run 🖥️ &lt;TesteFuncao01&gt; </code>
 
 ```markdown
-
+Começou o programa.
+A soma de 4 + 2 = 6
+A soma de 5 + 2 = 7
+A soma de 6 + 4 = 10
 ```
+
+
+<code> class TesteFuncao02 </code>
 
 ```java
+public class TesteFuncao02 {
 
+    static int soma(int a, int b) {
+
+        int soma = a + b;
+
+        return soma;
+
+        // System.out.println("A soma de " + a + " + " + b + " = " + soma);
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println("Começou o programa.");
+
+        int n1 = 5;
+        int n2 = 2;
+        int s = soma(n1, n2);
+
+        System.out.println("A soma de " + n1 + " + " + n2 + " = " + s);
+    }
+}
 ```
 
-
-
-<code> </code>
-
-```java
-
-```
-
-<code> &rarr; Run  &lt;EstruturaRepeticao1&gt; </code>
+<code> &rarr; Run 🖥️ &lt;TesteFuncao02&gt; </code>
 
 ```markdown
-
+Começou o programa.
+A soma de 5 + 2 = 7
 ```
+
+- Exemplo de uma classe acessando outra classe.
+    - A *class TesteFuncaoOperacoes* acessando a *class Operacoes*
+
+    - Na *class Operacoes* é necessário estar declado da seguinte forma: 
+    <code> public static </code> antes do método
+    - Dessa forma, a *class TesteFuncaoOperacoes* terá acesso a *class Operacoes*
+
+<code> class Operacoes </code>
 
 ```java
+public class Operacoes {
 
+      public static String contador(int inicio, int fim) {
+
+        String soma = "";
+
+        for (int cont = inicio; cont <= fim; cont++) {
+            soma += cont + " ";
+        }
+        return soma;
+    }
+}
 ```
 
-<code> &rarr; Run  &lt;EstruturaRepeticao1&gt; </code>
+<code> class TesteFuncaoOperacoes </code>
+
+```java
+public class TesteFuncaoOperacoes {
+
+    public static void main(String[] args) {
+
+        System.out.println("Vai começar a contagem.");
+
+        System.out.println(Operacoes.contador(1, 5));
+    }
+}
+```
+
+<code> &rarr; Run 🖥️ &lt;TesteFuncaoOperacoes&gt; </code>
 
 ```markdown
-
+Vai começar a contagem.
+1 2 3 4 5 
 ```
 
-
+---
 
 - Exercícios de Java #15
 
+<img src="./img/aula15/aula15-04.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula15/aula15-05.png" width="45%">
+<a href="#" target="_blank"></a>
+
+<br>
+
+- Exemplo de uma classe acessando outra classe.
+    - *class FuncaoFat* com acesso *class Fatorial*
 
 
+<code> class Fatorial </code>
+
+```java
+public class Fatorial {
+
+    private int numero = 0;
+    private int fatorial = 1;
+    private String formula = "";
+
+    public void setValor(int num) {
+
+        numero = num;
+        int fat = 1;
+        String str = "";
+
+        for (int cont = num; cont > 1; cont--) {
+
+            fat *= cont;
+            str += cont + " X ";
+
+        }
+        str += "1 = ";
+        fatorial = fat;
+        formula = str;
+    }
+
+    public int getFatorial() {
+        return fatorial;
+    }
+
+    public String getFormula() {
+        return formula;
+    }
+}
+```
+
+- Programa mostra a formulta e o resultado da Fatorial
+
+<code> class FuncaoFat </code>
+
+```java
+public class FuncaoFat {
+
+    public static void main(String[] args) {
+
+        Fatorial fat = new Fatorial();
+        fat.setValor(5);
+
+        System.out.print(fat.getFormula());
+        System.out.println(fat.getFatorial());
+
+    }
+}
+```
+
+<code> &rarr; Run 🖥️ &lt;FuncaoFat&gt; </code>
+
+```markdown
+5 X 4 X 3 X 2 X 1 = 120
+```
+
+<br>
+
+- A classe FuncaoFatorial com acesso a classe Operacoes
+
+<code> class FuncaoFatorial </code>
+
+```java
+import javax.swing.*;
+import java.awt.event.*;
+
+public class FuncaoFatorial extends JDialog {
+    private JPanel contentPane;
+    private JButton buttonOK;
+    private JButton buttonCancel;
+    private JSpinner txtNum;
+    private JButton btnFat;
+    private JLabel lblFormula;
+    private JLabel lblResultado;
+
+    public FuncaoFatorial() {
+        setContentPane(contentPane);
+        setModal(true);
+        getRootPane().setDefaultButton(buttonOK);
+
+        buttonOK.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                onOK();
+            }
+        });
+
+        buttonCancel.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                onCancel();
+            }
+        });
+
+        // call onCancel() when cross is clicked
+        setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
+        addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                onCancel();
+            }
+        });
+
+        // call onCancel() on ESCAPE
+        contentPane.registerKeyboardAction(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                onCancel();
+            }
+        }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+        btnFat.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                int num = Integer.parseInt(txtNum.getValue().toString());
+
+                Fatorial fat = new Fatorial();
+
+                fat.setValor(num);
+
+                lblFormula.setText(fat.getFormula());
+
+                lblResultado.setText(Integer.toString(fat.getFatorial()));
+
+            }
+        });
+    }
+
+    private void onOK() {
+        // add your code here
+        dispose();
+    }
+
+    private void onCancel() {
+        // add your code here if necessary
+        dispose();
+    }
+
+    public static void main(String[] args) {
+        FuncaoFatorial dialog = new FuncaoFatorial();
+        dialog.setTitle("Fatorial");
+        dialog.pack();
+        dialog.setVisible(true);
+        System.exit(0);
+    }
+}
+```
+
+- Program Tela Vetor - Adicionar/Remover/Ordenar
+
+<img src="./img/aula15/aula15-fatorial.gif" width="45%">
+<a href="#" target="_blank"></a>
+
+<br>
 
 <hr>
 
