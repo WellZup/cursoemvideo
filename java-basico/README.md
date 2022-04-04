@@ -3573,6 +3573,19 @@ public class FuncaoFatorial extends JDialog {
 <img src="./img/aula15/aula15-fatorial.gif" width="45%">
 <a href="#" target="_blank"></a>
 
+
+---
+
+<span id="certificado">
+
+#### Teste de Java
+
+-  100% de aproveitamento.
+
+<img src="./certificado/certificado.png" width="100%">
+<a href="./certificado/certificado-eduardo-da-silva-rodrigues.png" target="_blank"></a>
+
+
 <br>
 
 <hr>

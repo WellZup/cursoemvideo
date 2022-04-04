@@ -397,6 +397,10 @@
 
 [Código Fonte das Aulas - Curso de Java Básico - Projetos](https://github.com/eduardodsr/cursoemvideo/tree/master/java-basico/projects) 
 
+### Certificado: :trophy: :100: 
+
+[Certificado de Conclusão | Teste Final -> 10 de 10 Pontos (100% de aproveitamento)](https://github.com/eduardodsr/cursoemvideo/tree/master/java-basico/certificado) 
+
 ### Links: :link:
 
 <a href="https://www.cursoemvideo.com/curso/java-basico" target="_blank">Site do Curso em Vídeo, curso de Java Básico</a>
