@@ -58,10 +58,10 @@
     - Exercício de Java #12
 13. Aula 13 – Estruturas de Repetição (Parte 3)  ✅
     - Exercícios de Java #13
-14. Aula 14 – Vetores
-    - Exercícios de Java #14  ✅
-15. Aula 15 – Métodos
-    - Exercícios de Java #15  ✅
+14. Aula 14 – Vetores  ✅
+    - Exercícios de Java #14 
+15. Aula 15 – Métodos ✅
+    - Exercícios de Java #15  
 
 <hr>
 

@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class CalculaMedia {
     public static void main(String[] args) {
+        
         Scanner keyboard = new Scanner(System.in);
         System.out.print("Digite a 1º nota: ");
         float num1 = keyboard.nextFloat();

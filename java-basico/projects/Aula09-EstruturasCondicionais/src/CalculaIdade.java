@@ -2,6 +2,7 @@ import java.util.Calendar;
 import java.util.Scanner;
 
 public class CalculaIdade {
+    
     public static void main(String[] args) {
 
         Scanner teclado = new Scanner(System.in);

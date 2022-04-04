@@ -1,7 +1,9 @@
 import javax.management.ObjectName;
 
 public class ComparacaoString {
+
     public static void main(String[] args) {
+        
         String nome1 = "Eduardo";
         String nome2 = "Eduardo";
         String nome3 = new String("Eduardo");
