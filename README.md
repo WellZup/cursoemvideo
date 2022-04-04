@@ -429,6 +429,87 @@ https://www.jetbrains.com/idea/guide/tutorials
  
 <br>
 
+
+
+<span id="java-poo">
+
+<img src="https://www.cursoemvideo.com/wp-content/uploads/bb-plugin/cache/java-circle.jpg" alt="logo algoritmo" width="100px" />
+&nbsp;&nbsp;&nbsp;
+
+<img src="./logo/java_logo.png" alt="logo java" width="100px" /> 
+
+## 05. Java POO [40 Horas] :five:
+
+- Curso completo de **Programação Orientada a Objetos (POO)** com a linguagem Java. 
+- Aborda os principais conceitos como Classes, Objetos, instanciamento, abstração, encapsulamento, herança, polimorfismo e muito mais. 
+- Criado pelo professor Gustavo Guanabara para o Curso em Vídeo, explica todos os conceitos de POO de uma maneira simples, objetiva e divertida.
+
+
+### Conteúdo do Módulo :bookmark:
+
+1. Aula 1  ✅
+    - Aula Teórica 1 – O que é Programação Orientada a Objetos?
+    - Aula Prática 1 – Instalando o JDK e NetBeans
+2. Aula 2  
+    - Aula Teórica 2 – O que é um Objeto?
+    - Aula Prática 2 – Criando Classes e Objetos em Java
+3. Aula 3  
+    - Aula Teórica 3 – O que é Visibilidade em um Objeto?
+    - Aula Prática 3 – Configurando Visibilidade de Atributos e Métodos
+4. Aula 4  
+    - Aula Teórica 4 – Métodos Especiais
+    - Aula Prática 4 – Métodos Getter, Setter e Construtor
+5. Aula 5  
+    - Aula Teórica 5 – Exemplo Prático com Objetos
+    - Aula Prática 5 – Exemplo Prático em Java
+6. Aula 6 
+    - Aula Teórica 6 – Pilares da POO: Encapsulamento
+    - Aula Prática 6 – Encapsulamento
+7. Aula 7 
+    - Aula Teórica 7 – Relacionamento entre Classes
+    - Aula Prática 7 – Objetos Compostos em Java
+8. Aula 8 
+    - Aula Teórica 8 – Relacionamento de Agregação
+    - Aula Prática 8 – Agregação entre Objetos com Java
+9. Aula 9 
+    - Aula Teórica 9 – Exercícios de POO
+    - Aula Prática 9 – Exercício prático POO em Java
+10. Aula 10 
+    - Aula Teórica 10 – Herança (Parte 1)
+    - Aula Prática 10 – Herança (Parte 1)
+11. Aula 11 
+    - Aula Teórica 11 – Herança (Parte 2)
+    - Aula Prática 11 – Herança (Parte 2)
+12. Aula 12 
+    - Aula Teórica 12 – Conceito Polimorfismo (Parte 1)
+    - Aula Prática 12 – Polimorfismo em Java (Parte 1)
+13. Aula 13  
+    - Aula Teórica 13 – Conceito Polimorfismo (Parte 2)
+    - Aula Prática 13 – Polimorfismo Sobrecarga (Parte 2)
+14. Aula 14 
+    - Aula Teórica 14 – Exercícios de POO (Parte 2)
+    - Aula Prática 14 – Projeto Final em Java (Parte 1)
+15. Aula 15 
+    - Aula Teórica 15 – Exercícios de POO (Parte 3)
+    - Aula Prática 15 – Projeto Final em Java (Parte 2)
+
+
+### Anotações das Aulas: :open_book: :writing_hand:
+
+[Anotações das Aulas com Código Fonte](https://github.com/eduardodsr/cursoemvideo/blob/master/java-poo/README.md)
+
+### Código Fonte das Aulas : :computer: :file_folder:
+
+[Código Fonte das Aulas - Java POO](https://github.com/eduardodsr/cursoemvideo/tree/master/java-poo/aulas) 
+
+### YouTube - Playlist: :desktop_computer: :headphones:
+
+[Curso de Java POO](https://www.youtube.com/playlist?list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY)
+
+
+### Links: :link:
+
+
 <hr>
 
 
