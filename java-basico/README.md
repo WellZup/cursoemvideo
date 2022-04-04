@@ -2297,17 +2297,20 @@ public class Repita extends JDialog {
             n = Integer.parseInt(JOptionPane.showInputDialog(null,
                     "Informe um número: (valor 0 interrompe)"));
 
-            s += n; // somatorio de valores => armazena os números digitados
-            c++; // contador
+            if (n != 0) {
 
-            if (n % 2 == 0){
-                p++; // contador pares
-            } else {
-                i++; // contador impares
-            }
+                s += n; // somatorio de valores => armazena os números digitados
+                c++; // contador
 
-            if ( n > 100){
-                a++; // contador valores acima de 100
+                if (n % 2 == 0){
+                    p++; // contador pares
+                } else {
+                    i++; // contador impares
+                }
+
+                if ( n > 100){
+                    a++; // contador valores acima de 100
+                }
             }
 
         } while (n != 0);
@@ -2323,7 +2326,6 @@ public class Repita extends JDialog {
                 + ".</strong><br>Média dos valores: &nbsp;<strong>" + media + "</strong></html>");
     }
 }
-
 ```
 - Programa Repita
 
