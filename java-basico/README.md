@@ -1548,7 +1548,7 @@ public class CalculaIdade {
         if (idade >= 18) {
             System.out.println("Maior de idade");
         } else {
-            System.out.println("Menot de idade");
+            System.out.println("Menor de idade");
         }
     }
 }
@@ -2406,7 +2406,7 @@ public class RepeticaoFor2 {
 100
 ```
 
-- Laços Anilhados
+- Laços Aninhados
 
 <code> &rarr; RepeticaoForAninhado </code>
 
@@ -2576,28 +2576,712 @@ public class TelaContador extends JDialog {
 
 #### 14. Aula 14 – Vetores
 
-Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas para ajudar você a se especializar, incluindo testes com certificados para agregar em sua carreira. Todas as aulas com vídeos excelentes, super práticos e dinâmicos.
+<img src="./img/aula14/aula14-00.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula14/aula14-01.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula14/aula14-02.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula14/aula14-03.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula14/aula14-04.png" width="45%">
+<a href="#" target="_blank"></a>
 
 
+
+<code> class Vetor01 </code>
 
 ```java
+public class Vetor01 {
+    public static void main(String[] args) {
+
+        int num[] = {3, 2, 8, 7, 5, 4};
+
+        System.out.println("O vetor tem " + num.length + " posições (índices).");
+
+        for (int contador = 0; contador <= 5; contador++ ) {
+
+            System.out.println("Na posição " + contador + " do vetor, temos o valor " + num[contador]);
+        }
+    }
+}
 
 ```
 
-<code> &rarr; Run  &lt;EstruturaRepeticao1&gt; </code>
+<code> &rarr; Run  &lt;Vetor01&gt; </code>
 
 ```markdown
+O vetor tem 6 posições (índices).
+Na posição 0 do vetor, temos o valor 3
+Na posição 1 do vetor, temos o valor 2
+Na posição 2 do vetor, temos o valor 8
+Na posição 3 do vetor, temos o valor 7
+Na posição 4 do vetor, temos o valor 5
+Na posição 5 do vetor, temos o valor 4
+```
+
+<code> class Vetor02 </code>
+
+```java
+public class Vetor02 {
+    public static void main(String[] args) {
+
+        int num[] = {3, 2, 8, 7, 5, 4};
+
+        System.out.println("O vetor tem " + num.length + " posições (índices).");
+
+        //  for (int contador = 0; contador < num.length; contador++ ) { ... }
+
+        for (int contador = 0; contador <= num.length - 1; contador++ ) {
+
+            System.out.println("Na posição " + contador + " do vetor, temos o valor " + num[contador]);
+        }
+    }
+}
+```
+
+<code> &rarr; Run  &lt;Vetor02&gt; </code>
+
+```markdown
+O vetor tem 6 posições (índices).
+Na posição 0 do vetor, temos o valor 3
+Na posição 1 do vetor, temos o valor 2
+Na posição 2 do vetor, temos o valor 8
+Na posição 3 do vetor, temos o valor 7
+Na posição 4 do vetor, temos o valor 5
+Na posição 5 do vetor, temos o valor 4
+```
+
+
+
+<code> class VetorCalendario </code>
+
+```java
+public class VetorCalendario {
+    public static void main(String[] args) {
+
+        String mesesAno[] =   {"Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"};
+
+        String totalDias [] = {"31",  "28",  "31",  "30",  "31",  "30",   "31",  "31",  "30",  "31",  "30",  "31"};
+
+        for (int i = 0; i < mesesAno.length; i++) {
+            System.out.println(mesesAno[i] + " = " + totalDias[i]);
+        }
+    }
+}
+```
+
+<code> &rarr; Run  &lt;VetorCalendario&gt; </code>
+
+```markdown
+Jan = 31
+Fev = 28
+Mar = 31
+Abr = 30
+Mai = 31
+Jun = 30
+Jul = 31
+Ago = 31
+Set = 30
+Out = 31
+Nov = 30
+Dez = 31
+```
+
+- Desafio: Verificar se um ano é bissexto
+
+<code> class AnoBissexto </code>
+
+```java
+import java.util.Scanner;
+
+public class AnoBissexto {
+    public static void main(String[] args) {
+
+        int ano = 0;
+        boolean bissexto;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Digite o ano? ");
+        ano = input.nextInt();
+
+        if ( ano % 400 == 0) {
+            bissexto = true; // Regra 3: De 400 em 400 anos é ano bissexto.
+        } else {
+            if ( (ano % 4 == 0) && (ano % 100 != 0) ) {
+                bissexto = true;
+                // Regra 2 - De 100 em 100 anos não é ano bissexto
+                // AND
+                // Regra 3 - De 4 em 4 anos é ano bissexto.
+
+            } else {
+                bissexto = false;
+            }
+        }
+
+//        System.out.println(ano);
+//        System.out.println(bissexto);
+        System.out.println("O ano de " + ano + " é um ano Bissexto? "+ bissexto);
+    }
+
+/*
+        Fonte: https://pt.wikipedia.org/wiki/Ano_bissexto
+
+        Regra para o cálculo dos anos bissextos:
+        1. De 4 em 4 anos é ano bissexto.
+        2. De 100 em 100 anos não é ano bissexto.
+        3. De 400 em 400 anos é ano bissexto.
+        4. Prevalecem as últimas regras sobre as primeiras.
+*/
+}
 
 ```
+
+- Desafio: Verificar se um ano é bissexto (com laço de repetição)
+
+<code> class AnoBissextoLacoRepeticao </code>
+
+```java
+import java.util.Scanner;
+
+public class AnoBissextoLacoRepeticao {
+    public static void main(String[] args) {
+
+        // fonte: https://pt.wikipedia.org/wiki/Ano_bissexto
+
+        int ano = 0;
+        boolean bissexto;
+        String resposta = null;
+
+        Scanner input = new Scanner(System.in);
+
+        do {
+
+            System.out.print("Digite o ano? ");
+            ano = input.nextInt();
+
+            if ( ano % 400 == 0) {
+                bissexto = true; 
+            } else {
+                if ( (ano % 4 == 0) && (ano % 100 != 0) ) {
+                    bissexto = true;
+                } else {
+                    bissexto = false;
+                }
+            }
+            System.out.println("O ano de " + ano + " é um ano Bissexto? "+ bissexto);
+
+            System.out.print("Quer continuar? (S/N) ");
+            resposta = input.next();
+
+        } while (resposta.toUpperCase().equals("S"));
+    }
+}
+```
+
+- Exemplos de Vetores em Java
+
+<code> class Vetor03 </code>
+
+```java
+public class Vetor03 {
+    public static void main(String[] args) {
+
+        int num [] = {3 ,5, 1, 8, 4};
+
+        for (int valor: num) {
+            System.out.print(valor + " ");
+        }
+    }
+}
+```
+
+<code> &rarr; Run  &lt; Vetor03 &gt; </code>
+
+```markdown
+3 5 1 8 4 
+```
+
+
+<code> class Vetor04 </code>
+
+```java
+public class Vetor04 {
+    public static void main(String[] args) {
+
+        double vetor[] = {3.5 , 2.75, 9, -4.5};
+
+        for (double valor: vetor) {
+            System.out.print(valor + " , ");
+        }
+    }
+}
+```
+
+<code> &rarr; Run  &lt; Vetor04 &gt; </code>
+
+```markdown
+3.5 , 2.75 , 9.0 , -4.5 , 
+```
+
+- Vetor em ordem
+
+<code> class Vetor05 </code>
+
+```java
+import java.util.Arrays;
+
+public class Vetor05 {
+    public static void main(String[] args) {
+
+        double vetor[] = {3.5 , 2.75, 9, -4.5};
+
+        Arrays.sort(vetor);
+
+        for (double valor: vetor) {
+            System.out.print(valor + " , ");
+        }
+    }
+}
+```
+
+<code> &rarr; Run  &lt; Vetor05 &gt; </code>
+
+```markdown
+-4.5 , 2.75 , 3.5 , 9.0 , 
+```
+
+<code> class Vetor06 </code>
+
+```java
+import java.util.Arrays;
+
+public class Vetor06 {
+    public static void main(String[] args) {
+
+        int itens[] = { 3, 7, 6, 1, 9, 4, 2 };
+
+        // Arrays.sort(itens); // ordenar o vetor
+
+        // Mostrar o vetor
+        for (int item : itens) {
+            System.out.print(item + " ");
+        }
+
+        // buscar o valor 1 no vetor
+        int posicao = Arrays.binarySearch(itens, 1);
+
+        System.out.println("\nEncontrei o valor {1} na posição " + posicao);
+    }
+}
+```
+
+<code> &rarr; Run  &lt; Vetor06 &gt; </code>
+
+```markdown
+3 7 6 1 9 4 2 
+Encontrei o valor {1} na posição 3
+```
+
+- Criar um vetor de 5 posições com valor 0 (zero) para todos os índices do vetor.
+
+<code> class Vetor07 </code>
+
+```java
+import java.util.Arrays;
+
+public class Vetor07 {
+    public static void main(String[] args) {
+
+        /* Criar um vetor de 5 posições com valor 0 (zero) */
+
+        int num[] = new int[5];
+
+        Arrays.fill(num, 0);
+
+        for (int valor: num) {
+            System.out.println(valor);
+        }
+    }
+}
+```
+
+<code> &rarr; Run  &lt; Vetor07 &gt; </code>
+
+```markdown
+0
+0
+0
+0
+0
+```
+
+---
+
+Fonte: https://receitasdecodigo.com.br/java/exemplo-de-foreach-do-java-8
+
+
+- **Exemplo de forEach do Java 8**
+    Este post tem como objetivo demostrar como você pode utilizar o forEach do java 8 e como era antes do Java 8
+
+<code> class ArrayOld01 </code>
+
+```java
+import java.util.Arrays;
+import java.util.List;
+
+public class ArrayOld01 {
+    public static void main(String[] args) {
+
+        List<Integer> itens = Arrays.asList(11, 10, 16, 5, 85);
+
+        for (Integer item : itens) {
+            System.out.println(item);
+        }
+    }
+}
+```
+
+<code> &rarr; Run  &lt; ArrayOld01  &gt; </code>
+
+```markdown
+11
+10
+16
+5
+85
+```
+
+<code> class ArrayForEach01 </code>
+
+```java
+import java.util.Arrays;
+import java.util.List;
+
+public class ArrayForEach01 {
+
+    public static void main(String[] args) {
+
+        List<Integer> itens = Arrays.asList( 11, 10, 16, 5, 85 );
+
+        itens.forEach(item-> System.out.println(item));
+    }
+}
+```
+
+<code> &rarr; &lt; ArrayForEach01 &gt; </code>
+
+```markdown
+11
+10
+16
+5
+85
+```
+
+<code> class ArrayForEach02 </code>
+
+```java
+import java.util.Arrays;
+import java.util.List;
+
+public class ArrayForEach02 {
+
+    public static void main(String[] args) {
+
+        List<Integer> itens = Arrays.asList( 11, 10, 16, 5, 85 );
+
+        itens.forEach(System.out::println);
+    }
+}
+```
+
+<code> &rarr; ArrayForEach01  &lt; X &gt; </code>
+
+```markdown
+11
+10
+16
+5
+85
+```
+
+- Filtar itens de List usando Java 8 e lambda
+
+Um dos objetivos é permitir filtrar itens de uma maneira mais fácil de ler e entender, veja:
+
+<code> class ArrayForEach03 </code>
+
+```java
+import java.util.Arrays;
+import java.util.List;
+
+public class ArrayForEach03 {
+
+    public static void main(String[] args) {
+
+        List<Integer> itens = Arrays.asList( 11, 10, 16, 5, 85 );
+
+        for(Integer item : itens) {
+            if ( item == 16 )
+                System.out.println(item);
+        }
+    }
+}
+```
+
+<code> &rarr; Run  &lt; ArrayForEach03 &gt; </code>
+
+```markdown
+16
+```
+
+- Fazendo isso usando java 8, lambda e stream, podemos escrever assim:
+
+
+<code> class ArrayForEach04 </code>
+
+```java
+import java.util.Arrays;
+import java.util.List;
+
+public class ArrayForEach04 {
+
+    public static void main(String[] args) {
+
+        List<Integer> itens = Arrays.asList( 11, 10, 16, 5, 85 );
+
+        itens.stream().filter(i -> i == 16).forEach(System.out::println);
+    }
+}
+
+```
+
+<code> &rarr; Run  &lt; ArrayForEach04 &gt; </code>
+
+```markdown
+16
+```
+
+- Filtrando os itens maiores que 20
+Você poderia escrever tranquilamente assim:
+
+
+<code> class ArrayForEach05 </code>
+
+```java
+import java.util.Arrays;
+import java.util.List;
+
+public class ArrayForEach05 {
+
+    public static void main(String[] args) {
+
+        List<Integer> itens = Arrays.asList( 11, 10, 16, 5, 85 );
+
+        for (Integer item : itens) {
+            if ( item > 16 ) {
+                System.out.println(item);
+            }
+        }
+    }
+}
+```
+
+<code> &rarr; Run  &lt; ArrayForEach05 &gt; </code>
+
+```markdown
+85
+```
+
+---
 
 
 - Exercícios de Java #14
 
+<img src="./img/aula14/aula14-05.png" width="45%">
+<a href="#" target="_blank"></a>
+<img src="./img/aula14/aula14-06.png" width="45%">
+<a href="#" target="_blank"></a>
+
+<br>
+
+- Programa TelaVetor
+
+<code> class TelaVetor </code>
+
+```java
+import javax.swing.*;
+import java.awt.event.*;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
+public class TelaVetor extends JDialog {
+    private JPanel contentPane;
+    private JButton buttonOK;
+    private JButton buttonCancel;
+    private JSpinner txtNum;
+    private JButton btnAdd;
+    private JButton btnOrdem;
+    private JButton btnRemove;
+    private JList lstVetor;
+    private JLabel lblSelecionado;
+
+    int vetor[] = new int[5];
+    DefaultListModel lista = new DefaultListModel();
+    int selecionado = 0;
+
+    public TelaVetor() {
+
+        setContentPane(contentPane);
+        setModal(true);
+        getRootPane().setDefaultButton(buttonOK);
+
+        for (int contador = 0; contador < vetor.length; contador++) {
+
+            lista.addElement(vetor[contador]);
+        }
+
+        buttonOK.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                onOK();
+            }
+        });
+
+        buttonCancel.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                onCancel();
+            }
+        });
+
+        // call onCancel() when cross is clicked
+        setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
+        addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                onCancel();
+            }
+        });
+
+        // call onCancel() on ESCAPE
+        contentPane.registerKeyboardAction(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                onCancel();
+            }
+        }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+        btnAdd.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // TODO
+                vetor[selecionado] = Integer.parseInt(txtNum.getValue().toString());
+
+                lista.removeAllElements();
+
+                for (int contador = 0; contador < vetor.length; contador++) {
+                    lista.addElement(vetor[contador]);
+                }
+            }
+        });
+        lstVetor.addPropertyChangeListener(new PropertyChangeListener() {
+            @Override
+            public void propertyChange(PropertyChangeEvent evt) {
+
+            }
+        });
+        lstVetor.addPropertyChangeListener(new PropertyChangeListener() {
+            @Override
+            public void propertyChange(PropertyChangeEvent evt) {
+                lstVetor.setModel(lista);
+            }
+        });
+        btnAdd.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                vetor[selecionado] = Integer.parseInt(txtNum.getValue().toString());
+
+                lista.removeAllElements();
+
+                for (int contador = 0; contador < vetor.length; contador++) {
+
+                    lista.addElement(vetor[contador]);
+                }
+            }
+        });
+        lstVetor.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                selecionado = lstVetor.getSelectedIndex();
+                lblSelecionado.setText(" [ " + selecionado + " ] ");
+            }
+        });
+        btnRemove.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                vetor[selecionado] = 0;
+
+                lista.removeAllElements();
+
+                for (int contador = 0; contador < vetor.length; contador++) {
+
+                    lista.addElement(vetor[contador]);
+                }
+            }
+        });
+        btnOrdem.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                Arrays.sort(vetor);
+
+                lista.removeAllElements();
+
+                for (int contador = 0; contador < vetor.length; contador++) {
+
+                    lista.addElement(vetor[contador]);
+                }
+            }
+        });
+    }
+
+    private void onOK() {
+        // add your code here
+        dispose();
+    }
+
+    private void onCancel() {
+        // add your code here if necessary
+        dispose();
+    }
+
+    public static void main(String[] args) {
+        TelaVetor dialog = new TelaVetor();
+        dialog.setTitle("Vetor - Adicionar/Remover/Ordenar");
+        dialog.pack();
+        dialog.setVisible(true);
+        System.exit(0);
+    }
+
+    private void createUIComponents() {
+        // TODO: place custom component creation code here
+    }
+}
+```
+
+- Program Tela Vetor - Adicionar/Remover/Ordenar
+
+<img src="./img/aula14/aula14-07.png" width="45%">
+<a href="#" target="_blank"></a>
+
+<br>
+
 <span id="aula15">
 
 #### 15. Aula 15 – Métodos
-
-Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas para ajudar você a se especializar, incluindo testes com certificados para agregar em sua carreira. Todas as aulas com vídeos excelentes, super práticos e dinâmicos.
 
 <code> </code>
 
@@ -2605,6 +3289,19 @@ Curso de Java Básico desenvolvido por Gustavo Guanabara, com diversas aulas par
 
 ```
 
+<code> &rarr; Run  &lt; X &gt; </code>
+
+```markdown
+
+```
+
+```java
+
+```
+
+
+
+<code> </code>
 
 ```java
 
