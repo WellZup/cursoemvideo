@@ -51,7 +51,7 @@
 <img src="./uml/uml_curso.svg" >
 <a href="#" target="_blank"></a>
 
-## Cursos Concluídos
+## <u>Curso em Vídeo - Cursos Concluídos</u>:
 
 <span id="algoritmo">
 
@@ -110,7 +110,7 @@
 
 ### Links: :link:
 
-[Curso de Algoritmo, site do Prof. Gustavo Guanabara](https://www.cursoemvideo.com/curso/curso-de-algoritmo/)
+<a href="https://www.cursoemvideo.com/curso/curso-de-algoritmo" target="_blank">cursoemvideo.com/curso/curso-de-algoritmo</a>
 
 [Visual G - Site Oficial](http://visualg3.com.br/)
 
@@ -173,9 +173,7 @@
 
 ### Anotações das Aulas: :open_book: :writing_hand:
 
-[Anotações das aulas](https://github.com/eduardodsr/cursoemvideo/tree/master/php-basico)
-
-<p><a href="https://github.com/eduardodsr/cursoemvideo/blob/master/php-basico/README.md" target="_blank">Resumo das aulas</a></p>
+[Anotações das Aulas com Código Fonte](https://github.com/eduardodsr/cursoemvideo/blob/master/php-basico/README.md)
 
 ### Código Fonte / Projetos: :computer: :file_folder:
 
@@ -191,11 +189,7 @@
 
 ### Links: :link:
 
-<a href="https://github.com/eduardodsr/cursoemvideo#php-basico" target="_blank">Meu repositório do curso em vídeo, PHP </a>
-
-<a href="https://www.cursoemvideo.com/curso/php-basico" target="_blank">Site do Curso em Vídeo, curso de PHP Básico</a>
-
-[Curso de PHP Básico](https://www.cursoemvideo.com/curso/php-basico "cursoemvideo.com")
+<a href="https://www.cursoemvideo.com/curso/php-basico" target="_blank">cursoemvideo.com/curso/php-basico</a>
 
 [PHP museum - Release Archives](https://museum.php.net/ "museum.php.net")
 
@@ -227,14 +221,11 @@
 <img src="https://www.geekproject.com.br/wp-content/uploads/2011/01/elephpant-elephant-php-logo.png" alt="logo elephant php" width="150px" /> 
 
 
-
 ## 03. PHP POO [40 Horas] :three: 🏆
 
 - Curso completo de **Programação Orientada a Objetos (POO)** com a linguagem PHP. 
 - Aborda os principais conceitos como Classes, Objetos, instanciamento, abstração, encapsulamento, herança, polimorfismo e muito mais. 
 - Criado pelo professor Gustavo Guanabara para o Curso em Vídeo, explica todos os conceitos de POO de uma maneira simples, objetiva e divertida.
-
-
 
 ### Conteúdo do Módulo :bookmark:
 
@@ -284,7 +275,6 @@
     - Aula Teórica 15 – Exercícios de POO (Parte 3)
     - Aula Prática 15 – Projeto Final em PHP (Parte 2)
 
-
 ### Anotações das Aulas: :open_book: :writing_hand:
 
 [Anotações das Aulas com Código Fonte](https://github.com/eduardodsr/cursoemvideo/blob/master/php-poo/README.md)
@@ -304,11 +294,7 @@
 
 ### Links: :link:
 
-<a href="https://github.com/eduardodsr/cursoemvideo#php-poo" target="_blank">Meu repositório do curso em vídeo, PHP </a>
-
-<a href="https://www.cursoemvideo.com/curso/php-poo/" target="_blank">Site do Curso em Vídeo, curso de PHP Básico</a>
-
-[Curso de PHP POO](https://www.cursoemvideo.com/curso/php-poo/ "cursoemvideo.com")
+<a href="https://www.cursoemvideo.com/curso/php-poo" target="_blank">cursoemvideo.com/curso/php-poo</a>
 
 [Manual do PHP - php.net - manual pt_BR](https://www.php.net/manual/pt_BR/ "php.net")
 
@@ -318,6 +304,7 @@
 
 [mysqli (MySQLi) - Representa uma conexão entre o PHP e um banco de dados MySQL.](https://www.php.net/manual/pt_BR/class.mysqli.php)
 
+[PHP - Design Patterns - PADRÕES de PROJETO](https://refactoring.guru/pt-br/design-patterns/php)
 
 
 ### Agradecimentos: :clap:
@@ -403,13 +390,11 @@
 
 ### Links: :link:
 
-<a href="https://www.cursoemvideo.com/curso/java-basico" target="_blank">Site do Curso em Vídeo, curso de Java Básico</a>
+<a href="https://www.cursoemvideo.com/curso/java-basico" target="_blank">cursoemvideo.com/curso/java-basico</a>
 
 https://www.oracle.com/br/java
 
-https://www.java.com/pt-BR/download/help/whatis_java.html
-
-https://docs.oracle.com/en/
+https://jdk.java.net/
 
 https://www.jetbrains.com/help/idea/getting-started.html
 
@@ -427,13 +412,21 @@ https://www.jetbrains.com/idea/guide/tutorials
 
 [Dicas de Java - Site dicasdejava.com.br](https://dicasdejava.com.br/)
  
+[Java - Design Patterns - PADRÕES de PROJETO](https://refactoring.guru/pt-br/design-patterns/java)
+
+
+### Agradecimentos: :clap:
+
+- Prof. *Gustavo Guanabara*, criador do site Curso em Vídeo.
+ 
 <br>
 
+<hr>
 
 
 <span id="java-poo">
 
-<img src="https://www.cursoemvideo.com/wp-content/uploads/bb-plugin/cache/java-circle.jpg" alt="logo algoritmo" width="100px" />
+<img src="https://www.cursoemvideo.com/wp-content/uploads/bb-plugin/cache/poo-java-circle.jpg" alt="logo algoritmo" width="100px" />
 &nbsp;&nbsp;&nbsp;
 
 <img src="./logo/java_logo.png" alt="logo java" width="100px" /> 
@@ -509,6 +502,18 @@ https://www.jetbrains.com/idea/guide/tutorials
 
 ### Links: :link:
 
+<a href="https://www.cursoemvideo.com/curso/java-poo" target="_blank">www.cursoemvideo.com/curso/java-poo</a>
+
+https://refactoring.guru/pt-br/design-patterns/java
+
+[Java - Design Patterns - PADRÕES de PROJETO](https://refactoring.guru/pt-br/design-patterns/java)
+
+
+### Agradecimentos: :clap:
+
+- Prof. *Gustavo Guanabara*, criador do site Curso em Vídeo.
+ 
+<br>
 
 <hr>
 
