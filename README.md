@@ -20,14 +20,14 @@
 ## Cursos: Diagrama de Controle :brazil:
 
 ```txt
- ┌────────────┐┌─────────────┐┌──────────┐┌──────────────┐┌───────────┐┌───────┐┌─────────────┐
- │1. Algoritmo││2. PHP Básico││3. PHP POO││4. Java Básico││5. Java POO││6. HTML││7. JavaScript│
+ ┌────────────┐┌─────────────┐┌──────────┐┌──────────────┐┌───────────┐┌───────┐┌─────────────┐ 
+ │1. Algoritmo││2. PHP Básico││3. PHP POO││4. Java Básico││5. Java POO││6. HTML││7. JavaScript│ 
  └─────┬──────┘└──────┬──────┘└────┬─────┘└──────┬───────┘└─────┬─────┘└───┬───┘└──────┬──────┘
+       │              │            │             │              │          │           │   7. TODO      
+       │              │            │             │              │          │ 6. TODO   │ ──────────>         
+       │              │            │             │              │          │──────────>│   
        │              │            │             │              │          │           │       
-       │              │            │             │              │          │   TODO    │       
-       │              │            │             │              │          │──────────>│       
-       │              │            │             │              │          │           │       
-       │              │            │             │              │  5. TODO │           │       
+       │              │            │             │              │ 5. TODO  │           │       
        │              │            │             │              │─────────>│           │       
        │              │            │             │              │          │           │       
        │              │            │             │     4. OK    │          │           │       
@@ -228,7 +228,7 @@
 
 
 
-## 03. PHP POO [40 Horas] :three:
+## 03. PHP POO [40 Horas] :three: 🏆
 
 - Curso completo de **Programação Orientada a Objetos (POO)** com a linguagem PHP. 
 - Aborda os principais conceitos como Classes, Objetos, instanciamento, abstração, encapsulamento, herança, polimorfismo e muito mais. 
@@ -340,7 +340,7 @@
 
 
 
-## 04. Java Básico [40 Horas] :four:
+## 04. Java Básico [40 Horas] :four: 🏆
 
 - Java é uma linguagem de programação, orientada a objetos, desenvolvida na década de 90 por uma equipe de programadores chefiada por James Gosling, na empresa Sun Microsystems.
 
@@ -438,7 +438,7 @@ https://www.jetbrains.com/idea/guide/tutorials
 
 <img src="./logo/java_logo.png" alt="logo java" width="100px" /> 
 
-## 05. Java POO [40 Horas] :five:
+## 05. Java POO [40 Horas] :five: 🏆
 
 - Curso completo de **Programação Orientada a Objetos (POO)** com a linguagem Java. 
 - Aborda os principais conceitos como Classes, Objetos, instanciamento, abstração, encapsulamento, herança, polimorfismo e muito mais. 

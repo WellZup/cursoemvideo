@@ -266,16 +266,21 @@ Nessa aula de POO, vamos aprender os conceitos de Classes e Objetos, passando pe
 <img src="./img/aula02/aula2-02.png">
 <a href="#" target="_blank"></a>
 
+---
 
 - **POO (Programação Orientada a Objetos)**
+
+<br>
 
 - **OBJETO**
 
 - [Conceito de Objeto] &rarr; "É a instância de uma classe."
 
-    - **Atributos** (características) -> Coisas que eu tenho;
-    - **Métodos** (comportamentos) -> Coisas que eu faço;
-    - **Estado atual** (estado/características atuais no momento que estou analisando o objeto) -> Como eu estou agora.
+    - **Atributos** (características) &rarr;  Coisas que eu tenho;
+    - **Métodos** (comportamentos) &rarr;  Coisas que eu faço;
+    - **Estado atual** (estado/características atuais no momento que estou analisando o objeto) &rarr;  Como eu estou agora.
+
+    <br>
 
 - **CLASSE**
 
@@ -303,6 +308,8 @@ Nessa aula de POO, vamos aprender os conceitos de Classes e Objetos, passando pe
     O uso de abstração preserva a liberdade para tomar decisões de desenvolvimento ou de implementação apenas quando há um melhor entendimento do problema a ser resolvido.
 
 <br>
+
+---
 
 <u>Aula Prática 2 – Criando Classes e Objetos em Java</u>
 
@@ -401,22 +408,28 @@ Está tampada? false
 Estou rabiscando...
 ```
 
+---
+
 <br>
 
 <span id="aula03">
 
 ### 3. Aula 3
 
-#### Aula Teórica 3 – O que é Visibilidade em um Objeto?
+<u>Aula Teórica 3 – O que é Visibilidade em um Objeto?</u>
 
-Nessa aula de POO, vamos aprender qual a importância dos modificadores de visibilidade público (+), privado (-) e protegido (#) na Programação Orientada a Objetos.
+Nessa aula de POO, vamos aprender qual a importância dos modificadores de visibilidade:
+ público (+), privado (-) e protegido (#) 
+ na Programação Orientada a Objetos.
 
 - UML - Linguagem Modelada Unificada
 
 
 - Diagrama de Classes
 
-    No Diagrama de Classes -> toda classe será representada por um retangulo.
+    No Diagrama de Classes -> toda classe será representada por um **retangulo**.
+
+    <br>
 
 - **Modificadores de Visibilidade**
 
@@ -432,35 +445,120 @@ Nessa aula de POO, vamos aprender qual a importância dos modificadores de visib
 | :---------:                   | :-----:| :-----|
 | +  | **public** (público)     | a classe atual e todas as outras classes |
 | -  | **private** (privado)    | somente a classe atual |
-| #  | **protected** (protegido)| a classe atual e todas as suas sub-classes |
+| #  | **protected** (protegido)| a classe atual (mãe) e todas as suas sub-classes (filhas) |
 
 
-<img src="img/aula3-01.png" widf="400px">
+<img src="./img/aula03/aula3-01.png" widf="400px">
 <a href="#" target="_blank"></a>
-<img src="img/aula3-02.png" widf="400px">
+<img src="./img/aula03/aula3-02.png" widf="400px">
 <a href="#" target="_blank"></a>
-<img src="img/aula3-03.png" widf="400px">
+<img src="./img/aula03/aula3-03.png" widf="400px">
 <a href="#" target="_blank"></a>
-<img src="img/aula3-04.png" widf="400px">
+<img src="./img/aula03/aula3-04.png" widf="400px">
 <a href="#" target="_blank"></a>
-<img src="img/aula3-05.png" widf="400px">
+<img src="./img/aula03/aula3-05.png" widf="400px">
 <a href="#" target="_blank"></a>
-<img src="img/aula3-06.png" widf="400px">
+<img src="./img/aula03/aula3-06.png" widf="400px">
 <a href="#" target="_blank"></a>
-<img src="img/aula3-07.png" widf="400px">
+<img src="./img/aula03/aula3-07.png" widf="400px">
 <a href="#" target="_blank"></a>
-<img src="img/aula3-08.png" widf="400px">
+<img src="./img/aula03/aula3-08.png" widf="400px">
 <a href="#" target="_blank"></a>
-<img src="img/aula3-09.png" widf="400px">
+<img src="./img/aula03/aula3-09.png" widf="400px">
 <a href="#" target="_blank"></a>
-<img src="img/aula3-10.png" widf="400px">
+<img src="./img/aula03/aula3-10.png" widf="400px">
 
+<br>
 
-#### Aula Prática 3 – Configurando Visibilidade de Atributos e Métodos
+---
+
+<u> Aula Prática 3 – Configurando Visibilidade de Atributos e Métodos </u>
 
 Nessa aula de POO, vamos aprender na prática como utilizar os modificadores de visibilidade public, private e protected e qual é o efeito de cada um deles.
 
+<!-- <img src="./img/aula03/aula3-06.png" widf="200px">
+<a href="#" target="_blank"></a> -->
 
+- Programa Aula03
+
+<code> class Caneta </code>
+
+```java
+package aula03;
+
+public class Caneta {
+    // Atributos
+    public String modelo;
+    public String cor;
+    private float ponta;
+    protected int carga;
+    private boolean tampada;
+
+    // Métodos
+    public void status() {
+        System.out.println("--------------------");
+        System.out.println("Modelo: " + this.modelo);
+        System.out.println("Cor: " + this.cor);
+        System.out.println("Ponta: " + this.ponta);
+        System.out.println("Carga: " + this.carga);
+        System.out.println("Está tampada? " + this.tampada);
+        System.out.println("--------------------");
+    }
+
+    public void rabiscar() {
+        // ( this.tampada == true )
+        if (this.tampada) {
+            System.out.println("ERRO! Não posso rabiscar, pois a tampa da caneta está tampada!");
+        } else {
+            System.out.println("Estou rabiscando...");
+        }
+        System.out.println("\n");
+    }
+    public void tampar() {
+        this.tampada  = true;
+    }
+    public void destampar() {
+        this.tampada = false;
+    }
+}
+```
+
+<code> class Aula03 </code>
+
+```java
+package aula03;
+
+public class Aula03 {
+    public static void main(String[] args) {
+
+        Caneta c1 = new Caneta();
+
+        c1.modelo = "BIC CRISTAL";
+        c1.cor = "Azul";
+        // c1.ponta = 1.0F; // java: ponta has private access in aula03.Caneta
+        c1.carga = 80;
+
+        c1.tampar(); // c1.tampada = false;
+        c1.status();
+        c1.rabiscar(); // java: rabiscar() has private access in aula03.Caneta
+    }
+}
+```
+
+<code> &rarr; Run 🖥️ &lt;Aula03&gt; </code>
+
+```markdown
+--------------------
+Modelo: BIC CRISTAL
+Cor: Azul
+Ponta: 0.0
+Carga: 80
+Está tampada? true
+--------------------
+ERRO! Não posso rabiscar, pois a tampa da caneta está tampada!
+```
+
+---
 
 <br>
 
@@ -476,6 +574,7 @@ Nessa aula de POO, vamos aprender como funcionam os Métodos Acessores (Getters)
 
 Os Métodos Acessores (Getters) conseguem acessar um determinado atributo mantendo a segurança de acesso a ele.
 
+<br>
 
 - **Métodos Modificadores (Setters)** &rarr; são métodos que modificam coisas dentro de um objeto. Setters (sentido de modificar/atualizar alguma coisa), ele modifica alguma informação c/ segurança.
 
@@ -497,19 +596,19 @@ O método construtor (Construct) de uma classe serve para executar algum comport
 **Construtores** são métodos ordinários que são chamados durante a criação do objeto correspondente. Eles podem definir um número arbitrários de argumentos, quais podem ser obrigatórios, podem ter um tipo, e podem ter valores padrão. Argumentos de construtores são informados dentro de parênteses depois do nome da classe.
 
 
-<img src="img/aula4-01.png" widf="400px">
+<img src="./img/aula04/aula4-01.png" widf="400px">
 <a href="#" target="_blank"></a>
-<img src="img/aula4-02.png" widf="400px">
+<img src="./img/aula04/aula4-02.png" widf="400px">
 <a href="#" target="_blank"></a>
-<img src="img/aula4-03.png" widf="400px">
+<img src="./img/aula04/aula4-03.png" widf="400px">
 <a href="#" target="_blank"></a>
-<img src="img/aula4-04.png" widf="400px">
+<img src="./img/aula04/aula4-04.png" widf="400px">
 <a href="#" target="_blank"></a>
-<img src="img/aula4-05.png" widf="400px">
+<img src="./img/aula04/aula4-05.png" widf="400px">
 <a href="#" target="_blank"></a>
-<img src="img/aula4-06.png" widf="400px">
+<img src="./img/aula04/aula4-06.png" widf="400px">
 <a href="#" target="_blank"></a>
-<img src="img/aula4-07.png" widf="400px">
+<img src="./img/aula04/aula4-07.png" widf="400px">
 <a href="#" target="_blank"></a>
 
 <br>
