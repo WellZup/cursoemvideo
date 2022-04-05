@@ -1,5 +1,4 @@
-<img src="./img/java_logo.png" alt="logo java" width="100px" /> 
-<img src="./img/IntelliJ_IDEA_Icon.svg.png" alt="logo java" width="100px" /> 
+<img src="./img/java_logo.png" alt="logo java" width="100px" />  <img src="./img/IntelliJ_IDEA_Icon.svg.png" alt="logo java" width="100px" /> 
 
 ### 05. JAVA POO [40 Horas] 
 
