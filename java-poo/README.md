@@ -38,7 +38,7 @@
 2. Aula 2  ✅
     - Aula Teórica 2 – O que é um Objeto?
     - Aula Prática 2 – Criando Classes e Objetos em Java
-3. Aula 3  
+3. Aula 3   ✅
     - Aula Teórica 3 – O que é Visibilidade em um Objeto?
     - Aula Prática 3 – Configurando Visibilidade de Atributos e Métodos
 4. Aula 4  
@@ -193,6 +193,13 @@ public class HelloWorld {
 }
 ```
 
+<code> &rarr; Run 🖥️ &lt;HelloWorld&gt; </code>
+
+```markdown
+Hello, World!
+```
+
+
 <br>
 
 <span id="aula02">
@@ -205,7 +212,7 @@ Nessa aula de POO, vamos aprender os conceitos de Classes e Objetos, passando pe
 
 - **O que é um objeto?**
 
-    "Coisa material ou abstrata que pode ser percebida pelos sentidos e descrita por meio das suas características, comportamentos e estado atual (status)." [Gustavo Guanabara]
+    [Conceito de Objeto] &rarr; "Coisa material ou abstrata que pode ser percebida pelos sentidos e descrita por meio das suas características, comportamentos e estado atual (status)." [Gustavo Guanabara]
     
     * Tudo que tiver **característica** [ATRIBUTO], **comportamento** [MÉTODO/PROCEDIMENTOS/ROTINAS] e **estado atual** [STATUS] é considerado um **objeto**.
 
@@ -260,11 +267,11 @@ Nessa aula de POO, vamos aprender os conceitos de Classes e Objetos, passando pe
 <a href="#" target="_blank"></a>
 
 
-- **POO** :
+- **POO (Programação Orientada a Objetos)**
 
 - **OBJETO**
 
-- "É a instância de uma classe."
+- [Conceito de Objeto] &rarr; "É a instância de uma classe."
 
     - **Atributos** (características) -> Coisas que eu tenho;
     - **Métodos** (comportamentos) -> Coisas que eu faço;
@@ -272,7 +279,7 @@ Nessa aula de POO, vamos aprender os conceitos de Classes e Objetos, passando pe
 
 - **CLASSE**
 
-    - "Define os atributos e métodos comuns que serão compartilhados por um objeto."
+    - [Conceito de Classe] &rarr; "Define os atributos e métodos comuns que serão compartilhados por um objeto."
 
     - **Classes** são os modelos ou moldes nos quais surgirão os objetos. 
     As classes definem algumas propriedades e métodos que deverão fazer parte do objeto que derivar dela ou então, como dizemos, os objetos que serão instanciados a partir dela.
@@ -300,7 +307,99 @@ Nessa aula de POO, vamos aprender os conceitos de Classes e Objetos, passando pe
 <u>Aula Prática 2 – Criando Classes e Objetos em Java</u>
 
 
+- Programa Aula02 
 
+<code> class Caneta </code>
+
+```java
+package aula02;
+
+public class Caneta {
+    // Atributos
+    String modelo;
+    String cor;
+    float ponta;
+    int carga;
+    boolean tampada;
+
+    // Métodos
+    void status() {
+        System.out.println("--------------------");
+        System.out.println("Modelo: " + this.modelo);
+        System.out.println("Cor: " + this.cor);
+        System.out.println("Ponta: " + this.ponta);
+        System.out.println("Está tampada? " + this.tampada);
+        System.out.println("--------------------");
+    }
+
+    void rabiscar() {
+        // ( this.tampada == true )
+        if (this.tampada) {
+            System.out.println("ERRO! Não posso rabiscar, pois a tampa da caneta está tampada!");
+        } else {
+            System.out.println("Estou rabiscando...");
+        }
+        System.out.println("\n");
+    }
+    void tampar() {
+        this.tampada  = true;
+    }
+    void destampar() {
+        this.tampada = false;
+    }
+}
+```
+
+<code> class Aula02 </code>
+
+```java
+package aula02;
+
+public class Aula02 {
+    public static void main(String[] args) {
+
+        Caneta c1 = new Caneta();
+
+        c1.modelo = "BIC";
+        c1.cor = "Azul";
+        c1.ponta = 0.5F;
+        c1.tampar();
+        c1.status();
+        c1.rabiscar();
+
+        Caneta c2 = new Caneta();
+
+        c2.modelo = "BIC CRISTAL";
+        c2.cor = "Vermelha";
+        c2.ponta = 1.0F;
+        c2.destampar();
+        c2.status();
+        c2.rabiscar();
+    }
+}
+
+```
+
+<code> &rarr; Run 🖥️ &lt;Aula02&gt; </code>
+
+```markdown
+--------------------
+Modelo: BIC
+Cor: Azul
+Ponta: 0.5
+Está tampada? true
+--------------------
+ERRO! Não posso rabiscar, pois a tampa da caneta está tampada!
+
+
+--------------------
+Modelo: BIC CRISTAL
+Cor: Vermelha
+Ponta: 1.0
+Está tampada? false
+--------------------
+Estou rabiscando...
+```
 
 <br>
 
