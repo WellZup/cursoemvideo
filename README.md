@@ -379,8 +379,8 @@
 12. Aula 12 – Estruturas de Repetição (Parte 2)  ✅
     - Exercício de Java #12
 13. Aula 13 – Estruturas de Repetição (Parte 3)  ✅
-    - Exercícios de Java #13 ✅
-14. Aula 14 – Vetores
+    - Exercícios de Java #13 
+14. Aula 14 – Vetores  ✅
     - Exercícios de Java #14  
 15. Aula 15 – Métodos ✅
     - Exercícios de Java #15  
@@ -453,10 +453,10 @@ https://www.jetbrains.com/idea/guide/tutorials
 2. Aula 2  ✅
     - Aula Teórica 2 – O que é um Objeto?
     - Aula Prática 2 – Criando Classes e Objetos em Java
-3. Aula 3   ✅
+3. Aula 3  ✅
     - Aula Teórica 3 – O que é Visibilidade em um Objeto?
     - Aula Prática 3 – Configurando Visibilidade de Atributos e Métodos
-4. Aula 4  
+4. Aula 4  ✅
     - Aula Teórica 4 – Métodos Especiais
     - Aula Prática 4 – Métodos Getter, Setter e Construtor
 5. Aula 5  

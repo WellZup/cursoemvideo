@@ -38,10 +38,10 @@
 2. Aula 2  ✅
     - Aula Teórica 2 – O que é um Objeto?
     - Aula Prática 2 – Criando Classes e Objetos em Java
-3. Aula 3   ✅
+3. Aula 3  ✅
     - Aula Teórica 3 – O que é Visibilidade em um Objeto?
     - Aula Prática 3 – Configurando Visibilidade de Atributos e Métodos
-4. Aula 4  
+4. Aula 4  ✅
     - Aula Teórica 4 – Métodos Especiais
     - Aula Prática 4 – Métodos Getter, Setter e Construtor
 5. Aula 5  
@@ -97,6 +97,11 @@ Programação de baixo nível -> Programação linear -> Programação estrutura
 <img src="./img/Diagram.drawio.png">
 <a href="#" target="_blank"></a>
 
+* O que é Programação Orientada a Objetos?
+    - A programação orientada à objetos (POO), surgiu com a finalidade de facilitar a vida de programadores. Na POO, os objetos conversam entre si.
+    - Criada por Alan Kay, um Biólogo e Matemático, que formulou sua “analogia algébrico-biológica” e lançou o postulado de que o computador ideal deveria funcionar como um organismo vivo, isto é, cada “célula” relacionando-se com outras.
+“As coisas simples devem ser simples e as coisas complexas, possíveis.” - Alan Kay
+
 * Quem criou (POO) ?
     - Alan Kay
 
@@ -110,27 +115,38 @@ Programação de baixo nível -> Programação linear -> Programação estrutura
     - Visual Basic
 
 
--  **Vantagens da POO**
-    - Acrônimo das vantagens da POO: 
+-  **Vantagens da POO** (C O M E R N a d a)
+
+    1- Confiável
+    2- Oportuno
+    3- Manutenível
+    4- Extensível
+    5- Reutilizável
+    6- Natural
+
+    <br>
+
+- **Vantagens da POO** - Acrônimo : 
 
     - <strong><big> C O M E R N </strong>a d a </big>
 
-        - **C** -> **Confiável** -> O isolamento entre as partes gera o software seguro. Ao alterar uma parte, nenhuma outra é afetada;
-        - **O** -> **Oportuno** -> Ao dividir tudo em partes, várias delas podem ser desenvolvidas em paralelo;
-        - **M** -> **Manutenível** -> Atualizar um software é mais fácil. Uma pequena modificação vai beneficiar todas as partes que usarem o objeto;
-        - **E** -> **Extensível** -> O software não é estático. Ele deve crescer para permanecer útil;
-        - **R** -> **Reutilizável** -> Podemos usar objetos que criamos em outro sistema futuro;
-        - **N**ada -> **Natural** -> Mais fácil de entender. Você se preocupa mais na funcionalidade do que nos detalhes de implementação.
+        1 - **C**onfiável -> O isolamento entre as partes gera o software seguro. Ao alterar uma parte, nenhuma outra é afetada;
+        2 - **O**portuno -> Ao dividir tudo em partes, várias delas podem ser desenvolvidas em paralelo;
+        3 - **M**anutenível -> Atualizar um software é mais fácil. Uma pequena modificação vai beneficiar todas as partes que usarem o objeto;
+        4 - **E**xtensível -> O software não é estático. Ele deve crescer para permanecer útil;
+        5 - **R**eutilizável -> Podemos usar objetos que criamos em outro sistema futuro;
+        6 - **Na**tural -> Mais fácil de entender. Você se preocupa mais na funcionalidade do que nos detalhes de implementação.
 
 <br>
 
 ---
 
-<u>Aula Prática 1 – Instalando o JDK e NetBeans</u>
+<u>Aula Prática 1 – Instalando o JDK e IntelliJ IDEA</u>
 
 <img src="./img/IntelliJ_IDEA_Icon.svg.png" alt="logo java" width="100px" /> 
 
 - Estou utilizando o IDE, IntelliJ IDEA.
+    - Link para Download: https://www.jetbrains.com/pt-br/idea/download/
 
 - O IntelliJ IDEA é um ambiente de desenvolvimento integrado escrito em Java para o desenvolvimento de software de computador. 
 - Ele é desenvolvido pela empresa JetBrains.
@@ -238,21 +254,21 @@ Nessa aula de POO, vamos aprender os conceitos de Classes e Objetos, passando pe
 
     <br>
 
-    * **Coisas que eu tenho? &nbsp;&nbsp; <big>(ATRIBUTO)</big>**
+    * 1 - **Coisas que eu tenho? &nbsp;&nbsp; <big>(ATRIBUTO)</big>**
         - Modelo
         - Cor
         - Ponta
         - Carga
         - Tampada
 
-    * **Coisas que eu faço? &nbsp;&nbsp; <big>(MÉTODO)</big>**
+    * 2 - **Coisas que eu faço? &nbsp;&nbsp; <big>(MÉTODO)</big>**
         - Escrever( )
         - Rabiscar( )
         - Pintar( )
         - Tampar( )
         - Destampar( )
 
-    * **Como eu estou agora? &nbsp;&nbsp; <big>(ESTADO ATUAL)</big>**
+    * 3 - **Como eu estou agora? &nbsp;&nbsp; <big>(ESTADO ATUAL)</big>**
         - Cor azul
         - Ponta do tipo fina
         - 50% de carga
@@ -268,9 +284,9 @@ Nessa aula de POO, vamos aprender os conceitos de Classes e Objetos, passando pe
 
 ---
 
-- **POO (Programação Orientada a Objetos)**
+#### POO (Programação Orientada a Objetos)
 
-<br>
+
 
 - **OBJETO**
 
@@ -312,6 +328,8 @@ Nessa aula de POO, vamos aprender os conceitos de Classes e Objetos, passando pe
 ---
 
 <u>Aula Prática 2 – Criando Classes e Objetos em Java</u>
+
+Nessa aula de POO, vamos aprender como criar uma Classe, com seus atributos e métodos, e a instanciar novos objetos a partir dessa classe inicial.
 
 
 - Programa Aula02 
@@ -419,8 +437,7 @@ Estou rabiscando...
 <u>Aula Teórica 3 – O que é Visibilidade em um Objeto?</u>
 
 Nessa aula de POO, vamos aprender qual a importância dos modificadores de visibilidade:
- público (+), privado (-) e protegido (#) 
- na Programação Orientada a Objetos.
+ público (+), privado (-) e protegido (#) na Programação Orientada a Objetos.
 
 - UML - Linguagem Modelada Unificada
 
@@ -438,7 +455,6 @@ Nessa aula de POO, vamos aprender qual a importância dos modificadores de visib
     - público   ( + )
     - privado   ( - )
     - protegido ( # )
-
    
 
 | Simbolo   | Modificadores de Visibilidade | Definição |
@@ -468,7 +484,26 @@ Nessa aula de POO, vamos aprender qual a importância dos modificadores de visib
 <a href="#" target="_blank"></a>
 <img src="./img/aula03/aula3-10.png" widf="400px">
 
-<br>
+<br><br>
+
+- O que é Visibilidade em um Objeto?
+*Public, Protected e Private* são modificadores de acesso, com eles é possível determinar a disponibilidade de um atributo ou método.
+
+    - *Public* ( + ) &rarr; Um nível de acesso que o torna disponível a todos. 
+    Imagine o telefone público;
+    - *Protected* ( # ) &rarr; Somente classes e subclasses podem acessar. 
+    Imagine o telefone residencial, onde os proprietários e os filhos têm acesso;
+    - Default &rarr; Sem modificador, significa que não declaramos explicitamente um modificador de acesso para uma classe, atributo, método etc;
+    - *Private* ( - ) &rarr; Somente a classe onde ela foi definida pode acessar, ou usando os métodos getter e setter como intermediador.
+     Imagine o seu celular.
+
+A tabela abaixo mostra quem pode acessar atributos/métodos de acordo com o modificador:
+
+<img src="./img/aula02/aula02-tabela1.png" widf="200px">
+<a href="#" target="_blank"></a>
+
+<!-- <img src="./img/aula03/aula3-06.png" widf="200px">
+<a href="#" target="_blank"></a> -->
 
 ---
 
@@ -566,7 +601,7 @@ ERRO! Não posso rabiscar, pois a tampa da caneta está tampada!
 
 ### 4. Aula 4
 
-#### Aula Teórica 4 – Métodos Especiais
+<u>Aula Teórica 4 – Métodos Especiais</u>
 
 Nessa aula de POO, vamos aprender como funcionam os Métodos Acessores (Getters), Métodos Modificadores (Setters) e Métodos Construtores (Construct) para a Programação Orientada a Objetos. 
 
@@ -613,8 +648,55 @@ O método construtor (Construct) de uma classe serve para executar algum comport
 
 <br>
 
-#### Aula Prática 4 – Métodos Getter, Setter e Construtor
+---
 
+<u>Aula Prática 4 – Métodos Getter, Setter e Construtor</u>
+
+Nessa aula de POO, vamos aprender como criar em Java os Métodos Acessores (Getters), Métodos Modificadores (Setters) e Métodos Construtores (Construct).
+
+- **Métodos especiais**
+Veja como funcionam os Métodos Acessores (Getters), Métodos Modificadores (Setters) e Métodos Construtores (Construct).
+
+Métodos *Getters* e *Setters* são usados com a visibilidade *public*.
+
+Eles têm a **função de acessar e enviar dados de forma segura**, sem que o solicitante tenha acesso direto aos atributos/métodos do objeto, sendo necessária a intermediação do método para **pegar ou modificar dados**.
+
+- **Getter**: Acessa/Pega um dado:
+
+```java
+public String getModelo(){
+   return this.modelo;
+}
+```
+
+Sempre retorna algum valor, por isso, é necessário informar que tipo de valor será retornado, que neste exemplo é *String*.
+
+- **Setter**: Envia/Define um dado:
+
+```java
+public void setModelo(String m){
+   this.modelo = m;
+}
+```
+
+Repare que ele é *void*, ou seja, não tem retorno, no entanto, temos que definir o parâmetro que será "setado”(enviado), que nesse exemplo foi o <code> (String m) </code>, e quando ele for enviado/definido será atribuído ao atributo modelo que é do tipo *String*.
+
+- **Construtor**: Constroem objetos com atributos pré-definidos, onde normalmente recebem parâmetros, mas não é obrigatório.
+
+```java
+public class Caneta {
+   //  Constructor
+   public Caneta (String m, float p, String c){
+        this.setModelo(m); 
+        this.setPonta(p); // Modo seguro de atribuição de valores
+        this.cor = c;     // Modo "inseguro" de atribuição de valores
+        this.tampar(); 
+   }
+}
+```
+
+O exemplo acima é um *Constructor* que recebe 3 parâmetros (uma *String* para Modelo, um *float* para Ponta e uma *String* para Cor). Parâmetros que devem ser passados sempre que for criado um novo objeto com o Construtor Caneta.
+O Constructor sempre recebem o nome da classe, que nesse exemplo, ele é um Construtor da classe Caneta.java e são facilmente percebidos pois **não possuem** a declaração void, String, int etc.
 
 <br>
 
