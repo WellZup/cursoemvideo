@@ -143,6 +143,7 @@
 <img src="https://www.geekproject.com.br/wp-content/uploads/2011/01/elephpant-elephant-php-logo.png" alt="logo elephant php" width="150px" /> 
 
 
+
 ## 02. PHP Básico [40 Horas] :two: 🏆
 
 - Criado em 1995, por Rasmus Lerdorf, o **PHP** (acrônimo para PHP: Hypertext Preprocessor) é uma linguagem de script Open Source de uso geral. Com ela, desenvolvedores podem criar sites dinâmicos, extensões para aplicativos e otimizar tanto programas quanto Sistemas Operacionais. Ela é especialmente adequada para o desenvolvimento web e pode ser embutida dentro do HTML.
@@ -219,6 +220,7 @@
 &nbsp;&nbsp;&nbsp;
 
 <img src="https://www.geekproject.com.br/wp-content/uploads/2011/01/elephpant-elephant-php-logo.png" alt="logo elephant php" width="150px" /> 
+
 
 
 ## 03. PHP POO [40 Horas] :three: 🏆
@@ -316,14 +318,12 @@
 <hr>
 
 
-
 <span id="java-basico">
 
 <img src="https://www.cursoemvideo.com/wp-content/uploads/bb-plugin/cache/java-circle.jpg" alt="logo algoritmo" width="100px" />
 &nbsp;&nbsp;&nbsp;
 
 <img src="./logo/java_logo.png" alt="logo java" width="100px" /> 
-
 
 
 
@@ -336,10 +336,7 @@
 - Caso você já domine a construção de algoritmos e a lógica de programação, o professor Gustavo Guanabara vai mostrar a história, introdução e explicação do funcionamento da linguagem, assim como suas sintaxes e estruturas de maneira fácil e descontraída.
 
 
-
-
 ### Conteúdo do Módulo :bookmark:
-
 
 1. Aula 1 – História do Java  ✅
     - Exercícios de Java #01
@@ -374,7 +371,7 @@
 
 ### Anotações das Aulas: :open_book: :writing_hand:
 
-[Anotações das aulas](https://github.com/eduardodsr/cursoemvideo/tree/master/java-basico)
+[Anotações das aulas](https://github.com/eduardodsr/cursoemvideo/tree/master/java-basico/README.md)
 
 ### YouTube - Playlist Educativa: :desktop_computer: :headphones:
 
@@ -422,6 +419,7 @@ https://www.jetbrains.com/idea/guide/tutorials
 <br>
 
 <hr>
+
 
 
 <span id="java-poo">
@@ -490,6 +488,7 @@ https://www.jetbrains.com/idea/guide/tutorials
 ### Anotações das Aulas: :open_book: :writing_hand:
 
 [Anotações das Aulas com Código Fonte](https://github.com/eduardodsr/cursoemvideo/blob/master/java-poo/README.md)
+
 
 ### Código Fonte das Aulas : :computer: :file_folder:
 
