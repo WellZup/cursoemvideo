@@ -698,6 +698,292 @@ public class Caneta {
 O exemplo acima é um *Constructor* que recebe 3 parâmetros (uma *String* para Modelo, um *float* para Ponta e uma *String* para Cor). Parâmetros que devem ser passados sempre que for criado um novo objeto com o Construtor Caneta.
 O Constructor sempre recebem o nome da classe, que nesse exemplo, ele é um Construtor da classe Caneta.java e são facilmente percebidos pois **não possuem** a declaração void, String, int etc.
 
+
+---
+
+- Programa Aula04 (Exemplo dos Métodos Getters e Setters)
+
+<code> class Caneta </code>
+
+```java
+package aula04;
+
+public class Caneta {
+    // Atributos
+    private String modelo;
+    private float ponta;
+
+    // Métodos
+    public String getModelo() {
+        return this.modelo;
+    }
+    public void setModelo(String m) {
+        this.modelo = m;
+    }
+    public float getPonta() {
+        return this.ponta;
+    }
+    public void setPonta(float p) {
+        this.ponta = p;
+    }
+
+    public void status() {
+        System.out.println("--------------------");
+        System.out.println("Modelo: " + this.getModelo());
+        System.out.println("Ponta: " + this.getPonta());
+        System.out.println("--------------------");
+    }
+}
+```
+
+<code> class Aula04 </code>
+
+```java
+package aula04;
+
+public class Aula04 {
+
+    public static void main(String[] args) {
+
+        Caneta c1 = new Caneta();
+
+        c1.setModelo("BIC");
+        // c1.modelo = "BIC"; // java: modelo has private access in aula04.Caneta
+
+        c1.setPonta(0.5f);
+        // c1.ponta = 0.5f; // java: ponta has private access in aula04.Caneta
+
+        c1.status();
+
+        System.out.println("Tenho uma caneta de modelo " + c1.getModelo() +
+                " de ponta " + c1.getPonta());
+    }
+}
+```
+
+<code> &rarr; Run 🖥️ &lt;Aula04&gt; </code>
+
+```markdown
+--------------------
+Modelo: BIC
+Ponta: 0.5
+--------------------
+Tenho uma caneta de modelo BIC de ponta 0.5
+```
+
+<br>
+
+- Programa 04 (Exemplo do Método Construtor sem receber argumentos/parametros)
+
+<code> class Caneta </code>
+
+```java
+package aula04;
+
+public class Caneta {
+    // Atributos
+    private String modelo;
+    private float ponta;
+    private String cor;
+    private boolean tampada;
+
+    // Método Construtor
+    public Caneta() {
+        this.tampar();
+        this.cor = "Azul";
+    }
+
+    // Métodos Getters e Setters
+    public String getModelo() {
+        return this.modelo;
+    }
+    public void setModelo(String m) {
+        this.modelo = m;
+    }
+    public float getPonta() {
+        return this.ponta;
+    }
+    public void setPonta(float p) {
+        this.ponta = p;
+    }
+
+    // Método para tampar() e destampar() a caneta
+    public void tampar() {
+        this.tampada = true;
+    }
+    public void destampar() {
+        this.tampada = false;
+    }
+
+    // Método para retornar o status da caneta
+    public void status() {
+        System.out.println("--------------------");
+        System.out.println("Modelo: " + this.getModelo());
+        System.out.println("Ponta: " + this.getPonta());
+        System.out.println("Cor: " + this.cor);
+        System.out.println("Está tampada? " + this.tampada);
+        System.out.println("--------------------");
+    }
+}
+
+```
+
+<code> class Aula04 </code>
+
+```java
+package aula04;
+
+public class Aula04 {
+
+    public static void main(String[] args) {
+
+        Caneta c1 = new Caneta();
+        c1.status();
+    }
+}
+```
+
+<code> &rarr; Run 🖥️ &lt;Aula04&gt; </code>
+
+```markdown
+--------------------
+Modelo: null
+Ponta: 0.0
+Cor: Azul
+Está tampada? true
+--------------------
+```
+
+---
+
+<br>
+
+- IntelliJ IDEA - Code Generate - Construtor & Getters and Setters
+    <br>
+    - Code Generation in IntelliJ IDEA
+    - https://www.jetbrains.com/help/idea/generating-code.html
+    - https://www.youtube.com/watch?v=btqCYUc3nFE
+    <br>
+    -   IntelliJ IDEA - Main Menu, select **Code**  | **Generate**:
+        -  ⌘ + N , to open the popup menu with available constructs that you can generate.
+            - Generate constructors
+            - Generate getters and setters
+
+
+<code> class Caneta </code>
+
+```java
+package aula04v2;
+
+public class Caneta {
+    // Atributos
+    private String modelo;
+    private float ponta;
+    private String cor;
+    private boolean tampada;
+
+    // Método Construtor
+    public Caneta(String modelo, float ponta, String cor) {
+        this.modelo = modelo;
+        this.ponta = ponta;
+        this.cor = cor;
+    }
+
+    // Métodos Getters e Setters
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public float getPonta() {
+        return ponta;
+    }
+
+    public void setPonta(float ponta) {
+        this.ponta = ponta;
+    }
+
+    public String getCor() {
+        return cor;
+    }
+
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+
+    public boolean isTampada() {
+        return tampada;
+    }
+
+    public void setTampada(boolean tampada) {
+        this.tampada = tampada;
+    }
+
+    public void status() {
+        System.out.println("----------------------------------------");
+        System.out.println("Modelo: " + this.getModelo());
+        System.out.println("Ponta: " + this.getPonta());
+        System.out.println("Cor: " + this.cor);
+        System.out.println("Está tampada? " + this.tampada);
+        // System.out.println("----------------------------------------");
+    }
+}
+```
+
+<code> class Aula04 </code>
+
+```java
+package aula04v2;
+
+public class Aula04 {
+
+    public static void main(String[] args) {
+
+        Caneta c1 = new Caneta("BIC Cristal (Ponta Média)", 1.0f, "Vermelha");
+        c1.status();
+
+        Caneta c2 = new Caneta("BIC Cristal (Ponta Fina)", 0.8f, "Preta");
+        c2.status();
+
+        Caneta c3 = new Caneta("BIC Cristal (Ponta Fina)", 0.8f, "Azul");
+        c3.status();
+
+        Caneta c4 = new Caneta("BIC Cristal (Ponta Grossa)", 1.6f, "Preta");
+        c4.status();
+    }
+}
+```
+
+<code> &rarr; Run 🖥️ &lt;Aula04&gt; </code>
+
+```markdown
+----------------------------------------
+Modelo: BIC Cristal (Ponta Média)
+Ponta: 1.0
+Cor: Vermelha
+Está tampada? false
+----------------------------------------
+Modelo: BIC Cristal (Ponta Fina)
+Ponta: 0.8
+Cor: Preta
+Está tampada? false
+----------------------------------------
+Modelo: BIC Cristal (Ponta Fina)
+Ponta: 0.8
+Cor: Azul
+Está tampada? false
+----------------------------------------
+Modelo: BIC Cristal (Ponta Grossa)
+Ponta: 1.6
+Cor: Preta
+Está tampada? false
+```
+
+---
+
 <br>
 
 <span id="aula05">
