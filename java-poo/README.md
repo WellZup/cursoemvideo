@@ -32,22 +32,22 @@
 
 ### Aulas :bookmark:
 
-1. Aula 1  ✅
+1. Aula 1 
     - Aula Teórica 1 – O que é Programação Orientada a Objetos?
     - Aula Prática 1 – Instalando o JDK e NetBeans
-2. Aula 2  ✅
+2. Aula 2 
     - Aula Teórica 2 – O que é um Objeto?
     - Aula Prática 2 – Criando Classes e Objetos em Java
-3. Aula 3  ✅
+3. Aula 3 
     - Aula Teórica 3 – O que é Visibilidade em um Objeto?
     - Aula Prática 3 – Configurando Visibilidade de Atributos e Métodos
-4. Aula 4  ✅
+4. Aula 4 
     - Aula Teórica 4 – Métodos Especiais
     - Aula Prática 4 – Métodos Getter, Setter e Construtor
-5. Aula 5  ✅
+5. Aula 5 
     - Aula Teórica 5 – Exemplo Prático com Objetos
     - Aula Prática 5 – Exemplo Prático em Java
-6. Aula 6 ✅
+6. Aula 6
     - Aula Teórica 6 – Pilares da POO: Encapsulamento
     - Aula Prática 6 – Encapsulamento
 7. Aula 7 
@@ -875,7 +875,8 @@ Está tampada? true
     - https://www.jetbrains.com/help/idea/generating-code.html
     - https://www.youtube.com/watch?v=btqCYUc3nFE
     <br>
-    -   IntelliJ IDEA - Main Menu, select **Code**  | **Generate**:
+    -   IntelliJ IDEA - Main Menu, select: 
+        - Code  | Generate:
     <br>
         -  ⌘ + N , to open the popup menu with available constructs that you can generate.
     <br>
@@ -1365,9 +1366,11 @@ E H P : **ENCAPSULAMENTO**, **HERANÇA** E **POLIMORFISMO**.
 - OBS: Por exemplo, o prof. Gustavo Guanabara, diz que são 3 pilares da POO. 
 Nesse caso, a ABSTRAÇÃO está dentro do ENCAPSULAMENTO.
 
-<br>
+---
 
-- **Encapsulamento**
+#### Encapsulamento
+
+[Conceito de Encapsulamento] &rarr; Ocultar partes independentes da implementação, permitindo construir partes invisíveis ao mundo exterior.
 
 [Conceito de Encapsulamento] &rarr; Encapsular significa esconder a implementação dos objetos. O encapsulamento favorece principalmente dois aspectos de um sistema: a manutenção e a evolução.
 
@@ -1376,21 +1379,25 @@ Além de proteção, também é usado para padronizar objetos.
 Ex: Imagina uma pilha de controle remoto.
 <br>
 
+- **OBS**: Encapsular *não é obrigatório*, mas é uma boa prática para produzir Classe mais eficientes.
 
 
 **Exemplo:** uma pilha possui todos os seus atributos guardados (propriedades químicas dentro dela), com isso, para nos proteger — e vice-versa — , ela nos oferece apenas a sua energia, através de uma interface* (os polos: positivo e o negativo) que nesse exemplo, a interface são as extremidades da pilha.
 
-- Vantagens do encapsulamento em Java:
+- Vantagens em encapsular :
     - Tornar mudanças invisíveis;
     - Facilitar reutilização de código;
     - Reduzir efeitos colaterais.
 <br>
 
 - **O que é uma interface?**
-**Interface** é tudo aquilo que está disponível para o usuário. 
-Por exemplo: Os pedais de um carro, e os botões de um controle são exemplos de interfaces.
 
-Como criar uma interface?
+[Conceito de Interface] &rarr; Lista de serviços fornecidos por um componente. É o contato com o mundo exterior, que define o que pode ser feito com um objeto dessa classe.
+
+- **Interface** é tudo aquilo que está disponível para o usuário. 
+- Por exemplo: Os pedais de um carro, e os botões de um controle são exemplos de interfaces.
+
+**Como criar uma interface?**
 
 Toda interface precisa de métodos/funções, afinal quando apertamos um botão estamos realizando uma ação. 
 Esses métodos são sempre *públicos (public) e abstratos (abstract)*:
@@ -1422,7 +1429,7 @@ public class ControleRemoto implements Controlador {
 
 ---
 
-- Material Complementar:
+- <u>Material Complementar</u>:
 
 
 **Encapsulamento**
@@ -1440,13 +1447,15 @@ Podemos dizer portanto que os objetos possuem uma parte interna, os dados, que n
 
 **Os Benefícios do Encapsulamento:**
 
-**Modularidade**: o código-fonte para um objeto pode ser escrito e mantido independentemente do código-fonte de outros objetos (desacoplamento). Além disso, como não dependem de outros objetos, cada objeto pode ser utilizado livremente no sistema. Por exemplo, você pode dar sua bicicleta a alguém e mesmo assim ela funcionará. O objeto bicicleta deve ser independente dos objetos que a utilizam (objetos ciclistas).
+**Modularidade**: o código-fonte para um objeto pode ser escrito e mantido independentemente do código-fonte de outros objetos (desacoplamento). Além disso, como não dependem de outros objetos, cada objeto pode ser utilizado livremente no sistema. 
 
 **Ocultação de informações**: um objeto possui uma interface pública que outros objetos podem utilizar para comunicarem-se com ele. Mas o objeto pode manter informações privadas e métodos podem ser modificados em qualquer momento sem afetar os outros objetos que dependem dele. Por exemplo, você não precisa de entender o funcionamento interno do mecanismo de marchas da sua bicicleta para utilizá-lo.
 
 A única parte do objeto que o resto do sistema precisa conhecer é sua **interface**.
 
 ---
+
+<u>Aula Teórica 6 – Pilares da POO: Encapsulamento</u>
 
 <br>
 
@@ -1506,9 +1515,219 @@ A única parte do objeto que o resto do sistema precisa conhecer é sua **interf
 <hr>
 
 
-#### Aula Prática 6 – Encapsulamento
+<u> Aula Prática 6 – Encapsulamento </u>
+
+Nessa aula de POO, vamos aprender como fazer Encapsulamento em Java, implementando o primeiro pilar da POO.
 
 
+<code> interface Controlador</code>
+
+```java
+package aula06;
+
+public interface Controlador {
+
+    // Métodos Abstratos
+    public abstract void ligar();
+    public abstract void desligar();
+    public abstract void abrirMenu();
+    public abstract void fecharMenu();
+    public abstract void maisVolume();
+    public abstract void menosVolume();
+    public abstract void ligarMudo();
+    public abstract void desligarMudo();
+    public abstract void play();
+    public abstract void pause();
+}
+```
+
+<code> class ControleRemoto implements Controlador </code>
+
+```java
+package aula06;
+
+public class ControleRemoto implements Controlador {
+
+    // Atributos
+
+    private int volume;
+    private boolean ligado;
+    private boolean tocando;
+
+    // Método Construtor
+
+    public ControleRemoto() {
+        this.volume = 10;
+        this.ligado = false;
+        this.tocando = false;
+    }
+
+    // Métodos Getters e Setters
+
+    private int getVolume() {
+        return volume;
+    }
+
+    private void setVolume(int volume) {
+        this.volume = volume;
+    }
+
+    // type boolean ->  Generate (Default) -> isLigado()
+    private boolean getLigado() {
+        return ligado;
+    }
+
+    private void setLigado(boolean ligado) {
+        this.ligado = ligado;
+    }
+
+    // type boolean ->  Generate (Default) -> isTocando()
+    private boolean getTocando() {
+        return tocando;
+    }
+
+    private void setTocando(boolean tocando) {
+        this.tocando = tocando;
+    }
+
+    /**
+     * @Override = Sobrescrever; Sobrepor; Sobrescrita
+     *
+     * @Override -> Significa que eu já tinha um método abstrato (abstract) e sobrescrevo os métodos.
+     *
+     * A sobrescrita (ou override) está diretamente relacionada à orientação a objetos, mais especificamente com a herança.
+     * Com a sobrescrita, conseguimos especializar os métodos herdados das superclasses, alterando o seu comportamento nas subclasses por um mais específico.
+     */
+
+    // Métodos Abstratos
+
+    @Override
+    public void ligar() {
+        this.setLigado(true);
+    }
+
+    @Override
+    public void desligar() {
+        this.setLigado(false);
+    }
+
+    @Override
+    public void abrirMenu() {
+        if ( this.getLigado() ) {
+            System.out.println("\nAbrindo Menu!");
+            System.out.println("----------------------------------------------");
+            System.out.println("Está ligado? " + this.getLigado());
+            System.out.println("Está tocando? " + this.getTocando());
+            System.out.print("Volume: " + this.getVolume() + " -> ");
+            for (int i = 0; i < this.getVolume(); i += 10) {
+                System.out.print(" ▲ ");
+            }
+            System.out.println("\n----------------------------------------------");
+        } else {
+            System.out.println("Não é possível mostrar o Menu, pois o controle remoto está desligado!");
+        }
+    }
+
+    @Override
+    public void fecharMenu() {
+        System.out.println("Fechando Menu!");
+    }
+
+    @Override
+    public void maisVolume() {
+        if ( this.getLigado() ) {
+            this.setVolume(this.getVolume() + 10);
+        } else {
+            System.out.println("Não é possível aumentar o volume!");
+        }
+    }
+
+    @Override
+    public void menosVolume() {
+        if ( this.getLigado() ) {
+            this.setVolume(this.getVolume() - 10);
+        } else {
+            System.out.println("Não é possível diminuir o volume!");
+        }
+    }
+
+    @Override
+    public void ligarMudo() {
+        if ( this.getLigado() && this.getVolume() > 0 ) {
+            this.setVolume(0);
+        } else {
+            System.out.println("Não é possível ligar o mudo!");
+        }
+    }
+
+    @Override
+    public void desligarMudo() {
+        if ( this.getLigado() && this.getVolume() == 0 ) {
+            this.setVolume(50);
+        }
+    }
+
+    @Override
+    public void play() {
+        if ( this.getLigado() && !(this.getTocando()) ) {
+            this.setTocando(true);
+        } else {
+            System.out.println("Não é possível executar o play!");
+        }
+    }
+
+    @Override
+    public void pause() {
+        if ( this.getLigado() && this.getTocando() ) {
+            this.setTocando(false);
+        } else {
+            System.out.println("Não é possível executar o pause!");
+        }
+    }
+}
+
+```
+
+<code> class Aula06 </code>
+
+```java
+package aula06;
+
+public class Aula06 {
+
+    public static void main(String[] args) {
+
+        ControleRemoto c = new ControleRemoto();
+
+        c.ligar();
+        c.play();
+        c.maisVolume();
+        c.maisVolume();
+        c.pause();
+        c.menosVolume();
+        c.abrirMenu();
+        c.fecharMenu();
+    }
+}
+
+```
+
+<code> &rarr; Run 🖥️ &lt;Aula06&gt; </code>
+
+```markdown
+Abrindo Menu!
+----------------------------------------------
+Está ligado? true
+Está tocando? false
+Volume: 20 ->  ▲  ▲ 
+----------------------------------------------
+Fechando Menu!
+```
+
+
+<br>
+
+<hr>
 
 <br>
 
@@ -1516,56 +1735,60 @@ A única parte do objeto que o resto do sistema precisa conhecer é sua **interf
 
 ### 7. Aula 7
 
-#### Aula Teórica 7 – Relacionamento entre Classes
+<u> Aula Teórica 7 – Relacionamento entre Classes </u>
 
 Nessa aula de POO, vamos aprender como fazer relacionamentos entre as classes.
 
 
 <!-- <img src="img/aula7-01.png">
 <a href="#" target="_blank"></a> -->
-<img src="img/aula7-02.png">
+<img src="./img/aula07/aula7-02.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula7-03.png">
+<img src="./img/aula07/aula7-03.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula7-04.png">
+<img src="./img/aula07/aula7-04.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula7-05.png">
+<img src="./img/aula07/aula7-05.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula7-06.png">
+<img src="./img/aula07/aula7-06.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula7-07.png">
+<img src="./img/aula07/aula7-07.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula7-08.png">
+<img src="./img/aula07/aula7-08.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula7-09.png">
+<img src="./img/aula07/aula7-09.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula7-10.png">
+<img src="./img/aula07/aula7-10.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula7-11.png">
+<img src="./img/aula07/aula7-11.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula7-12.png">
+<img src="./img/aula07/aula7-12.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula7-13.png">
+<img src="./img/aula07/aula7-13.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula7-14.png">
+<img src="./img/aula07/aula7-14.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula7-15.png">
+<img src="./img/aula07/aula7-15.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula7-16.png">
+<img src="./img/aula07/aula7-16.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula7-17.png">
+<img src="./img/aula07/aula7-17.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula7-18.png">
+<img src="./img/aula07/aula7-18.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula7-19.png">
+<img src="./img/aula07/aula7-19.png">
 <a href="#" target="_blank"></a>
 
+---
 
 
-#### Aula Prática 7 – Objetos Compostos em PHP
+<u> Aula Prática 7 – Objetos Compostos em PHP </u>
 
+Nessa aula de POO, vamos aprender como criar Objetos Compostos criando um vetor de objetos.
 
 <br>
+
+---
 
 <span id="aula08">
 
