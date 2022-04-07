@@ -1006,6 +1006,44 @@ Está tampada? false
 
 Nessa aula de POO, vamos fazer um exemplo prático com Programação Orientada a Objetos, usando tudo aquilo que aprendemos até aqui.
 
+
+- Slides da Aula 05:
+
+<img src="./img/aula05/aula5-01.png">
+<a href="#" target="_blank"></a>
+<img src="./img/aula05/aula5-02.png">
+<a href="#" target="_blank"></a>
+<img src="./img/aula05/aula5-03.png">
+<a href="#" target="_blank"></a>
+<img src="./img/aula05/aula5-04.png">
+<a href="#" target="_blank"></a>
+<img src="./img/aula05/aula5-05.png">
+<a href="#" target="_blank"></a>
+<img src="./img/aula05/aula5-06.png">
+<a href="#" target="_blank"></a>
+<img src="./img/aula05/aula5-07.png">
+<a href="#" target="_blank"></a>
+<img src="./img/aula05/aula5-08.png">
+<a href="#" target="_blank"></a>
+<img src="./img/aula05/aula5-09a.png">
+<a href="#" target="_blank"></a> 
+<img src="./img/aula05/aula5-09b.png"> 
+<a href="#" target="_blank"></a>
+<img src="./img/aula05/aula5-10.png">
+<a href="#" target="_blank"></a> 
+<img src="./img/aula05/aula5-11.png">
+<a href="#" target="_blank"></a>
+<img src="./img/aula05/aula5-12.png">
+<a href="#" target="_blank"></a>
+
+<br>
+
+---
+
+<u>Aula Prática 5 – Exemplo Prático em JAVA</u>
+
+Nessa aula de POO, vamos fazer um grande exercício de Programação Orientada a Objetos utilizando Java.
+
 Criação de um protótipo de sistema bancário, confira os requisitos abaixo:
 
 ```markdown
@@ -1060,48 +1098,241 @@ Legenda das Visibilidades:
       ( # ) é protected.
 ```
 
-- Slides da Aula 05:
 
-<img src="./img/aula05/aula5-01.png">
-<a href="#" target="_blank"></a>
-<img src="./img/aula05/aula5-02.png">
-<a href="#" target="_blank"></a>
-<img src="./img/aula05/aula5-03.png">
-<a href="#" target="_blank"></a>
-<img src="./img/aula05/aula5-04.png">
-<a href="#" target="_blank"></a>
-<img src="./img/aula05/aula5-05.png">
-<a href="#" target="_blank"></a>
-<img src="./img/aula05/aula5-06.png">
-<a href="#" target="_blank"></a>
-<img src="./img/aula05/aula5-07.png">
-<a href="#" target="_blank"></a>
-<img src="./img/aula05/aula5-08.png">
-<a href="#" target="_blank"></a>
-<img src="./img/aula05/aula5-09a.png">
-<a href="#" target="_blank"></a> 
-<img src="./img/aula05/aula5-09b.png"> 
-<a href="#" target="_blank"></a>
-<img src="./img/aula05/aula5-10.png">
-<a href="#" target="_blank"></a> 
-<img src="./img/aula05/aula5-11.png">
-<a href="#" target="_blank"></a>
-<img src="./img/aula05/aula5-12.png">
-<a href="#" target="_blank"></a>
-
-<br>
-
----
-
-<u>Aula Prática 5 – Exemplo Prático em JAVA</u>
-
-Nessa aula de POO, vamos fazer um grande exercício de Programação Orientada a Objetos utilizando Java.
-
-- Criar a Classe ContaBanco
+- Classe ContaBanco
 
 <img src="./img/aula05/aula5-02.png" width="300px">
 <a href="#" target="_blank"></a>
 
+- Programa ContaBanco em Java
+
+<code> class ContaBanco </code>
+
+```java
+package aula05;
+
+public class ContaBanco {
+    // ATRIBUTOS
+    public int numConta;
+    protected String tipo;
+    private String dono;
+    private float saldo;
+    private boolean status;
+
+    // MÉTODO CONSTRUTOR
+    public ContaBanco() {
+        this.setSaldo(0);
+        this.setStatus(false);
+    }
+
+    // MÉTODOS ESPECIAIS
+
+    public void estadoAtual() {
+        System.out.println("------------------------------------------------------------");
+        System.out.println("Conta: " + this.getNumConta());
+        System.out.println("Tipo: " + this.getTipo());
+        System.out.println("Dono: " + this.getDono());
+        System.out.println("Saldo: " + this.getSaldo());
+        System.out.println("Status: " + this.getStatus());
+        System.out.println("------------------------------------------------------------");
+        System.out.println("\n");
+    }
+
+    public void abrirConta(String tipo){
+        this.setTipo(tipo);
+        this.setStatus(true);
+
+        if ( tipo == "CC") {
+            this.setSaldo(50);
+        }
+        else if ( tipo == "CP" ) {
+            this.setSaldo(150);
+        }
+        System.out.println(this.getDono() + ". Conta aberta com sucesso!");
+    }
+
+    public void fecharConta(){
+        if ( this.getSaldo() > 0 ) {
+            System.out.println("[ERRO] Conta de " +
+                    this.getDono() + " está com dinheiro, saldo de R$ " +
+                    this.getSaldo() + ", não posso fechar a conta!");
+        }
+        else if ( this.getSaldo() < 0 ) {
+            System.out.println("[ERRO] Conta de " +
+                    this.getDono() + " está com débito, saldo de R$ " +
+                    this.getSaldo() + ", não posso fechar a conta!");
+        }
+        // ( this.getSaldo == 0)
+        else {
+            setStatus(false);
+            System.out.println("Conta de " + this.getDono() + " foi fechada com sucesso!");
+        }
+    }
+
+    public void depositar(float v){
+        if ( this.getStatus() ) {
+            this.setSaldo(this.getSaldo() + v); // this.saldo = this.saldo + v;
+            System.out.println("Depósito de R$ " + v + " na conta de " + this.getDono());
+        } else {
+            System.out.println("ERRO. Impossível depositar em uma conta fechada!");
+        }
+    }
+    public void sacar(float v){
+
+        if ( this.getStatus() ) {
+            if ( this.getSaldo() >= v) {
+                this.setSaldo(this.getSaldo() - v);
+                System.out.println("Saque de R$ " + v + " na conta de " + this.getDono());
+                System.out.println(this.getDono() + ", saldo da conta R$ " + this.getSaldo());
+            } else {
+                System.out.println(this.getDono() + ", saldo insuficiente para saque!");
+            }
+        } else {
+            System.out.println("[ERRO] Impossível sacar de uma conta está fechada!");
+        }
+    }
+
+    public void pagarMensalidade(){
+        float v = 0.0f;
+
+        if (this.getTipo() == "CC") {
+            v = 12;
+        } else if (this.getTipo() == "CP") {
+            v = 20;
+        }
+
+        if ( this.getStatus() ) {
+            if ( this.getSaldo() > v) {
+                this.setSaldo(this.getSaldo() - v);
+                System.out.println("Mensalidade de R$ " + v + " debitada na conta de " +
+                        this.getDono() + ". Saldo disponível R$ " + this.getSaldo());
+
+            } else {
+                System.out.println("Saldo negativo");
+            }
+
+        } else {
+            System.out.println("[ERRO] Impossível débitar a mensalidade, a conta está fechada!");
+        }
+
+    }
+
+
+    // Métodos Getters e Setters
+    public int getNumConta() {
+        return numConta;
+    }
+
+    public void setNumConta(int numConta) {
+        this.numConta = numConta;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public String getDono() {
+        return dono;
+    }
+
+    public void setDono(String dono) {
+        this.dono = dono;
+    }
+
+    public float getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(float saldo) {
+        this.saldo = saldo;
+    }
+
+    public boolean getStatus() {
+        return status;
+    }
+
+    public void setStatus(boolean status) {
+        this.status = status;
+    }
+}
+
+```
+
+<code> class Aula05 </code>
+
+```java
+package aula05;
+
+public class Aula05 {
+
+    public static void main(String[] args) {
+
+        ContaBanco p1 = new ContaBanco(); // Jubileu
+
+        p1.setDono("Jubileu");
+        p1.abrirConta("CC");
+        p1.setNumConta(1001);
+        p1.depositar(300);      // 300 [deposito] + 50 [abertura CC] = 350 [saldo]
+        // p1.fecharConta();    // [ERRO] Conta de Jubileu está com dinheiro, saldo de R$ 350.0, não posso fechar a conta!
+        p1.pagarMensalidade();  // 350 - 12 [mensalidade CC] = 338 [saldo]
+        p1.sacar(338);
+        p1.fecharConta();
+        p1.estadoAtual();
+
+        ContaBanco p2 = new ContaBanco(); // Creuza
+
+        p2.setDono("Creuza");
+        p2.abrirConta("CP");
+        p2.setNumConta(2002);
+        p2.depositar(500);      // 500 [deposito] + 150 [abertura CP] = 650 [saldo]
+        p2.sacar(100);          // 650 - 100 [saque] = 550 [saldo]
+        // p2.sacar(1000);      // Creuza, saldo insuficiente para saque!
+        p2.pagarMensalidade();  // 550 - 20 [mensalidade CP] = 530 [saldo]
+        p2.sacar(530);
+        p2.fecharConta();
+        p2.estadoAtual();
+    }
+}
+```
+
+<code> &rarr; Run 🖥️ &lt;Aula05&gt; </code>
+
+```markdown
+Jubileu. Conta aberta com sucesso!
+Depósito de R$ 300.0 na conta de Jubileu
+Mensalidade de R$ 12.0 debitada na conta de Jubileu. Saldo disponível R$ 338.0
+Saque de R$ 338.0 na conta de Jubileu
+Jubileu, saldo da conta R$ 0.0
+Conta de Jubileu foi fechada com sucesso!
+------------------------------------------------------------
+Conta: 1001
+Tipo: CC
+Dono: Jubileu
+Saldo: 0.0
+Status: false
+------------------------------------------------------------
+
+
+Creuza. Conta aberta com sucesso!
+Depósito de R$ 500.0 na conta de Creuza
+Saque de R$ 100.0 na conta de Creuza
+Creuza, saldo da conta R$ 550.0
+Mensalidade de R$ 20.0 debitada na conta de Creuza. Saldo disponível R$ 530.0
+Saque de R$ 530.0 na conta de Creuza
+Creuza, saldo da conta R$ 0.0
+Conta de Creuza foi fechada com sucesso!
+------------------------------------------------------------
+Conta: 2002
+Tipo: CP
+Dono: Creuza
+Saldo: 0.0
+Status: false
+------------------------------------------------------------
+```
 
 ---
 
