@@ -117,12 +117,12 @@ Programação de baixo nível -> Programação linear -> Programação estrutura
 
 -  **Vantagens da POO** (C O M E R N a d a)
 
-    1- Confiável
-    2- Oportuno
-    3- Manutenível
-    4- Extensível
-    5- Reutilizável
-    6- Natural
+    1. Confiável
+    2. Oportuno
+    3. Manutenível
+    4. Extensível
+    5. Reutilizável
+    6. Natural
 
     <br>
 
@@ -130,12 +130,12 @@ Programação de baixo nível -> Programação linear -> Programação estrutura
 
     - <strong><big> C O M E R N </strong>a d a </big>
 
-        1 - **C**onfiável -> O isolamento entre as partes gera o software seguro. Ao alterar uma parte, nenhuma outra é afetada;
-        2 - **O**portuno -> Ao dividir tudo em partes, várias delas podem ser desenvolvidas em paralelo;
-        3 - **M**anutenível -> Atualizar um software é mais fácil. Uma pequena modificação vai beneficiar todas as partes que usarem o objeto;
-        4 - **E**xtensível -> O software não é estático. Ele deve crescer para permanecer útil;
-        5 - **R**eutilizável -> Podemos usar objetos que criamos em outro sistema futuro;
-        6 - **Na**tural -> Mais fácil de entender. Você se preocupa mais na funcionalidade do que nos detalhes de implementação.
+        1. **C**onfiável -> O isolamento entre as partes gera o software seguro. Ao alterar uma parte, nenhuma outra é afetada;
+        2. **O**portuno -> Ao dividir tudo em partes, várias delas podem ser desenvolvidas em paralelo;
+        3. **M**anutenível -> Atualizar um software é mais fácil. Uma pequena modificação vai beneficiar todas as partes que usarem o objeto;
+        4. **E**xtensível -> O software não é estático. Ele deve crescer para permanecer útil;
+        5. **R**eutilizável -> Podemos usar objetos que criamos em outro sistema futuro;
+        6. **Na**tural -> Mais fácil de entender. Você se preocupa mais na funcionalidade do que nos detalhes de implementação.
 
 <br>
 
