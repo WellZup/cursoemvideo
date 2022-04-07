@@ -453,7 +453,7 @@ https://www.jetbrains.com/idea/guide/tutorials
 5. Aula 5  ✅
     - Aula Teórica 5 – Exemplo Prático com Objetos
     - Aula Prática 5 – Exemplo Prático em Java
-6. Aula 6 
+6. Aula 6 ✅
     - Aula Teórica 6 – Pilares da POO: Encapsulamento
     - Aula Prática 6 – Encapsulamento
 7. Aula 7 

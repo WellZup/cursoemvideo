@@ -47,7 +47,7 @@
 5. Aula 5  ✅
     - Aula Teórica 5 – Exemplo Prático com Objetos
     - Aula Prática 5 – Exemplo Prático em Java
-6. Aula 6 
+6. Aula 6 ✅
     - Aula Teórica 6 – Pilares da POO: Encapsulamento
     - Aula Prática 6 – Encapsulamento
 7. Aula 7 
@@ -1370,57 +1370,57 @@ A única parte do objeto que o resto do sistema precisa conhecer é sua interfac
 
 <br>
 
-<img src="img/aula6-01.png">
+<img src="./img/aula06/aula6-01.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula6-02.png">
+<img src="./img/aula06/aula6-02.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula6-03.png">
+<img src="./img/aula06/aula6-03.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula6-04.png">
+<img src="./img/aula06/aula6-04.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula6-05.png">
+<img src="./img/aula06/aula6-05.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula6-06.png">
+<img src="./img/aula06/aula6-06.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula6-07.png">
+<img src="./img/aula06/aula6-07.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula6-08.png">
+<img src="./img/aula06/aula6-08.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula6-09.png">
+<img src="./img/aula06/aula6-09.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula6-10.png">
+<img src="./img/aula06/aula6-10.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula6-11.png">
+<img src="./img/aula06/aula6-11.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula6-12.png">
+<img src="./img/aula06/aula6-12.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula6-13.png">
+<img src="./img/aula06/aula6-13.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula6-14.png">
+<img src="./img/aula06/aula6-14.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula6-15.png">
+<img src="./img/aula06/aula6-15.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula6-16.png">
+<img src="./img/aula06/aula6-16.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula6-17.png">
+<img src="./img/aula06/aula6-17.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula6-18.png">
+<img src="./img/aula06/aula6-18.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula6-19.png">
+<img src="./img/aula06/aula6-19.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula6-20.png">
+<img src="./img/aula06/aula6-20.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula6-21.png">
+<img src="./img/aula06/aula6-21.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula6-22.png">
+<img src="./img/aula06/aula6-22.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula6-23.png">
+<img src="./img/aula06/aula6-23.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula6-24.png">
+<img src="./img/aula06/aula6-24.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula6-25.png">
+<img src="./img/aula06/aula6-25.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula6-26.png">
+<img src="./img/aula06/aula6-26.png">
 
 
 <hr>
