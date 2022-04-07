@@ -1343,9 +1343,87 @@ Status: false
 
 ### 6. Aula 6
 
-#### Aula Teórica 6 – Pilares da POO: Encapsulamento
+<u>Aula Teórica 6 – Pilares da POO: Encapsulamento</u>
 
 Nessa aula de POO, vamos aprender quais são os três pilares da Programação Orientada a Objetos e vamos estudar o primeiro pilar: o **Encapsulamento** da POO.
+
+Os três pilares da POO são: **Encapsulamento, Herança e Polimorfismo.**
+
+Alguns autores citam 3 pilares da POO e outros citam 4 pilares da POO.
+
+Para os autores que citam 4 os pilares principais da POO: 
+
+A E H P : ABSTRAÇÃO, ENCAPSULAMENTO, HERANÇA E POLIMORFISMO.
+
+O prof. Gustavo Guanabara, ensina como 3 os pilares principais da POO:
+
+E H P : **ENCAPSULAMENTO**, **HERANÇA** E **POLIMORFISMO**.
+
+- Dica: Para lembrar dos pilares pensa nome da sua impressora: 
+- “É - H - P ?” — ENCAPSULAMENTO - HERANÇA - POLIMORFISMO.
+<br>
+- OBS: Por exemplo, o prof. Gustavo Guanabara, diz que são 3 pilares da POO. 
+Nesse caso, a ABSTRAÇÃO está dentro do ENCAPSULAMENTO.
+
+<br>
+
+- **Encapsulamento**
+
+[Conceito de Encapsulamento] &rarr; Encapsular significa esconder a implementação dos objetos. O encapsulamento favorece principalmente dois aspectos de um sistema: a manutenção e a evolução.
+
+Consiste na ideia de proteger o usuário do código e o código do usuário, **ocultando partes internas do mundo exterior**. 
+Além de proteção, também é usado para padronizar objetos. 
+Ex: Imagina uma pilha de controle remoto.
+<br>
+
+
+
+**Exemplo:** uma pilha possui todos os seus atributos guardados (propriedades químicas dentro dela), com isso, para nos proteger — e vice-versa — , ela nos oferece apenas a sua energia, através de uma interface* (os polos: positivo e o negativo) que nesse exemplo, a interface são as extremidades da pilha.
+
+- Vantagens do encapsulamento em Java:
+    - Tornar mudanças invisíveis;
+    - Facilitar reutilização de código;
+    - Reduzir efeitos colaterais.
+<br>
+
+- **O que é uma interface?**
+**Interface** é tudo aquilo que está disponível para o usuário. 
+Por exemplo: Os pedais de um carro, e os botões de um controle são exemplos de interfaces.
+
+Como criar uma interface?
+
+Toda interface precisa de métodos/funções, afinal quando apertamos um botão estamos realizando uma ação. 
+Esses métodos são sempre *públicos (public) e abstratos (abstract)*:
+- **public** porque todo mundo pode chamar e realizar a ação;
+- **abstract** porque o usuário não precisa saber o que acontece “por trás dos panos” quando ele realiza uma ação e nem de onde os códigos vêm.
+
+Exemplo de uma interface, com o nome Controlador:
+
+```java
+package aula06;
+public interface Controlador {
+    public abstract void ligar();
+    public abstract void desligar(); 
+    ...
+}
+```
+
+No exemplo acima, apenas dizemos: “Olha, há duas funções: ligar/desligar e você pode chamar elas quando quiser”, porém, o usuário do programa não precisa saber necessariamente como elas funcionam.
+
+- Como “conectar” a interface para usar as funções da classe?
+Na classe ControleRemoto.java, faremos o uso do **implements** (após ter criado a interface), ele será responsável para criar essa “conexão” entre a interface e o código definitivamente:
+
+```java
+public class ControleRemoto implements Controlador {
+  ...
+}
+```
+
+
+---
+
+- Material Complementar:
+
 
 **Encapsulamento**
 
@@ -1366,7 +1444,9 @@ Podemos dizer portanto que os objetos possuem uma parte interna, os dados, que n
 
 **Ocultação de informações**: um objeto possui uma interface pública que outros objetos podem utilizar para comunicarem-se com ele. Mas o objeto pode manter informações privadas e métodos podem ser modificados em qualquer momento sem afetar os outros objetos que dependem dele. Por exemplo, você não precisa de entender o funcionamento interno do mecanismo de marchas da sua bicicleta para utilizá-lo.
 
-A única parte do objeto que o resto do sistema precisa conhecer é sua interface.
+A única parte do objeto que o resto do sistema precisa conhecer é sua **interface**.
+
+---
 
 <br>
 
