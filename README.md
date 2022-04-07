@@ -450,7 +450,7 @@ https://www.jetbrains.com/idea/guide/tutorials
 4. Aula 4  ✅
     - Aula Teórica 4 – Métodos Especiais
     - Aula Prática 4 – Métodos Getter, Setter e Construtor
-5. Aula 5  
+5. Aula 5  ✅
     - Aula Teórica 5 – Exemplo Prático com Objetos
     - Aula Prática 5 – Exemplo Prático em Java
 6. Aula 6 

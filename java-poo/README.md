@@ -44,7 +44,7 @@
 4. Aula 4  ✅
     - Aula Teórica 4 – Métodos Especiais
     - Aula Prática 4 – Métodos Getter, Setter e Construtor
-5. Aula 5  
+5. Aula 5  ✅
     - Aula Teórica 5 – Exemplo Prático com Objetos
     - Aula Prática 5 – Exemplo Prático em Java
 6. Aula 6 
@@ -290,11 +290,7 @@ Nessa aula de POO, vamos aprender os conceitos de Classes e Objetos, passando pe
 
 - **OBJETO**
 
-- [Conceito de Objeto] &rarr; "É a instância de uma classe."
-
-    - **Atributos** (características) &rarr;  Coisas que eu tenho;
-    - **Métodos** (comportamentos) &rarr;  Coisas que eu faço;
-    - **Estado atual** (estado/características atuais no momento que estou analisando o objeto) &rarr;  Como eu estou agora.
+    - [Conceito de Objeto] &rarr; "É a instância de uma classe."
 
     <br>
 
@@ -303,14 +299,27 @@ Nessa aula de POO, vamos aprender os conceitos de Classes e Objetos, passando pe
     - [Conceito de Classe] &rarr; "Define os atributos e métodos comuns que serão compartilhados por um objeto."
 
     - **Classes** são os modelos ou moldes nos quais surgirão os objetos. 
-    As classes definem algumas propriedades e métodos que deverão fazer parte do objeto que derivar dela ou então, como dizemos, os objetos que serão instanciados a partir dela.
+    
+    - As classes definem algumas propriedades e métodos que deverão fazer parte do objeto que derivar dela ou então, como dizemos, os objetos que serão instanciados a partir dela.
+    <br>
+    
+    - **Atributos** (características) &rarr;  Coisas que eu tenho?
+    - **Métodos** (comportamentos) &rarr;  Coisas que eu faço?
+    - **Estado atual** (característica/estado atual no momento que estou analisando o objeto) &rarr;  Como eu estou agora?
+    <br>
+    * Em POO, essas perguntas são representadas da seguinte maneira:
+    1. **Atributos** = Como o objeto é;
+    2. **Métodos** = O que o objeto faz;
+    3. **Estado** = Estado atual.
+    
+    - Dica: Para gravar **A**TRIBUTOS, **M**ÉTODOS & **E**STADO, lembre-se da sigla AME.
 
 <br>
 
 - **OBJETO**
 
-    É a instância de uma classe. 
-    **Instanciar** é quando pego uma classe e consigo gerar um objeto a partir dela.
+    [Conceito de Objeto] &rarr; É a instância de uma classe. 
+    **Instanciar** é quando pego uma *Classe* e consigo gerar um *Objeto* a partir dela.
 
 <br>
 
@@ -696,7 +705,8 @@ public class Caneta {
 ```
 
 O exemplo acima é um *Constructor* que recebe 3 parâmetros (uma *String* para Modelo, um *float* para Ponta e uma *String* para Cor). Parâmetros que devem ser passados sempre que for criado um novo objeto com o Construtor Caneta.
-O Constructor sempre recebem o nome da classe, que nesse exemplo, ele é um Construtor da classe Caneta.java e são facilmente percebidos pois **não possuem** a declaração void, String, int etc.
+<br>
+O Constructor sempre recebem o nome da classe, que nesse exemplo, ele é um Construtor da classe Caneta.java e são facilmente percebidos pois **não possuem** a declaração void, String, int, float, etc.
 
 
 ---
@@ -865,7 +875,9 @@ Está tampada? true
     - https://www.youtube.com/watch?v=btqCYUc3nFE
     <br>
     -   IntelliJ IDEA - Main Menu, select **Code**  | **Generate**:
+    <br>
         -  ⌘ + N , to open the popup menu with available constructs that you can generate.
+    <br>
             - Generate constructors
             - Generate getters and setters
 
@@ -990,41 +1002,108 @@ Está tampada? false
 
 ### 5. Aula 5
 
-#### Aula Teórica 5 – Exemplo Prático com Objetos
+<u>Aula Teórica 5 – Exemplo Prático com Objetos</u>
 
 Nessa aula de POO, vamos fazer um exemplo prático com Programação Orientada a Objetos, usando tudo aquilo que aprendemos até aqui.
 
-<img src="img/aula5-01.png">
+Criação de um protótipo de sistema bancário, confira os requisitos abaixo:
+
+```markdown
+Exercício – Duas pessoas querem abrir uma conta no banco, o Jubileu e a Creusa. 
+O Jubileu optou por abrir uma conta poupança, e irá deposita 300 reais na sua conta. 
+A Creusa, possui mais dinheiro e quer depositar 500 reais em uma conta corrente. 
+Para isso, eles precisam abrir uma conta no banco. 
+Os atributos e métodos da ContaBanco estão expostos abaixo, 
+com base nesse diagrama de classes.
+
+Requisitos: 
+
+1. O tipo da conta, só aceita dois caracteres, cc e cp. 
+Conta corrente(cc) e conta poupança (cp), respectivamente.
+
+2. Na hora de abrir conta, eu mudo o status de falso para verdadeiro. 
+É nesse momento que decido qual conta vou abrir:
+- para uma cp já recebe um presente de 150 reais, 
+- para uma cc já recebe um presente de 50 reais.
+
+3. Para fechar conta, o Jubileu ou a Creusa 
+não vão poder ter dinheiro dentro da sua conta ou saldo devedor.
+
+4. Para fazer um depósito ou sacar, 
+a conta já deve ter sido aberta com status verdadeiro. 
+No caso do saque, eu devo já ter dinheiro dentro, 
+e o valor do saque não deve ser superior ao seu saldo.
+
+5. A mensalidade vai ser cobrada diretamente do saldo. 
+Na hora que for chamado a mensalidade(), o cliente com cc pagará 12 reais, 
+e o cliente com cp pagará 20 reias de mensalidade.
+
+6. Você precisará usar o método getter e setter para TODOS os atributos.
+
+7. É necessário ter um método construtor, 
+onde o seu status será definido como zero e 
+o saldo definido como zero, pois a conta está fechada.
+
+8. Visibilidades: 
+      -> numConta ( + )
+      -> tipo ( # )
+      -> dono ( - )
+      -> saldo ( - )
+      -> status ( - )
+      
+Todos os métodos especiais (getter e setter) devem ser públicos. 
+Os demais métodos, privados.
+      
+Legenda das Visibilidades: 
+      ( + ) é public. 
+      ( - ) é private. 
+      ( # ) é protected.
+```
+
+- Slides da Aula 05:
+
+<img src="./img/aula05/aula5-01.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula5-02.png">
+<img src="./img/aula05/aula5-02.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula5-03.png">
+<img src="./img/aula05/aula5-03.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula5-04.png">
+<img src="./img/aula05/aula5-04.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula5-05.png">
+<img src="./img/aula05/aula5-05.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula5-06.png">
+<img src="./img/aula05/aula5-06.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula5-07.png">
+<img src="./img/aula05/aula5-07.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula5-08.png">
+<img src="./img/aula05/aula5-08.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula5-09a.png">
+<img src="./img/aula05/aula5-09a.png">
+<a href="#" target="_blank"></a> 
+<img src="./img/aula05/aula5-09b.png"> 
 <a href="#" target="_blank"></a>
-<img src="img/aula5-09b.png">
+<img src="./img/aula05/aula5-10.png">
+<a href="#" target="_blank"></a> 
+<img src="./img/aula05/aula5-11.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula5-10.png">
+<img src="./img/aula05/aula5-12.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula5-11.png">
-<a href="#" target="_blank"></a>
-<img src="img/aula5-12.png">
+
+<br>
+
+---
+
+<u>Aula Prática 5 – Exemplo Prático em JAVA</u>
+
+Nessa aula de POO, vamos fazer um grande exercício de Programação Orientada a Objetos utilizando Java.
+
+- Criar a Classe ContaBanco
+
+<img src="./img/aula05/aula5-02.png" width="300px">
 <a href="#" target="_blank"></a>
 
 
-
-#### Aula Prática 5 – Exemplo Prático em PHP
-
+---
 
 <br>
 
