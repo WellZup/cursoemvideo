@@ -307,12 +307,13 @@ Nessa aula de POO, vamos aprender os conceitos de Classes e Objetos, passando pe
     - **Métodos** (comportamentos) &rarr;  Coisas que eu faço?
     - **Estado atual** (característica/estado atual no momento que estou analisando o objeto) &rarr;  Como eu estou agora?
     <br>
-    * Em POO, essas perguntas são representadas da seguinte maneira:
-    1. **Atributos** = Como o objeto é;
-    2. **Métodos** = O que o objeto faz;
-    3. **Estado** = Estado atual.
+* Em POO, essas perguntas são representadas da seguinte maneira: <br>
+
+1. **Atributos** = Como o objeto é;
+2. **Métodos** = O que o objeto faz;
+3. **Estado** = Estado atual.
     
-    - Dica: Para gravar **A**TRIBUTOS, **M**ÉTODOS & **E**STADO, lembre-se da sigla AME.
+- Dica: Para gravar **A**TRIBUTOS, **M**ÉTODOS & **E**STADO, lembre-se da sigla AME.
 
 <br>
 
