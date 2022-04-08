@@ -2254,7 +2254,15 @@ Na programação OO, o encapsulamento se refere ao agrupamento de dados com os m
     - objeto-tipo
     - objeto-parte
 
+#### Representação de Agregação
+
+- Um losango na extremidade da classe que contém os objetos-todo.
+
+- Link PowerPoint, material adicional, clique aqui: [Relacionamentos do Diagrama de Classes](https://homepages.dcc.ufmg.br/~figueiredo/disciplinas/aulas/uml-diagrama-classes-relacionamentos_v01.pdf)
+
 <br>
+
+---
 
 **Associação**, **Agregação** e **Composição** em Java, são chamados de **relacionamento entre classes**, logo, compartilham dados entre si.
 
@@ -2271,7 +2279,10 @@ Veja só o exemplo:
 
 <code> Agregação em diagrama sendo representado pelo losango branco. Livro é parte do todo. </code>
 
-Criada duas classes: Pessoa e Livro, a classe Livro faz parte direta da Pessoa, pois pessoas leem livros. Ou seja, agregação ocorre quando uma classe usa outras em suas operações. As classes utilizadas (Livro) participam da classe principal (Pessoa), mas a classe principal não contém estas classes utilizadas como sendo partes suas.
+
+<br><br>
+
+- **Composição**: Vínculo Forte (Se a classe pai deixar de existir a filha também deixa). Na composição, se a classe responsável pelo relacionamento for excluída, então deve-se excluir a classe que ele possui relacionamento. As partes devem ser criadas após o todo, e uma vez criadas, elas vivem e morre com o todo.
 
 <img src="./img/aula08/aula8-f2.png">
 
@@ -2279,16 +2290,6 @@ Criada duas classes: Pessoa e Livro, a classe Livro faz parte direta da Pessoa, 
 
 <br>
 
-- **Composição**: Vínculo Forte (Se a classe pai deixar de existir a filha também deixa). Na composição, se a classe responsável pelo relacionamento for excluída, então deve-se excluir a classe que ele possui relacionamento. As partes devem ser criadas após o todo, e uma vez criadas, elas vivem e morre com o todo.
-
-
-**Representação de Agregação**
-
-- Um losango na extremidade da classe que contém os objetos-todo.
-
-- Link PowerPoint, material adicional, clique aqui: [Relacionamentos do Diagrama de Classes](https://homepages.dcc.ufmg.br/~figueiredo/disciplinas/aulas/uml-diagrama-classes-relacionamentos_v01.pdf)
-
-<br>
 
 ---
 
@@ -2332,6 +2333,399 @@ Nessa aula de POO, vamos aprender como realizar um relacionamento de agregação
 
 <u> Aula Prática 8 – Agregação entre Objetos em Java </u>
 
+<br>
+
+<code> class Lutador </code>
+
+```java
+
+package aula08;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Lutador {
+
+    // ATTRIBUTES
+
+    private String nome;
+    private String nacionalidade;
+    private int idade;
+    private float altura;
+    private float peso;
+    private String categoria;
+    private int vitorias;
+    private int derrotas;
+    private int empates;
+
+    // PUBLIC METHODS
+
+    public void apresentar(){
+        // System.out.println("APRESENTAÇÃO DO LUTADOR");
+        System.out.println("----------------------------------------");
+        System.out.println("Lutador: " + this.getNome());
+        System.out.println("Nacionalidade: " + this.getNacionalidade());
+        System.out.println("Idade: " + this.getIdade() + " anos");
+        System.out.println("Peso: " +  this.getPeso() + " Kg");
+        System.out.print("Vitorias: " + this.getVitorias() + "; ");
+        System.out.print("Empates: " + this.getEmpates() + "; ");
+        System.out.print("Derrotas: " + this.getDerrotas() + "\n");
+        // System.out.println("----------------------------------------");
+        // System.out.println("\n");
+    }
+    public void status(){
+        // System.out.println("STATUS DO LUTADOR");
+        System.out.println("----------------------------------------");
+        System.out.println("Nome: " + this.getNome());
+        System.out.println("Categoria: " + this.getCategoria());
+        System.out.print("Vitorias: " + this.getVitorias() + "; ");
+        System.out.print("Empates: " + this.getEmpates() + "; ");
+        System.out.print("Derrotas: " + this.getDerrotas() + "\n");
+        // System.out.println("----------------------------------------");
+        // System.out.println("\n");
+    }
+    public void ganharLuta(){
+        this.setVitorias(this.getVitorias() + 1);
+    }
+    public void perderLuta(){
+        this.setDerrotas(this.getDerrotas() + 1);
+    }
+    public void empatarLuta(){
+        this.setEmpates(this.getEmpates() + 1);
+    }
+
+    // SPECIAL METHODS
+
+    // Constructor
+    // OBS: A categoria não será selecionada no método construtor!
+    // Por que? Porque a categoria sera calcula nos método: setPeso(peso)
+
+    public Lutador(String nome, String nacionalidade, int idade, float altura, float peso, int vitorias, int derrotas, int empates) {
+        this.nome = nome;
+        this.nacionalidade = nacionalidade;
+        this.idade = idade;
+        this.altura = altura;
+        this.setPeso(peso); // this.peso = peso;
+        this.vitorias = vitorias;
+        this.derrotas = derrotas;
+        this.empates = empates;
+    }
+
+    // Getters and Setters
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getNacionalidade() {
+        return nacionalidade;
+    }
+
+    public void setNacionalidade(String nacionalidade) {
+        this.nacionalidade = nacionalidade;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public float getAltura() {
+        return altura;
+    }
+
+    public void setAltura(float altura) {
+        this.altura = altura;
+    }
+
+    public float getPeso() {
+        return peso;
+    }
+
+    public void setPeso(float peso) {
+        this.peso = peso;
+        this.setCategoria();
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    // setCategoria() -> será um método interno, pois a categoria muda conforme o peso
+    private void setCategoria() {
+        if ( this.peso < 52.2F ) {
+            this.categoria = "Inválido";
+        }
+        else if ( this.peso <= 70.3F ) {
+            this.categoria = "Leve";
+        }
+        else if ( this.peso <= 83.9F ) {
+            this.categoria = "Médio";
+        }
+        else if ( this.peso <= 120.2F ) {
+            this.categoria = "Pesado";
+        }
+        else {
+            this.categoria = "Inválido";
+        }
+    }
+
+    public int getVitorias() {
+        return vitorias;
+    }
+
+    public void setVitorias(int vitorias) {
+        this.vitorias = vitorias;
+    }
+
+    public int getDerrotas() {
+        return derrotas;
+    }
+
+    public void setDerrotas(int derrotas) {
+        this.derrotas = derrotas;
+    }
+
+    public int getEmpates() {
+        return empates;
+    }
+
+    public void setEmpates(int empates) {
+        this.empates = empates;
+    }
+}
+```
+
+
+<code> class Luta </code>
+
+```java
+package aula08;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Random;
+
+public class Luta {
+
+    // ATTRIBUTES
+    private Lutador desafiado;
+    private Lutador desafiante;
+    private  int rounds;
+    private boolean aprovada;
+
+    // PUBLIC METHODS
+
+    public void mensagem() {
+        Date data = new Date();
+        SimpleDateFormat df = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+        System.out.println("Data: " + df.format(data));
+
+        System.out.println("----------------------------------------");
+        System.out.println(" 'Ladies and gentlemen, we are live!' ");
+        System.out.println(" 'This is the moment you've all been waiting for' ");
+        System.out.println(" 'It's time!' ");
+        System.out.println("----------------------------------------");
+        // System.out.println("\n");
+    }
+
+    public void marcarLuta(Lutador L1, Lutador L2) {
+
+        // L1.getCategoria().equals(L2.getCategoria())
+      if ( ( L1.getCategoria() == L2.getCategoria()  )  && ( L1 != L2 ) ) {
+              this.aprovada = true;
+              this.desafiado = L1;
+              this.desafiante = L2;
+          } else {
+              this.aprovada = false;
+              this.desafiado = null;
+              this.desafiante = null;
+          }
+    }
+
+    public void lutar() {
+
+        if (this.aprovada) {
+            System.out.println("\n ### DESAFIADO ###");
+            this.desafiante.apresentar();
+            System.out.println("\n ### DESAFIANTE ###");
+            this.desafiado.apresentar();
+
+            // Gerar Numero Aleatorio de 0 a 2, ou seja: { 0 , 1 , 2 }
+            Random aleatorio = new Random();
+
+            int vencedor = aleatorio.nextInt(3); // Vai gerar 3 resultados: { 0 , 1 , 2 }
+
+            // 0 = EMPATE
+            // 1 = GANHOU DESAFIADO
+            // 2 = GANHOU DESAFIANTE"
+
+            switch (vencedor) {
+                case 0:
+                    System.out.println("\n ### EMPATE: " + this.desafiado.getNome() + " VS "  + this.desafiante.getNome());
+                    this.desafiado.empatarLuta();
+                    this.desafiante.empatarLuta();
+                    break;
+                case 1:
+                    System.out.println("\n ### GANHOU DESAFIADO! -> " + this.desafiado.getNome());
+                    this.desafiado.ganharLuta();
+                    this.desafiante.perderLuta();
+                    break;
+                case 2:
+                    System.out.println("\n ### GANHOU DESAFIANTE! -> " + this.desafiante.getNome());
+                    this.desafiante.ganharLuta();
+                    this.desafiado.perderLuta();
+                    break;
+                default:
+                    System.out.println("NÃO HOUVE VENCEDOR!"); // Opcional
+            }
+        } else {
+            System.out.println(" A luta não pode acontecer!");
+        }
+    }
+
+    // SPECIAL METHODS
+    public Lutador getDesafiado() {
+        return desafiado;
+    }
+
+    public void setDesafiado(Lutador desafiado) {
+        this.desafiado = desafiado;
+    }
+
+    public Lutador getDesafiante() {
+        return desafiante;
+    }
+
+    public void setDesafiante(Lutador desafiante) {
+        this.desafiante = desafiante;
+    }
+
+    public int getRounds() {
+        return rounds;
+    }
+
+    public void setRounds(int rounds) {
+        this.rounds = rounds;
+    }
+
+    public boolean isAprovada() {
+        return aprovada;
+    }
+
+    public void setAprovada(boolean aprovada) {
+        this.aprovada = aprovada;
+    }
+}
+
+```
+
+<code> &rarr; Run 🖥️ &lt;Aula08&gt; </code>
+
+```markdown
+/Library/Java/JavaVirtualMachines/jdk-18.jdk/Contents/Home/bin/java -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52680:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -classpath /Users/eduardo/IdeaProjects/poo-aula08/out/production/poo-aula08 aula08.Aula08
+
+------------------------------------ Luta peso leve ----------------------------------------------
+Data: 08-04-2022 03:05:25
+----------------------------------------
+ 'Ladies and gentlemen, we are live!' 
+ 'This is the moment you've all been waiting for' 
+ 'It's time!' 
+----------------------------------------
+
+ ### DESAFIADO ###
+----------------------------------------
+Lutador: v[1]. Putscript
+Nacionalidade: Brasil
+Idade: 29 anos
+Peso: 57.8 Kg
+Vitorias: 14; Empates: 3; Derrotas: 2
+
+ ### DESAFIANTE ###
+----------------------------------------
+Lutador: v[0]. Pretty Boy
+Nacionalidade: França
+Idade: 31 anos
+Peso: 68.9 Kg
+Vitorias: 11; Empates: 1; Derrotas: 2
+
+ ### EMPATE: v[0]. Pretty Boy VS v[1]. Putscript
+----------------------------------------
+Nome: v[0]. Pretty Boy
+Categoria: Leve
+Vitorias: 11; Empates: 2; Derrotas: 2
+----------------------------------------
+Nome: v[1]. Putscript
+Categoria: Leve
+Vitorias: 14; Empates: 4; Derrotas: 2
+
+------------------------------------ Luta peso medio ----------------------------------------------
+
+ ### DESAFIADO ###
+----------------------------------------
+Lutador: v[3]. Dead Code
+Nacionalidade: Austrália
+Idade: 28 anos
+Peso: 81.6 Kg
+Vitorias: 13; Empates: 2; Derrotas: 0
+
+ ### DESAFIANTE ###
+----------------------------------------
+Lutador: v[2]. Snapshadown
+Nacionalidade: EUA
+Idade: 35 anos
+Peso: 80.9 Kg
+Vitorias: 12; Empates: 1; Derrotas: 2
+
+ ### GANHOU DESAFIADO! -> v[2]. Snapshadown
+----------------------------------------
+Nome: v[3]. Dead Code
+Categoria: Médio
+Vitorias: 13; Empates: 2; Derrotas: 1
+----------------------------------------
+Nome: v[2]. Snapshadown
+Categoria: Médio
+Vitorias: 13; Empates: 1; Derrotas: 2
+
+------------------------------------ Luta peso pesado ----------------------------------------------
+
+ ### DESAFIADO ###
+----------------------------------------
+Lutador: v[5]. Nederland
+Nacionalidade: EUA
+Idade: 30 anos
+Peso: 105.7 Kg
+Vitorias: 12; Empates: 4; Derrotas: 2
+
+ ### DESAFIANTE ###
+----------------------------------------
+Lutador: v[4]. Ufocobol
+Nacionalidade: Brasil
+Idade: 37 anos
+Peso: 119.3 Kg
+Vitorias: 5; Empates: 3; Derrotas: 4
+
+ ### EMPATE: v[4]. Ufocobol VS v[5]. Nederland
+----------------------------------------
+Nome: v[5]. Nederland
+Categoria: Pesado
+Vitorias: 12; Empates: 5; Derrotas: 2
+----------------------------------------
+Nome: v[4]. Ufocobol
+Categoria: Pesado
+Vitorias: 5; Empates: 4; Derrotas: 4
+
+Process finished with exit code 0
+```
+
+<br>
 
 ---
 
@@ -2346,37 +2740,38 @@ Nessa aula de POO, vamos aprender como realizar um relacionamento de agregação
 
 Nessa aula de POO, vamos fazer alguns exercícios de Programação Orientada a Objeto conceituais que já apareceram em concursos. Coloque em prática tudo aquilo que aprendeu até aqui.
 
-<img src="img/aula9-01.png">
+<img src="./img/aula09/aula9-01.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula9-02.png">
+<img src="./img/aula09/aula9-02.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula9-03.png">
+<img src="./img/aula09/aula9-03.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula9-04.png">
+<img src="./img/aula09/aula9-04.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula9-05.png">
+<img src="./img/aula09/aula9-05.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula9-06.png">
+<img src="./img/aula09/aula9-06.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula9-07.png">
+<img src="./img/aula09/aula9-07.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula9-08.png">
+<img src="./img/aula09/aula9-08.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula9-09.png">
+<img src="./img/aula09/aula9-09.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula9-10.png">
+<img src="./img/aula09/aula9-10.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula9-11.png">
+<img src="./img/aula09/aula9-11.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula9-12.png">
+<img src="./img/aula09/aula9-12.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula9-13.png">
+<img src="./img/aula09/aula9-13.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula9-14.png">
+<img src="./img/aula09/aula9-14.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula9-15.png">
+<img src="./img/aula09/aula9-15.png">
 <a href="#" target="_blank"></a>
 
+<br><br>
 
 * Q1 -> Uma casa está para uma planta arquitetônica assim como um **objeto** está para... 
 
@@ -2385,12 +2780,12 @@ Nessa aula de POO, vamos fazer alguns exercícios de Programação Orientada a O
 * Q2 -> Vantagens da POO
 
 **C O M E R N**ada
-- **C** -> Confiável
-- **O**-> Oportuno
-- **M** -> Manutenível
-- **E** -> Extensível
-- **R** -> Reutilizavel
-- **N**ada -> Natural
+1. - **C** -> Confiável
+2. - **O**-> Oportuno
+3. - **M** -> Manutenível
+4. - **E** -> Extensível
+5. - **R** -> Reutilizavel
+6. - **N**ada -> Natural
 
 * Q3
 
@@ -2442,16 +2837,16 @@ Nessa aula de POO, vamos fazer alguns exercícios de Programação Orientada a O
 - privado (-) -> é visível somente dentro da classe. Somente a classe atual.
 - protegido (#) -> nível intermediário entre o publico e o privado. A classe atual e todas as sub-classes (filhas)
 
-- Q11
+* Q11
 
 - Conceito de **Encapsulamento** -> A proteção de atributos e operações das classes, fazendo com que estas se comuniquem com o meio externo por meio de suas interfaces.
 
-- Q12
+* Q12
 
 - **Implementação** -> define os detalhes internos do componente
 - **Interface** -> lista os serviços fornecidos por ele.
 
-- Q13
+* Q13
 
 - **ENCAPSULAMENTO** -> é a característica da POO que permite separar o programa em várias partes menores e independentes. Cada parte possui sua implementação isolada e realiza seu trabalho de forma autônoma. Com essa característica é possível ocultar os detalhes internos de cada parte através de uma interface.
 
@@ -2467,6 +2862,8 @@ Nessa aula de POO, vamos fazer alguns exercícios de Programação Orientada a O
 - **MÉTODOS** -> são subprogramas que definem as operações em objetos de uma classe.
 
 <br>
+
+---
 
 #### Aula Prática 9 – Exercício prático POO em PHP
 
