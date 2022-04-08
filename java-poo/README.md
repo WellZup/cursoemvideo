@@ -335,6 +335,7 @@ Nessa aula de POO, vamos aprender os conceitos de Classes e Objetos, passando pe
 
 <br>
 
+
 ---
 
 <u>Aula Prática 2 – Criando Classes e Objetos em Java</u>
@@ -472,6 +473,20 @@ Nessa aula de POO, vamos aprender qual a importância dos modificadores de visib
 | +  | **public** (público)     | a classe atual e todas as outras classes |
 | -  | **private** (privado)    | somente a classe atual |
 | #  | **protected** (protegido)| a classe atual (mãe) e todas as suas sub-classes (filhas) |
+
+---
+
+<u> Material adicional </u>
+
+- Apresentação sobre Diagrama de Classes, do prof. Eduardo Figueiredo
+http://www.dcc.ufmg.br/~figueiredo
+
+- [Apresentação - Diagrama de Classes](https://homepages.dcc.ufmg.br/~figueiredo/disciplinas/aulas/uml-diagrama-classes_v02-1.pdf)
+
+
+---
+
+
 
 
 <img src="./img/aula03/aula3-01.png" widf="400px">
@@ -2218,53 +2233,76 @@ Process finished with exit code 0
 
 ### 8. Aula 8
 
-Objetos são instância de classes.
 
-Preciso de uma Classe para poder instanciar um Objeto.
+<u> Revisão POO </u>: 
 
-Não consigo ter Objetos sem ter uma Classe definindo a estrutura.
+- Objetos são instâncias de classes.
 
-Uma Classe encapsula dados e funcionalidades.
+- Preciso de uma Classe para poder instanciar um Objeto.
+
+- Não consigo ter Objetos sem ter uma Classe definindo a estrutura.
+
+- Uma Classe encapsula dados e funcionalidades.
 
 Na programação OO, o encapsulamento se refere ao agrupamento de dados com os métodos que operam nesses dados ou à restrição do acesso direto a alguns dos componentes de um objeto.
 
+#### Agregação
 
-#### Aula Teórica 8 – Relacionamento de Agregação
+- Tipo especial de associação;
+- Demostra que as informações de um objeto precisam ser complementadas por um objeto de outra classe;
+- Associação Todo-Parte
+    - objeto-tipo
+    - objeto-parte
+
+**Representação de Agregação**
+
+- Um losango na extremidade da classe que contém os objetos-todo.
+
+- Link PowerPoint, material adicional, clique aqui: [Relacionamentos do Diagrama de Classes](https://homepages.dcc.ufmg.br/~figueiredo/disciplinas/aulas/uml-diagrama-classes-relacionamentos_v01.pdf)
+
+<br>
+
+
+<u> Aula Teórica 8 – **Relacionamento de Agregação** </u>
 
 Nessa aula de POO, vamos aprender como realizar um relacionamento de agregação entre classes para gerar objetos ainda mais poderosos.
 
 
-<img src="img/aula8-01.png">
+<img src="./img/aula08/aula8-01.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula8-02.png">
+<img src="./img/aula08/aula8-02.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula8-03.png">
+<img src="./img/aula08/aula8-03.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula8-04.png">
+<img src="./img/aula08/aula8-04.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula8-05.png">
+<img src="./img/aula08/aula8-05.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula8-06.png">
+<img src="./img/aula08/aula8-06.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula8-07.png">
+<img src="./img/aula08/aula8-07.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula8-08.png">
+<img src="./img/aula08/aula8-08.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula8-09.png">
+<img src="./img/aula08/aula8-09.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula8-10.png">
+<img src="./img/aula08/aula8-10.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula8-12.png">
+<img src="./img/aula08/aula8-12.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula8-13.png">
+<img src="./img/aula08/aula8-13.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula8-14.png">
+<img src="./img/aula08/aula8-14.png">
 <a href="#" target="_blank"></a>
-<img src="img/aula8-15.png">
+<img src="./img/aula08/aula8-15.png">
 <a href="#" target="_blank"></a>
 
+---
 
-#### Aula Prática 8 – Agregação entre Objetos em PHP
+<u> Aula Prática 8 – Agregação entre Objetos em Java </u>
+
+
+---
 
 
 <br>
