@@ -2254,6 +2254,34 @@ Na programação OO, o encapsulamento se refere ao agrupamento de dados com os m
     - objeto-tipo
     - objeto-parte
 
+<br>
+
+**Associação**, **Agregação** e **Composição** em Java, são chamados de **relacionamento entre classes**, logo, compartilham dados entre si.
+
+- **Associação**: Esse tipo de associação de classe não é nada mais que uma linha preenchida que conecta uma classe a outra que está sendo referenciada;
+
+<br>
+
+- **Agregação**: Vínculo Fraco (Não são dependentes uma da outra). É a ideia de que uma classe possui uma outra agregada à ela. Faz parte do relacionamento conhecido como “todo-parte”, que significa que ambas as classes estão conceitualmente no mesmo nível, onde um objeto todo tem objetos parte. Se o objeto todo for destruído, as partes ainda continuam vivas.
+
+Veja só o exemplo:
+
+
+<img src="./img/aula08/aula8-f1.png">
+
+<code> Agregação em diagrama sendo representado pelo losango branco. Livro é parte do todo. </code>
+
+Criada duas classes: Pessoa e Livro, a classe Livro faz parte direta da Pessoa, pois pessoas leem livros. Ou seja, agregação ocorre quando uma classe usa outras em suas operações. As classes utilizadas (Livro) participam da classe principal (Pessoa), mas a classe principal não contém estas classes utilizadas como sendo partes suas.
+
+<img src="./img/aula08/aula8-f2.png">
+
+<code> Composição em diagrama sendo representado pelo losango preto. </code>
+
+<br>
+
+- **Composição**: Vínculo Forte (Se a classe pai deixar de existir a filha também deixa). Na composição, se a classe responsável pelo relacionamento for excluída, então deve-se excluir a classe que ele possui relacionamento. As partes devem ser criadas após o todo, e uma vez criadas, elas vivem e morre com o todo.
+
+
 **Representação de Agregação**
 
 - Um losango na extremidade da classe que contém os objetos-todo.
@@ -2262,6 +2290,9 @@ Na programação OO, o encapsulamento se refere ao agrupamento de dados com os m
 
 <br>
 
+---
+
+<br>
 
 <u> Aula Teórica 8 – **Relacionamento de Agregação** </u>
 
