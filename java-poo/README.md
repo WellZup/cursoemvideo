@@ -1704,6 +1704,7 @@ public class Aula06 {
         c.maisVolume();
         c.maisVolume();
         c.pause();
+        c.play();
         c.menosVolume();
         c.abrirMenu();
         c.fecharMenu();
@@ -1718,7 +1719,7 @@ public class Aula06 {
 Abrindo Menu!
 ----------------------------------------------
 Está ligado? true
-Está tocando? false
+Está tocando? true
 Volume: 20 ->  ▲  ▲ 
 ----------------------------------------------
 Fechando Menu!
@@ -1782,13 +1783,436 @@ Nessa aula de POO, vamos aprender como fazer relacionamentos entre as classes.
 ---
 
 
-<u> Aula Prática 7 – Objetos Compostos em PHP </u>
+<u> Aula Prática 7 – Objetos Compostos em Java </u>
 
 Nessa aula de POO, vamos aprender como criar Objetos Compostos criando um vetor de objetos.
 
+Aprendemos sobre o Relacionamento entre as Classes.
+
+As aulas 7 e 8 são complementares, isso é, apesar da divisão, nos vídeos você irá aprender sobre o conceito de Agregação que faz parte da modelagem UML.
+
+
+#### Agregação
+
+- Tipo especial de associação;
+- Demostra que as informações de um objeto precisam ser complementadas por um objeto de outra classe;
+- Associação Todo-Parte
+    - objeto-tipo
+    - objeto-parte
+
+**Representação de Agregação**
+
+- Um losango na extremidade da classe que contém os objetos-todo.
+
 <br>
 
+**O Ultimate Emoji Combate** 
+
+Foi o exercício proposto, confira o resumo dos requisitos abaixo
+
+```markdown
+UltraEmojiCombate - Programa que simula uma arena de combate (com lutadores com nomes esquisitos)
+
+Criar uma classe para os lutadores, onde ela deve ter os seguintes requisitos:
+
+1. Atributos:
+           - nome;
+           - nacionalidade;
+           - idade;
+           - altura;
+           - peso;
+           - categoria;
+           - vitorias;
+           - derrotas;
+           - empates;
+
+2. Métodos públicos:
+
+     + ganharLuta();    // Adiciona mais 1 na variável vitorias
+     + perderLuta();    // Adiciona mais 1 na variável derrotas
+     + empatarLuta();   // Adiciona mais um na variável empates
+     + apresentar();    // Apresenta os dados do lutador 
+     + status();        // Apresenta suas vitórias, derrotas e empates
+        
+3. Métodos especiais:
+
+    Crie um construtor que receba TODAS as informações do lutador, menos a categoria, pois ela,
+    em especial, deve ser definida automaticamente no momento que soubermos qual o peso do atleta;
+    
+    Segue abaixo os dados de todos os 6 atletas que devem ser cadastrados na arena de combate:
+
+    Nome, Nacionalidade, Idade, Altura, Peso, Vitórias, Derrotas Empates;
+
+        "Prettyboy", "Frances", 31, 1.75f, 68.9f, 11, 3, 1
+        "Putscript", "Brasil", 29, 1.68f, 57.8f, 14, 2, 3
+        "Snapshadow", "EUA", 35, 1.65f, 80.9f, 12, 2, 1
+        "Dead code", "Australia", 28, 1.93f, 81.6f, 13, 0, 2
+        "UFOCobol", "Brasil", 37, 1.70f, 119.3f, 5, 4, 3
+        "Nerdart", "EUA", 30, 1.81f, 105.7f, 12, 2, 4
+      
+4. Métodos getter e setter:
+
+    Crie os métodos getter e setter de todos os atributos acima, porém, crie uma condição para que
+    o seu programa defina automaticamente a categoria do lutador baseando-se no peso dele. 
+    
+    Faixas para definir qual a categoria do lutator, onde, se:
+      
+      peso < 52.2 então categoria = "Invalido";
+      peso <= 70.3 então categoria = "Leve";
+      peso <= 83.9 então categoria = "Médio";
+      peso <= 120.2 então categoria = "Pesado";
+      peso > 120.2 então categoria = "Invalido";
+     
+Legenda: 
+    - é igual a privado. 
+    + é igual a público.
+```
+
+<br><br>
+
+<code> class Lutador </code>
+
+```java
+package aula07;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
+public class Lutador {
+
+    // ATTRIBUTES
+
+    private String nome;
+    private String nacionalidade;
+    private int idade;
+    private float altura;
+    private float peso;
+    private String categoria;
+    private int vitorias;
+    private int derrotas;
+    private int empates;
+
+    // PUBLIC METHODS
+
+    public void mensagem() {
+        Date data = new Date();
+        SimpleDateFormat df = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+        System.out.println("Data: " + df.format(data));
+
+        System.out.println("----------------------------------------");
+        System.out.println(" 'Ladies and gentlemen, we are live!' ");
+        System.out.println(" 'This is the moment you've all been waiting for' ");
+        System.out.println(" 'It's time!' ");
+        System.out.println("----------------------------------------");
+        // System.out.println("\n");
+    }
+
+    public void apresentar(){
+        // System.out.println("APRESENTAÇÃO DO LUTADOR");
+        System.out.println("----------------------------------------");
+        System.out.println("Lutador: " + this.getNome());
+        System.out.println("Nacionalidade: " + this.getNacionalidade());
+        System.out.println("Idade: " + this.getIdade() + " anos");
+        System.out.println("Peso: " +  this.getPeso() + " Kg");
+        System.out.print("Vitorias: " + this.getVitorias() + "; ");
+        System.out.print("Empates: " + this.getEmpates() + "; ");
+        System.out.print("Derrotas: " + this.getDerrotas() + "\n");
+        // System.out.println("----------------------------------------");
+        // System.out.println("\n");
+    }
+    public void status(){
+        // System.out.println("STATUS DO LUTADOR");
+        System.out.println("----------------------------------------");
+        System.out.println("Nome: " + this.getNome());
+        System.out.println("Categoria: " + this.getCategoria());
+        System.out.print("Vitorias: " + this.getVitorias() + "; ");
+        System.out.print("Empates: " + this.getEmpates() + "; ");
+        System.out.print("Derrotas: " + this.getDerrotas() + "\n");
+        // System.out.println("----------------------------------------");
+        // System.out.println("\n");
+    }
+    public void ganharLuta(){
+        this.setVitorias(this.getVitorias() + 1);
+    }
+    public void perderLuta(){
+        this.setDerrotas(this.getDerrotas() + 1);
+    }
+    public void empatarLuta(){
+        this.setEmpates(this.getEmpates() + 1);
+    }
+
+    // SPECIAL METHODS
+
+    // Constructor
+    // OBS: A categoria não será selecionada no método construtor!
+    // Por que? Porque a categoria sera calcula nos método: setPeso(peso)
+
+    public Lutador(String nome, String nacionalidade, int idade, float altura, float peso, int vitorias, int derrotas, int empates) {
+        this.nome = nome;
+        this.nacionalidade = nacionalidade;
+        this.idade = idade;
+        this.altura = altura;
+        this.setPeso(peso); // this.peso = peso;
+        this.vitorias = vitorias;
+        this.derrotas = derrotas;
+        this.empates = empates;
+    }
+
+    // Getters and Setters
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getNacionalidade() {
+        return nacionalidade;
+    }
+
+    public void setNacionalidade(String nacionalidade) {
+        this.nacionalidade = nacionalidade;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public float getAltura() {
+        return altura;
+    }
+
+    public void setAltura(float altura) {
+        this.altura = altura;
+    }
+
+    public float getPeso() {
+        return peso;
+    }
+
+    public void setPeso(float peso) {
+        this.peso = peso;
+        this.setCategoria();
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    // setCategoria() -> será um método interno, pois a categoria muda conforme o peso
+    private void setCategoria() {
+        if ( this.peso < 52.2F ) {
+            this.categoria = "Inválido";
+        }
+        else if ( this.peso <= 70.3F ) {
+            this.categoria = "Leve";
+        }
+        else if ( this.peso <= 83.9F ) {
+            this.categoria = "Médio";
+        }
+        else if ( this.peso <= 120.2F ) {
+            this.categoria = "Pesado";
+        }
+        else {
+            this.categoria = "Inválido";
+        }
+    }
+
+    public int getVitorias() {
+        return vitorias;
+    }
+
+    public void setVitorias(int vitorias) {
+        this.vitorias = vitorias;
+    }
+
+    public int getDerrotas() {
+        return derrotas;
+    }
+
+    public void setDerrotas(int derrotas) {
+        this.derrotas = derrotas;
+    }
+
+    public int getEmpates() {
+        return empates;
+    }
+
+    public void setEmpates(int empates) {
+        this.empates = empates;
+    }
+}
+
+```
+
+
+<code> class Aula07 </code>
+
+```java
+package aula07;
+
+public class Aula07 {
+
+    public static void main(String[] args) {
+
+        Lutador arr[] = new Lutador[6];
+
+        arr[0] = new Lutador("[0]. Pretty Boy", "França", 31, 1.75F, 68.9F, 11, 2, 1);
+        arr[1] = new Lutador("[1]. Putscript", "Brasil", 29, 1.68F, 57.8F, 14, 2, 3);
+        arr[2] = new Lutador("[2]. Snapshadown", "EUA", 35, 1.65F, 80.9F, 12, 2, 1 );
+        arr[3] = new Lutador("[3]. Dead Code", "Austrália", 28, 1.93F, 81.6F, 13, 0, 2 );
+        arr[4] = new Lutador("[4]. Ufocobol", "Brasil", 37, 1.70F, 119.3F, 5, 4, 3 );
+        arr[5] = new Lutador("[5]. Nederland", "EUA", 30, 1.81F, 105.7F, 12, 2, 4 );
+
+        arr[0].mensagem(); // Mensagem inicial antes da luta
+
+        // luta peso leve
+        System.out.println("\n # Luta Peso Leve: \n" +
+                arr[0].getNome() + " VS " +
+                arr[1].getNome() );
+
+        arr[0].apresentar();
+        arr[1].apresentar();
+
+        System.out.println("\n Luta Peso Leve: EMPATE");
+        arr[0].empatarLuta();
+        arr[1].empatarLuta();
+
+        arr[0].status();
+        arr[1].status();
+
+        // luta peso médio
+        System.out.println("\n # Luta Peso Médio: \n" +
+                arr[2].getNome() + " VS " +
+                arr[3].getNome() );
+
+        arr[2].apresentar();
+        arr[3].apresentar();
+
+        System.out.println("\n Luta Peso Médio | VITORIA: " + arr[2].getNome());
+        arr[2].ganharLuta();
+        arr[3].perderLuta();
+
+        arr[2].status();
+        arr[3].status();
+
+        // luta peso pesado
+        System.out.println("\n # Luta Peso Pesado: \n" +
+                arr[4].getNome() + " VS " +
+                arr[5].getNome() );
+
+        arr[4].apresentar();
+        arr[5].apresentar();
+
+        System.out.println("\n Luta Peso Pesado | VITORIA: " + arr[4].getNome());
+        arr[4].ganharLuta();
+        arr[5].perderLuta();
+
+        arr[4].status();
+        arr[5].status();
+    }
+}
+```
+
+<code> &rarr; Run 🖥️ &lt;Aula07&gt; </code>
+
+```markdown
+Data: 07-04-2022 23:15:06
+----------------------------------------
+ 'Ladies and gentlemen, we are live!' 
+ 'This is the moment you've all been waiting for' 
+ 'It's time!' 
+----------------------------------------
+
+ # Luta Peso Leve: 
+[0]. Pretty Boy VS [1]. Putscript
+----------------------------------------
+Lutador: [0]. Pretty Boy
+Nacionalidade: França
+Idade: 31 anos
+Peso: 68.9 Kg
+Vitorias: 11; Empates: 1; Derrotas: 2
+----------------------------------------
+Lutador: [1]. Putscript
+Nacionalidade: Brasil
+Idade: 29 anos
+Peso: 57.8 Kg
+Vitorias: 14; Empates: 3; Derrotas: 2
+
+ Luta Peso Leve: EMPATE
+----------------------------------------
+Nome: [0]. Pretty Boy
+Categoria: Leve
+Vitorias: 11; Empates: 2; Derrotas: 2
+----------------------------------------
+Nome: [1]. Putscript
+Categoria: Leve
+Vitorias: 14; Empates: 4; Derrotas: 2
+
+ # Luta Peso Médio: 
+[2]. Snapshadown VS [3]. Dead Code
+----------------------------------------
+Lutador: [2]. Snapshadown
+Nacionalidade: EUA
+Idade: 35 anos
+Peso: 80.9 Kg
+Vitorias: 12; Empates: 1; Derrotas: 2
+----------------------------------------
+Lutador: [3]. Dead Code
+Nacionalidade: Austrália
+Idade: 28 anos
+Peso: 81.6 Kg
+Vitorias: 13; Empates: 2; Derrotas: 0
+
+ Luta Peso Médio | VITORIA: [2]. Snapshadown
+----------------------------------------
+Nome: [2]. Snapshadown
+Categoria: Médio
+Vitorias: 13; Empates: 1; Derrotas: 2
+----------------------------------------
+Nome: [3]. Dead Code
+Categoria: Médio
+Vitorias: 13; Empates: 2; Derrotas: 1
+
+ # Luta Peso Pesado: 
+[4]. Ufocobol VS [5]. Nederland
+----------------------------------------
+Lutador: [4]. Ufocobol
+Nacionalidade: Brasil
+Idade: 37 anos
+Peso: 119.3 Kg
+Vitorias: 5; Empates: 3; Derrotas: 4
+----------------------------------------
+Lutador: [5]. Nederland
+Nacionalidade: EUA
+Idade: 30 anos
+Peso: 105.7 Kg
+Vitorias: 12; Empates: 4; Derrotas: 2
+
+ Luta Peso Pesado | VITORIA: [4]. Ufocobol
+----------------------------------------
+Nome: [4]. Ufocobol
+Categoria: Pesado
+Vitorias: 6; Empates: 3; Derrotas: 4
+----------------------------------------
+Nome: [5]. Nederland
+Categoria: Pesado
+Vitorias: 12; Empates: 4; Derrotas: 3
+
+Process finished with exit code 0
+```
+
+
 ---
+
+<br>
 
 <span id="aula08">
 
