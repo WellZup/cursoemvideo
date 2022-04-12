@@ -1,15 +1,12 @@
-<img src="./img/java_logo.png" alt="logo java" width="100px" />  <img src="./img/IntelliJ_IDEA_Icon.svg.png" alt="logo java" width="100px" /> 
+<img src="./img/java_logo.png" alt="logo java" width="100px" /> <img src="./img/IntelliJ_IDEA_Icon.svg.png" alt="logo java" width="100px" />
 
-### 05. JAVA POO [40 Horas] 
+### 05. JAVA POO [40 Horas]
 
-- Curso completo de **Programação Orientada a Objetos (POO)** com a linguagem JAVA. 
-- Aborda os principais conceitos como Classes, Objetos, instanciamento, abstração, encapsulamento, herança, polimorfismo e muito mais. 
+- Curso completo de **Programação Orientada a Objetos (POO)** com a linguagem JAVA.
+- Aborda os principais conceitos como Classes, Objetos, instanciamento, abstração, encapsulamento, herança, polimorfismo e muito mais.
 - Criado pelo professor Gustavo Guanabara para o Curso em Vídeo, explica todos os conceitos de POO de uma maneira simples, objetiva e divertida.
 
-
-
-
-<h1 align="center"> JAVA POO - Índice</h1> 
+<h1 align="center"> JAVA POO - Índice</h1>
 
 <p align="center"> |&nbsp;&nbsp;&nbsp; 
   <a href="#aula01">Aula 01</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -29,52 +26,51 @@
   <a href="#aula15">Aula 15</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
-
 ### Aulas :bookmark:
 
-1. Aula 1 
-    - Aula Teórica 1 – O que é Programação Orientada a Objetos?
-    - Aula Prática 1 – Instalando o JDK e NetBeans
-2. Aula 2 
-    - Aula Teórica 2 – O que é um Objeto?
-    - Aula Prática 2 – Criando Classes e Objetos em Java
-3. Aula 3 
-    - Aula Teórica 3 – O que é Visibilidade em um Objeto?
-    - Aula Prática 3 – Configurando Visibilidade de Atributos e Métodos
-4. Aula 4 
-    - Aula Teórica 4 – Métodos Especiais
-    - Aula Prática 4 – Métodos Getter, Setter e Construtor
-5. Aula 5 
-    - Aula Teórica 5 – Exemplo Prático com Objetos
-    - Aula Prática 5 – Exemplo Prático em Java
+1. Aula 1
+   - Aula Teórica 1 – O que é Programação Orientada a Objetos?
+   - Aula Prática 1 – Instalando o JDK e NetBeans
+2. Aula 2
+   - Aula Teórica 2 – O que é um Objeto?
+   - Aula Prática 2 – Criando Classes e Objetos em Java
+3. Aula 3
+   - Aula Teórica 3 – O que é Visibilidade em um Objeto?
+   - Aula Prática 3 – Configurando Visibilidade de Atributos e Métodos
+4. Aula 4
+   - Aula Teórica 4 – Métodos Especiais
+   - Aula Prática 4 – Métodos Getter, Setter e Construtor
+5. Aula 5
+   - Aula Teórica 5 – Exemplo Prático com Objetos
+   - Aula Prática 5 – Exemplo Prático em Java
 6. Aula 6
-    - Aula Teórica 6 – Pilares da POO: Encapsulamento
-    - Aula Prática 6 – Encapsulamento
-7. Aula 7 
-    - Aula Teórica 7 – Relacionamento entre Classes
-    - Aula Prática 7 – Objetos Compostos em Java
-8. Aula 8 
-    - Aula Teórica 8 – Relacionamento de Agregação
-    - Aula Prática 8 – Agregação entre Objetos com Java
-9. Aula 9 
-    - Aula Teórica 9 – Exercícios de POO
-    - Aula Prática 9 – Exercício prático POO em Java
-10. Aula 10 
+   - Aula Teórica 6 – Pilares da POO: Encapsulamento
+   - Aula Prática 6 – Encapsulamento
+7. Aula 7
+   - Aula Teórica 7 – Relacionamento entre Classes
+   - Aula Prática 7 – Objetos Compostos em Java
+8. Aula 8
+   - Aula Teórica 8 – Relacionamento de Agregação
+   - Aula Prática 8 – Agregação entre Objetos com Java
+9. Aula 9
+   - Aula Teórica 9 – Exercícios de POO
+   - Aula Prática 9 – Exercício prático POO em Java
+10. Aula 10
     - Aula Teórica 10 – Herança (Parte 1)
     - Aula Prática 10 – Herança (Parte 1)
-11. Aula 11 
+11. Aula 11
     - Aula Teórica 11 – Herança (Parte 2)
     - Aula Prática 11 – Herança (Parte 2)
-12. Aula 12 
+12. Aula 12
     - Aula Teórica 12 – Conceito Polimorfismo (Parte 1)
     - Aula Prática 12 – Polimorfismo em Java (Parte 1)
-13. Aula 13  
+13. Aula 13
     - Aula Teórica 13 – Conceito Polimorfismo (Parte 2)
     - Aula Prática 13 – Polimorfismo Sobrecarga (Parte 2)
-14. Aula 14 
+14. Aula 14
     - Aula Teórica 14 – Exercícios de POO (Parte 2)
     - Aula Prática 14 – Projeto Final em Java (Parte 1)
-15. Aula 15 
+15. Aula 15
     - Aula Teórica 15 – Exercícios de POO (Parte 3)
     - Aula Prática 15 – Projeto Final em Java (Parte 2)
 
@@ -82,40 +78,35 @@
 
 ### Conteúdo do Módulo :bookmark:
 
-
 ### 1. Aula 1
 
 <u>Aula Teórica 1 – O que é Programação Orientada a Objetos?</u>
 
 Nessa aula de POO, vamos aprender o que é Programação Orientada a Objetos e quais são as suas principais vantagens em relação a outros tipos de Linguagem de Programação.
 
-* Como era?
+- Como era?
 
 Programação de baixo nível -> Programação linear -> Programação estruturada -> Programação modular -> POO (Programação Orientada a Objetos)
-
 
 <img src="./img/Diagram.drawio.png">
 <a href="#" target="_blank"></a>
 
-* O que é Programação Orientada a Objetos?
-    - A programação orientada à objetos (POO), surgiu com a finalidade de facilitar a vida de programadores. Na POO, os objetos conversam entre si.
-    - Criada por Alan Kay, um Biólogo e Matemático, que formulou sua “analogia algébrico-biológica” e lançou o postulado de que o computador ideal deveria funcionar como um organismo vivo, isto é, cada “célula” relacionando-se com outras.
-“As coisas simples devem ser simples e as coisas complexas, possíveis.” - Alan Kay
+- O que é Programação Orientada a Objetos? - A programação orientada à objetos (POO), surgiu com a finalidade de facilitar a vida de programadores. Na POO, os objetos conversam entre si. - Criada por Alan Kay, um Biólogo e Matemático, que formulou sua “analogia algébrico-biológica” e lançou o postulado de que o computador ideal deveria funcionar como um organismo vivo, isto é, cada “célula” relacionando-se com outras.
+  “As coisas simples devem ser simples e as coisas complexas, possíveis.” - Alan Kay
 
-* Quem criou (POO) ?
-    - Alan Kay
+- Quem criou (POO) ?
 
+  - Alan Kay
 
-* Linguagens POO
-    - C++
-    - Java
-    - PHP
-    - Python
-    - Ruby
-    - Visual Basic
+- Linguagens POO
+  - C++
+  - Java
+  - PHP
+  - Python
+  - Ruby
+  - Visual Basic
 
-
--  **Vantagens da POO** (C O M E R N a d a)
+* **Vantagens da POO** (C O M E R N a d a)
 
 1. Confiável
 2. Oportuno
@@ -124,11 +115,11 @@ Programação de baixo nível -> Programação linear -> Programação estrutura
 5. Reutilizável
 6. Natural
 
-    <br>
+<br>
 
-- **Vantagens da POO** - Acrônimo : 
+- **Vantagens da POO** - Acrônimo :
 
-    - <strong><big> C O M E R N </strong>a d a </big>
+  - <strong><big> C O M E R N </strong>a d a </big>
 
 1. **C**onfiável -> O isolamento entre as partes gera o software seguro. Ao alterar uma parte, nenhuma outra é afetada;
 2. **O**portuno -> Ao dividir tudo em partes, várias delas podem ser desenvolvidas em paralelo;
@@ -143,24 +134,24 @@ Programação de baixo nível -> Programação linear -> Programação estrutura
 
 <u>Aula Prática 1 – Instalando o JDK e IntelliJ IDEA</u>
 
-<img src="./img/IntelliJ_IDEA_Icon.svg.png" alt="logo java" width="100px" /> 
+<img src="./img/IntelliJ_IDEA_Icon.svg.png" alt="logo java" width="100px" />
 
 - Estou utilizando o IDE, IntelliJ IDEA.
-    - Link para Download: https://www.jetbrains.com/pt-br/idea/download/
 
-- O IntelliJ IDEA é um ambiente de desenvolvimento integrado escrito em Java para o desenvolvimento de software de computador. 
+  - Link para Download: https://www.jetbrains.com/pt-br/idea/download/
+
+- O IntelliJ IDEA é um ambiente de desenvolvimento integrado escrito em Java para o desenvolvimento de software de computador.
 - Ele é desenvolvido pela empresa JetBrains.
 
 - Versão do JAVA, comando no terminal: <code> java -version </code>
 
-    ```markdown
-    eduardo@MacBook ~ % java -version
-    java version "18" 2022-03-22
-    Java(TM) SE Runtime Environment (build 18+36-2087)
-    Java HotSpot(TM) 64-Bit Server VM (build 18+36-2087, mixed mode, sharing)
-    eduardo@MacBook ~ % 
-    ```
-
+  ```markdown
+  eduardo@MacBook ~ % java -version
+  java version "18" 2022-03-22
+  Java(TM) SE Runtime Environment (build 18+36-2087)
+  Java HotSpot(TM) 64-Bit Server VM (build 18+36-2087, mixed mode, sharing)
+  eduardo@MacBook ~ %
+  ```
 
 #### Hello, World
 
@@ -174,26 +165,25 @@ Estou utilizando o IntelliJ IDEA da JetBrains.
 
 [IntelliJIDEA_ReferenceCard](https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf)
 
-
 #### Code completion (IntelliSense):
 
-- Ao digital <code> psvm </code> apresenta <code> public static void main </code> 
+- Ao digital <code> psvm </code> apresenta <code> public static void main </code>
+
 ```java
 public static void main(String[] args) {
-         
-    } 
+
+    }
 ```
 
-- Ao digital <code> sout </code> apresenta <code> System.out.println </code> 
+- Ao digital <code> sout </code> apresenta <code> System.out.println </code>
 
 ```java
-    System.out.println(""); 
+    System.out.println("");
 ```
-
 
 #### Projects
 
--  Programa <code> class HelloWorld </code>
+- Programa <code> class HelloWorld </code>
 
 ```java
 package com.example.helloworld;
@@ -204,7 +194,7 @@ public class HelloWorld {
     public static void main(String[] args) {
 
         // digitar 'sout' <TAB>
-        System.out.println("Hello, World!"); 
+        System.out.println("Hello, World!");
     }
 }
 ```
@@ -214,7 +204,6 @@ public class HelloWorld {
 ```markdown
 Hello, World!
 ```
-
 
 <br>
 
@@ -228,53 +217,54 @@ Nessa aula de POO, vamos aprender os conceitos de Classes e Objetos, passando pe
 
 - **O que é um objeto?**
 
-    [Conceito de Objeto] &rarr; "Coisa material ou abstrata que pode ser percebida pelos sentidos e descrita por meio das suas características, comportamentos e estado atual (status)." [Gustavo Guanabara]
-    
-    * Tudo que tiver **característica** [ATRIBUTO], **comportamento** [MÉTODO/PROCEDIMENTOS/ROTINAS] e **estado atual** [STATUS] é considerado um **objeto**.
+  [Conceito de Objeto] &rarr; "Coisa material ou abstrata que pode ser percebida pelos sentidos e descrita por meio das suas características, comportamentos e estado atual (status)." [Gustavo Guanabara]
 
-    Exemplo de objeto:
-    - Controle Remoto; Caneta.
+  - Tudo que tiver **característica** [ATRIBUTO], **comportamento** [MÉTODO/PROCEDIMENTOS/ROTINAS] e **estado atual** [STATUS] é considerado um **objeto**.
 
-    <br>
+  Exemplo de objeto:
 
-- **OBJETO** 
-
-    Uma **Caneta** é um **Objeto**.
-
-    Antes de criar uma caneta tenho que planejar / classificar como será o objeto caneta, ou seja, tenho que fazer um molde para as canetas (**Classe**)
-    
-    Todo **objeto** vem a partir de uma **classe** (molde que foi gerado para criar o objeto).
+  - Controle Remoto; Caneta.
 
     <br>
- 
+
+- **OBJETO**
+
+  Uma **Caneta** é um **Objeto**.
+
+  Antes de criar uma caneta tenho que planejar / classificar como será o objeto caneta, ou seja, tenho que fazer um molde para as canetas (**Classe**)
+
+  Todo **objeto** vem a partir de uma **classe** (molde que foi gerado para criar o objeto).
+
+    <br>
 
 - **CLASSE**
 
-    - Uma **classe** precisa responde as 3 perguntas abaixo:
+  - Uma **classe** precisa responde as 3 perguntas abaixo:
 
     <br>
 
-    * 1 - **Coisas que eu tenho? &nbsp;&nbsp; <big>(ATRIBUTO)</big>**
-        - Modelo
-        - Cor
-        - Ponta
-        - Carga
-        - Tampada
+  - 1 - **Coisas que eu tenho? &nbsp;&nbsp; <big>(ATRIBUTO)</big>**
 
-    * 2 - **Coisas que eu faço? &nbsp;&nbsp; <big>(MÉTODO)</big>**
-        - Escrever( )
-        - Rabiscar( )
-        - Pintar( )
-        - Tampar( )
-        - Destampar( )
+    - Modelo
+    - Cor
+    - Ponta
+    - Carga
+    - Tampada
 
-    * 3 - **Como eu estou agora? &nbsp;&nbsp; <big>(ESTADO ATUAL)</big>**
-        - Cor azul
-        - Ponta do tipo fina
-        - 50% de carga
-        - A caneta está sem tampa (tampa aberta)
-        - A caneta está escrevendo agora
+  - 2 - **Coisas que eu faço? &nbsp;&nbsp; <big>(MÉTODO)</big>**
 
+    - Escrever( )
+    - Rabiscar( )
+    - Pintar( )
+    - Tampar( )
+    - Destampar( )
+
+  - 3 - **Como eu estou agora? &nbsp;&nbsp; <big>(ESTADO ATUAL)</big>**
+    - Cor azul
+    - Ponta do tipo fina
+    - 50% de carga
+    - A caneta está sem tampa (tampa aberta)
+    - A caneta está escrevendo agora
 
 <img src="./img/aula02/aula2-01.png">
 <a href="#" target="_blank"></a>
@@ -286,55 +276,53 @@ Nessa aula de POO, vamos aprender os conceitos de Classes e Objetos, passando pe
 
 #### POO (Programação Orientada a Objetos)
 
-
-
 - **OBJETO**
 
-    - [Conceito de Objeto] &rarr; "É a instância de uma classe."
+  - [Conceito de Objeto] &rarr; "É a instância de uma classe."
 
     <br>
 
 - **CLASSE**
 
-    - [Conceito de Classe] &rarr; "Define os atributos e métodos comuns que serão compartilhados por um objeto."
+  - [Conceito de Classe] &rarr; "Define os atributos e métodos comuns que serão compartilhados por um objeto."
 
-    - **Classes** são os modelos ou moldes nos quais surgirão os objetos. 
-    
-    - As classes definem algumas propriedades e métodos que deverão fazer parte do objeto que derivar dela ou então, como dizemos, os objetos que serão instanciados a partir dela.
+  - **Classes** são os modelos ou moldes nos quais surgirão os objetos.
+
+  - As classes definem algumas propriedades e métodos que deverão fazer parte do objeto que derivar dela ou então, como dizemos, os objetos que serão instanciados a partir dela.
     <br>
-    
-    - **Atributos** (características) &rarr;  Coisas que eu tenho?
-    - **Métodos** (comportamentos) &rarr;  Coisas que eu faço?
-    - **Estado atual** (característica/estado atual no momento que estou analisando o objeto) &rarr;  Como eu estou agora?
+
+  - **Atributos** (características) &rarr; Coisas que eu tenho?
+  - **Métodos** (comportamentos) &rarr; Coisas que eu faço?
+  - **Estado atual** (característica/estado atual no momento que estou analisando o objeto) &rarr; Como eu estou agora?
     <br>
+
 * Em POO, essas perguntas são representadas da seguinte maneira: <br>
 
 1. **Atributos** = Como o objeto é;
 2. **Métodos** = O que o objeto faz;
 3. **Estado** = Estado atual.
-    
+
 - Dica: Para gravar **A**TRIBUTOS, **M**ÉTODOS & **E**STADO, lembre-se da sigla AME.
 
 <br>
 
 - **OBJETO**
 
-    [Conceito de Objeto] &rarr; É a instância de uma classe. 
-    **Instanciar** é quando pego uma *Classe* e consigo gerar um *Objeto* a partir dela.
+  [Conceito de Objeto] &rarr; É a instância de uma classe.
+  **Instanciar** é quando pego uma _Classe_ e consigo gerar um _Objeto_ a partir dela.
 
 <br>
 
 - **ABSTRAÇÃO**
 
-    [Conceito de Abstração] &rarr; Habilidade de concentrar-se nos aspectos essenciais de um domínio, ignorando características menos importantes ou acidentais. Nesse contexto, objetos são abstrações de entidades existentes no domínio em questão.
+  [Conceito de Abstração] &rarr; Habilidade de concentrar-se nos aspectos essenciais de um domínio, ignorando características menos importantes ou acidentais. Nesse contexto, objetos são abstrações de entidades existentes no domínio em questão.
 
-    Abstração consiste de focalizar nos aspectos essenciais inerentes a uma entidade e ignorar propriedades menos importantes  ou "acidentais."
-    
-    Em termos de desenvolvimento de sistemas, isto significa concentrar-se no que um objeto é e faz antes de se decidir como ele será implementado. 
-    O uso de abstração preserva a liberdade para tomar decisões de desenvolvimento ou de implementação apenas quando há um melhor entendimento do problema a ser resolvido.
+  Abstração consiste de focalizar nos aspectos essenciais inerentes a uma entidade e ignorar propriedades menos importantes ou "acidentais."
+
+  Em termos de desenvolvimento de sistemas, isto significa concentrar-se no que um objeto é e faz antes de se decidir como ele será implementado.
+  O uso de abstração preserva a liberdade para tomar decisões de desenvolvimento ou de implementação apenas quando há um melhor entendimento do problema a ser resolvido.
 
 <br>
-
 
 ---
 
@@ -342,8 +330,7 @@ Nessa aula de POO, vamos aprender os conceitos de Classes e Objetos, passando pe
 
 Nessa aula de POO, vamos aprender como criar uma Classe, com seus atributos e métodos, e a instanciar novos objetos a partir dessa classe inicial.
 
-
-- Programa Aula02 
+- Programa Aula02
 
 <code> class Caneta </code>
 
@@ -419,21 +406,26 @@ public class Aula02 {
 <code> &rarr; Run 🖥️ &lt;Aula02&gt; </code>
 
 ```markdown
---------------------
+---
+
 Modelo: BIC
 Cor: Azul
 Ponta: 0.5
 Está tampada? true
---------------------
+
+---
+
 ERRO! Não posso rabiscar, pois a tampa da caneta está tampada!
 
+---
 
---------------------
 Modelo: BIC CRISTAL
 Cor: Vermelha
 Ponta: 1.0
 Está tampada? false
---------------------
+
+---
+
 Estou rabiscando...
 ```
 
@@ -448,46 +440,40 @@ Estou rabiscando...
 <u>Aula Teórica 3 – O que é Visibilidade em um Objeto?</u>
 
 Nessa aula de POO, vamos aprender qual a importância dos modificadores de visibilidade:
- público (+), privado (-) e protegido (#) na Programação Orientada a Objetos.
+público (+), privado (-) e protegido (#) na Programação Orientada a Objetos.
 
 - UML - Linguagem Modelada Unificada
 
-
 - Diagrama de Classes
 
-    No Diagrama de Classes -> toda classe será representada por um **retangulo**.
+  No Diagrama de Classes -> toda classe será representada por um **retangulo**.
 
     <br>
 
 - **Modificadores de Visibilidade**
 
-    Indicam o nível de acesso aos componentes internos de uma classe na Programação Orientada a Objetos (POO):
+  Indicam o nível de acesso aos componentes internos de uma classe na Programação Orientada a Objetos (POO):
 
-    - público   ( + )
-    - privado   ( - )
-    - protegido ( # )
-   
+  - público ( + )
+  - privado ( - )
+  - protegido ( # )
 
-| Simbolo   | Modificadores de Visibilidade | Definição |
-| :---------:                   | :-----:| :-----|
-| +  | **public** (público)     | a classe atual e todas as outras classes |
-| -  | **private** (privado)    | somente a classe atual |
-| #  | **protected** (protegido)| a classe atual (mãe) e todas as suas sub-classes (filhas) |
+| Simbolo | Modificadores de Visibilidade | Definição                                                 |
+| :-----: | :---------------------------: | :-------------------------------------------------------- |
+|    +    |     **public** (público)      | a classe atual e todas as outras classes                  |
+|    -    |     **private** (privado)     | somente a classe atual                                    |
+|    #    |   **protected** (protegido)   | a classe atual (mãe) e todas as suas sub-classes (filhas) |
 
 ---
 
 <u> Material adicional </u>
 
 - Apresentação sobre Diagrama de Classes, do prof. Eduardo Figueiredo
-http://www.dcc.ufmg.br/~figueiredo
+  http://www.dcc.ufmg.br/~figueiredo
 
 - [Apresentação - Diagrama de Classes](https://homepages.dcc.ufmg.br/~figueiredo/disciplinas/aulas/uml-diagrama-classes_v02-1.pdf)
 
-
 ---
-
-
-
 
 <img src="./img/aula03/aula3-01.png" widf="400px">
 <a href="#" target="_blank"></a>
@@ -512,15 +498,15 @@ http://www.dcc.ufmg.br/~figueiredo
 <br><br>
 
 - O que é Visibilidade em um Objeto?
-*Public, Protected e Private* são modificadores de acesso, com eles é possível determinar a disponibilidade de um atributo ou método.
+  _Public, Protected e Private_ são modificadores de acesso, com eles é possível determinar a disponibilidade de um atributo ou método.
 
-    - *Public* ( + ) &rarr; Um nível de acesso que o torna disponível a todos. 
-    Imagine o telefone público;
-    - *Protected* ( # ) &rarr; Somente classes e subclasses podem acessar. 
-    Imagine o telefone residencial, onde os proprietários e os filhos têm acesso;
-    - Default &rarr; Sem modificador, significa que não declaramos explicitamente um modificador de acesso para uma classe, atributo, método etc;
-    - *Private* ( - ) &rarr; Somente a classe onde ela foi definida pode acessar, ou usando os métodos getter e setter como intermediador.
-     Imagine o seu celular.
+      - *Public* ( + ) &rarr; Um nível de acesso que o torna disponível a todos.
+      Imagine o telefone público;
+      - *Protected* ( # ) &rarr; Somente classes e subclasses podem acessar.
+      Imagine o telefone residencial, onde os proprietários e os filhos têm acesso;
+      - Default &rarr; Sem modificador, significa que não declaramos explicitamente um modificador de acesso para uma classe, atributo, método etc;
+      - *Private* ( - ) &rarr; Somente a classe onde ela foi definida pode acessar, ou usando os métodos getter e setter como intermediador.
+       Imagine o seu celular.
 
 A tabela abaixo mostra quem pode acessar atributos/métodos de acordo com o modificador:
 
@@ -608,13 +594,16 @@ public class Aula03 {
 <code> &rarr; Run 🖥️ &lt;Aula03&gt; </code>
 
 ```markdown
---------------------
+---
+
 Modelo: BIC CRISTAL
 Cor: Azul
 Ponta: 0.0
 Carga: 80
 Está tampada? true
---------------------
+
+---
+
 ERRO! Não posso rabiscar, pois a tampa da caneta está tampada!
 ```
 
@@ -628,16 +617,15 @@ ERRO! Não posso rabiscar, pois a tampa da caneta está tampada!
 
 <u>Aula Teórica 4 – Métodos Especiais</u>
 
-Nessa aula de POO, vamos aprender como funcionam os Métodos Acessores (Getters), Métodos Modificadores (Setters) e Métodos Construtores (Construct) para a Programação Orientada a Objetos. 
+Nessa aula de POO, vamos aprender como funcionam os Métodos Acessores (Getters), Métodos Modificadores (Setters) e Métodos Construtores (Construct) para a Programação Orientada a Objetos.
 
-- **Métodos Acessores (Getters)** &rarr; são métodos que dão acesso a uma determinada coisa; Getter (sentido de pegar/acessar alguma coisa), ele pega/acessa alguma informação c/ segurança. 
+- **Métodos Acessores (Getters)** &rarr; são métodos que dão acesso a uma determinada coisa; Getter (sentido de pegar/acessar alguma coisa), ele pega/acessa alguma informação c/ segurança.
 
 Os Métodos Acessores (Getters) conseguem acessar um determinado atributo mantendo a segurança de acesso a ele.
 
 <br>
 
 - **Métodos Modificadores (Setters)** &rarr; são métodos que modificam coisas dentro de um objeto. Setters (sentido de modificar/atualizar alguma coisa), ele modifica alguma informação c/ segurança.
-
 
 **Getters** e **setters** são usados para proteger seus dados, especialmente na criação de classes.
 
@@ -646,15 +634,13 @@ Para cada instância de variável, um método **getter** retorna seu valor, enqu
 Por convenção, **getters** começam com a palavra "**get**" e **setters** com a palavra "**set**", seguidos de um nome de variável.
 
 **Por que usar getters e setters?**
-Getters e setters permitem controlar a forma como variáveis importantes são acessadas e atualizadas no seu código. 
-
+Getters e setters permitem controlar a forma como variáveis importantes são acessadas e atualizadas no seu código.
 
 - **Métodos Construtores (Construct)** &rarr; Classes que tem um método construtor chamam o método a cada objeto recém criado, sendo apropriado para qualquer inicialização que o objeto necessite antes de ser utilizado.
 
 O método construtor (Construct) de uma classe serve para executar algum comportamento (atribuição de valor, execução de método, etc) logo no momento em que uma instancia da mesma for criada. Isso traz vantagens pois evita a execução de tarefas repetitivas e obrigatórias.
 
 **Construtores** são métodos ordinários que são chamados durante a criação do objeto correspondente. Eles podem definir um número arbitrários de argumentos, quais podem ser obrigatórios, podem ter um tipo, e podem ter valores padrão. Argumentos de construtores são informados dentro de parênteses depois do nome da classe.
-
 
 <img src="./img/aula04/aula4-01.png" widf="400px">
 <a href="#" target="_blank"></a>
@@ -680,9 +666,9 @@ O método construtor (Construct) de uma classe serve para executar algum comport
 Nessa aula de POO, vamos aprender como criar em Java os Métodos Acessores (Getters), Métodos Modificadores (Setters) e Métodos Construtores (Construct).
 
 - **Métodos especiais**
-Veja como funcionam os Métodos Acessores (Getters), Métodos Modificadores (Setters) e Métodos Construtores (Construct).
+  Veja como funcionam os Métodos Acessores (Getters), Métodos Modificadores (Setters) e Métodos Construtores (Construct).
 
-Métodos *Getters* e *Setters* são usados com a visibilidade *public*.
+Métodos _Getters_ e _Setters_ são usados com a visibilidade _public_.
 
 Eles têm a **função de acessar e enviar dados de forma segura**, sem que o solicitante tenha acesso direto aos atributos/métodos do objeto, sendo necessária a intermediação do método para **pegar ou modificar dados**.
 
@@ -694,7 +680,7 @@ public String getModelo(){
 }
 ```
 
-Sempre retorna algum valor, por isso, é necessário informar que tipo de valor será retornado, que neste exemplo é *String*.
+Sempre retorna algum valor, por isso, é necessário informar que tipo de valor será retornado, que neste exemplo é _String_.
 
 - **Setter**: Envia/Define um dado:
 
@@ -704,7 +690,7 @@ public void setModelo(String m){
 }
 ```
 
-Repare que ele é *void*, ou seja, não tem retorno, no entanto, temos que definir o parâmetro que será "setado”(enviado), que nesse exemplo foi o <code> (String m) </code>, e quando ele for enviado/definido será atribuído ao atributo modelo que é do tipo *String*.
+Repare que ele é _void_, ou seja, não tem retorno, no entanto, temos que definir o parâmetro que será "setado”(enviado), que nesse exemplo foi o <code> (String m) </code>, e quando ele for enviado/definido será atribuído ao atributo modelo que é do tipo _String_.
 
 - **Construtor**: Constroem objetos com atributos pré-definidos, onde normalmente recebem parâmetros, mas não é obrigatório.
 
@@ -712,18 +698,17 @@ Repare que ele é *void*, ou seja, não tem retorno, no entanto, temos que defin
 public class Caneta {
    //  Constructor
    public Caneta (String m, float p, String c){
-        this.setModelo(m); 
+        this.setModelo(m);
         this.setPonta(p); // Modo seguro de atribuição de valores
         this.cor = c;     // Modo "inseguro" de atribuição de valores
-        this.tampar(); 
+        this.tampar();
    }
 }
 ```
 
-O exemplo acima é um *Constructor* que recebe 3 parâmetros (uma *String* para Modelo, um *float* para Ponta e uma *String* para Cor). Parâmetros que devem ser passados sempre que for criado um novo objeto com o Construtor Caneta.
+O exemplo acima é um _Constructor_ que recebe 3 parâmetros (uma _String_ para Modelo, um _float_ para Ponta e uma _String_ para Cor). Parâmetros que devem ser passados sempre que for criado um novo objeto com o Construtor Caneta.
 <br>
 O Constructor sempre recebem o nome da classe, que nesse exemplo, ele é um Construtor da classe Caneta.java e são facilmente percebidos pois **não possuem** a declaração void, String, int, float, etc.
-
 
 ---
 
@@ -790,10 +775,11 @@ public class Aula04 {
 <code> &rarr; Run 🖥️ &lt;Aula04&gt; </code>
 
 ```markdown
---------------------
+---
 Modelo: BIC
 Ponta: 0.5
---------------------
+---
+
 Tenho uma caneta de modelo BIC de ponta 0.5
 ```
 
@@ -872,12 +858,14 @@ public class Aula04 {
 <code> &rarr; Run 🖥️ &lt;Aula04&gt; </code>
 
 ```markdown
---------------------
+---
+
 Modelo: null
 Ponta: 0.0
 Cor: Azul
 Está tampada? true
---------------------
+
+---
 ```
 
 ---
@@ -885,19 +873,14 @@ Está tampada? true
 <br>
 
 - IntelliJ IDEA - Code Generate - Construtor & Getters and Setters
+  <br>
+  - Code Generation in IntelliJ IDEA
+  - https://www.jetbrains.com/help/idea/generating-code.html
+  - https://www.youtube.com/watch?v=btqCYUc3nFE
     <br>
-    - Code Generation in IntelliJ IDEA
-    - https://www.jetbrains.com/help/idea/generating-code.html
-    - https://www.youtube.com/watch?v=btqCYUc3nFE
-    <br>
-    -   IntelliJ IDEA - Main Menu, select: 
-        - Code  | Generate:
-    <br>
-        -  ⌘ + N , to open the popup menu with available constructs that you can generate.
-    <br>
-            - Generate constructors
-            - Generate getters and setters
-
+  - IntelliJ IDEA - Main Menu, select: - Code | Generate:
+    <br> - ⌘ + N , to open the popup menu with available constructs that you can generate.
+    <br> - Generate constructors - Generate getters and setters
 
 <code> class Caneta </code>
 
@@ -989,22 +972,29 @@ public class Aula04 {
 <code> &rarr; Run 🖥️ &lt;Aula04&gt; </code>
 
 ```markdown
-----------------------------------------
+---
+
 Modelo: BIC Cristal (Ponta Média)
 Ponta: 1.0
 Cor: Vermelha
 Está tampada? false
-----------------------------------------
+
+---
+
 Modelo: BIC Cristal (Ponta Fina)
 Ponta: 0.8
 Cor: Preta
 Está tampada? false
-----------------------------------------
+
+---
+
 Modelo: BIC Cristal (Ponta Fina)
 Ponta: 0.8
 Cor: Azul
 Está tampada? false
-----------------------------------------
+
+---
+
 Modelo: BIC Cristal (Ponta Grossa)
 Ponta: 1.6
 Cor: Preta
@@ -1022,7 +1012,6 @@ Está tampada? false
 <u>Aula Teórica 5 – Exemplo Prático com Objetos</u>
 
 Nessa aula de POO, vamos fazer um exemplo prático com Programação Orientada a Objetos, usando tudo aquilo que aprendemos até aqui.
-
 
 - Slides da Aula 05:
 
@@ -1064,57 +1053,57 @@ Nessa aula de POO, vamos fazer um grande exercício de Programação Orientada a
 Criação de um protótipo de sistema bancário, confira os requisitos abaixo:
 
 ```markdown
-Exercício – Duas pessoas querem abrir uma conta no banco, o Jubileu e a Creusa. 
-O Jubileu optou por abrir uma conta poupança, e irá deposita 300 reais na sua conta. 
-A Creusa, possui mais dinheiro e quer depositar 500 reais em uma conta corrente. 
-Para isso, eles precisam abrir uma conta no banco. 
-Os atributos e métodos da ContaBanco estão expostos abaixo, 
+Exercício – Duas pessoas querem abrir uma conta no banco, o Jubileu e a Creusa.
+O Jubileu optou por abrir uma conta poupança, e irá deposita 300 reais na sua conta.
+A Creusa, possui mais dinheiro e quer depositar 500 reais em uma conta corrente.
+Para isso, eles precisam abrir uma conta no banco.
+Os atributos e métodos da ContaBanco estão expostos abaixo,
 com base nesse diagrama de classes.
 
-Requisitos: 
+Requisitos:
 
-1. O tipo da conta, só aceita dois caracteres, cc e cp. 
-Conta corrente(cc) e conta poupança (cp), respectivamente.
+1. O tipo da conta, só aceita dois caracteres, cc e cp.
+   Conta corrente(cc) e conta poupança (cp), respectivamente.
 
-2. Na hora de abrir conta, eu mudo o status de falso para verdadeiro. 
-É nesse momento que decido qual conta vou abrir:
-- para uma cp já recebe um presente de 150 reais, 
+2. Na hora de abrir conta, eu mudo o status de falso para verdadeiro.
+   É nesse momento que decido qual conta vou abrir:
+
+- para uma cp já recebe um presente de 150 reais,
 - para uma cc já recebe um presente de 50 reais.
 
-3. Para fechar conta, o Jubileu ou a Creusa 
-não vão poder ter dinheiro dentro da sua conta ou saldo devedor.
+3. Para fechar conta, o Jubileu ou a Creusa
+   não vão poder ter dinheiro dentro da sua conta ou saldo devedor.
 
-4. Para fazer um depósito ou sacar, 
-a conta já deve ter sido aberta com status verdadeiro. 
-No caso do saque, eu devo já ter dinheiro dentro, 
-e o valor do saque não deve ser superior ao seu saldo.
+4. Para fazer um depósito ou sacar,
+   a conta já deve ter sido aberta com status verdadeiro.
+   No caso do saque, eu devo já ter dinheiro dentro,
+   e o valor do saque não deve ser superior ao seu saldo.
 
-5. A mensalidade vai ser cobrada diretamente do saldo. 
-Na hora que for chamado a mensalidade(), o cliente com cc pagará 12 reais, 
-e o cliente com cp pagará 20 reias de mensalidade.
+5. A mensalidade vai ser cobrada diretamente do saldo.
+   Na hora que for chamado a mensalidade(), o cliente com cc pagará 12 reais,
+   e o cliente com cp pagará 20 reias de mensalidade.
 
 6. Você precisará usar o método getter e setter para TODOS os atributos.
 
-7. É necessário ter um método construtor, 
-onde o seu status será definido como zero e 
-o saldo definido como zero, pois a conta está fechada.
+7. É necessário ter um método construtor,
+   onde o seu status será definido como zero e
+   o saldo definido como zero, pois a conta está fechada.
 
-8. Visibilidades: 
-      -> numConta ( + )
-      -> tipo ( # )
-      -> dono ( - )
-      -> saldo ( - )
-      -> status ( - )
-      
-Todos os métodos especiais (getter e setter) devem ser públicos. 
+8. Visibilidades:
+   -> numConta ( + )
+   -> tipo ( # )
+   -> dono ( - )
+   -> saldo ( - )
+   -> status ( - )
+
+Todos os métodos especiais (getter e setter) devem ser públicos.
 Os demais métodos, privados.
-      
-Legenda das Visibilidades: 
-      ( + ) é public. 
-      ( - ) é private. 
-      ( # ) é protected.
-```
 
+Legenda das Visibilidades:
+( + ) é public.
+( - ) é private.
+( # ) é protected.
+```
 
 - Classe ContaBanco
 
@@ -1325,14 +1314,16 @@ Mensalidade de R$ 12.0 debitada na conta de Jubileu. Saldo disponível R$ 338.0
 Saque de R$ 338.0 na conta de Jubileu
 Jubileu, saldo da conta R$ 0.0
 Conta de Jubileu foi fechada com sucesso!
-------------------------------------------------------------
+
+---
+
 Conta: 1001
 Tipo: CC
 Dono: Jubileu
 Saldo: 0.0
 Status: false
-------------------------------------------------------------
 
+---
 
 Creuza. Conta aberta com sucesso!
 Depósito de R$ 500.0 na conta de Creuza
@@ -1342,13 +1333,16 @@ Mensalidade de R$ 20.0 debitada na conta de Creuza. Saldo disponível R$ 530.0
 Saque de R$ 530.0 na conta de Creuza
 Creuza, saldo da conta R$ 0.0
 Conta de Creuza foi fechada com sucesso!
-------------------------------------------------------------
+
+---
+
 Conta: 2002
 Tipo: CP
 Dono: Creuza
 Saldo: 0.0
 Status: false
-------------------------------------------------------------
+
+---
 ```
 
 ---
@@ -1367,7 +1361,7 @@ Os três pilares da POO são: **Encapsulamento, Herança e Polimorfismo.**
 
 Alguns autores citam 3 pilares da POO e outros citam 4 pilares da POO.
 
-Para os autores que citam 4 os pilares principais da POO: 
+Para os autores que citam 4 os pilares principais da POO:
 
 A E H P : ABSTRAÇÃO, ENCAPSULAMENTO, HERANÇA E POLIMORFISMO.
 
@@ -1375,11 +1369,11 @@ O prof. Gustavo Guanabara, ensina como 3 os pilares principais da POO:
 
 E H P : **ENCAPSULAMENTO**, **HERANÇA** E **POLIMORFISMO**.
 
-- Dica: Para lembrar dos pilares pensa nome da sua impressora: 
+- Dica: Para lembrar dos pilares pensa nome da sua impressora:
 - “É - H - P ?” — ENCAPSULAMENTO - HERANÇA - POLIMORFISMO.
-<br>
-- OBS: Por exemplo, o prof. Gustavo Guanabara, diz que são 3 pilares da POO. 
-Nesse caso, a ABSTRAÇÃO está dentro do ENCAPSULAMENTO.
+  <br>
+- OBS: Por exemplo, o prof. Gustavo Guanabara, diz que são 3 pilares da POO.
+  Nesse caso, a ABSTRAÇÃO está dentro do ENCAPSULAMENTO.
 
 ---
 
@@ -1389,33 +1383,30 @@ Nesse caso, a ABSTRAÇÃO está dentro do ENCAPSULAMENTO.
 
 [Conceito de Encapsulamento] &rarr; Encapsular significa esconder a implementação dos objetos. O encapsulamento favorece principalmente dois aspectos de um sistema: a manutenção e a evolução.
 
-Consiste na ideia de proteger o usuário do código e o código do usuário, **ocultando partes internas do mundo exterior**. 
-Além de proteção, também é usado para padronizar objetos. 
+Consiste na ideia de proteger o usuário do código e o código do usuário, **ocultando partes internas do mundo exterior**.
+Além de proteção, também é usado para padronizar objetos.
 Ex: Imagina uma pilha de controle remoto.
 <br>
 
-- **OBS**: Encapsular *não é obrigatório*, mas é uma boa prática para produzir Classe mais eficientes.
+- **OBS**: Encapsular _não é obrigatório_, mas é uma boa prática para produzir Classe mais eficientes.
 
+**Exemplo:** uma pilha possui todos os seus atributos guardados (propriedades químicas dentro dela), com isso, para nos proteger — e vice-versa — , ela nos oferece apenas a sua energia, através de uma interface\* (os polos: positivo e o negativo) que nesse exemplo, a interface são as extremidades da pilha.
 
-**Exemplo:** uma pilha possui todos os seus atributos guardados (propriedades químicas dentro dela), com isso, para nos proteger — e vice-versa — , ela nos oferece apenas a sua energia, através de uma interface* (os polos: positivo e o negativo) que nesse exemplo, a interface são as extremidades da pilha.
-
-- Vantagens em encapsular :
-    - Tornar mudanças invisíveis;
-    - Facilitar reutilização de código;
-    - Reduzir efeitos colaterais.
-<br>
+- Vantagens em encapsular : - Tornar mudanças invisíveis; - Facilitar reutilização de código; - Reduzir efeitos colaterais.
+  <br>
 
 - **O que é uma interface?**
 
 [Conceito de Interface] &rarr; Lista de serviços fornecidos por um componente. É o contato com o mundo exterior, que define o que pode ser feito com um objeto dessa classe.
 
-- **Interface** é tudo aquilo que está disponível para o usuário. 
+- **Interface** é tudo aquilo que está disponível para o usuário.
 - Por exemplo: Os pedais de um carro, e os botões de um controle são exemplos de interfaces.
 
 **Como criar uma interface?**
 
-Toda interface precisa de métodos/funções, afinal quando apertamos um botão estamos realizando uma ação. 
-Esses métodos são sempre *públicos (public) e abstratos (abstract)*:
+Toda interface precisa de métodos/funções, afinal quando apertamos um botão estamos realizando uma ação.
+Esses métodos são sempre _públicos (public) e abstratos (abstract)_:
+
 - **public** porque todo mundo pode chamar e realizar a ação;
 - **abstract** porque o usuário não precisa saber o que acontece “por trás dos panos” quando ele realiza uma ação e nem de onde os códigos vêm.
 
@@ -1425,7 +1416,7 @@ Exemplo de uma interface, com o nome Controlador:
 package aula06;
 public interface Controlador {
     public abstract void ligar();
-    public abstract void desligar(); 
+    public abstract void desligar();
     ...
 }
 ```
@@ -1433,7 +1424,7 @@ public interface Controlador {
 No exemplo acima, apenas dizemos: “Olha, há duas funções: ligar/desligar e você pode chamar elas quando quiser”, porém, o usuário do programa não precisa saber necessariamente como elas funcionam.
 
 - Como “conectar” a interface para usar as funções da classe?
-Na classe ControleRemoto.java, faremos o uso do **implements** (após ter criado a interface), ele será responsável para criar essa “conexão” entre a interface e o código definitivamente:
+  Na classe ControleRemoto.java, faremos o uso do **implements** (após ter criado a interface), ele será responsável para criar essa “conexão” entre a interface e o código definitivamente:
 
 ```java
 public class ControleRemoto implements Controlador {
@@ -1441,28 +1432,25 @@ public class ControleRemoto implements Controlador {
 }
 ```
 
-
 ---
 
 - <u>Material Complementar</u>:
-
 
 **Encapsulamento**
 
 O princípio de esconder a estrutura de dados utilizada e somente prover uma interface bem definida é chamado de encapsulamento.
 
 **Algumas definições comuns de encapsulamento:**
-  1. Encapsulamento é o processo de esconder todos os detalhes de um objeto que não contribuem para as suas características essenciais.
+
+1. Encapsulamento é o processo de esconder todos os detalhes de um objeto que não contribuem para as suas características essenciais.
 2. Encapsulamento é um princípio, utilizando quando se está desenvolvendo a estrutura geral de um programa, no qual cada componente de um programa deve encapsular ou esconder cada decisão de projeto (...) A interface com cada módulo é definida de forma a revelar o mínimo possível sobre o seu funcionamento interno.
 3. O encapsulamento esconde detalhes de implementação do objeto (métodos) e o que sobra visível é a sua interface, isto é, o conjunto de todas as mensagens a que ele pode responder. Uma vez que o objeto é encapsulado, seus detalhes de implementação não são mais imediatamente acessíveis. Ao invés disso, eles são empacotados e são somente indiretamente acessíveis através da interface do objeto. A única forma de acessar a um objeto encapsulado é através da troca de mensagens: é enviada uma mensagem ao objeto, o objeto mesmo seleciona o método pelo qual ele irá reagir à mensagem.
- 
+
 Podemos dizer portanto que os objetos possuem uma parte interna, os dados, que não podem ser acessados por outros objetos do sistema, e outra externa, os métodos, que permitem a alteração ou verificação de seu estado.
-
-
 
 **Os Benefícios do Encapsulamento:**
 
-**Modularidade**: o código-fonte para um objeto pode ser escrito e mantido independentemente do código-fonte de outros objetos (desacoplamento). Além disso, como não dependem de outros objetos, cada objeto pode ser utilizado livremente no sistema. 
+**Modularidade**: o código-fonte para um objeto pode ser escrito e mantido independentemente do código-fonte de outros objetos (desacoplamento). Além disso, como não dependem de outros objetos, cada objeto pode ser utilizado livremente no sistema.
 
 **Ocultação de informações**: um objeto possui uma interface pública que outros objetos podem utilizar para comunicarem-se com ele. Mas o objeto pode manter informações privadas e métodos podem ser modificados em qualquer momento sem afetar os outros objetos que dependem dele. Por exemplo, você não precisa de entender o funcionamento interno do mecanismo de marchas da sua bicicleta para utilizá-lo.
 
@@ -1526,14 +1514,11 @@ A única parte do objeto que o resto do sistema precisa conhecer é sua **interf
 <a href="#" target="_blank"></a>
 <img src="./img/aula06/aula6-26.png">
 
-
 <hr>
-
 
 <u> Aula Prática 6 – Encapsulamento </u>
 
 Nessa aula de POO, vamos aprender como fazer Encapsulamento em Java, implementando o primeiro pilar da POO.
-
 
 <code> interface Controlador</code>
 
@@ -1731,15 +1716,16 @@ public class Aula06 {
 <code> &rarr; Run 🖥️ &lt;Aula06&gt; </code>
 
 ```markdown
-Abrindo Menu!
-----------------------------------------------
+## Abrindo Menu!
+
 Está ligado? true
 Está tocando? true
-Volume: 20 ->  ▲  ▲ 
-----------------------------------------------
+Volume: 20 -> ▲ ▲
+
+---
+
 Fechando Menu!
 ```
-
 
 <br>
 
@@ -1754,7 +1740,6 @@ Fechando Menu!
 <u> Aula Teórica 7 – Relacionamento entre Classes </u>
 
 Nessa aula de POO, vamos aprender como fazer relacionamentos entre as classes.
-
 
 <!-- <img src="img/aula7-01.png">
 <a href="#" target="_blank"></a> -->
@@ -1797,7 +1782,6 @@ Nessa aula de POO, vamos aprender como fazer relacionamentos entre as classes.
 
 ---
 
-
 <u> Aula Prática 7 – Objetos Compostos em Java </u>
 
 Nessa aula de POO, vamos aprender como criar Objetos Compostos criando um vetor de objetos.
@@ -1806,14 +1790,13 @@ Aprendemos sobre o Relacionamento entre as Classes.
 
 As aulas 7 e 8 são complementares, isso é, apesar da divisão, nos vídeos você irá aprender sobre o conceito de Agregação que faz parte da modelagem UML.
 
-
 #### Agregação
 
 - Tipo especial de associação;
 - Demostra que as informações de um objeto precisam ser complementadas por um objeto de outra classe;
 - Associação Todo-Parte
-    - objeto-tipo
-    - objeto-parte
+  - objeto-tipo
+  - objeto-parte
 
 **Representação de Agregação**
 
@@ -1821,7 +1804,7 @@ As aulas 7 e 8 são complementares, isso é, apesar da divisão, nos vídeos voc
 
 <br>
 
-**O Ultimate Emoji Combate** 
+**O Ultimate Emoji Combate**
 
 Foi o exercício proposto, confira o resumo dos requisitos abaixo
 
@@ -1830,30 +1813,21 @@ UltraEmojiCombate - Programa que simula uma arena de combate (com lutadores com 
 
 Criar uma classe para os lutadores, onde ela deve ter os seguintes requisitos:
 
-1. Atributos:
-           - nome;
-           - nacionalidade;
-           - idade;
-           - altura;
-           - peso;
-           - categoria;
-           - vitorias;
-           - derrotas;
-           - empates;
+1.  Atributos: - nome; - nacionalidade; - idade; - altura; - peso; - categoria; - vitorias; - derrotas; - empates;
 
-2. Métodos públicos:
+2.  Métodos públicos:
 
-     + ganharLuta();    // Adiciona mais 1 na variável vitorias
-     + perderLuta();    // Adiciona mais 1 na variável derrotas
-     + empatarLuta();   // Adiciona mais um na variável empates
-     + apresentar();    // Apresenta os dados do lutador 
-     + status();        // Apresenta suas vitórias, derrotas e empates
-        
-3. Métodos especiais:
+    - ganharLuta(); // Adiciona mais 1 na variável vitorias
+    - perderLuta(); // Adiciona mais 1 na variável derrotas
+    - empatarLuta(); // Adiciona mais um na variável empates
+    - apresentar(); // Apresenta os dados do lutador
+    - status(); // Apresenta suas vitórias, derrotas e empates
+
+3.  Métodos especiais:
 
     Crie um construtor que receba TODAS as informações do lutador, menos a categoria, pois ela,
     em especial, deve ser definida automaticamente no momento que soubermos qual o peso do atleta;
-    
+
     Segue abaixo os dados de todos os 6 atletas que devem ser cadastrados na arena de combate:
 
     Nome, Nacionalidade, Idade, Altura, Peso, Vitórias, Derrotas Empates;
@@ -1864,23 +1838,21 @@ Criar uma classe para os lutadores, onde ela deve ter os seguintes requisitos:
         "Dead code", "Australia", 28, 1.93f, 81.6f, 13, 0, 2
         "UFOCobol", "Brasil", 37, 1.70f, 119.3f, 5, 4, 3
         "Nerdart", "EUA", 30, 1.81f, 105.7f, 12, 2, 4
-      
-4. Métodos getter e setter:
+
+4.  Métodos getter e setter:
 
     Crie os métodos getter e setter de todos os atributos acima, porém, crie uma condição para que
-    o seu programa defina automaticamente a categoria do lutador baseando-se no peso dele. 
-    
+    o seu programa defina automaticamente a categoria do lutador baseando-se no peso dele.
+
     Faixas para definir qual a categoria do lutator, onde, se:
-      
-      peso < 52.2 então categoria = "Invalido";
-      peso <= 70.3 então categoria = "Leve";
-      peso <= 83.9 então categoria = "Médio";
-      peso <= 120.2 então categoria = "Pesado";
-      peso > 120.2 então categoria = "Invalido";
-     
-Legenda: 
-    - é igual a privado. 
-    + é igual a público.
+
+    peso < 52.2 então categoria = "Invalido";
+    peso <= 70.3 então categoria = "Leve";
+    peso <= 83.9 então categoria = "Médio";
+    peso <= 120.2 então categoria = "Pesado";
+    peso > 120.2 então categoria = "Invalido";
+
+Legenda: - é igual a privado. + é igual a público.
 ```
 
 <br><br>
@@ -2067,7 +2039,6 @@ public class Lutador {
 
 ```
 
-
 <code> class Aula07 </code>
 
 ```java
@@ -2139,91 +2110,106 @@ public class Aula07 {
 <code> &rarr; Run 🖥️ &lt;Aula07&gt; </code>
 
 ```markdown
-Data: 07-04-2022 23:15:06
-----------------------------------------
- 'Ladies and gentlemen, we are live!' 
- 'This is the moment you've all been waiting for' 
- 'It's time!' 
-----------------------------------------
+## Data: 07-04-2022 23:15:06
 
- # Luta Peso Leve: 
-[0]. Pretty Boy VS [1]. Putscript
-----------------------------------------
+'Ladies and gentlemen, we are live!'
+'This is the moment you've all been waiting for'
+'It's time!'
+
+---
+
+# Luta Peso Leve:
+
+## [0]. Pretty Boy VS [1]. Putscript
+
 Lutador: [0]. Pretty Boy
 Nacionalidade: França
 Idade: 31 anos
 Peso: 68.9 Kg
 Vitorias: 11; Empates: 1; Derrotas: 2
-----------------------------------------
+
+---
+
 Lutador: [1]. Putscript
 Nacionalidade: Brasil
 Idade: 29 anos
 Peso: 57.8 Kg
 Vitorias: 14; Empates: 3; Derrotas: 2
 
- Luta Peso Leve: EMPATE
-----------------------------------------
+## Luta Peso Leve: EMPATE
+
 Nome: [0]. Pretty Boy
 Categoria: Leve
 Vitorias: 11; Empates: 2; Derrotas: 2
-----------------------------------------
+
+---
+
 Nome: [1]. Putscript
 Categoria: Leve
 Vitorias: 14; Empates: 4; Derrotas: 2
 
- # Luta Peso Médio: 
-[2]. Snapshadown VS [3]. Dead Code
-----------------------------------------
+# Luta Peso Médio:
+
+## [2]. Snapshadown VS [3]. Dead Code
+
 Lutador: [2]. Snapshadown
 Nacionalidade: EUA
 Idade: 35 anos
 Peso: 80.9 Kg
 Vitorias: 12; Empates: 1; Derrotas: 2
-----------------------------------------
+
+---
+
 Lutador: [3]. Dead Code
 Nacionalidade: Austrália
 Idade: 28 anos
 Peso: 81.6 Kg
 Vitorias: 13; Empates: 2; Derrotas: 0
 
- Luta Peso Médio | VITORIA: [2]. Snapshadown
-----------------------------------------
+## Luta Peso Médio | VITORIA: [2]. Snapshadown
+
 Nome: [2]. Snapshadown
 Categoria: Médio
 Vitorias: 13; Empates: 1; Derrotas: 2
-----------------------------------------
+
+---
+
 Nome: [3]. Dead Code
 Categoria: Médio
 Vitorias: 13; Empates: 2; Derrotas: 1
 
- # Luta Peso Pesado: 
-[4]. Ufocobol VS [5]. Nederland
-----------------------------------------
+# Luta Peso Pesado:
+
+## [4]. Ufocobol VS [5]. Nederland
+
 Lutador: [4]. Ufocobol
 Nacionalidade: Brasil
 Idade: 37 anos
 Peso: 119.3 Kg
 Vitorias: 5; Empates: 3; Derrotas: 4
-----------------------------------------
+
+---
+
 Lutador: [5]. Nederland
 Nacionalidade: EUA
 Idade: 30 anos
 Peso: 105.7 Kg
 Vitorias: 12; Empates: 4; Derrotas: 2
 
- Luta Peso Pesado | VITORIA: [4]. Ufocobol
-----------------------------------------
+## Luta Peso Pesado | VITORIA: [4]. Ufocobol
+
 Nome: [4]. Ufocobol
 Categoria: Pesado
 Vitorias: 6; Empates: 3; Derrotas: 4
-----------------------------------------
+
+---
+
 Nome: [5]. Nederland
 Categoria: Pesado
 Vitorias: 12; Empates: 4; Derrotas: 3
 
 Process finished with exit code 0
 ```
-
 
 ---
 
@@ -2233,8 +2219,7 @@ Process finished with exit code 0
 
 ### 8. Aula 8
 
-
-<u> Revisão POO </u>: 
+<u> Revisão POO </u>:
 
 - Objetos são instâncias de classes.
 
@@ -2251,8 +2236,8 @@ Na programação OO, o encapsulamento se refere ao agrupamento de dados com os m
 - Tipo especial de associação;
 - Demostra que as informações de um objeto precisam ser complementadas por um objeto de outra classe;
 - Associação Todo-Parte
-    - objeto-tipo
-    - objeto-parte
+  - objeto-tipo
+  - objeto-parte
 
 #### Representação de Agregação
 
@@ -2274,11 +2259,9 @@ Na programação OO, o encapsulamento se refere ao agrupamento de dados com os m
 
 Veja só o exemplo:
 
-
 <img src="./img/aula08/aula8-f1.png">
 
 <code> Agregação em diagrama sendo representado pelo losango branco. Livro é parte do todo. </code>
-
 
 <br><br>
 
@@ -2290,7 +2273,6 @@ Veja só o exemplo:
 
 <br>
 
-
 ---
 
 <br>
@@ -2298,7 +2280,6 @@ Veja só o exemplo:
 <u> Aula Teórica 8 – **Relacionamento de Agregação** </u>
 
 Nessa aula de POO, vamos aprender como realizar um relacionamento de agregação entre classes para gerar objetos ainda mais poderosos.
-
 
 <img src="./img/aula08/aula8-01.png">
 <a href="#" target="_blank"></a>
@@ -2503,7 +2484,6 @@ public class Lutador {
 }
 ```
 
-
 <code> class Luta </code>
 
 ```java
@@ -2675,96 +2655,122 @@ public class Aula08 {
 }
 ```
 
-
 <code> &rarr; Run 🖥️ &lt;Aula08&gt; </code>
 
 ```markdown
 ------------------------------------ Luta peso leve ----------------------------------------------
 Data: 08-04-2022 03:05:25
-----------------------------------------
- 'Ladies and gentlemen, we are live!' 
- 'This is the moment you've all been waiting for' 
- 'It's time!' 
-----------------------------------------
 
- ### DESAFIADO ###
-----------------------------------------
+---
+
+'Ladies and gentlemen, we are live!'
+'This is the moment you've all been waiting for'
+'It's time!'
+
+---
+
+### DESAFIADO
+
+---
+
 Lutador: v[1]. Putscript
 Nacionalidade: Brasil
 Idade: 29 anos
 Peso: 57.8 Kg
 Vitorias: 14; Empates: 3; Derrotas: 2
 
- ### DESAFIANTE ###
-----------------------------------------
+### DESAFIANTE
+
+---
+
 Lutador: v[0]. Pretty Boy
 Nacionalidade: França
 Idade: 31 anos
 Peso: 68.9 Kg
 Vitorias: 11; Empates: 1; Derrotas: 2
 
- ### EMPATE: v[0]. Pretty Boy VS v[1]. Putscript
-----------------------------------------
+### EMPATE: v[0]. Pretty Boy VS v[1]. Putscript
+
+---
+
 Nome: v[0]. Pretty Boy
 Categoria: Leve
 Vitorias: 11; Empates: 2; Derrotas: 2
-----------------------------------------
+
+---
+
 Nome: v[1]. Putscript
 Categoria: Leve
 Vitorias: 14; Empates: 4; Derrotas: 2
 
 ------------------------------------ Luta peso medio ----------------------------------------------
 
- ### DESAFIADO ###
-----------------------------------------
+### DESAFIADO
+
+---
+
 Lutador: v[3]. Dead Code
 Nacionalidade: Austrália
 Idade: 28 anos
 Peso: 81.6 Kg
 Vitorias: 13; Empates: 2; Derrotas: 0
 
- ### DESAFIANTE ###
-----------------------------------------
+### DESAFIANTE
+
+---
+
 Lutador: v[2]. Snapshadown
 Nacionalidade: EUA
 Idade: 35 anos
 Peso: 80.9 Kg
 Vitorias: 12; Empates: 1; Derrotas: 2
 
- ### GANHOU DESAFIADO! -> v[2]. Snapshadown
-----------------------------------------
+### GANHOU DESAFIADO! -> v[2]. Snapshadown
+
+---
+
 Nome: v[3]. Dead Code
 Categoria: Médio
 Vitorias: 13; Empates: 2; Derrotas: 1
-----------------------------------------
+
+---
+
 Nome: v[2]. Snapshadown
 Categoria: Médio
 Vitorias: 13; Empates: 1; Derrotas: 2
 
 ------------------------------------ Luta peso pesado ----------------------------------------------
 
- ### DESAFIADO ###
-----------------------------------------
+### DESAFIADO
+
+---
+
 Lutador: v[5]. Nederland
 Nacionalidade: EUA
 Idade: 30 anos
 Peso: 105.7 Kg
 Vitorias: 12; Empates: 4; Derrotas: 2
 
- ### DESAFIANTE ###
-----------------------------------------
+### DESAFIANTE
+
+---
+
 Lutador: v[4]. Ufocobol
 Nacionalidade: Brasil
 Idade: 37 anos
 Peso: 119.3 Kg
 Vitorias: 5; Empates: 3; Derrotas: 4
 
- ### EMPATE: v[4]. Ufocobol VS v[5]. Nederland
-----------------------------------------
+### EMPATE: v[4]. Ufocobol VS v[5]. Nederland
+
+---
+
 Nome: v[5]. Nederland
 Categoria: Pesado
 Vitorias: 12; Empates: 5; Derrotas: 2
-----------------------------------------
+
+---
+
 Nome: v[4]. Ufocobol
 Categoria: Pesado
 Vitorias: 5; Empates: 4; Derrotas: 4
@@ -2775,7 +2781,6 @@ Process finished with exit code 0
 <br>
 
 ---
-
 
 <br>
 
@@ -2820,102 +2825,389 @@ Nessa aula de POO, vamos fazer alguns exercícios de Programação Orientada a O
 
 <br><br>
 
-* Q1 -> Uma casa está para uma planta arquitetônica assim como um **objeto** está para... 
+- Q1 &rarr; Uma casa está para uma planta arquitetônica assim como um **objeto** está para...
 
-**uma classe**
+* **uma classe**
 
-* Q2 -> Vantagens da POO
+<br>
 
-**C O M E R N**ada
-1. - **C** -> Confiável
-2. - **O**-> Oportuno
-3. - **M** -> Manutenível
-4. - **E** -> Extensível
-5. - **R** -> Reutilizavel
-6. - **N**ada -> Natural
+- Q2 &rarr; Vantagens da POO
 
-* Q3
+- **C O M E R N**ada
 
-- Uma **classe** é instância de um **objeto**.
+1. - **C** &rarr; Confiável
+2. - **O**&rarr; Oportuno
+3. - **M** &rarr; Manutenível
+4. - **E** &rarr; Extensível
+5. - **R** &rarr; Reutilizavel
+6. - **N**ada &rarr; Natural
 
-* Q4
+- Q3
 
-- **OBJETO** -> construção de sw que encapsula estado e comportamento
-- **CLASSE** -> define os atributos e comportamentos comuns
-- **ATRITUBO** -> característica de uma classe que é visível
-- **COMPORTAMENTO** -> ação executada por um objeto
-- **DOMÍNIO** -> espaço onde o problema reside
+* [**Incorreta**] &rarr; Uma <s> **Classe** </s> é instância de um <s> **Objeto** </s>.
 
-* Q5 
+* [Correta] &rarr; Uma **Objeto** é instância de um **Classe**.
 
-- Uma **variável interna** é um valor mantido dentro do objeto
-- **Atributos** são as características de uma classe visíveis externamente
-- **Comportamentos (Métodos)** são funcionalidades externas.
-- O **estado de um objeto** é o significado das variáveis internas do objeto
+* [Correta] &rarr; Um objeto é uma construção de software que encapsula estado e comportamento.
 
-* Q6
+* [Correta] &rarr; Uma classe define os atributos e comportamentos compartilhados por um tipo de objeto.
 
-- **Construtor** -> métodos usados para inicializar objetos durante a inicialização
-- **Acessor** -> métodos que dão acessos aos dados internos
-- **Mutante (Modificador)** -> métodos que permitem que se altere o estado de um objeto.
-- **Tipos** -> define as diferentes espécies de valores que podem ser usados
+* [Correta] &rarr; Um uma linguagem POO pura, tudo é um objeto, desde os tipos mais básicos.
 
-* Q7 - 3 Pilares da POO (Programação Orientada a Objetos)
+- Q4
 
--  E H P
-- **Encapsulamento**
-- **Herança**
-- **Polimorfismo** 
+* **OBJETO** &rarr; construção de sw que encapsula estado e comportamento
+* **CLASSE** &rarr; define os atributos e comportamentos comuns
+* **ATRIBUTO** &rarr; característica de uma classe que é visível
+* **COMPORTAMENTO** &rarr; ação executada por um objeto
+* **DOMÍNIO** &rarr; espaço onde o problema reside
 
-* Q8
+- Q5
 
-- **CLASSE** -> define os atributos e comportamentos (métodos) compartilhados
-- **OBJETO** -> instanciação de uma classe
-- **CONSTRUTOR** -> utilizado para inicializar objetos
-- **INTERFACE** -> Define o que uma entidade pode fazer com o objeto. A interface diz quais são os métodos que são determinados como públicos que estão diretamente acessíveis.
+* Uma **variável interna** (ou Atributo) é um valor mantido dentro do objeto
+* **Atributos** são as características de uma classe visíveis externamente
+* **Comportamentos** (ou Métodos) são funcionalidades **internas**.
+* O **estado de um objeto** é o significado das variáveis internas do objeto
 
-* Q9 - Níveis de acesso (visibilidade) em POO
+- Q6
 
-- público (+) , privado (-) e protegido (#).
+* **Construtor** &rarr; métodos usados para inicializar objetos durante a inicialização
+* **Acessor** &rarr; métodos que dão acessos aos dados internos
+* **Mutante (Modificador)** &rarr; métodos que permitem que se altere o estado de um objeto.
+* **Tipos** &rarr; define as diferentes espécies de valores que podem ser usados
 
-* Q10 - niveis de acesso (Visibilidade dos Modificadores)
+- Q7 - 3 Pilares da POO (Programação Orientada a Objetos)
 
-- público (+) -> qualquer um pode acessar. A classe atual e outras classes.
-- privado (-) -> é visível somente dentro da classe. Somente a classe atual.
-- protegido (#) -> nível intermediário entre o publico e o privado. A classe atual e todas as sub-classes (filhas)
+* macete: Qual o nome da sua impressora?
+* É H P
+* **Encapsulamento**
+* **Herança**
+* **Polimorfismo**
 
-* Q11
+- Q8
 
-- Conceito de **Encapsulamento** -> A proteção de atributos e operações das classes, fazendo com que estas se comuniquem com o meio externo por meio de suas interfaces.
+* **CLASSE** &rarr; define os atributos e comportamentos (métodos) compartilhados
+* **OBJETO** &rarr; instanciação de uma classe
+* **CONSTRUTOR** &rarr; utilizado para inicializar objetos
+* **INTERFACE** &rarr; Define o que uma entidade pode fazer com o objeto.
 
-* Q12
+- A interface diz quais são os métodos que são determinados como públicos que estão diretamente acessíveis.
 
-- **Implementação** -> define os detalhes internos do componente
-- **Interface** -> lista os serviços fornecidos por ele.
+* [Conceito de Interface] → Lista de serviços fornecidos por um componente. É o contato com o mundo exterior, que define o que pode ser feito com um objeto dessa classe.
 
-* Q13
+<br>
 
-- **ENCAPSULAMENTO** -> é a característica da POO que permite separar o programa em várias partes menores e independentes. Cada parte possui sua implementação isolada e realiza seu trabalho de forma autônoma. Com essa característica é possível ocultar os detalhes internos de cada parte através de uma interface.
+- Q9 - Níveis de acesso (visibilidade) em POO
 
-* Q14
+* público (+) , privado (-) e protegido (#).
 
-- **ABSTRAÇÃO** -> significa representar uma entidade, incluindo apenas seus atributos relevantes.
+- Q10 - niveis de acesso (Visibilidade dos Modificadores)
 
-* Q15
+* público (+) &rarr; qualquer um pode acessar. A classe atual e outras classes.
+* privado (-) &rarr; é visível somente dentro da classe. Somente a classe atual.
+* protegido (#) &rarr; nível intermediário entre o publico e o privado. A classe atual e todas as sub-classes (filhas)
 
-- **CLASSES** -> são tipos abstratos de dados
-- **OBJETOS** -> são instâncias de uma classe
-- **SUBCLASSE** -> é um classe definida por meio de outra classe
-- **MÉTODOS** -> são subprogramas que definem as operações em objetos de uma classe.
+- Q11
+
+* [Conceito de **Encapsulamento**] &rarr; A proteção de atributos e operações das classes, fazendo com que estas se comuniquem com o meio externo por meio de suas interfaces.
+
+- Q12
+
+* **Implementação** &rarr; define os detalhes internos do componente
+* **Interface** &rarr; lista os serviços fornecidos por ele.
+
+- Q13
+
+* **ENCAPSULAMENTO** &rarr; é a característica da POO que permite separar o programa em várias partes menores e independentes. Cada parte possui sua implementação isolada e realiza seu trabalho de forma autônoma. Com essa característica é possível ocultar os detalhes internos de cada parte através de uma interface.
+
+- Q14
+
+* **ABSTRAÇÃO** &rarr; significa representar uma entidade, incluindo apenas seus atributos mais relevantes.
+
+- Q15
+
+* **CLASSES** &rarr; são tipos abstratos de dados
+* **OBJETOS** &rarr; são instâncias de uma classe
+* **SUBCLASSE** &rarr; é um classe definida por meio de outra classe
+* **MÉTODOS** &rarr; são subprogramas que definem as operações em objetos de uma classe.
 
 <br>
 
 ---
 
-#### Aula Prática 9 – Exercício prático POO em PHP
+#### Aula Prática 9 – Exercício prático POO em Java
 
+Nessa aula de POO, vamos fazer um exercício de Programação Orientada a Objeto em Java com tudo aquilo que aprendemos até aqui.
+
+<img src="./img/aula09/aula09-b.png">
+<a href="#" target="_blank"></a>
 
 <br>
+
+- package aula09
+- ProjetoLivro
+
+<code> class Pessoa</code>
+
+```java
+package aula09;
+
+public class Pessoa {
+    // ATTRIBUTES
+    private String nome;
+    private int idade;
+    private String sexo;
+
+    // METHODS
+    public void fazerAniversario(){
+        this.idade++;
+    }
+    // CONSTRUCTOR
+    public Pessoa(String nome, int idade, String sexo) {
+        this.nome = nome;
+        this.idade = idade;
+        this.sexo = sexo;
+    }
+
+    // GETTERS AND SETTERS
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public String getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
+}
+```
+
+<code> class Livro implements Publicacao </code>
+
+```java
+package aula09;
+
+public class Livro implements Publicacao {
+    // ATTRIBUTES
+    private String titulo;
+    private String autor;
+    private int totalPaginas;
+    private int paginaAtual; // not constructor argument // this.paginaAtual = 0;
+    private boolean aberto;  // not constructor argument // this.aberto = false;
+    private Pessoa leitor;
+
+   // METHODS
+
+    // toString()
+    // @Override
+    public String detalhes() {
+        return "Livro{" +
+                "\n titulo='" + titulo +  '\'' +
+                ", \n autor='" + autor + '\'' +
+                ", \n totalPaginas=" + totalPaginas +
+                ", \n paginaAtual=" + paginaAtual +
+                ", \n aberto=" + aberto +
+                ", \n leitor=" + leitor.getNome() +
+                ", \n idade=" + leitor.getIdade() +
+                ", \n sexo=" + leitor.getSexo() +
+                '}';
+    }
+
+    // constructor
+    public Livro(String titulo, String autor, int totalPaginas, Pessoa leitor) {
+        this.titulo = titulo;
+        this.autor = autor;
+        this.totalPaginas = totalPaginas;
+        this.leitor = leitor;
+
+        this.paginaAtual = 0;
+        this.aberto = false;
+    }
+
+    // Getters and Setters
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public int getTotalPaginas() {
+        return totalPaginas;
+    }
+
+    public void setTotalPaginas(int totalPaginas) {
+        this.totalPaginas = totalPaginas;
+    }
+
+    public int getPaginaAtual() {
+        return paginaAtual;
+    }
+
+    public void setPaginaAtual(int paginaAtual) {
+        this.paginaAtual = paginaAtual;
+    }
+
+    public boolean isAberto() {
+        return aberto;
+    }
+
+    public void setAberto(boolean aberto) {
+        this.aberto = aberto;
+    }
+
+    public Pessoa getLeitor() {
+        return leitor;
+    }
+
+    public void setLeitor(Pessoa leitor) {
+        this.leitor = leitor;
+    }
+
+    // interface Publicacao
+    @Override
+    public void abrir() {
+        this.aberto = true;
+    }
+
+    @Override
+    public void fechar() {
+        this.aberto = false;
+    }
+
+    @Override
+    public void folhear(int pagina) {
+        if ( pagina > this.totalPaginas) {
+            this.paginaAtual = 0;
+        } else {
+            this.paginaAtual = pagina;
+        }
+    }
+
+    @Override
+    public void avancarPagina() {
+        this.paginaAtual++;
+    }
+
+    @Override
+    public void voltarPagina() {
+        this.paginaAtual--;
+    }
+}
+```
+
+<code> interface Publicacao </code>
+
+```java
+package aula09;
+
+public interface Publicacao {
+
+    public void abrir();
+    public void fechar();
+    public void folhear(int pagina);
+    public void avancarPagina();
+    public void voltarPagina();
+}
+```
+
+<code> class ProjetoLivro </code>
+
+```java
+package aula09;
+
+public class ProjetoLivro {
+
+    public static void main(String[] args) {
+
+        Pessoa [] p = new Pessoa[2];
+
+        p[0] = new Pessoa("Pedro", 22, "M");
+        p[1] = new Pessoa("Sofia", 25, "F");
+
+        Livro [] l = new Livro[3];
+
+        l[0] = new Livro("Java basic", "G. Guanabara", 100, p[0]);
+        l[1] = new Livro("POO basic", "G. Guanabara", 200, p[1]);
+        l[2] = new Livro("POO advanced", "G. Guanabara", 300, p[1]);
+
+        l[0].abrir();
+        l[0].folhear(90);
+        l[0].avancarPagina(); // 91
+        l[0].voltarPagina(); // 90
+
+        System.out.println(l[0].detalhes());
+
+        System.out.println();
+        System.out.println(l[1].detalhes());
+
+        System.out.println();
+        System.out.println(l[2].detalhes());
+
+    }
+}
+```
+
+<code> &rarr; Run 🖥️ &lt;Aula09&gt; </code>
+
+```markdown
+Livro{
+titulo='Java basic',
+autor='G. Guanabara',
+totalPaginas=100,
+paginaAtual=90,
+aberto=true,
+leitor=Pedro,
+idade=22,
+sexo=M}
+
+Livro{
+titulo='POO basic',
+autor='G. Guanabara',
+totalPaginas=200,
+paginaAtual=0,
+aberto=false,
+leitor=Sofia,
+idade=25,
+sexo=F}
+
+Livro{
+titulo='POO advanced',
+autor='G. Guanabara',
+totalPaginas=300,
+paginaAtual=0,
+aberto=false,
+leitor=Sofia,
+idade=25,
+sexo=F}
+```
+
+<br>
+
+---
 
 <span id="aula10">
 
@@ -2956,9 +3248,37 @@ Nessa aula de POO, vamos aprender o que é Herança em Programação Orientada a
 <img src="img/Aula10/aula10-14.png">
 <a href="#" target="_blank"></a>
 
-
 #### Aula Prática 10 – Herança (Parte 1)
 
+<br>
+
+<code> class </code>
+
+```java
+
+```
+
+<code> class </code>
+
+```java
+
+```
+
+<code> class Aula08 </code>
+
+```java
+
+```
+
+<code> &rarr; Run 🖥️ &lt;Aula10&gt; </code>
+
+```markdown
+
+```
+
+<br>
+
+---
 
 <br>
 
@@ -3001,9 +3321,7 @@ Nessa aula de POO, vamos aprender como funcionam os tipos de Herança, que são 
 <img src="img/Aula11/aula11-15.png">
 <a href="#" target="_blank"></a>
 
-
 #### Aula Prática 11 – Herança (Parte 2)
-
 
 <br>
 
@@ -3058,9 +3376,7 @@ Nessa aula de POO, vamos aprender como funciona o Polimorfismo em Programação 
 <img src="img/Aula12/aula12-21.png">
 <a href="#" target="_blank"></a>
 
-
 #### Aula Prática 12 – Polimorfismo em PHP (Parte 1)
-
 
 <br>
 
@@ -3089,10 +3405,7 @@ Nessa aula de POO, vamos aprender como aplicar o Polimorfismo de Sobrecarga às 
 <img src="img/Aula13/aula13-08.png">
 <a href="#" target="_blank"></a>
 
-
-
 #### Aula Prática 13 – Polimorfismo Sobrecarga (Parte 2)
-
 
 <br>
 
@@ -3165,7 +3478,6 @@ Nessa aula de POO, vamos iniciar a construção de um exemplo completo de um mod
 
 <br>
 
-
 <span id="aula15">
 
 ### 15. Aula 15
@@ -3214,7 +3526,6 @@ Nessa aula de POO, vamos fazer mais 10 Exercícios de Programação Orientada a 
 <img src="img/Aula15/aula15-resp08.png">
 <a href="#" target="_blank"></a>
 
-
 #### Aula Prática 15 – Projeto Final em PHP (Parte 2)
 
 Nessa aula de POO, vamos aplicar o modelo de agregação em Classes utilizando linguagem PHP. Um exercício prático e completamente feito em Programação Orientada a Objetos.
@@ -3229,7 +3540,6 @@ Nessa aula de POO, vamos aplicar o modelo de agregação em Classes utilizando l
 <img src="img/Aula15/aula15-proj2.png">
 <a href="#" target="_blank"></a>
 
-
 <hr>
 
 <span id="autor">
@@ -3242,9 +3552,12 @@ Nessa aula de POO, vamos aplicar o modelo de agregação em Classes utilizando l
   </a>
 </div>
 
-  * ` Dev: ` Eduardo da Silva Rodrigues
-  
-  * ` GitHub: ` [github.com/eduardodsr](https://www.github.com/eduardodsr) :link:
- 
-  * ` E-mail: ` <eduardodsr@gmail.com> :email:
+- `Dev:` Eduardo da Silva Rodrigues
 
+- `GitHub:` [github.com/eduardodsr](https://www.github.com/eduardodsr) :link:
+
+- `E-mail:` <eduardodsr@gmail.com> :email:
+
+```
+
+```
