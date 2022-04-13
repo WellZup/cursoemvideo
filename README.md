@@ -469,7 +469,7 @@ https://www.jetbrains.com/idea/guide/tutorials
 
 ### Código Fonte das Aulas : :computer: :file_folder:
 
-[Código Fonte das Aulas - Java POO](https://github.com/eduardodsr/cursoemvideo/tree/master/java-poo/aulas)
+[Código Fonte das Aulas - Java POO](https://github.com/eduardodsr/cursoemvideo/tree/master/java-poo/projects)
 
 ### YouTube - Playlist: :desktop_computer: :headphones:
 
