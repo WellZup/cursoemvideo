@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>aula09.ProjetoLivro</OriginalElement>
+  <nodes>
+    <node x="56.260416666666664" y="80.0">aula09.Livro</node>
+    <node x="135.75" y="0.0">aula09.Publicacao</node>
+    <node x="0.0" y="160.0">aula09.ProjetoLivro</node>
+    <node x="-85.25" y="-9.0">aula09.Pessoa</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="aula09.Livro" target="aula09.Pessoa" relationship="TO_ONE">
+      <point x="-28.66666666666667" y="-14.0" />
+      <point x="70.59374999999999" y="54.0" />
+      <point x="-33.749999999999986" y="54.0" />
+      <point x="1.4210854715202004E-14" y="14.0" />
+    </edge>
+    <edge source="aula09.ProjetoLivro" target="aula09.Pessoa" relationship="CREATE">
+      <point x="0.0" y="-14.0" />
+      <point x="69.0" y="134.0" />
+      <point x="40.79166666666667" y="134.0" />
+      <point x="40.79166666666667" y="54.0" />
+      <point x="-68.08333333333334" y="54.0" />
+      <point x="-34.333333333333336" y="14.0" />
+    </edge>
+    <edge source="aula09.Livro" target="aula09.Publicacao" relationship="REALIZATION">
+      <point x="28.66666666666667" y="-14.0" />
+      <point x="127.92708333333334" y="54.0" />
+      <point x="201.75" y="54.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="aula09.ProjetoLivro" target="aula09.Livro" relationship="CREATE">
+      <point x="0.0" y="-14.0" />
+      <point x="69.0" y="134.0" />
+      <point x="99.26041666666666" y="134.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="aula09.Livro" target="aula09.Pessoa" relationship="DEPENDENCY">
+      <point x="0.0" y="-14.0" />
+      <point x="99.26041666666666" y="54.0" />
+      <point x="0.5833333333333428" y="54.0" />
+      <point x="34.33333333333334" y="14.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="134.0" y="94.0" />
+  <SelectedNodes>
+    <node>aula09.Pessoa</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
