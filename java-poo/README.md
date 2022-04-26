@@ -3252,35 +3252,35 @@ sexo=F}
 
 Nessa aula de POO, vamos aprender o que é Herança em Programação Orientada a Objetos.
 
-<img src="img/Aula10/aula10-00.png">
+<img src="./img/Aula10/aula10-00.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula10/aula10-01.png">
+<img src="./img/Aula10/aula10-01.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula10/aula10-02.png">
+<img src="./img/Aula10/aula10-02.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula10/aula10-03.png">
+<img src="./img/Aula10/aula10-03.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula10/aula10-04.png">
+<img src="./img/Aula10/aula10-04.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula10/aula10-05.png">
+<img src="./img/Aula10/aula10-05.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula10/aula10-06.png">
+<img src="./img/Aula10/aula10-06.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula10/aula10-07.png">
+<img src="./img/Aula10/aula10-07.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula10/aula10-08.png">
+<img src="./img/Aula10/aula10-08.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula10/aula10-09.png">
+<img src="./img/Aula10/aula10-09.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula10/aula10-10.png">
+<img src="./img/Aula10/aula10-10.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula10/aula10-11.png">
+<img src="./img/Aula10/aula10-11.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula10/aula10-12.png">
+<img src="./img/Aula10/aula10-12.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula10/aula10-13.png">
+<img src="./img/Aula10/aula10-13.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula10/aula10-14.png">
+<img src="./img/Aula10/aula10-14.png">
 <a href="#" target="_blank"></a>
 
 
