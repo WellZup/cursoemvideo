@@ -3961,7 +3961,7 @@ A assinatura só leva em consideração essas duas premissas:
 
 ---
 
-#### Aula Prática 12 – Polimorfismo em PHP (Parte 1)
+#### Aula Prática 12 – Polimorfismo em Java (Parte 1)
 
 
 <code> class Animal </code>
@@ -4382,21 +4382,21 @@ Som de ave
 
 Nessa aula de POO, vamos aprender como aplicar o Polimorfismo de Sobrecarga às nossas classes. Veja também a diferença entre sobrecarga e sobreposição, algo que muita gente confunde.
 
-<img src="img/Aula13/aula13-01.png">
+<img src="./img/aula13/aula13-01.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula13/aula13-02.png">
+<img src="./img/aula13/aula13-02.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula13/aula13-03.png">
+<img src="./img/aula13/aula13-03.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula13/aula13-04.png">
+<img src="./img/aula13/aula13-04.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula13/aula13-05.png">
+<img src="./img/aula13/aula13-05.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula13/aula13-06.png">
+<img src="./img/aula13/aula13-06.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula13/aula13-07.png">
+<img src="./img/aula13/aula13-07.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula13/aula13-08.png">
+<img src="./img/aula13/aula13-08.png">
 <a href="#" target="_blank"></a>
 
 ---
