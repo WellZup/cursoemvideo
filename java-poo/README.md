@@ -3915,7 +3915,6 @@ A assinatura só leva em consideração essas duas premissas:
 - **Sobrecarga**: É usado para alterar comportamentos na mesma classe, com a possibilidade de ter assinaturas diferentes, ainda assim, em um método com o mesmo nome.
 
 
-
 <img src="./img/aula12/aula12-01.png">
 <a href="#" target="_blank"></a>
 <img src="./img/aula12/aula12-02.png">
@@ -4399,17 +4398,177 @@ Nessa aula de POO, vamos aprender como aplicar o Polimorfismo de Sobrecarga às 
 <img src="./img/aula13/aula13-08.png">
 <a href="#" target="_blank"></a>
 
+<br>
+
+#### Polimorfismo
+
+- *Polimorfismo* é terceiro e último pilar da POO. 
+- É um mecanismo que permite um único nome representar comportamentos diferentes…
+<br>
+- Poli = Muitas | Morfo = Formas
+
+#### Assinatura dos métodos
+
+- São a quantidade e os tipos dos parâmetros. 
+- A assinatura só leva em consideração essas duas premissas: 
+    - Quantidade e Tipo. 
+    
+#### Tipos de Polimorfismos
+
+- **Sobreposição / @Override**: É usado para sobrescrever comportamentos, mas mantendo o nome do método e sobrescrevendo ele em outra classe, obrigatório que tenha a mesma assinatura.
+
+- **Sobrecarga**: É usado para alterar comportamentos na mesma classe, com a possibilidade de ter assinaturas diferentes, ainda assim, em um método com o mesmo nome.
+
 ---
 
 <u> Aula Prática 13 – Polimorfismo Sobrecarga (Parte 2)</u>
 
 <br>
 
-<code> class </code>
+<code> abstract class Animal </code>
 
 ```java
+package aula13;
 
+public abstract class Animal {
+    // Attributes
+    protected float peso;
+    protected int idade;
+    protected int membros;
+
+    // Method
+    public abstract void emitirSom();
+}
 ```
+
+<code> class Mamifero extends Animal </code>
+
+```java
+package aula13;
+
+public class Mamifero extends Animal {
+    // Attributes
+    protected String corPelo;
+
+    // Polimorfismo de Sobreposição
+    @Override
+    public void emitirSom() {
+        System.out.println("Som de Mamifero!");
+    }
+}
+```
+
+<code> class Lobo extends Mamifero </code>
+
+```java
+package aula13;
+
+public class Lobo extends Mamifero {
+    // Polimorfismo de Sobreposição
+    @Override
+    public void emitirSom() {
+        System.out.println("Auuuuuuuuuu!");
+    }
+}
+```
+
+<code> class Cachorro extends Lobo </code>
+
+```java
+package aula13;
+
+public class Cachorro extends Lobo {
+
+    // Polimorfismo de Sobreposição -> Mesma assinatura. Classes diferentes.
+    @Override
+    public void emitirSom() {
+        System.out.println("Au! Au! Au!");
+    }
+
+    // Polimorfismo de Sobrecarga -> mesma classe. Assinatura diferentes.
+    public void reagir(String frase) {
+        if (frase.toLowerCase() == "toma comida" || frase.toLowerCase() == "ola") {
+           System.out.println("Abanar! e Latir!");
+        } else {
+            System.out.println("Rosnar!");
+        }
+    }
+    public void reagir(int hora, int minuto) {
+        if (hora < 12) {
+            System.out.println("Abanar!");
+        }
+        else if (hora >= 18) {
+            System.out.println("Ignorar!");
+        } else {
+            System.out.println("Abanar! e Latir!");
+        }
+    }
+    public void reagir(boolean dono) {
+        if (dono) {
+            System.out.println("Abanar!");
+        } else {
+            System.out.println("Rosnar! e Latir!");
+        }
+    }
+    public void reagir(int idade, float peso) {
+        if (idade < 5) {
+            if (peso < 10){
+                System.out.println("Abanar!");
+            }
+            else {
+                System.out.println("Latir!");
+            }
+        } else {
+            if (peso < 10) {
+                System.out.println("Rosnar!");
+            } else {
+                System.out.println("Ignorar!");
+            }
+        }
+    }
+}
+```
+
+- Programa Principal
+
+<code> class Aula13 </code>
+
+```java
+package aula13;
+
+public class Aula13 {
+
+    public static void main(String[] args) {
+
+        Mamifero mam = new Mamifero();
+        System.out.println("##### Mamifero #####");
+        mam.emitirSom();            // Som de Mamifero!
+
+        Lobo lob = new Lobo();
+        System.out.println("\n##### Lobo #####");
+        lob.emitirSom();            // Auuuuuuuuuu!
+
+        Cachorro cac = new Cachorro();
+        System.out.println("\n##### Cachorro #####");
+        cac.emitirSom();           // Au! Au! Au!
+        cac.reagir("ola");         // Abanar! e Latir!
+        cac.reagir("Vai apanhar"); // Rosnar!
+        System.out.println();
+        cac.reagir(11,45);          // Abanar!
+        cac.reagir(21,00);          // Ignorar!
+        cac.reagir(17,00);          // Abanar! e Latir!
+        System.out.println();
+        cac.reagir(false);          // Rosnar! e Latir!
+        cac.reagir(true);           // Abanar!
+        System.out.println();
+        cac.reagir(2,12.5F);        // Latir!
+        cac.reagir(17,4.5F);        // Rosnar!
+        cac.reagir(15, 15.0F);      // Ignorar!
+    }
+}
+```
+
+---
 
 <br>
 
@@ -4471,7 +4630,7 @@ Nessa aula de POO, vamos fazer uma lista de exercícios de programação orienta
 
 <br>
 
-#### Aula Prática 14 – Projeto Final em PHP (Parte 1)
+#### Aula Prática 14 – Projeto Final em Java (Parte 1)
 
 Nessa aula de POO, vamos iniciar a construção de um exemplo completo de um modelo 100% construído em Programação Orientada a Objetos com PHP.
 
