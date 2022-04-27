@@ -3252,6 +3252,10 @@ sexo=F}
 
 Nessa aula de POO, vamos aprender o que é Herança em Programação Orientada a Objetos.
 
+- **Herança** é o conceito de herdar coisas, faça uma analogia, por exemplo, com a herança deixada por familiares. Usada quando queremos pegar atributos e comportamentos de uma classe e transferir eles para outra classe, isso sem necessidade de copiar e colar códigos.
+
+- Em UML, a **herança** é representada com uma seta para cima. Toda classe que passa seus atributos e métodos adiante é chamada de **SuperClasse (mãe)**, e toda classe que herda algo é chamada de **SubClasse (filha)**. 
+
 <img src="./img/aula10/aula10-00.png">
 <a href="#" target="_blank"></a>
 <img src="./img/aula10/aula10-01.png">
@@ -3508,7 +3512,6 @@ Pessoa{nome='Fabiana', idade=40, sexo='F'}
 
 ---
 
-<br>
 
 <span id="aula11">
 
@@ -3517,6 +3520,73 @@ Pessoa{nome='Fabiana', idade=40, sexo='F'}
 #### Aula Teórica 11 – Herança (Parte 2)
 
 Nessa aula de POO, vamos aprender como funcionam os tipos de Herança, que são a Herança de Implementação e Herança para Diferença. Além disso, vamos ver algumas nomenclaturas importantes para a Programação Orientada a Objetos.
+
+#### Navegação pela Herança
+Navegar pela herança pode ser visto assim como uma árvore genealógica, contudo, ela esta de ponta cabeça. Sim, a raiz começa no topo! Logo, temos duas formas de visualizar este modelo de diagrama:
+1. **Especialização**: Quando você percorre a árvore de cima para baixo.
+2. **Generalização**: Quando você percorre a árvore de baixo para cima.
+
+- **Raiz**: Chamada de classe base. É uma classe que não possui superclasse (mãe). Imagina um ser místico que nasceu do nada.
+
+- **Descendente**: Dada uma classe, toda classe que aparece depois dela é uma descendente da classe dada. Na imagem: ACA é descendente de A. AC não é descendente de A, AC é filha de A. Imagina seu neto(a) que vai ser descendente.
+
+- **Ancestral**: Dada uma filha, uma ancestral é uma classe que aparece antes da progenitora (mãe). Na imagem: A teve um filho AA. AA teve um filho AAA. Ancestral de AAA é A. A não é ancestral de AA, A é mãe de AA. Lembra da vó.
+
+- **Folha**: uma classe que não possui subclasses (filhas). Na imagem: ABAA e ABAB são folhas. Lembra do seu amigo(a) que não quer ter— e nem tem — filhos.
+
+
+#### Tipos de Herança
+
+#### 1. Herança para implementação
+Conhecida também como **herança pobre** (porque só herda o básico), diz que a classe filha herda as características e comportamentos da mãe, porém, **a filha não implementa mais nada**. Aplicando o conceito de reuso de código, herdando características existentes em vez de recortar e colar o código novamente. Exemplo:
+
+```java
+package aula11;
+
+public class Visitante extends Pessoa {
+
+}
+```
+
+#### 2. Herança para diferença
+Também herda características e comportamentos da classe mãe, porém, **a filha implementa mais coisas**, tornado a nova classe diferente da classe herdada. Isso permite que você programe através de incrementos. Exemplo:
+
+```java
+package aula11;
+
+public class Aluno extends Pessoa {
+    private int matricula;
+    private String curso;
+
+    public void pagarMensalidade() {
+        System.out.println("Pagando mensalidade do aluno");
+    }
+}
+```
+
+No exemplo acima, o Aluno (filha) além de ter herdado tudo da classe Pessoa (mãe), também adicionou comportamentos a ele.
+
+#### Classes e Métodos abstrato e final
+
+- **Classe abstrata:** sempre será mãe, como também, não serve para instanciar novos objetos, ou seja, ela existe só para as outras classes herdarem suas características e comportamentos.
+
+```java
+package aula11;
+
+public abstract class Pessoa {
+  //
+}
+```
+
+- **Métodos abstratos**: só podem ser colocados numa interface ou classe abstrata.
+
+- **@Sobrepor (@Override) :** fazer a mesma coisa de formas diferentes. É um dos tipos de Polimorfismo.
+
+- **Classes com o** <code>final</code> declarado é obrigatoriamente folha, isto quer dizer que, não pode ter filhos, logo, ela é final e nenhuma classe pode herdar coisas dela.
+
+- **Métodos com o** <code>final</code> declarado não poder ser sobrescritos (@Override) pelas subclasses, isto é, nada de mudar o que o método faz, ele funcionará da mesma maneira em classe filhas.
+
+- **Um atributo com** <code>final</code> declarado em uma classe pode ter seu valor atribuído uma única vez, seja na própria declaração ou no construtor.
 
 <img src="./img/aula11/aula11-01.png">
 <a href="#" target="_blank"></a>
@@ -3553,9 +3623,269 @@ Nessa aula de POO, vamos aprender como funcionam os tipos de Herança, que são 
 
 <br>
 
-<u> Aula Prática 11 – Herança (Parte 2) </u>
+#### <u> Aula Prática 11 – Herança (Parte 2) </u>
 
+<img src="./img/aula11/aula11-p01.png">
+<a href="#" target="_blank"></a>
 
+<br>
+
+<br>
+
+<code> class Pessoa </code>
+
+```java
+package aula11;
+
+public abstract class Pessoa {
+
+    // Attributes
+    protected String nome;
+    protected int idade;
+    protected String sexo;
+
+    // Generate -> toString()
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                ", sexo='" + sexo + '\'' +
+                '}';
+    }
+
+    // Methods
+    public void fazerAniversario(){
+        this.idade++;
+    }
+
+    // Special Methodos - Getters and Setters
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public String getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
+}
+```
+
+<code> class Visitante extends Pessoa </code>
+
+```java
+package aula11;
+
+public class Visitante extends Pessoa {
+    /**
+     * A classe Visitante não tem nenhum atributo e nenhum metodo adicional;
+     * Herança de Implementação, também conhecida como Herança Pobre;
+     * Herança Pobre -> Vai herdar tudo de Pessoa, mas não vai implementar nada novo;
+     */
+}
+```
+
+<code> class Professor extends Pessoa </code>
+
+```java
+public class Professor extends Pessoa {
+    // Attributes
+    private String especialidade;
+    private float salario;
+
+    // Methods
+    public void receberAumento(float aumento) {
+        this.salario += aumento;
+    }
+
+    // Special Methods - Getters and Setters
+    public String getEspecialidade() {
+        return especialidade;
+    }
+
+    public void setEspecialidade(String especialidade) {
+        this.especialidade = especialidade;
+    }
+
+    public float getSalario() {
+        return salario;
+    }
+
+    public void setSalario(float salario) {
+        this.salario = salario;
+    }
+}
+
+```
+
+<code> class Aluno extends Pessoa </code>
+
+```java
+package aula11;
+
+public class Aluno extends Pessoa {
+    // Attributes
+    private int matricula;
+    private String curso;
+
+    // Methods
+    public void pagarMensalidade() {
+        System.out.println("Pagando mensalidade do aluno " + this.nome);
+    }
+
+    public void cancelarMatricula() {
+        System.out.println("Matrícula será cancelada!");
+    }
+
+    // Special Methods - Getters and Setters
+    public int getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(int matricula) {
+        this.matricula = matricula;
+    }
+
+    public String getCurso() {
+        return curso;
+    }
+
+    public void setCurso(String curso) {
+        this.curso = curso;
+    }
+}
+```
+
+<code> class Bolsista extends Aluno </code>
+
+```java
+package aula11;
+
+public class Bolsista extends Aluno {
+    // Attributes
+    private float bolsa;
+
+    // Method
+    public void renovarBolsa() {
+        System.out.println("Renovando bolsa de " + this.nome);
+    }
+
+    @Override
+    public void pagarMensalidade() {
+        System.out.println(this.nome + " é bolsista! Pagamento facilitado.");
+    }
+
+    // Special Method - Getters and Setters
+    public float getBolsa() {
+        return bolsa;
+    }
+
+    public void setBolsa(float bolsa) {
+        this.bolsa = bolsa;
+    }
+}
+```
+
+<code> class Tecnico extends Aluno </code>
+
+```java
+package aula11;
+
+public class Tecnico extends Aluno {
+    // Attributes
+    private int registroProfissional;
+
+    // Method
+    public void praticar() {
+        System.out.println(this.nome + " é aluno técnico! Relizando atividade pratica!");
+    }
+
+    // Special Method - Getters and Setters
+    public int getRegistroProfissional() {
+        return registroProfissional;
+    }
+
+    public void setRegistroProfissional(int registroProfissional) {
+        this.registroProfissional = registroProfissional;
+    }
+}
+```
+
+<code> class ProjetoPessoas (Classe Principal) </code>
+
+```java
+package aula11;
+
+public class ProjetoPessoas {
+
+    public static void main(String[] args) {
+
+        Visitante v1 = new Visitante();
+        v1.setNome("Juvenal");
+        v1.setIdade(24);
+        v1.setSexo("M");
+        System.out.println(v1);
+        System.out.println();
+
+        Aluno a1 = new Aluno();
+        a1.setNome("Claudio");
+        a1.setMatricula(1111);
+        a1.setIdade(16);
+        a1.setSexo("M");
+        a1.pagarMensalidade();
+        System.out.println(a1);
+        System.out.println();
+
+        Bolsista b1 = new Bolsista();
+        b1.setMatricula(2222);
+        b1.setNome("Jubileu");
+        b1.setSexo("M");
+        b1.setIdade(15);
+        b1.setBolsa(12.5F);
+        b1.pagarMensalidade();
+        System.out.println(b1);
+        System.out.println();
+
+        Tecnico t1 = new Tecnico();
+        t1.setNome("Creuza");
+        t1.setSexo("F");
+        t1.setIdade(14);
+        t1.praticar();
+        System.out.println(t1);
+    }
+}
+
+```
+
+<code> &rarr; Run 🖥️ &lt; class ProjetoPessoas (Aula11) &gt; </code>
+
+```markdown
+Pessoa{nome='Juvenal', idade=24, sexo='M'}
+
+Pagando mensalidade do aluno Claudio
+Pessoa{nome='Claudio', idade=16, sexo='M'}
+
+Jubileu é bolsista! Pagamento facilitado.
+Pessoa{nome='Jubileu', idade=15, sexo='M'}
+
+Creuza é aluno técnico! Relizando atividade pratica!
+Pessoa{nome='Creuza', idade=14, sexo='F'}
+```
 
 <br>
 
@@ -3569,52 +3899,480 @@ Nessa aula de POO, vamos aprender como funcionam os tipos de Herança, que são 
 
 Nessa aula de POO, vamos aprender como funciona o Polimorfismo em Programação Orientada a Objetos, o terceiro pilar de teoria.
 
-<img src="img/Aula12/aula12-01.png">
+**Polimorfismo** é terceiro e último pilar da POO. É um mecanismo que permite um único nome representar comportamentos diferentes…
+
+- Poli = Muitas | Morfo = Formas
+
+#### Assinatura dos métodos
+São a quantidade e os tipos dos parâmetros. 
+A assinatura só leva em consideração essas duas premissas: 
+    - Quantidade e Tipo. 
+    
+#### Tipos de Polimorfismos
+
+- **Sobreposição / @Override**: É usado para sobrescrever comportamentos, mas mantendo o nome do método e sobrescrevendo ele em outra classe, obrigatório que tenha a mesma assinatura.
+
+- **Sobrecarga**: É usado para alterar comportamentos na mesma classe, com a possibilidade de ter assinaturas diferentes, ainda assim, em um método com o mesmo nome.
+
+
+
+<img src="./img/aula12/aula12-01.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula12/aula12-02.png">
+<img src="./img/aula12/aula12-02.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula12/aula12-03.png">
+<img src="./img/aula12/aula12-03.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula12/aula12-04.png">
+<img src="./img/aula12/aula12-04.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula12/aula12-05.png">
+<img src="./img/aula12/aula12-05.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula12/aula12-06.png">
+<img src="./img/aula12/aula12-06.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula12/aula12-07.png">
+<img src="./img/aula12/aula12-07.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula12/aula12-08.png">
+<img src="./img/aula12/aula12-08.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula12/aula12-09.png">
+<img src="./img/aula12/aula12-09.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula12/aula12-10.png">
+<img src="./img/aula12/aula12-10.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula12/aula12-11.png">
+<img src="./img/aula12/aula12-11.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula12/aula12-12.png">
+<img src="./img/aula12/aula12-12.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula12/aula12-13.png">
+<img src="./img/aula12/aula12-13.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula12/aula12-14.png">
+<img src="./img/aula12/aula12-14.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula12/aula12-15.png">
+<img src="./img/aula12/aula12-15.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula12/aula12-16.png">
+<img src="./img/aula12/aula12-16.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula12/aula12-17.png">
+<img src="./img/aula12/aula12-17.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula12/aula12-18.png">
+<img src="./img/aula12/aula12-18.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula12/aula12-19.png">
+<img src="./img/aula12/aula12-19.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula12/aula12-20.png">
+<img src="./img/aula12/aula12-20.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula12/aula12-21.png">
+<img src="./img/aula12/aula12-21.png">
 <a href="#" target="_blank"></a>
+
+---
 
 #### Aula Prática 12 – Polimorfismo em PHP (Parte 1)
 
+
+<code> class Animal </code>
+
+```java
+package aula12;
+
+public abstract class Animal {
+    // Attributes
+    protected float peso;
+    protected int idade;
+    protected int membros;
+
+    // Methods
+    public abstract void locomover();
+    public abstract void alimentar();
+    public abstract void emitirSom();
+
+    // Special Methods - Getters and Setters
+    public float getPeso() {
+        return peso;
+    }
+
+    public void setPeso(float peso) {
+        this.peso = peso;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public int getMembros() {
+        return membros;
+    }
+
+    public void setMembros(int membros) {
+        this.membros = membros;
+    }
+}
+```
+
+<code> class Mamifero extends Animal </code>
+
+```java
+package aula12;
+
+public class Mamifero extends Animal {
+    // Attributes
+    private String corPelo;
+
+    @Override
+    public void locomover() {
+        System.out.println("Correndo");
+    }
+
+    @Override
+    public void alimentar() {
+        System.out.println("Mamando");
+    }
+
+    @Override
+    public void emitirSom() {
+        System.out.println("Som de mamifero");
+    }
+
+    // Special Methods - Getters and Setters
+    public String getCorPelo() {
+        return corPelo;
+    }
+
+    public void setCorPelo(String corPelo) {
+        this.corPelo = corPelo;
+    }
+}
+```
+
+<code> class Cachorro extends Mamifero </code>
+
+```java
+package aula12;
+
+public class Cachorro extends Mamifero {
+
+    @Override
+    public void emitirSom() {
+        System.out.println("au au au");
+    }
+
+    public void enterrarOsso() {
+        System.out.println("Enterrando o osso");
+    }
+
+    public void abanarRabo() {
+        System.out.println("Abanando o rabo");
+    }
+}
+```
+
+<code> class Canguru extends Mamifero </code>
+
+```java
+package aula12;
+
+public class Canguru extends Mamifero {
+    @Override
+    public void locomover() {
+        System.out.println("Saltando");
+    }
+
+    public void usarBolsa() {
+        System.out.println("Usando a bolsa");
+    }
+}
+```
+
+<code> class Reptil extends Animal </code>
+
+```java
+package aula12;
+
+public class Reptil extends Animal {
+    // Attributes
+    private String corEscama;
+
+    @Override
+    public void locomover() {
+        System.out.println("Rastejando");
+    }
+
+    @Override
+    public void alimentar() {
+        System.out.println("Comendo Vegetais");
+    }
+
+    @Override
+    public void emitirSom() {
+        System.out.println("Som de Réptil");
+    }
+
+    // Special Methods - Getters and Setters
+    public String getCorEscama() {
+        return corEscama;
+    }
+
+    public void setCorEscama(String corEscama) {
+        this.corEscama = corEscama;
+    }
+}
+```
+
+<code> class Cobra extends Reptil </code>
+
+```java
+package aula12;
+
+public class Cobra extends Reptil {
+
+}
+```
+
+<code> class Tartaruga extends Reptil </code>
+
+```java
+package aula12;
+
+public class Tartaruga extends Reptil {
+
+    @Override
+    public void locomover() {
+        System.out.println("Andando beeeem devagar");
+    }
+}
+
+```
+
+<code> class Peixe extends Animal </code>
+
+```java
+package aula12;
+
+public class Peixe extends Animal {
+    // Attributes
+    private String corEscama;
+
+    @Override
+    public void locomover() {
+        System.out.println("Nadando");
+    }
+
+    @Override
+    public void alimentar() {
+        System.out.println("Comendo substâncias");
+    }
+
+    @Override
+    public void emitirSom() {
+        System.out.println("Peixe não faz som");
+    }
+
+     public void soltarBolha() {
+         System.out.println("Soltou uma bolha");
+     }
+
+    // Special Methods - Getters and Setters
+    public String getCorEscama() {
+        return corEscama;
+    }
+
+    public void setCorEscama(String corEscama) {
+        this.corEscama = corEscama;
+    }
+}
+```
+
+<code> class GoldFish extends Peixe </code>
+
+```java
+package aula12;
+
+public class GoldFish extends Peixe {
+
+}
+```
+
+<code> class Ave extends Animal </code>
+
+```java
+package aula12;
+
+public class Ave extends Animal {
+    // Attributes
+    private String corPena;
+
+    @Override
+    public void locomover() {
+        System.out.println("Voando");
+    }
+
+    @Override
+    public void alimentar() {
+        System.out.println("Comendo frutas");
+    }
+
+    @Override
+    public void emitirSom() {
+        System.out.println("Som de ave");
+    }
+
+    public void fazerNinho() {
+        System.out.println("Construiu um ninho");
+    }
+
+    // Special Method - Getters and Setters
+    public String getCorPena() {
+        return corPena;
+    }
+
+    public void setCorPena(String corPena) {
+        this.corPena = corPena;
+    }
+}
+```
+
+<code> class Arara extends Ave </code>
+
+```java
+package aula12;
+
+public class Arara extends Ave {
+
+}
+```
+
+<code> class Aula12 (Programa Principal) </code>
+
+```java
+package aula12;
+
+public class Aula12 {
+    public static void main(String[] args) {
+
+        Mamifero ma = new Mamifero();
+        System.out.println("####### Mamifero #######");
+        ma.alimentar();
+        ma.locomover();
+        ma.emitirSom();
+
+        Reptil rp = new Reptil();
+        System.out.println("\n ####### Reptil #######");
+        rp.locomover();
+        rp.alimentar();
+        rp.emitirSom();
+
+        Peixe px = new Peixe();
+        System.out.println("\n ######## Peixe ######");
+        px.locomover();
+        px.alimentar();
+        px.emitirSom();
+
+        Ave av = new Ave();
+        System.out.println("\n ######### Ave ########");
+        av.locomover();
+        av.alimentar();
+        av.emitirSom();
+
+        Canguru cang = new Canguru();
+        System.out.println("\n ####### Canguru ########");
+        cang.locomover();
+        cang.alimentar();
+        cang.emitirSom();
+        cang.usarBolsa();
+
+        Cachorro cach = new Cachorro();
+        System.out.println("\n ######## Cachorro #######");
+        cach.locomover();
+        cach.alimentar();
+        cach.emitirSom();
+        cach.enterrarOsso();
+        cach.abanarRabo();
+
+        Cobra cobr = new Cobra();
+        System.out.println("\n ######### Cobra #########");
+        cobr.locomover();
+        cobr.alimentar();
+        cobr.emitirSom();
+
+        Tartaruga tart = new Tartaruga();
+        System.out.println("\n ######### Tartaruga ######");
+        tart.locomover();
+        tart.alimentar();
+        tart.emitirSom();
+
+        GoldFish gold = new GoldFish();
+        System.out.println("\n ######### GoldFish #######");
+        gold.locomover();
+        gold.alimentar();
+        gold.emitirSom();
+
+        Arara arar = new Arara();
+        System.out.println("\n ########## Arara ##########");
+        arar.locomover();
+        arar.alimentar();
+        arar.emitirSom();
+    }
+}
+```
+
+<code> &rarr; Run 🖥️  &lt;class Aula12&gt; </code>
+
+```markdown
+####### Mamifero #######
+Mamando
+Correndo
+Som de mamifero
+
+ ####### Reptil #######
+Rastejando
+Comendo Vegetais
+Som de Réptil
+
+ ######## Peixe ######
+Nadando
+Comendo substâncias
+Peixe não faz som
+
+ ######### Ave ########
+Voando
+Comendo frutas
+Som de ave
+
+ ####### Canguru ########
+Saltando
+Mamando
+Som de mamifero
+Usando a bolsa
+
+ ######## Cachorro #######
+Correndo
+Mamando
+au au au
+Enterrando o osso
+Abanando o rabo
+
+ ######### Cobra #########
+Rastejando
+Comendo Vegetais
+Som de Réptil
+
+ ######### Tartaruga ######
+Andando beeeem devagar
+Comendo Vegetais
+Som de Réptil
+
+ ######### GoldFish #######
+Nadando
+Comendo substâncias
+Peixe não faz som
+
+ ########## Arara ##########
+Voando
+Comendo frutas
+Som de ave
+```
+
 <br>
+
+---
 
 <span id="aula13">
 
@@ -3641,7 +4399,17 @@ Nessa aula de POO, vamos aprender como aplicar o Polimorfismo de Sobrecarga às 
 <img src="img/Aula13/aula13-08.png">
 <a href="#" target="_blank"></a>
 
-#### Aula Prática 13 – Polimorfismo Sobrecarga (Parte 2)
+---
+
+<u> Aula Prática 13 – Polimorfismo Sobrecarga (Parte 2)</u>
+
+<br>
+
+<code> class </code>
+
+```java
+
+```
 
 <br>
 
