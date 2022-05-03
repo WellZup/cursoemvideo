@@ -4937,6 +4937,10 @@ Nessa aula de POO, vamos fazer mais 10 Exercícios de Programação Orientada a 
 <a href="#" target="_blank"></a>
 <img src="./img/aula15/aula15-08.png">
 <a href="#" target="_blank"></a>
+<img src="./img/aula15/aula15-resp09.png">
+<a href="#" target="_blank"></a>
+<img src="./img/aula15/aula15-resp10.png">
+<a href="#" target="_blank"></a>
 
 <br><br>
 
@@ -4958,12 +4962,16 @@ Nessa aula de POO, vamos fazer mais 10 Exercícios de Programação Orientada a 
 <a href="#" target="_blank"></a>
 <img src="./img/aula15/aula15-resp08.png">
 <a href="#" target="_blank"></a>
+<img src="./img/aula15/aula15-resp09.png">
+<a href="#" target="_blank"></a>
+<img src="./img/aula15/aula15-resp10.png">
+<a href="#" target="_blank"></a>
 
 ---
 
 <br>
 
-#### Aula Prática 15 – Projeto Final em PHP (Parte 2)
+#### Aula Prática 15 – Projeto Final em Java (Parte 2)
 
 Nessa aula de POO, vamos aplicar o modelo de agregação em Classes utilizando linguagem Java. Um exercício prático e completamente feito em Programação Orientada a Objetos.
 
@@ -4980,6 +4988,296 @@ O **desafio final** é a criação de um pequeno programa semelhante ao Youtube,
 <img src="./img/aula15/aula15-proj2.png">
 <a href="#" target="_blank"></a>
 
+
+<br><br>
+
+- **PROJETO YOUTUBE**
+
+<code> interface AcoesVideo  </code>
+
+```java
+package aula15;
+
+public interface AcoesVideo {
+    // abstract method
+    public void play();
+    public void pause();
+    public void like();
+}
+```
+
+<code> class Video implements AcoesVideo </code>
+
+```java
+package aula15;
+
+public class Video implements AcoesVideo {
+    // Attributes
+    private String titulo;
+    private int avaliacao;
+    private int views;
+    private int curtidas;
+    private boolean reproduzindo;
+
+    // Constructor
+    public Video(String titulo) {
+        this.titulo = titulo;
+        this.avaliacao = 1;  // estrelas DE 1 ATE 5!
+        this.views = 0;
+        this.curtidas = 0;
+        this.reproduzindo = false;
+    }
+
+    // toString()
+    @Override
+    public String toString() {
+        return "Video{" +
+                "titulo='" + titulo + '\'' +
+                ", avaliacao=" + avaliacao +
+                ", views=" + views +
+                ", curtidas=" + curtidas +
+                ", reproduzindo=" + reproduzindo +
+                '}';
+    }
+
+    // Special Method - Getters and Setters
+    public String getTitulo() {
+        return titulo;
+    }
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+    public int getAvaliacao() {
+        return avaliacao;
+    }
+    public void setAvaliacao(int avaliacao) {
+        this.avaliacao = avaliacao;
+    }
+    public int getViews() {
+        return views;
+    }
+    public void setViews(int views) {
+        this.views = views;
+    }
+    public int getCurtidas() {
+        return curtidas;
+    }
+    public void setCurtidas(int curtidas) {
+        this.curtidas = curtidas;
+    }
+
+    @Override
+    public void play() {
+        this.reproduzindo = true;
+    }
+
+    @Override
+    public void pause() {
+        this.reproduzindo = false;
+    }
+
+    @Override
+    public void like() {
+        this.curtidas++;
+    }
+}
+
+```
+
+<code> abstract class Pessoa </code>
+
+```java
+package aula15;
+
+public abstract class Pessoa {
+    // Attributes
+    protected String nome;
+    protected int idade;
+    protected String sexo;
+    protected float experiencia;
+
+    // Construct
+    public Pessoa(String nome, int idade, String sexo) {
+        this.nome = nome;
+        this.idade = idade;
+        this.sexo = sexo;
+        this.experiencia = 0;
+    }
+
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                ", sexo='" + sexo + '\'' +
+                ", experiencia=" + experiencia +
+                '}';
+    }
+
+    // Method
+    public void ganharExperiencia(){
+        // TODO
+    }
+
+    // Special Method
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public String getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
+
+    public float getExperiencia() {
+        return experiencia;
+    }
+
+    public void setExperiencia(float experiencia) {
+        this.experiencia = experiencia;
+    }
+}
+```
+
+<code> class Gafanhoto extends Pessoa </code>
+
+```java
+package aula15;
+
+public class Gafanhoto extends Pessoa {
+    // Attributes
+    private String login;
+    private int totalAssistido;
+
+    // Construcor
+    public Gafanhoto(String nome, int idade, String sexo, String login) {
+        super(nome, idade, sexo);
+        this.login = login;
+        this.totalAssistido = 0;
+    }
+
+    @Override
+    public String toString() {
+        return "Gafanhoto{" +
+                super.toString() +
+                "login='" + login + '\'' +
+//                ", nome='" + nome + '\'' +
+//                ", idade=" + idade +
+//                ", sexo='" + sexo + '\'' +
+                ", totalAssistido='" + totalAssistido + '\'' +
+                '}';
+    }
+
+    // Method
+    public void viuMaisUm(){
+        // TODO
+    }
+
+    // Special Method - Getters and Setters
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public int getTotalAssistido() {
+        return totalAssistido;
+    }
+
+    public void setTotalAssistido(int totalAssistido) {
+        this.totalAssistido = totalAssistido;
+    }
+}
+```
+
+- Programa Principal
+
+<code> class Aula15 </code>
+
+```java
+package aula15;
+
+public class Aula15 {
+
+    public static void main(String[] args) {
+
+        Video vet[] = new Video[3];
+        vet[0] = new Video("Aula 01 de POO");
+        vet[1] = new Video("Aula 02 de PHP");
+        vet[2] = new Video("Aula 03 de HTML");
+
+        /*
+        System.out.println(vet[0].toString());
+        System.out.println(vet[1].toString());
+        System.out.println(vet[2].toString());
+        System.out.println();
+        */
+
+        Gafanhoto gaf[] = new Gafanhoto[3];
+        gaf[0] = new Gafanhoto("Jubileu", 15, "M", "juba");
+        gaf[1] = new Gafanhoto("Creuza",16, "F", "creu");
+        gaf[2] = new Gafanhoto("Jose", 17,"M", "jose");
+
+        /*
+        System.out.println(gaf[0].toString());
+        System.out.println(gaf[1].toString());
+        System.out.println(gaf[2].toString());
+        */
+
+        Visualizacao vis [] = new Visualizacao[3];
+        vis[0] = new Visualizacao(gaf[0], vet[0]);
+        vis[0].avaliar(); // nota=5 => avaliacao=5
+
+        vis[1] = new Visualizacao(gaf[0], vet[1]);
+        vis[1].avaliar(10); // nota=10 => avaliacao=10
+
+        vis[2] = new Visualizacao(gaf[0], vet[2]);
+        vis[2].avaliar(80.0F); // porcentagem=80% => avaliacao=8
+
+        System.out.println(vis[0].toString());
+        System.out.println(vis[1].toString());
+        System.out.println(vis[2].toString());
+    }
+}
+```
+
+<code> &rarr; Run 🖥️  &lt;class Aula15&gt; </code>
+
+```markdown
+Visualizacao{espectador=Gafanhoto{Pessoa{nome='Jubileu', idade=15, sexo='M', experiencia=0.0}
+login='juba', totalAssistido='3'}, 
+filme=Video{titulo='Aula 01 de POO', avaliacao=5, views=1, curtidas=0, reproduzindo=false}}
+
+Visualizacao{espectador=Gafanhoto{Pessoa{nome='Jubileu', idade=15, sexo='M', experiencia=0.0}
+login='juba', totalAssistido='3'}, 
+filme=Video{titulo='Aula 02 de PHP', avaliacao=10, views=1, curtidas=0, reproduzindo=false}}
+
+Visualizacao{espectador=Gafanhoto{Pessoa{nome='Jubileu', idade=15, sexo='M', experiencia=0.0}
+login='juba', totalAssistido='3'}, 
+filme=Video{titulo='Aula 03 de HTML', avaliacao=8, views=1, curtidas=0, reproduzindo=false}}
+```
+
+<br>
+
+
+
 <hr>
 
 <span id="autor">
@@ -4991,6 +5289,8 @@ O **desafio final** é a criação de um pequeno programa semelhante ao Youtube,
    <img align="center" style="border-radius: 100%;" src="https://avatars.githubusercontent.com/u/66234125?s=400" width="100px;" alt="Foto do GitHub de eduardodsr"/>
   </a>
 </div>
+
+<br>
 
 - `Dev:` Eduardo da Silva Rodrigues
 
