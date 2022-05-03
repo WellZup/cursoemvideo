@@ -4638,11 +4638,11 @@ Nessa aula de POO, vamos fazer uma lista de exercícios de programação orienta
 
 #### Aula Prática 14 – Projeto Final em Java (Parte 1)
 
-Nessa aula de POO, vamos iniciar a construção de um exemplo completo de um modelo 100% construído em Programação Orientada a Objetos com PHP.
+Nessa aula de POO, vamos iniciar a construção de um exemplo completo de um modelo 100% construído em Programação Orientada a Objetos com Java.
 
-<img src="img/Aula14/aula14b-pratica-01.png">
+<img src="./img/aula14/aula14b-pratica-01.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula14/aula14b-pratica-02.png">
+<img src="./img/aula14/aula14b-pratica-02.png">
 <a href="#" target="_blank"></a>
 
 <br><br>
