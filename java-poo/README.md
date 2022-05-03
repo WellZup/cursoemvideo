@@ -4647,32 +4647,267 @@ Nessa aula de POO, vamos iniciar a construção de um exemplo completo de um mod
 
 <br><br>
 
-<code> class  </code>
+- **PROJETO YOUTUBE**
+
+<code> interface AcoesVideo  </code>
 
 ```java
+package aula14;
 
+public interface AcoesVideo {
+    // abstract method
+    public void play();
+    public void pause();
+    public void like();
+}
 ```
 
-<code> class  </code>
+<code> class Video implements AcoesVideo </code>
 
 ```java
+package aula14;
 
+public class Video implements AcoesVideo {
+    // Attributes
+    private String titulo;
+    private int avaliacao;
+    private int views;
+    private int curtidas;
+    private boolean reproduzindo;
+
+    // Constructor
+    public Video(String titulo) {
+        this.titulo = titulo;
+        this.avaliacao = 1;  // estrelas DE 1 ATE 5!
+        this.views = 0;
+        this.curtidas = 0;
+        this.reproduzindo = false;
+    }
+
+    // toString()
+    @Override
+    public String toString() {
+        return "Video{" +
+                "titulo='" + titulo + '\'' +
+                ", avaliacao=" + avaliacao +
+                ", views=" + views +
+                ", curtidas=" + curtidas +
+                ", reproduzindo=" + reproduzindo +
+                '}';
+    }
+
+    // Special Method - Getters and Setters
+    public String getTitulo() {
+        return titulo;
+    }
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+    public int getAvaliacao() {
+        return avaliacao;
+    }
+    public void setAvaliacao(int avaliacao) {
+        this.avaliacao = avaliacao;
+    }
+    public int getViews() {
+        return views;
+    }
+    public void setViews(int views) {
+        this.views = views;
+    }
+    public int getCurtidas() {
+        return curtidas;
+    }
+    public void setCurtidas(int curtidas) {
+        this.curtidas = curtidas;
+    }
+
+    @Override
+    public void play() {
+        this.reproduzindo = true;
+    }
+
+    @Override
+    public void pause() {
+        this.reproduzindo = false;
+    }
+
+    @Override
+    public void like() {
+        this.curtidas++;
+    }
+}
 ```
 
-<code> class  </code>
+<code> abstract class Pessoa </code>
 
 ```java
+package aula14;
 
+public abstract class Pessoa {
+    // Attributes
+    protected String nome;
+    protected int idade;
+    protected String sexo;
+    protected float experiencia;
+
+    // Construct
+    public Pessoa(String nome, int idade, String sexo) {
+        this.nome = nome;
+        this.idade = idade;
+        this.sexo = sexo;
+        this.experiencia = 0;
+    }
+
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                ", sexo='" + sexo + '\'' +
+                ", experiencia=" + experiencia +
+                '}';
+    }
+
+    // Method
+    public void ganharExperiencia(){
+        // TODO
+    }
+
+    // Special Method
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public String getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
+
+    public float getExperiencia() {
+        return experiencia;
+    }
+
+    public void setExperiencia(float experiencia) {
+        this.experiencia = experiencia;
+    }
+}
 ```
 
-<code> class  </code>
+<code> class Gafanhoto extends Pessoa </code>
 
 ```java
+package aula14;
 
+public class Gafanhoto extends Pessoa {
+    // Attributes
+    private String login;
+    private int totalAssistido;
+
+    // Construcor
+    public Gafanhoto(String nome, int idade, String sexo, String login) {
+        super(nome, idade, sexo);
+        this.login = login;
+        this.totalAssistido = 0;
+    }
+
+    @Override
+    public String toString() {
+        return "Gafanhoto{" +
+                "login='" + login + '\'' +
+                ", nome='" + nome + '\'' +
+                ", idade=" + idade +
+                ", sexo='" + sexo + '\'' +
+                '}';
+    }
+
+    // Method
+    public void viuMaisUm(){
+        // TODO
+    }
+
+    // Special Method - Getters and Setters
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public int getTotalAssistido() {
+        return totalAssistido;
+    }
+
+    public void setTotalAssistido(int totalAssistido) {
+        this.totalAssistido = totalAssistido;
+    }
+}
 ```
 
+<code> class Aula14 (Programa Principal) </code>
+
+```java
+package aula14;
+
+public class Aula14 {
+
+    public static void main(String[] args) {
+
+        Video vet[] = new Video[3];
+        vet[0] = new Video("Aula 1 de POO");
+        vet[1] = new Video("Aula 2 de PHP");
+        vet[2] = new Video("Aula 3 de HTML");
+
+        System.out.println(vet[0].toString());
+        System.out.println(vet[1].toString());
+        System.out.println(vet[2].toString());
+        System.out.println();
+
+        Gafanhoto gaf[] = new Gafanhoto[3];
+        gaf[0] = new Gafanhoto("Jubileu", 15, "M", "juba");
+        gaf[1] = new Gafanhoto("Creuza",16, "F", "creu");
+        gaf[2] = new Gafanhoto("Jose", 17,"M", "jose");
+
+        System.out.println(gaf[0].toString());
+        System.out.println(gaf[1].toString());
+        System.out.println(gaf[2].toString());
+    }
+}
+```
+
+
+<code> &rarr; Run 🖥️  &lt;class Aula14&gt; </code>
+
+```markdown
+Video{titulo='Aula 1 de POO', avaliacao=1, views=0, curtidas=0, reproduzindo=false}
+Video{titulo='Aula 2 de PHP', avaliacao=1, views=0, curtidas=0, reproduzindo=false}
+Video{titulo='Aula 3 de HTML', avaliacao=1, views=0, curtidas=0, reproduzindo=false}
+
+Gafanhoto{login='juba', nome='Jubileu', idade=15, sexo='M'}
+Gafanhoto{login='creu', nome='Creuza', idade=16, sexo='F'}
+Gafanhoto{login='jose', nome='Jose', idade=17, sexo='M'}
+```
+
+<br>
 
 ---
+
 
 <br>
 
