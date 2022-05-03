@@ -4921,42 +4921,42 @@ Nessa aula de POO, vamos fazer mais 10 Exercícios de Programação Orientada a 
 
 - Exercícios de POO
 
-<img src="img/Aula15/aula15-01.png">
+<img src="./img/aula15/aula15-01.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula15/aula15-02.png">
+<img src="./img/aula15/aula15-02.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula15/aula15-03.png">
+<img src="./img/aula15/aula15-03.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula15/aula15-04.png">
+<img src="./img/aula15/aula15-04.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula15/aula15-05.png">
+<img src="./img/aula15/aula15-05.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula15/aula15-06.png">
+<img src="./img/aula15/aula15-06.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula15/aula15-07.png">
+<img src="./img/aula15/aula15-07.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula15/aula15-08.png">
+<img src="./img/aula15/aula15-08.png">
 <a href="#" target="_blank"></a>
 
 <br><br>
 
 - Respostas aos Exercícios de POO
 
-<img src="img/Aula15/aula15-resp01.png">
+<img src="./img/aula15/aula15-resp01.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula15/aula15-resp02.png">
+<img src="./img/aula15/aula15-resp02.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula15/aula15-resp03.png">
+<img src="./img/aula15/aula15-resp03.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula15/aula15-resp04.png">
+<img src="./img/aula15/aula15-resp04.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula15/aula15-resp05.png">
+<img src="./img/aula15/aula15-resp05.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula15/aula15-resp06.png">
+<img src="./img/aula15/aula15-resp06.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula15/aula15-resp07.png">
+<img src="./img/aula15/aula15-resp07.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula15/aula15-resp08.png">
+<img src="./img/aula15/aula15-resp08.png">
 <a href="#" target="_blank"></a>
 
 ---
@@ -4970,14 +4970,14 @@ Nessa aula de POO, vamos aplicar o modelo de agregação em Classes utilizando l
 O **desafio final** é a criação de um pequeno programa semelhante ao Youtube, onde você deverá criar um sistema que permite adicionar vídeos, um “login” para as pessoas assistirem os vídeos, como também, gravar a quantidade de visualizações e a opção de avaliar cada vídeo. Tudo isso aplicando conceitos de orientação à objetos.
 
 
-<img src="img/Aula14/aula14b-pratica-01.png">
+<img src="./img/aula14/aula14b-pratica-01.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula14/aula14b-pratica-02.png">
+<img src="./img/aula14/aula14b-pratica-02.png">
 <a href="#" target="_blank"></a>
 
-<img src="img/Aula15/aula15-proj1.png">
+<img src="./img/aula15/aula15-proj1.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula15/aula15-proj2.png">
+<img src="./img/aula15/aula15-proj2.png">
 <a href="#" target="_blank"></a>
 
 <hr>
