@@ -475,6 +475,10 @@ https://www.jetbrains.com/idea/guide/tutorials
 
 [Curso de Java POO](https://www.youtube.com/playlist?list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY)
 
+### Certificado: :trophy: :100:
+
+[Certificado de Conclusão | Teste Final -> 10 de 10 Pontos (100% de aproveitamento)](https://github.com/eduardodsr/cursoemvideo/tree/master/java-poo/certificado)
+
 ### Links: :link:
 
 <a href="https://www.cursoemvideo.com/curso/java-poo" target="_blank">www.cursoemvideo.com/curso/java-poo</a>
