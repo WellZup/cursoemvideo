@@ -4570,8 +4570,6 @@ public class Aula13 {
 
 ---
 
-<br>
-
 <span id="aula14">
 
 ### 14. Aula 14
@@ -4580,53 +4578,61 @@ public class Aula13 {
 
 Nessa aula de POO, vamos fazer uma lista de exercícios de programação orientada a objetos para você testar os seus conhecimentos adquiridos durante as 13 primeiras aulas do curso.
 
+
+---
+
 - Exercícios de POO
 
-<img src="img/Aula14/aula14-01.png">
+<img src="./img/aula14/aula14-01.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula14/aula14-02.png">
+<img src="./img/aula14/aula14-02.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula14/aula14-03.png">
+<img src="./img/aula14/aula14-03.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula14/aula14-04.png">
+<img src="./img/aula14/aula14-04.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula14/aula14-05.png">
+<img src="./img/aula14/aula14-05.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula14/aula14-06.png">
+<img src="./img/aula14/aula14-06.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula14/aula14-07.png">
+<img src="./img/aula14/aula14-07.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula14/aula14-08.png">
+<img src="./img/aula14/aula14-08.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula14/aula14-09.png">
+<img src="./img/aula14/aula14-09.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula14/aula14-10.png">
+<img src="./img/aula14/aula14-10.png">
 <a href="#" target="_blank"></a>
 
 <br>
 
+----
+
+
 - Respostas aos Exercícios de POO
 
-<img src="img/Aula14/aula14-resp01.png">
+<img src="./img/aula14/aula14-resp01.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula14/aula14-resp02.png">
+<img src="./img/aula14/aula14-resp02.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula14/aula14-resp03.png">
+<img src="./img/aula14/aula14-resp03.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula14/aula14-resp04.png">
+<img src="./img/aula14/aula14-resp04.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula14/aula14-resp05.png">
+<img src="./img/aula14/aula14-resp05.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula14/aula14-resp06.png">
+<img src="./img/aula14/aula14-resp06.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula14/aula14-resp07.png">
+<img src="./img/aula14/aula14-resp07.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula14/aula14-resp08.png">
+<img src="./img/aula14/aula14-resp08.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula14/aula14-resp09.png">
+<img src="./img/aula14/aula14-resp09.png">
 <a href="#" target="_blank"></a>
-<img src="img/Aula14/aula14-resp10.png">
+<img src="./img/aula14/aula14-resp10.png">
 <a href="#" target="_blank"></a>
+
+---
 
 <br>
 
@@ -4638,6 +4644,35 @@ Nessa aula de POO, vamos iniciar a construção de um exemplo completo de um mod
 <a href="#" target="_blank"></a>
 <img src="img/Aula14/aula14b-pratica-02.png">
 <a href="#" target="_blank"></a>
+
+<br><br>
+
+<code> class  </code>
+
+```java
+
+```
+
+<code> class  </code>
+
+```java
+
+```
+
+<code> class  </code>
+
+```java
+
+```
+
+<code> class  </code>
+
+```java
+
+```
+
+
+---
 
 <br>
 
@@ -4689,9 +4724,16 @@ Nessa aula de POO, vamos fazer mais 10 Exercícios de Programação Orientada a 
 <img src="img/Aula15/aula15-resp08.png">
 <a href="#" target="_blank"></a>
 
+---
+
+<br>
+
 #### Aula Prática 15 – Projeto Final em PHP (Parte 2)
 
-Nessa aula de POO, vamos aplicar o modelo de agregação em Classes utilizando linguagem PHP. Um exercício prático e completamente feito em Programação Orientada a Objetos.
+Nessa aula de POO, vamos aplicar o modelo de agregação em Classes utilizando linguagem Java. Um exercício prático e completamente feito em Programação Orientada a Objetos.
+
+O **desafio final** é a criação de um pequeno programa semelhante ao Youtube, onde você deverá criar um sistema que permite adicionar vídeos, um “login” para as pessoas assistirem os vídeos, como também, gravar a quantidade de visualizações e a opção de avaliar cada vídeo. Tudo isso aplicando conceitos de orientação à objetos.
+
 
 <img src="img/Aula14/aula14b-pratica-01.png">
 <a href="#" target="_blank"></a>
