@@ -456,10 +456,10 @@ https://www.jetbrains.com/idea/guide/tutorials
 13. Aula 13 ✅
     - Aula Teórica 13 – Conceito Polimorfismo (Parte 2)
     - Aula Prática 13 – Polimorfismo Sobrecarga (Parte 2)
-14. Aula 14
+14. Aula 14 ✅
     - Aula Teórica 14 – Exercícios de POO (Parte 2)
     - Aula Prática 14 – Projeto Final em Java (Parte 1)
-15. Aula 15
+15. Aula 15 ✅
     - Aula Teórica 15 – Exercícios de POO (Parte 3)
     - Aula Prática 15 – Projeto Final em Java (Parte 2)
 
