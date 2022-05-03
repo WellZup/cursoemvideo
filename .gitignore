@@ -9,7 +9,6 @@
 */.idea
 **/.idea
 
-
 # Directories Ignores 
 teste
 
@@ -17,3 +16,9 @@ teste
 *.dmg
 *.rar
 *.zip
+
+# Archives ignored *.iml
+.iml
+*/.iml
+**/.iml
+
